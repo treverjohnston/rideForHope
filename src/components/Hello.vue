@@ -13,16 +13,16 @@
     <div class="top-logo">
       <img class="ride" src="statics/tLogo.png" alt="ride for hope logo">
     </div>
-    <q-tabs class="shadow-2">
-      <q-tab class="tab" slot="title" label="Home" />
-      <q-tab class="tab" slot="title" label="About" />
-      <q-tab class="tab" slot="title" label="Register" />
-      <q-tab class="tab" slot="title" label="Routes" />
-      <q-tab class="tab" slot="title" label="Donate" />
-      <q-tab class="tab" slot="title" label="Raffle Items" />
-      <q-tab class="tab" slot="title" label="Get Involved" />
-      <q-tab class="tab" slot="title" label="Photo Gallery" />
-      <q-tab class="tab" slot="title" label="Contact" />
+    <q-tabs glossy align="center" class="shadow-2">
+      <q-tab class="tab" slot="title" label="Home" name="home" />
+      <q-tab class="tab" slot="title" label="About" name="about" />
+      <q-tab class="tab" slot="title" label="Register" name="register" />
+      <q-tab class="tab" slot="title" label="Routes" name="routes" />
+      <q-tab class="tab" slot="title" label="Donate" name="donate" />
+      <q-tab class="tab" slot="title" label="Raffle Items" name="raffle" />
+      <q-tab class="tab" slot="title" label="Get Involved" name="involved" />
+      <q-tab class="tab" slot="title" label="Photo Gallery" name="gallery" />
+      <q-tab class="tab" slot="title" label="Contact" name="contact" />
     </q-tabs>
 
     <div class="mobile-only" slot="left">
@@ -68,23 +68,43 @@
         <h2 class="text-bold">Kuna, ID</h2>
       </div>
     </q-parallax>
-    <div class="row options">
-      <q-card class="card">
-        <q-card-title>
-          <q-btn class="cbtn shadow-24">Register Now</q-btn>
-        </q-card-title>
-      </q-card>
-      <q-card class="card">
-        <q-card-title>
-          <q-btn class="cbtn shadow-24">Donate Now</q-btn>
-        </q-card-title>
-      </q-card>
-      <q-card class="card">
-        <q-card-title>
-          <q-btn class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
-        </q-card-title>
-      </q-card>
+    <div class="spacer">
+      <img class="ride" src="statics/tLogo.png" alt="ride for hope logo">
     </div>
+    <q-parallax :speed="1" src="./statics/cover2.jpg">
+      <div slot="loading">Loading...</div>
+
+      <div class="row options">
+        <q-card class="card">
+          <q-card-title>
+            <hr>
+            <q-btn class="cbtn shadow-24">Register Now</q-btn>
+            <hr>
+          </q-card-title>
+        </q-card>
+        <q-card class="card">
+          <q-card-title>
+            <hr>
+            <q-btn class="cbtn shadow-24">Donate Now</q-btn>
+            <hr>
+          </q-card-title>
+        </q-card>
+        <q-card class="card">
+          <q-card-title>
+            <hr>
+            <q-btn class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
+            <hr>
+          </q-card-title>
+        </q-card>
+      </div>
+    </q-parallax>
+    <q-toolbar glossy class="footer text-center text-italic" slot="footer">
+      <q-toolbar-title>
+        Thank you for supporting Ride for Hope! </q-toolbar-title>
+      <q-btn flat>
+        <q-icon name="" />
+      </q-btn>
+    </q-toolbar>
   </q-layout>
 </template>
 
@@ -157,16 +177,34 @@
 </script>
 
 <style>
-  .cbtn{
-    background-color: rgba(17, 17, 17, 0.705);
+  .footer {
+    background-color: rgb(39, 34, 34);
+    color: rgb(0, 128, 128);
   }
+
+  .spacer {
+    padding: .5rem 0 .5rem 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .cbtn {
+    background-color: rgba(17, 17, 17, 0.705);
+    color: white;
+  }
+
   .card {
-    background-color: rgb(197, 7, 7);
+    background-color: rgba(197, 7, 7, 0.8);
+    padding: 2rem 2rem 2rem 2rem;
   }
 
   .options {
     display: flex;
     justify-content: space-around;
+    background-color: rgba(17, 17, 17, 0.705);
+    padding: 3rem 5rem 3rem 5rem;
     /* justify-content: center; */
   }
 
