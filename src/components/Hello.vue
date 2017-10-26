@@ -101,9 +101,11 @@
     <q-toolbar glossy class="footer text-center text-italic" slot="footer">
       <q-toolbar-title>
         Thank you for supporting Ride for Hope! </q-toolbar-title>
-      <q-btn flat>
-        <q-icon name="" />
-      </q-btn>
+      <a href="https://www.facebook.com/rideforhopeidaho/" target="_blank">
+        <q-btn flat>
+          <q-icon class="fb" name="fa-facebook-square" />
+        </q-btn>
+      </a>
     </q-toolbar>
   </q-layout>
 </template>
@@ -177,6 +179,10 @@
 </script>
 
 <style>
+  .fb {
+    color: rgb(59, 89, 152)
+  }
+
   .footer {
     background-color: rgb(39, 34, 34);
     color: rgb(0, 128, 128);
