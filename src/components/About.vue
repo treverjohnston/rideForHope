@@ -2,9 +2,9 @@
     <q-layout class="about">
         <q-transition appear enter="lightSpeedIn" leave="fadeOut">
             <div class="row wrap xs-gutter">
-                <h1 class="offset-sm-3 col-sm-8 text-bold offset-xs-1 col-xs-10">About Us</h1>
-                <hr class="offset-sm-3 col-sm-8 return offset-xs-1 col-xs-10">
-                <div class="para offset-sm-3 col-sm-5 offset-xs-1 col-xs-10">
+                <h1 class="offset-sm-2 col-sm-8 text-bold offset-xs-1 col-xs-10">About Us</h1>
+                <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10">
+                <div class="para offset-sm-2 col-sm-5 offset-xs-1 col-xs-10">
                     <p class="text-justify">
                         Ride For Hope is "gearing up" for our 4th annual fully supported bicycle charity event which will take place on June 23,
                         2018 . We are a small group of dedicated cyclists and volunteers who firmly believe that quality
@@ -23,7 +23,7 @@
                 <div class="pic col-sm-4 col-xs-12 text-center">
                     <img class="rider" src="statics/rider.png" alt="rider">
                 </div>
-                <div class="paragroup offset-sm-3 col-sm-8 offset-xs-1 col-xs-10">
+                <div class="paragroup offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
                     <p class="text-justify">
                         In 2017 funds raised included Canyon County Community Clinic, located in Caldwell, Idaho. Canyon County Community Clinic
                         is a non-profit clinic staffed by medical volunteers that helps improve quality of life for those
