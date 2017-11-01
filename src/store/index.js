@@ -3,8 +3,8 @@ import vue from 'vue'
 import vuex from 'vuex'
 import router from '../router'
 
-var production = !window.location.host.includes('localhost');
-var baseUrl = production ? '//inspireq.herokuapp.com/' : '//localhost:3000/';
+// var production = !window.location.host.includes('localhost');
+// var baseUrl = production ? '//inspireq.herokuapp.com/' : '//localhost:3000/';
 
 vue.use(vuex)
 

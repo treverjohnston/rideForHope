@@ -25,8 +25,43 @@ export default new VueRouter({
   scrollBehavior: () => ({ y: 0 }),
 
   routes: [
-    { path: '/', component: load('Hello') },
-
+    {
+      path: '/', component: load('Hello'),
+      children: [
+        {
+          path: 'about',
+          component: load('About')
+        },
+        {
+          path: 'register',
+          component: load('Register')
+        },
+        {
+          path: 'routes',
+          component: load('Routes')
+        },
+        {
+          path: 'donate',
+          component: load('Donate')
+        },
+        {
+          path: 'raffle',
+          component: load('Raffle')
+        },
+        {
+          path: 'involved',
+          component: load('Involved')
+        },
+        {
+          path: 'gallery',
+          component: load('Gallery')
+        },
+        {
+          path: 'contact',
+          component: load('Contact')
+        }
+      ]
+    },
     // Always leave this last one
     { path: '*', component: load('Error404') } // Not found
   ]

@@ -12,4 +12,8 @@
 export default {}
 </script>
 
-<style></style>
+<style>
+  .q-tabs-head {
+    background-color: rgba(17, 17, 17, 0.88);
+  }
+</style>
