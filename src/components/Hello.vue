@@ -39,42 +39,42 @@
 
       <q-list class="mobile-only" no-border link inset-delimiter>
         <q-list-header>Ride For Hope</q-list-header>
-        <q-item @click="launch('http://quasar-framework.org')">
+        <q-side-link to="/">
           <q-item-side icon="school" />
           <q-item-main label="Home" />
-        </q-item>
-        <q-item @click="launch('http://forum.quasar-framework.org')">
+        </q-side-link>
+        <q-side-link to="about">
           <q-item-side icon="record_voice_over" />
           <q-item-main label="About" />
-        </q-item>
-        <q-item @click="launch('https://gitter.im/quasarframework/Lobby')">
+        </q-side-link>
+        <q-side-link to="register">
           <q-item-side icon="chat" />
           <q-item-main label="Register" />
-        </q-item>
-        <q-item @click="launch('https://twitter.com/quasarframework')">
+        </q-side-link>
+        <q-side-link to="routes">
           <q-item-side icon="rss feed" />
           <q-item-main label="Routes" />
-        </q-item>
-        <q-item @click="launch('https://twitter.com/quasarframework')">
+        </q-side-link>
+        <q-side-link to="donate">
           <q-item-side icon="rss feed" />
           <q-item-main label="Donate" />
-        </q-item>
-        <q-item @click="launch('https://twitter.com/quasarframework')">
+        </q-side-link>
+        <q-side-link to="raffle">
           <q-item-side icon="rss feed" />
           <q-item-main label="Raffle Items" />
-        </q-item>
-        <q-item @click="launch('https://twitter.com/quasarframework')">
+        </q-side-link>
+        <q-side-link to="involved">
           <q-item-side icon="rss feed" />
           <q-item-main label="Get Involved" />
-        </q-item>
-        <q-item @click="launch('https://twitter.com/quasarframework')">
+        </q-side-link>
+        <q-side-link to="gallery">
           <q-item-side icon="rss feed" />
           <q-item-main label="Photo Gallery" />
-        </q-item>
-        <q-item @click="launch('https://twitter.com/quasarframework')">
+        </q-side-link>
+        <q-side-link to="contact">
           <q-item-side icon="rss feed" />
           <q-item-main label="Contact" />
-        </q-item>
+        </q-side-link>
       </q-list>
     </div>
 
@@ -163,7 +163,8 @@
     QCardSeparator,
     QCardMain,
     QRouteTab,
-    QTransition
+    QTransition,
+    QSideLink
   } from 'quasar'
 
 
@@ -189,7 +190,8 @@
       QCardSeparator,
       QCardMain,
       QRouteTab,
-      QTransition
+      QTransition,
+      QSideLink
     },
     data() {
       return {
