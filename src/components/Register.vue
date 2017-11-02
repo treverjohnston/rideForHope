@@ -1,10 +1,25 @@
 <template>
     <q-layout class="registration">
-        <!-- <div class="layout-padding row justify-center"> -->
-            <!-- <div style="width: 500px; max-width: 90vw;"> -->
-                <q-gallery-carousel dots infinite :src="secondSlider"></q-gallery-carousel>
-            <!-- </div> -->
-        <!-- </div> -->
+        <q-parallax :speed="1" :height="500" src="./statics/riders2.jpg">
+            <div slot="loading">Loading...</div>
+
+            <div class="text-center">
+                <h2 class="text-bold">Registration for 2018 will open January 1, 2018</h2>
+                <!-- <h1 class="text-bold">Register</h1> -->
+            </div>
+            <q-btn class="cbtn shadow-24">Register</q-btn>s
+        </q-parallax>
+        <div class="spacer">
+            <img class="ride" src="statics/tLogo.png" alt="ride for hope logo">
+        </div>
+        <q-parallax :speed="1" :height="500" src="./statics/riders3.jpg">
+            <div slot="loading">Loading...</div>
+            <div class="text-center">
+                <h2 class="text-bold">Proposed Routes Pending Road Construction</h2>
+                <q-btn class="cbtn shadow-24">Routes</q-btn>
+            </div>
+
+        </q-parallax>
     </q-layout>
 </template>
 
@@ -12,7 +27,9 @@
     import {
         QLayout,
         QGallery,
-        QGalleryCarousel
+        QGalleryCarousel,
+        QParallax,
+        QBtn
     } from 'quasar'
     export default {
         name: 'About',
@@ -27,12 +44,35 @@
         components: {
             QLayout,
             QGalleryCarousel,
-            QGallery
+            QGallery,
+            QParallax,
+            QBtn
         }
     }
 </script>
 
-<style>
+<style scoped>
+    .ride {
+        height: 7rem;
+        /* margin: 1rem 0 1rem 0; */
+    }
+
+    .cbtn {
+        background-color: rgba(197, 7, 7, 0.8);
+        color: white;
+        padding: 1rem 1rem 1rem 1rem;
+        text-shadow: none;
+    }
+
+    .spacer {
+        padding: .5rem 0 .5rem 0;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
     .registration {
         background-color: rgb(206, 201, 201);
     }

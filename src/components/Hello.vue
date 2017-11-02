@@ -4,6 +4,7 @@
       <q-btn class="mobile-only" flat @click="$refs.layout.toggleLeft()">
         <q-icon name="menu" />
       </q-btn>
+      <img src="statics/tLogo.png" alt="logo" class="mini">
       <q-toolbar-title>
         Ride For Hope
       </q-toolbar-title>
@@ -30,7 +31,7 @@
       <q-route-tab class="tab" slot="title" label="Contact" name="contact" to="contact" />
     </q-tabs>
 
-    <div class="mobile-only" slot="left">
+    <div class="mobile-only left-tab" slot="left">
       <!--
         Use <q-side-link> component
         instead of <q-item> for
@@ -38,42 +39,50 @@
       -->
 
       <q-list class="mobile-only" no-border link inset-delimiter>
-        <q-list-header>Ride For Hope</q-list-header>
+        <!-- <q-list-header>Ride For Hope</q-list-header> -->
         <q-side-link to="/">
-          <q-item-side icon="school" />
-          <q-item-main label="Home" />
+          <!-- <q-item-side icon="school" /> -->
+          <q-item-main class="side" label="Home" />
+          <hr class="tabhr">
         </q-side-link>
         <q-side-link to="about">
-          <q-item-side icon="record_voice_over" />
-          <q-item-main label="About" />
+          <!-- <q-item-side icon="record_voice_over" /> -->
+          <q-item-main class="side" label="About" />
+          <hr class="tabhr">
         </q-side-link>
         <q-side-link to="register">
-          <q-item-side icon="chat" />
-          <q-item-main label="Register" />
+          <!-- <q-item-side icon="chat" /> -->
+          <q-item-main class="side" label="Register" />
+          <hr class="tabhr">
         </q-side-link>
         <q-side-link to="routes">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Routes" />
+          <!-- <q-item-side icon="rss feed" /> -->
+          <q-item-main class="side" label="Routes" />
+          <hr class="tabhr">
         </q-side-link>
         <q-side-link to="donate">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Donate" />
+          <!-- <q-item-side icon="rss feed" /> -->
+          <q-item-main class="side" label="Donate" />
+          <hr class="tabhr">
         </q-side-link>
         <q-side-link to="raffle">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Raffle Items" />
+          <!-- <q-item-side icon="rss feed" /> -->
+          <q-item-main class="side" label="Raffle Items" />
+          <hr class="tabhr">
         </q-side-link>
         <q-side-link to="involved">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Get Involved" />
+          <!-- <q-item-side icon="rss feed" /> -->
+          <q-item-main class="side" label="Get Involved" />
+          <hr class="tabhr">
         </q-side-link>
         <q-side-link to="gallery">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Photo Gallery" />
+          <!-- <q-item-side icon="rss feed" /> -->
+          <q-item-main class="side" label="Photo Gallery" />
+          <hr class="tabhr">
         </q-side-link>
         <q-side-link to="contact">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Contact" />
+          <!-- <q-item-side icon="rss feed" /> -->
+          <q-item-main class="side" label="Contact" />
         </q-side-link>
       </q-list>
     </div>
@@ -129,8 +138,14 @@
     </div>
     <!--  -->
     <q-toolbar glossy class="footer text-center text-italic" slot="footer">
-      <h6>
-        Thank you for supporting Ride for Hope! </h6>
+      <q-toolbar-title>
+        <h6 class="desktop-only">
+          Thank you for supporting Ride for Hope!
+        </h6>
+        <small class="small mobile-only">
+          Thank you for supporting Ride for Hope!
+        </small>
+      </q-toolbar-title>
       <a href="https://www.facebook.com/rideforhopeidaho/" target="_blank">
         <q-btn flat>
           <q-icon class="fb" name="fa-facebook-square" />
@@ -223,6 +238,30 @@
 </script>
 
 <style scoped>
+  .tabhr {
+    border-color: black;
+    width: 80%;
+  }
+
+  .left-tab {
+    background-color: teal;
+    text-align: center;
+  }
+
+  .side {
+    font-weight: 100;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .small {
+    font-size: .7rem;
+  }
+
+  .mini {
+    height: 3rem;
+  }
+
   .top-promo {
     color: rgb(255, 255, 0);
   }
