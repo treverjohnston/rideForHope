@@ -1,6 +1,6 @@
 <template>
     <q-layout class="about">
-        <q-transition appear enter="lightSpeedIn" leave="fadeOut">
+        <!-- <q-transition appear enter="lightSpeedIn" leave="fadeOut"> -->
             <div class="row wrap xs-gutter">
                 <h1 class="offset-sm-2 col-sm-8 text-bold offset-xs-1 col-xs-10">About Us</h1>
                 <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10">
@@ -52,7 +52,7 @@
                     </p>
                 </div>
             </div>
-        </q-transition>
+        <!-- </q-transition> -->
     </q-layout>
 </template>
 
