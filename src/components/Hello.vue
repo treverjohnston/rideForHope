@@ -112,29 +112,62 @@
       <div class="spacer">
         <img class="ride" src="statics/tLogo.png" alt="ride for hope logo">
       </div>
-      <div class="row options">
-        <q-card class="card">
-          <q-card-main>
-            <hr>
-            <q-btn class="cbtn shadow-24">Register Now</q-btn>
-            <hr>
-          </q-card-main>
-        </q-card>
-        <q-card class="card">
-          <q-card-main>
-            <hr>
-            <q-btn class="cbtn shadow-24">Donate Now</q-btn>
-            <hr>
-          </q-card-main>
-        </q-card>
-        <q-card class="card">
-          <q-card-main>
-            <hr>
-            <q-btn class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
-            <hr>
-          </q-card-main>
-        </q-card>
-      </div>
+
+      <q-parallax class="desktop-only" :speed="1" :height="500" src="./statics/cover2.jpg">
+        <div slot="loading">Loading...</div>
+
+        <div class="row options">
+          <q-card class="card">
+            <q-card-main>
+              <hr>
+              <q-btn class="cbtn shadow-24">Register Now</q-btn>
+              <hr>
+            </q-card-main>
+          </q-card>
+          <q-card class="card">
+            <q-card-main>
+              <hr>
+              <q-btn class="cbtn shadow-24">Donate Now</q-btn>
+              <hr>
+            </q-card-main>
+          </q-card>
+          <q-card class="card">
+            <q-card-main>
+              <hr>
+              <q-btn class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
+              <hr>
+            </q-card-main>
+          </q-card>
+        </div>
+      </q-parallax>
+      <q-parallax class="mobile-only" :speed="1" :height="500" src="./statics/cover2.jpg">
+        <div slot="loading">Loading...</div>
+
+        <div class="row options">
+          <q-card class="card-mobile col-xs-12 text-center">
+            <q-card-main>
+              <hr>
+              <q-btn class="cbtn shadow-24">Register Now</q-btn>
+              <hr>
+            </q-card-main>
+          </q-card>
+          <q-card class="card-mobile col-xs-12 text-center">
+            <q-card-main>
+              <hr>
+              <q-btn class="cbtn shadow-24">Donate Now</q-btn>
+              <hr>
+            </q-card-main>
+          </q-card>
+          <q-card class="card-mobile col-xs-12 text-center">
+            <q-card-main>
+              <hr>
+              <q-btn class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
+              <hr>
+            </q-card-main>
+          </q-card>
+        </div>
+      </q-parallax>
+      
     </div>
     <!--  -->
     <q-toolbar glossy class="footer text-center text-italic" slot="footer">
@@ -298,16 +331,20 @@
     background-color: rgba(197, 7, 7, 0.8);
     padding: 2rem 2rem 2rem 2rem;
   }
+  .card-mobile {
+    background-color: rgba(197, 7, 7, 0.8);
+    /* padding: 2rem 2rem 2rem 2rem; */
+  }
 
   .options {
     display: flex;
     justify-content: space-around;
     background-color: rgba(17, 17, 17, 0.88);
     padding: 3rem 5rem 3rem 5rem;
-    background-image: url("~statics/cover2.jpg");
+    /* background-image: url("~statics/cover2.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     /* justify-content: center; */
   }
 
