@@ -5,9 +5,8 @@
 
             <div class="text-center">
                 <h2 class="text-bold">Registration for 2018 will open January 1, 2018</h2>
-                <!-- <h1 class="text-bold">Register</h1> -->
             </div>
-            <q-btn class="cbtn shadow-24">Register</q-btn>s
+            <q-btn @click="launch('https://www.bikereg.com/ride-for-hope0')" class="cbtn shadow-24">Register</q-btn>s
         </q-parallax>
         <div class="spacer">
             <img class="ride" src="statics/tLogo.png" alt="ride for hope logo">
@@ -16,7 +15,7 @@
             <div slot="loading">Loading...</div>
             <div class="text-center">
                 <h2 class="text-bold">Proposed Routes Pending Road Construction</h2>
-                <q-btn class="cbtn shadow-24">Routes</q-btn>
+                <q-btn @click="$router.push('routes')" class="cbtn shadow-24">Routes</q-btn>
             </div>
 
         </q-parallax>
@@ -25,6 +24,7 @@
 
 <script>
     import {
+        openURL,
         QLayout,
         QGallery,
         QGalleryCarousel,
@@ -47,6 +47,11 @@
             QGallery,
             QParallax,
             QBtn
+        },
+        methods: {
+            launch(url) {
+                openURL(url)
+            },
         }
     }
 </script>

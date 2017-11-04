@@ -57,6 +57,14 @@ export default new VueRouter({
           component: load('Gallery')
         },
         {
+          path: 'volunteers',
+          component: load('Volunteers')
+        },
+        {
+          path: 'sponsors',
+          component: load('Sponsors')
+        },
+        {
           path: 'contact',
           component: load('Contact')
         }

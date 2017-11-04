@@ -19,7 +19,7 @@
     <!-- <div class="top-logo">
       <img class="ride" src="statics/tLogo.png" alt="ride for hope logo">
     </div> -->
-    <q-tabs glossy align="center" class="shadow-2 desktop-only tabs">
+    <q-tabs  align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-route-tab class="tab" slot="title" label="About" name="about" to="about" />
       <q-route-tab class="tab" slot="title" label="Register" name="register" to="register" />
@@ -120,21 +120,21 @@
           <q-card class="card">
             <q-card-main>
               <hr>
-              <q-btn class="cbtn shadow-24">Register Now</q-btn>
+              <q-btn @click="launch('https://www.bikereg.com/ride-for-hope0')" class="cbtn shadow-24">Register Now</q-btn>
               <hr>
             </q-card-main>
           </q-card>
           <q-card class="card">
             <q-card-main>
               <hr>
-              <q-btn class="cbtn shadow-24">Donate Now</q-btn>
+              <q-btn @click="launch('https://www.bikereg.com/ride-for-hope0')" class="cbtn shadow-24">Donate Now</q-btn>
               <hr>
             </q-card-main>
           </q-card>
           <q-card class="card">
             <q-card-main>
               <hr>
-              <q-btn class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
+              <q-btn @click="launch('https://www.bikereg.com/ride-for-hope0')" class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
               <hr>
             </q-card-main>
           </q-card>
@@ -147,21 +147,21 @@
           <q-card class="card-mobile col-xs-12 text-center">
             <q-card-main>
               <hr>
-              <q-btn class="cbtn shadow-24">Register Now</q-btn>
+              <q-btn @click="launch('https://www.bikereg.com/ride-for-hope0')" class="cbtn shadow-24">Register Now</q-btn>
               <hr>
             </q-card-main>
           </q-card>
           <q-card class="card-mobile col-xs-12 text-center">
             <q-card-main>
               <hr>
-              <q-btn class="cbtn shadow-24">Donate Now</q-btn>
+              <q-btn @click="launch('https://www.bikereg.com/ride-for-hope0')" class="cbtn shadow-24">Donate Now</q-btn>
               <hr>
             </q-card-main>
           </q-card>
           <q-card class="card-mobile col-xs-12 text-center">
             <q-card-main>
               <hr>
-              <q-btn class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
+              <q-btn @click="launch('https://www.bikereg.com/ride-for-hope0')" class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
               <hr>
             </q-card-main>
           </q-card>
@@ -170,7 +170,7 @@
       
     </div>
     <!--  -->
-    <q-toolbar glossy class="footer text-center text-italic" slot="footer">
+    <q-toolbar class="footer text-center text-italic" slot="footer">
       <q-toolbar-title>
         <h6 class="desktop-only">
           Thank you for supporting Ride for Hope!

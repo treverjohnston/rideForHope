@@ -24,7 +24,7 @@
                 </div>
                 <div class="row wrap">
                     <div class="col-xs-12 text-center">
-                        <q-btn class="cbtn shadow-24">Donate Here</q-btn>
+                        <q-btn @click="launch('https://www.bikereg.com/ride-for-hope0')" class="cbtn shadow-24">Donate Here</q-btn>
                     </div>
                 </div>
                 <div class="row wrap justify-center desktop-only">
@@ -63,7 +63,8 @@
 <script>
     import {
         QLayout,
-        QBtn
+        QBtn,
+        openURL
     } from 'quasar'
     export default {
         name: 'Donate',
@@ -78,6 +79,11 @@
             routes() {
                 return this.$store.state.routes
             }
+        },
+        methods: {
+            launch(url) {
+                openURL(url)
+            },
         }
     }
 </script>
