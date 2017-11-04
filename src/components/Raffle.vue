@@ -2,7 +2,7 @@
     <q-layout class="raffle">
         <div class="row wrap justify-center desktop-only">
             <q-transition appear enter="fadeIn" leave="fadeOut">
-                <div class="col-sm-8 top text-center">
+                <div class="col-lg-8 top text-center">
                     <hr color="red" class="hr">
                     <h2 class="headline text-bold">RAFFLE ITEMS</h2>
                     <h4 class="fancy">2018 raffle items coming soon</h4>
@@ -34,7 +34,7 @@
         </div>
         <q-transition appear enter="fadeIn" leave="fadeOut">
             <div class="row wrap justify-center pics desktop-only">
-                <q-card flat align="center" class="col-xs-12 col-sm-6">
+                <q-card flat align="center" class="col-xs-12 col-lg-6">
                     <q-card-media>
                         <img src="https://static.wixstatic.com/media/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.jpg/v1/fill/w_413,h_218,al_c,q_80,usm_0.66_1.00_0.01/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.webp"
                             class="img" alt="Raffle item picture">
@@ -49,7 +49,7 @@
             </div>
         </q-transition>
         <div class="row wrap justify-center pics desktop-only">
-            <q-card v-for="item in items" flat align="center" class="col-xs-12 col-sm-3">
+            <q-card v-for="item in items" flat align="center" class="col-xs-12 col-lg-3">
                 <q-card-media>
                     <img :src="item.link" class="img" alt="Raffle item picture">
                 </q-card-media>
@@ -62,7 +62,7 @@
             </q-card>
         </div>
         <div class="row wrap justify-center mobile-only">
-            <q-card align="center" class="col-xs-11 col-sm-3 pics-mobile">
+            <q-card align="center" class="col-xs-11 col-sm-8 col-lg-3 pics-mobile">
                 <q-card-media>
                     <img src="https://static.wixstatic.com/media/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.jpg/v1/fill/w_413,h_218,al_c,q_80,usm_0.66_1.00_0.01/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.webp"
                         class="img" alt="Raffle item picture">
@@ -76,7 +76,7 @@
             </q-card>
         </div>
         <div class="row wrap justify-center mobile-only">
-            <q-card v-for="item in items" align="center" class="col-xs-11 col-sm-3 pics-mobile">
+            <q-card v-for="item in items" align="center" class="col-xs-11 col-sm-8 col-lg-3 pics-mobile">
                 <q-card-media>
                     <img :src="item.link" alt="Raffle item picture">
                 </q-card-media>
@@ -154,15 +154,6 @@
         max-height: 20rem;
     }
 
-    /* .raffle {
-        background-image: url("~statics/woodback.jpeg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-    } */
-
     .raffle {
         background-image: url("~statics/woodback.jpeg");
         background-size: cover;
@@ -174,6 +165,7 @@
         height: 100%;
         top: 10;
         left: 0;
+        padding-bottom: 10rem;
     }
 
     .pics {

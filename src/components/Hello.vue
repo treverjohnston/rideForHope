@@ -170,7 +170,7 @@
       
     </div>
     <!--  -->
-    <q-toolbar  glossy class="footer text-center text-italic" slot="footer">
+    <q-toolbar glossy class="footer text-center text-italic" slot="footer">
       <q-toolbar-title>
         <h6 class="desktop-only">
           Thank you for supporting Ride for Hope!
