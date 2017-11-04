@@ -88,6 +88,14 @@ var store = new vuex.Store({
                 donator: 'Jack In The Box',
                 description: '(50 Free Meals, raffled in 10 meal increments)'
             },
+        ],
+        pictures:[
+            'statics/cover.jpg',
+            'statics/cover2.jpg',
+            'statics/riders2.jpg',
+            'statics/riders3.jpg',
+            'statics/riders4.jpg',
+            'statics/riders5.jpg',
         ]
     },
     mutations: {
