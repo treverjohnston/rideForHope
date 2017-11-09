@@ -3,6 +3,7 @@ import axios from 'axios'
 import $ from 'jquery'
 import vuex from 'vuex'
 import router from '../router'
+import {Toast} from 'quasar'
 
 // var production = !window.location.host.includes('localhost');
 // var baseUrl = production ? '//inspireq.herokuapp.com/' : '//localhost:3000/';
@@ -114,13 +115,14 @@ var store = new vuex.Store({
                 method: "POST",
                 data: {
                     name: obj.name,
-                    email: obj.email,
+                    _email: obj.email,
                     phone: obj.phone,
                     _subject: obj._subject,
                     message: obj.message
                 },
                 dataType: "json"
             });
+            Toast.create('Message Sent')
         }
     }
 })

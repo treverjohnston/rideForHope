@@ -4,8 +4,8 @@
             <div class="col-xs-11 col-md-8 text-center">
                 <h3>Contact Us</h3>
                 <hr color="red" class="hr">
-                <h5 class="light-paragraph desktop-only">Please contact us anytime with any question, or other inquiries.</h5>
-                <h6 class="light-paragraph mobile-only">Please contact us anytime with any question, or other inquiries.</h6>
+                <h5 class="light-paragraph desktop-only">Please contact us anytime with any questions, or other inquiries.</h5>
+                <h6 class="light-paragraph mobile-only">Please contact us anytime with any questions, or other inquiries.</h6>
             </div>
         </div>
         <div class="row wrap justify-center bot desktop-only xs-gutter">
@@ -15,10 +15,10 @@
                 <h6>**Or contact Margo, (208) 608-2527</h6>
             </div>
             <div class="col-xs-5">
-                <q-input v-model="name" float-label="Name" name="name" />
-                <q-input v-model="email" float-label="Email" name="email" />
-                <q-input v-model="phone" float-label="Phone" name="phone" />
-                <q-input v-model="subject" float-label="Subject" name="_subject" />
+                <q-input v-model="name" float-label="Name" name="name" type="text" />
+                <q-input v-model="email" float-label="Email" name="email" type="email" />
+                <q-input v-model="phone" float-label="Phone" name="phone" type="tel" />
+                <q-input v-model="subject" float-label="Subject" name="subject" type="text" />
                 <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
                 <q-btn @click="send">Send</q-btn>
             </div>
@@ -27,8 +27,8 @@
             <div class="col-xs-11">
                 <q-input v-model="name" float-label="Name" name="name" />
                 <q-input v-model="email" float-label="Email" name="email" />
-                <q-input v-model="phone" float-label="Phone" name="phone"/>
-                <q-input v-model="subject" float-label="Subject" name="_subject" />
+                <q-input v-model="phone" float-label="Phone" name="phone" />
+                <q-input v-model="subject" float-label="Subject" name="subject" />
                 <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
                 <q-btn @click="send" class="full-width">Send</q-btn>
             </div>
@@ -42,10 +42,12 @@
 </template>
 
 <script>
+    import { required, email, alpha, alphaNum } from 'vuelidate/lib/validators'
     import {
         QLayout,
         QInput,
-        QBtn
+        QBtn,
+        Toast
     } from 'quasar'
     export default {
         name: 'Contact',
@@ -58,13 +60,38 @@
                 message: ''
             }
         },
+        validations: {
+            name: { required, alpha },
+            email: { required, email },
+            subject: { required },
+            message: { required }
+        },
         components: {
             QLayout,
             QInput,
-            QBtn
+            QBtn,
+            Toast
         },
-        methods:{
-            send(){
+        methods: {
+            send() {
+                this.$v.name.$touch()
+                this.$v.email.$touch()
+                this.$v.subject.$touch()
+                this.$v.message.$touch()
+                if (this.$v.name.$error || this.$v.email.$error || this.$v.subject.$error || this.$v.message.$error) {
+                    // console.log(this.$v.name.$error)
+                    // console.log(this.$v.email.$error)
+                    // console.log(this.$v.subject.$error)
+                    // console.log(this.$v.message.$error)
+                    Toast.create({
+                        html: 'Something went wrong, please try again. Be sure to check all fields are filled out correctly.',
+                        bgColor: 'red'
+                    })
+                    return
+                } 
+                // else {
+                //     Toast.create('Message Sending')
+                // }
                 var obj = {
                     name: this.name,
                     email: this.email,
