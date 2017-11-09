@@ -1,5 +1,6 @@
 import vue from 'vue'
-// import axios from 'axios'
+import axios from 'axios'
+import $ from 'jquery'
 import vuex from 'vuex'
 import router from '../router'
 
@@ -10,7 +11,7 @@ vue.use(vuex)
 
 var store = new vuex.Store({
     state: {
-        routes:[
+        routes: [
             {
                 url: 'http://www.mapmyride.com/routes/view/1647707687',
                 length: 9.5,
@@ -22,7 +23,7 @@ var store = new vuex.Store({
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1509736164/Ride/22.png'
             },
             {
-                url:'http://www.mapmyride.com/routes/view/1478990992',
+                url: 'http://www.mapmyride.com/routes/view/1478990992',
                 length: 31,
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1509736163/Ride/31.png'
             },
@@ -42,7 +43,7 @@ var store = new vuex.Store({
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1509736164/Ride/100.png'
             }
         ],
-        raffles:[
+        raffles: [
             // {
             //     link: 'https://static.wixstatic.com/media/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.jpg/v1/fill/w_413,h_218,al_c,q_80,usm_0.66_1.00_0.01/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.webp',
             //     donator: 'Meridian Cycles',
@@ -89,7 +90,7 @@ var store = new vuex.Store({
                 description: '(50 Free Meals, raffled in 10 meal increments)'
             },
         ],
-        pictures:[
+        pictures: [
             'statics/cover.jpg',
             'statics/cover2.jpg',
             'statics/riders2.jpg',
@@ -103,10 +104,24 @@ var store = new vuex.Store({
             console.error(err)
             // state.error = err
         },
-        
+
     },
     actions: {
-        
+        sendEmail({ commit, dispatch }, obj) {
+            console.log('email obj', obj)
+            $.ajax({
+                url: "https://formspree.io/treverj1029@gmail.com",
+                method: "POST",
+                data: {
+                    name: obj.name,
+                    email: obj.email,
+                    phone: obj.phone,
+                    _subject: obj._subject,
+                    message: obj.message
+                },
+                dataType: "json"
+            });
+        }
     }
 })
 

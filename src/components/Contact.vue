@@ -15,22 +15,22 @@
                 <h6>**Or contact Margo, (208) 608-2527</h6>
             </div>
             <div class="col-xs-5">
-                <q-input v-model="name" float-label="Name" />
-                <q-input v-model="email" float-label="Email" />
-                <q-input v-model="phone" float-label="Phone" />
-                <q-input v-model="subject" float-label="Subject" />
-                <q-input v-model="message" type="textarea" float-label="Message" :max-height="100" :min-rows="5" />
-                <q-btn>Send</q-btn>
+                <q-input v-model="name" float-label="Name" name="name" />
+                <q-input v-model="email" float-label="Email" name="email" />
+                <q-input v-model="phone" float-label="Phone" name="phone" />
+                <q-input v-model="subject" float-label="Subject" name="_subject" />
+                <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
+                <q-btn @click="send">Send</q-btn>
             </div>
         </div>
         <div class="row wrap justify-center mobile-only">
             <div class="col-xs-11">
-                <q-input v-model="name" float-label="Name" />
-                <q-input v-model="email" float-label="Email" />
-                <q-input v-model="phone" float-label="Phone" />
-                <q-input v-model="subject" float-label="Subject" />
-                <q-input v-model="message" type="textarea" float-label="Message" :max-height="100" :min-rows="5" />
-                <q-btn class="full-width">Send</q-btn>
+                <q-input v-model="name" float-label="Name" name="name" />
+                <q-input v-model="email" float-label="Email" name="email" />
+                <q-input v-model="phone" float-label="Phone" name="phone"/>
+                <q-input v-model="subject" float-label="Subject" name="_subject" />
+                <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
+                <q-btn @click="send" class="full-width">Send</q-btn>
             </div>
             <div class="col-xs-11 bot">
                 <h6 class="text-center">**Or contact Margo, (208) 608-2527</h6>
@@ -62,6 +62,18 @@
             QLayout,
             QInput,
             QBtn
+        },
+        methods:{
+            send(){
+                var obj = {
+                    name: this.name,
+                    email: this.email,
+                    phone: this.phone,
+                    _subject: this.subject,
+                    message: this.message
+                }
+                this.$store.dispatch('sendEmail', obj)
+            }
         }
     }
 </script>
