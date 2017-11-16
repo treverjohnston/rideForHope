@@ -13,11 +13,26 @@
 </script>
 
 <style>
+  .q-item{
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    padding: 0;
+    font-weight: 400;
+  }
+  .q-item-link:hover {
+    background: transparent;
+}
+  .q-list-highlight{
+    background: transparent;
+    color: black;
+    font-weight: 400;
+  }
   .q-tabs-head {
     background-color: rgba(17, 17, 17, 0.88);
   }
 
   .bg-grey-2 {
-    background: teal !important;
+    background: rgba(255,255,255, .6) !important;
   }
 </style>

@@ -8,10 +8,22 @@
       <q-toolbar-title>
         Ride For Hope
       </q-toolbar-title>
-      <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <span class="top-promo mobile-hide" slot="subtitle">
-          2017 Ride For Hope raised $12,500 which was donated to charity. Thanks to everyone who helped make this happen!!
+      <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
+        <span class="desktop-only">Join Team Ride For Hope Idaho on Strava
+          <a class="desktop-only" href="https://www.strava.com/clubs/302822" target="_blank">
+            <q-btn flat>
+              <img class="strava-top" src="statics/strava.png" alt="strava logo">
+            </q-btn>
+          </a>
         </span>
+      </q-transition>
+      <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
+        <a class="desktop-only" href="http://www.meridian-cycles.com/" target="_blank">
+          <q-btn flat>
+            <img class="strava" src="https://static.wixstatic.com/media/a44970_2ceddec734c0451dbee6fad6f95a6616~mv2_d_2304_2304_s_2.png/v1/crop/x_520,y_514,w_1256,h_1270/fill/w_151,h_139,al_c,usm_0.66_1.00_0.01/a44970_2ceddec734c0451dbee6fad6f95a6616~mv2_d_2304_2304_s_2.png"
+              alt="Meridian Cycles logo">
+          </q-btn>
+        </a>
       </q-transition>
 
     </q-toolbar class="head desktop-only">
@@ -19,14 +31,41 @@
     <!-- <div class="top-logo">
       <img class="ride" src="statics/tLogo.png" alt="ride for hope logo">
     </div> -->
-    <q-tabs  align="center" class="shadow-2 desktop-only tabs">
+    <q-tabs align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-route-tab class="tab" slot="title" label="About" name="about" to="about" />
       <q-route-tab class="tab" slot="title" label="Register" name="register" to="register" />
       <q-route-tab class="tab" slot="title" label="Routes" name="routes" to="routes" />
       <q-route-tab class="tab" slot="title" label="Donate" name="donate" to="donate" />
       <q-route-tab class="tab" slot="title" label="Raffle Items" name="raffle" to="raffle" />
-      <q-route-tab class="tab" slot="title" label="Get Involved" name="involved" to="involved" />
+      <!-- <q-tab class="tab" slot="title" name="involved">
+        <q-collapsible class="involved" label="Get Involved">
+          <div class="overlay">
+            <q-item-main>
+              <q-route-tab class="tab" slot="title" label="Get Involved" name="involved" to="involved" />
+            </q-item-main>
+            <q-item-main>
+              <q-route-tab class="tab" slot="title" label="Volunteers" name="volunteers" to="volunteers" /> </q-item-main>
+            </q-item-main>
+            <q-item-main>
+              <q-route-tab class="tab" slot="title" label="Sponsors" name="sponsors" to="sponsors" />
+            </q-item-main>
+          </div>
+        </q-collapsible>
+      </q-tab> -->
+      <q-tab class="tab involved" slot="title" label="Get Involved" name="involved">
+        <q-popover fit ref="popover" class="involved">
+          <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Get Involved" name="involved" to="involved" />
+          </q-item-main>
+          <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Volunteers" name="volunteers" to="volunteers" /> </q-item-main>
+          </q-item-main>
+          <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Sponsors" name="sponsors" to="sponsors" />
+          </q-item-main>
+        </q-popover>
+      </q-tab>
       <q-route-tab class="tab" slot="title" label="Photo Gallery" name="gallery" to="gallery" />
       <q-route-tab class="tab" slot="title" label="Contact" name="contact" to="contact" />
     </q-tabs>
@@ -41,47 +80,51 @@
       <q-list class="mobile-only" no-border link inset-delimiter>
         <!-- <q-list-header>Ride For Hope</q-list-header> -->
         <q-side-link to="/">
-          <!-- <q-item-side icon="school" /> -->
           <q-item-main class="side" label="Home" />
           <hr class="tabhr">
         </q-side-link>
         <q-side-link to="about">
-          <!-- <q-item-side icon="record_voice_over" /> -->
           <q-item-main class="side" label="About" />
           <hr class="tabhr">
         </q-side-link>
         <q-side-link to="register">
-          <!-- <q-item-side icon="chat" /> -->
           <q-item-main class="side" label="Register" />
           <hr class="tabhr">
         </q-side-link>
         <q-side-link to="routes">
-          <!-- <q-item-side icon="rss feed" /> -->
           <q-item-main class="side" label="Routes" />
           <hr class="tabhr">
         </q-side-link>
         <q-side-link to="donate">
-          <!-- <q-item-side icon="rss feed" /> -->
           <q-item-main class="side" label="Donate" />
           <hr class="tabhr">
         </q-side-link>
         <q-side-link to="raffle">
-          <!-- <q-item-side icon="rss feed" /> -->
           <q-item-main class="side" label="Raffle Items" />
           <hr class="tabhr">
         </q-side-link>
-        <q-side-link to="involved">
-          <!-- <q-item-side icon="rss feed" /> -->
-          <q-item-main class="side" label="Get Involved" />
+        <q-collapsible class="side-collapse" label="Get Involved">
           <hr class="tabhr">
-        </q-side-link>
+          <q-side-link to="involved">
+            <q-item-main class="small-side" label="General Information" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="volunteers">
+            <q-item-main class="small-side" label="Volunteers" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="sponsors">
+            <q-item-main class="small-side" label="Sponsors" />
+          </q-side-link>
+          <!-- <hr class="tabhrs"> -->
+        </q-collapsible>
+        <hr class="tabhr">
+        <!-- <q-item-main class="side" label="Get Involved" /> -->
         <q-side-link to="gallery">
-          <!-- <q-item-side icon="rss feed" /> -->
           <q-item-main class="side" label="Photo Gallery" />
           <hr class="tabhr">
         </q-side-link>
         <q-side-link to="contact">
-          <!-- <q-item-side icon="rss feed" /> -->
           <q-item-main class="side" label="Contact" />
         </q-side-link>
       </q-list>
@@ -167,10 +210,15 @@
           </q-card>
         </div>
       </q-parallax>
-      
+
     </div>
     <!--  -->
     <q-toolbar class="footer text-center text-italic" slot="footer">
+      <a href="https://www.strava.com/clubs/302822" target="_blank">
+        <q-btn flat>
+          <img class="strava" src="statics/strava.png" alt="strava logo">
+        </q-btn>
+      </a>
       <q-toolbar-title>
         <h6 class="desktop-only">
           Thank you for supporting Ride for Hope!
@@ -212,7 +260,9 @@
     QCardMain,
     QRouteTab,
     QTransition,
-    QSideLink
+    QSideLink,
+    QPopover,
+    QCollapsible
   } from 'quasar'
 
 
@@ -239,7 +289,9 @@
       QCardMain,
       QRouteTab,
       QTransition,
-      QSideLink
+      QSideLink,
+      QPopover,
+      QCollapsible
     },
     data() {
       return {
@@ -259,6 +311,9 @@
       launch(url) {
         openURL(url)
       },
+      collapse() {
+        this.$refs.popover.close()
+      }
 
     },
     mounted() {
@@ -271,19 +326,58 @@
 </script>
 
 <style scoped>
+  .strava-top {
+    max-width: 8rem;
+  }
+  .strava {
+    max-width: 5rem;
+  }
+
+  .q-item-link:hover {
+    background: rgba(255, 255, 255, .7);
+  }
+
+  .q-list-highlight {
+    background: rgba(255, 255, 255, .7);
+    color: black;
+    font-weight: 400;
+  }
+
+  .q-popover {
+    background-color: rgba(17, 17, 17, 0.88);
+    color: black;
+  }
+
   .tabhr {
     border-color: black;
     width: 80%;
   }
 
+  .tabhrs {
+    border-color: black;
+    width: 40%;
+  }
+
   .left-tab {
-    background-color: teal;
+    background-color: rgba(255, 255, 255, .8);
     text-align: center;
   }
 
-  .side {
-    font-weight: 100;
+  .small-side {
+    font-weight: 400;
+    color: black;
+    font-size: 1.5rem;
+  }
+
+  /* .q-item-label {
+    font-weight: 400;
     color: white;
+    font-size: 2rem;
+  } */
+
+  .side {
+    font-weight: 400;
+    color: black;
     font-size: 2rem;
   }
 
@@ -331,6 +425,7 @@
     background-color: rgba(197, 7, 7, 0.8);
     padding: 2rem 2rem 2rem 2rem;
   }
+
   .card-mobile {
     background-color: rgba(197, 7, 7, 0.8);
     /* padding: 2rem 2rem 2rem 2rem; */

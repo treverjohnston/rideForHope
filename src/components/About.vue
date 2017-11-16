@@ -1,72 +1,108 @@
 <template>
     <q-layout class="about">
         <div class="row wrap xs-gutter">
-            <h2 class="offset-sm-2 col-sm-8 text-bold offset-xs-1 col-xs-10">About Us</h2>
+            <h2 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">Our Mission</h2>
             <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10 ">
-            <h5 class="text-italic text-bold offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">Ride For Hope Mission Statement</h5>
-            <h6 class="text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
+            <!-- <h5 class="text-italic text-bold offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">Ride For Hope Mission Statement</h5> -->
+            <h6 class="top text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
                 <b>Ride For Hope</b> is a charity bicycle event with the firm belief that quality healthcare should be accessible
-                to everyone. The event is unique in that the full cost of the ride is completely funded by charitable contributions
-                from local sponsors. This allows for 100% of participant fees and donations to go directly to charity. ​
+                to everyone. We support the holistic approach to healthcare where true healing focuses not only on symptoms,
+                but the underlying root cause of disease.
             </h6>
-            <h6 class="text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
-                We support the holistic approach to healthcare where true healing focuses not only on symptoms, but the underlying root cause
-                of disease. </h6>
+            <h6 class="top text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
+                <b>Ride For Hope</b> is committed to ensuring that 100% of participant fees and donations go directly to charity.
+                This unique commitment is made possible by charitable contributions from local sponsors which cover the entire
+                cost of the event.
+            </h6>
             <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10">
+            <h3 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">About Us</h3>
             <div class="para offset-sm-2 col-sm-5 offset-xs-1 col-xs-10">
                 <p class="text-justify">
                     <em>
                         <b>Ride For Hope</b>
-                    </em> is "gearing up" for our 4th
-                    <i>annual fully supported</i> bicycle charity event which will take place on June 23, 2018 .
+                    </em> is a small, but growing group of volunteers who have been moved to action for a deep compassion for our
+                    fellow citizens. We feel a moral obligation to fight for individuals and families who do not have access
+                    to basic healthcare and fundamental human necessities. Many of these individuals and families are grappling
+                    with exorbitant healthcare costs and preexisting conditions.
+
                 </p>
+                <p class="text-justify">
+                    We want to help give these families and individuals
+                    <b>
+                        <em>"Hope"</em>
+                    </b>.
+                    <b>
+                        <em>"Hope"</em>
+                    </b> that they can have access to routine medical treatment;
+                    <b>
+                        <em>"Hope"</em>
+                    </b> that they can avoid unnecessary emergency room visits and hospitalizations;
+                    <b>
+                        <em>"Hope"</em>
+                    </b> that they don’t need to make a choice between paying bills or paying for medication;
+                    <b>
+                        <em>"Hope"</em>
+                    </b> that because they earn a little too much and are not eligible for Medicaid, and are too young for Medicare,
+                    that there are still avenues for their healthcare needs;
+                    <b>
+                        <em>"Hope"</em>
+                    </b> that those of us that are more fortunate can help them with basic human needs.
+                </p>
+                <p class="text-justify">
+                    <em>
+                        <b>Ride For Hope</b>
+                    </em> has donated $28,500 in three years:</p>
                 <ul>
                     <li>In 2015 over $7,000 wa donated.</li>
                     <li>In 2016 over $9,000 wa donated.</li>
                     <li>In 2017 over $12,500 wa donated.</li>
                 </ul>
-                <p class="text-justify">
-                    In
-                    <em>
-                        <u>three years</u>
-                    </em> the event has raised over
-                    <em>
-                        <b>$28,500</b>
-                    </em> for charity. We are always striving to increase rider participation and funds raised and in 2018 we are
-                    hoping to eclipse the mark set in 2017.
-                </p>
-                <p class="text-justify">
-                    <em>
-                        <b>Ride For Hope</b>
-                    </em> is a small team comprised of volunteers and other charitable groups who hope to do big things for these
-                    great causes. We welcome anyone who shares our vision to come partner with us to help promote access
-                    to quality healthcare for everyone.
-
-                </p>
             </div>
             <div class="pic col-sm-4 col-xs-12 text-center">
                 <img class="rider" src="statics/rider.png" alt="rider">
             </div>
             <div class="paragroup offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
                 <p class="text-justify">
-                    <em>
-                        <b>A huge thanks to all of you who have either participated or believe in the Ride For Hope cause....</b>
-                    </em>
-                    individual cyclists, cycling clubs and teams, sponsors, volunteers .... for your generosity, support,
-                    and help in transforming the Ride For Hope vision into reality and helping us to raise awareness of these
-                    important ongoing needs!
-                    <em>
-                        <b>Thank-You!</b>
-                    </em>
-
+                    This year we are proud to support
+                    <b>
+                        <em>Genesis Community Health</em>
+                    </b> and
+                    <b>
+                        <em>Boise Rescue Mission</em>
+                    </b>.
+                    <b>
+                        <em>Genesis Community Health</em>
+                    </b> is an integrated healthcare facility providing primary medical care, basic dental, mental health, specialty
+                    referral and medication to the low-income and uninsured.
+                    <b>
+                        <em>Boise Rescue Mission</em>
+                    </b> provides programs and services including addiction recovery and food and shelter for homeless men, women
+                    and children. </p>
+                <p class="text-justify">
+                    We are determined to continue along our upward fundraising trajectory. We can’t do it alone. We need your help. Collectively
+                    we can make a difference. Please join us in helping the most vulnerable in our Treasure Valley Community.
                 </p>
             </div>
             <div class="paragroup offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
                 <h4 class="text-center signature">
                     <em>
-                        <b>Your Ride For Hope Team</b>
+                        <b>Team Ride For Hope</b>
                     </em>
                 </h4>
+            </div>
+            <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5">
+                <a href="https://genesiscommunityhealth.com/about-us/" target="_blank">
+                    <q-btn flat>
+                        <img class="responsive" src="statics/gch.png" alt="Genesis Community Health Logo">
+                    </q-btn>
+                </a>
+            </div>
+            <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5">
+                <a href="https://boiserm.org/" target="_blank">
+                    <q-btn flat>
+                        <img class="responsive" src="statics/brm.png" alt="Boise Rescue Mission Logo">
+                    </q-btn>
+                </a>
             </div>
         </div>
     </q-layout>
@@ -90,6 +126,10 @@
 </script>
 
 <style scoped>
+    .top {
+        font-size: 1.25rem;
+    }
+
     .signature {
         color: rgb(180, 0, 0);
         font-family: 'Niconne', cursive;
