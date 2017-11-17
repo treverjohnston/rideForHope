@@ -9,7 +9,7 @@
         Ride For Hope
       </q-toolbar-title>
       <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <span class="desktop-only">Join Team Ride For Hope Idaho on Strava
+        <span class="desktop-only">Join Team Ride For Hope Idaho on Strava!
           <a class="desktop-only" href="https://www.strava.com/clubs/302822" target="_blank">
             <q-btn flat>
               <img class="strava-top" src="statics/strava.png" alt="strava logo">
@@ -140,12 +140,13 @@
     <div v-if="home">
       <q-parallax :speed="1" :height="500" src="./statics/cover.jpg">
         <div slot="loading">Loading...</div>
-
-        <div class="promo text-center desktop-only">
-          <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
-          <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
-          <h2 class="text-bold">Kuna, ID</h2>
-        </div>
+        <q-transition appear enter="slideInUp" leave="fadeOut">
+          <div class="promo text-center desktop-only">
+            <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
+            <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
+            <h2 class="text-bold">Kuna, ID</h2>
+          </div>
+        </q-transition>
         <div class="promo text-center mobile-only">
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
           <h3 class="text-bold">2018 Event Date: Saturday, June 23</h3>
@@ -213,20 +214,20 @@
 
     </div>
     <!--  -->
-    <q-toolbar class="footer text-center text-italic" slot="footer">
+    <q-toolbar class="footer text-center text-italic row justify-center" slot="footer">
       <a href="https://www.strava.com/clubs/302822" target="_blank">
         <q-btn flat>
           <img class="strava" src="statics/strava.png" alt="strava logo">
         </q-btn>
       </a>
-      <q-toolbar-title>
-        <h6 class="desktop-only">
-          Thank you for supporting Ride for Hope!
-        </h6>
-        <small class="small mobile-only">
-          Thank you for supporting Ride for Hope!
-        </small>
-      </q-toolbar-title>
+      <!-- <q-toolbar-title> -->
+      <h6 class="desktop-only">
+        Thank you for supporting Ride for Hope!
+      </h6>
+      <small class="small mobile-only">
+        Thank you for supporting Ride for Hope!
+      </small>
+      <!-- </q-toolbar-title> -->
       <a href="https://www.facebook.com/rideforhopeidaho/" target="_blank">
         <q-btn flat>
           <q-icon class="fb" name="fa-facebook-square" />
@@ -329,6 +330,7 @@
   .strava-top {
     max-width: 8rem;
   }
+
   .strava {
     max-width: 5rem;
   }
@@ -345,7 +347,7 @@
 
   .q-popover {
     background-color: rgba(17, 17, 17, 0.88);
-    color: black;
+    color: white;
   }
 
   .tabhr {
@@ -359,7 +361,7 @@
   }
 
   .left-tab {
-    background-color: rgba(255, 255, 255, .8);
+    /* background-color: rgba(255, 255, 255, .8); */
     text-align: center;
   }
 
@@ -386,7 +388,7 @@
   }
 
   .mini {
-    height: 3rem;
+    height: 4rem;
   }
 
   .top-promo {
@@ -398,7 +400,7 @@
   }
 
   .fb {
-    color: rgb(59, 89, 152)
+    color: rgb(59, 89, 152);
   }
 
   .footer {

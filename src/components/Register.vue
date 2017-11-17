@@ -14,8 +14,8 @@
         <q-parallax :speed="1" :height="500" src="./statics/riders3.jpg">
             <div slot="loading">Loading...</div>
             <div class="text-center">
-                <h2 class="text-bold">Proposed Routes Pending Road Construction</h2>
-                <q-btn @click="$router.push('routes')" class="cbtn shadow-24">Routes</q-btn>
+                <h2 class="text-bold">Routes</h2>
+                <q-btn @click="$router.push('routes')" class="cbtn shadow-24">View Routes Now</q-btn>
             </div>
 
         </q-parallax>

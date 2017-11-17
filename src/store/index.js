@@ -14,35 +14,26 @@ var store = new vuex.Store({
     state: {
         routes: [
             {
-                url: 'http://www.mapmyride.com/routes/view/1647707687',
-                length: 9.5,
-                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1509736164/Ride/9.5.png'
-            },
-            {
                 url: 'http://www.mapmyride.com/routes/view/996049745',
-                length: 22,
-                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1509736164/Ride/22.png'
+                length: 18,
+                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/18_mrihcr.jpg'
             },
             {
                 url: 'http://www.mapmyride.com/routes/view/1478990992',
                 length: 31,
-                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1509736163/Ride/31.png'
-            },
-            {
-                url: 'http://www.mapmyride.com/routes/view/1478877649',
-                length: 50,
-                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1509736164/Ride/50.png'
+                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg'
             },
             {
                 url: 'http://www.mapmyride.com/routes/view/981667107',
-                length: 65,
-                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1509736164/Ride/65.png'
+                length: 62.8,
+                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/62.8_obydkx.jpg'
             },
             {
                 url: 'http://www.mapmyride.com/routes/view/1462908562',
                 length: 100,
-                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1509736164/Ride/100.png'
+                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg'
             }
+            
         ],
         raffles: [
             // {

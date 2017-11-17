@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <hr color="red" class="hr">
-                <q-btn class="btn shadow-24" no-caps>Sponsor Ride For Hope</q-btn>
+                <q-btn class="row wrap btn shadow-24" no-caps>Sponsor Ride For Hope</q-btn>
             </div>
         </div>
 
@@ -95,7 +95,7 @@
     .promo {
         background-color: rgba(0, 128, 128, 0.6);
         background-size: cover;
-        margin-top: 5rem;
+        margin: 5rem 0 10rem 0;
 
     }
 

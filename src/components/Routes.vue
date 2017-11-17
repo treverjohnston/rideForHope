@@ -1,25 +1,27 @@
 <template>
     <q-layout class="routes row">
-        <div class="promo text-center text-italic desktop-only col-xs-12">
-            <h2>2018 Route Maps Listed Below*</h2>
-            <h4>(*Pending unforseen road construction)</h4>
-            <h4>(*9.5 mile route will be added for 2018)</h4>
+        <div class="promo text-center text-italic text-bold desktop-only col-xs-12">
+            <h2>2018 Routes</h2>
+            <q-btn @click="launch('https://docs.wixstatic.com/ugd/a44970_c113c732a6f2426a9e905f46e2c30034.pdf')" class="maps shadow-24"
+                big no-caps>Click Here for Map Options: STRAVA/Map My Ride/Garmin/Ride with GPS</q-btn>
         </div>
-        <div class="promo text-center text-italic mobile-only col-xs-12">
-            <h4>2018 Route Maps Listed Below*</h4>
-            <h6>(*Pending unforseen road construction)</h6>
-            <h6>(*9.5 mile route will be added for 2018)</h6>
+        <div class="promo text-center text-italic text-bold mobile-only col-xs-12">
+            <h4>2018 Routes</h4>
+            <q-btn @click="launch('https://docs.wixstatic.com/ugd/a44970_c113c732a6f2426a9e905f46e2c30034.pdf')" class="maps shadow-24"
+                big no-caps>Click Here for Map Options: STRAVA/Map My Ride/Garmin/Ride with GPS</q-btn>
         </div>
         <div class="row wrap justify-center">
             <q-card v-for="card in routes" inline class="route col-xs-11 col-sm-5 shadow-24">
-                <q-card-media>
-                    <img :src="card.pic">
-                </q-card-media>
-                <q-card-actions align="center">
-                    <a :href="card.url" target="_blank">
-                        <q-btn color="secondary" glossy no-caps>{{card.length}} Mile Route Map</q-btn>
-                    </a>
-                </q-card-actions>
+                <q-transition appear enter="zoomIn" leave="fadeOut">
+                    <q-card-media>
+                        <img :src="card.pic">
+                    </q-card-media>
+                    <q-card-actions align="center">
+                        <a :href="card.url" target="_blank">
+                            <q-btn color="secondary" glossy no-caps>{{card.length}} Mile Route Map</q-btn>
+                        </a>
+                    </q-card-actions>
+                </q-transition>
             </q-card>
         </div>
     </q-layout>
@@ -34,7 +36,9 @@
         QCardTitle,
         QCardSeparator,
         QCardActions,
-        QBtn
+        QBtn,
+        openURL,
+        QTransition
     } from 'quasar'
     export default {
         name: 'About',
@@ -50,7 +54,8 @@
             QCardTitle,
             QCardSeparator,
             QCardActions,
-            QBtn
+            QBtn,
+            QTransition
         },
         computed: {
             routes() {
@@ -58,20 +63,33 @@
             }
         },
         methods: {
+            launch(url) {
+                openURL(url)
+            },
         }
     }
 </script>
 
 <style scoped>
-    .route{
+    .maps {
+        /* color: rgb(194, 0, 0); */
+        color: white;
+        margin-bottom: 1rem;
+        background-color: rgba(2, 182, 182, 0.6);
+    }
+
+    .route {
         border: 5px solid black;
     }
+
     .routes {
         background-color: rgb(0, 95, 95);
     }
 
     .promo {
         /* padding: 0 2rem 0 2rem; */
-        background-color: rgba(2, 182, 182, 0.6);
+        /* background-color: rgba(2, 182, 182, 0.6); */
+        color: white;
+        text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
     }
 </style>

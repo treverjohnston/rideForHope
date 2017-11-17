@@ -33,6 +33,6 @@
   }
 
   .bg-grey-2 {
-    background: rgba(255,255,255, .6) !important;
+    background: rgba(255,255,255, .85) !important;
   }
 </style>

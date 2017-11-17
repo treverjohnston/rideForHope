@@ -111,7 +111,8 @@
 <script>
     import {
         QLayout,
-        QTransition
+        QTransition,
+        QBtn
     } from 'quasar'
     export default {
         name: 'About',
@@ -120,7 +121,8 @@
         },
         components: {
             QLayout,
-            QTransition
+            QTransition,
+            QBtn
         }
     }
 </script>
