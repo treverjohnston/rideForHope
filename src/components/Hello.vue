@@ -5,18 +5,18 @@
         <q-icon name="menu" />
       </q-btn>
       <img src="statics/tLogo.png" alt="logo" class="mini">
-      <q-toolbar-title>
+      <q-toolbar-title class="desktop-only">
         Ride For Hope
       </q-toolbar-title>
-      <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <span class="desktop-only">Join Team Ride For Hope Idaho on Strava!
-          <a class="desktop-only" href="https://www.strava.com/clubs/302822" target="_blank">
+      <span class="desktop-only ">Join Team Ride For Hope Idaho on Strava!
+        <q-transition appear enter="lightSpeedIn" leave="fadeOut">
+          <a href="https://www.strava.com/clubs/302822" target="_blank">
             <q-btn flat>
               <img class="strava-top" src="statics/strava.png" alt="strava logo">
             </q-btn>
           </a>
-        </span>
-      </q-transition>
+        </q-transition>
+      </span>
       <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
         <a class="desktop-only" href="http://www.meridian-cycles.com/" target="_blank">
           <q-btn flat>
@@ -25,6 +25,13 @@
           </q-btn>
         </a>
       </q-transition>
+
+      <h6 class="top-title mobile-only">Ride For Hope</h6>
+      <a class="mobile-only" href="https://www.strava.com/clubs/302822" target="_blank">
+        <q-btn flat>
+          <img class="strava-top" src="statics/strava.png" alt="strava logo">
+        </q-btn>
+      </a>
 
     </q-toolbar class="head desktop-only">
     <!-- IF LOGO IS WANTED ON TOP -->
@@ -327,6 +334,9 @@
 </script>
 
 <style scoped>
+  .top-title{
+    margin-left: .5rem;
+  }
   .strava-top {
     max-width: 8rem;
   }
@@ -361,7 +371,6 @@
   }
 
   .left-tab {
-    /* background-color: rgba(255, 255, 255, .8); */
     text-align: center;
   }
 
@@ -370,12 +379,6 @@
     color: black;
     font-size: 1.5rem;
   }
-
-  /* .q-item-label {
-    font-weight: 400;
-    color: white;
-    font-size: 2rem;
-  } */
 
   .side {
     font-weight: 400;
