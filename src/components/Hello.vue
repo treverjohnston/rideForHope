@@ -42,31 +42,43 @@
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-route-tab class="tab" slot="title" label="About" name="about" to="about" />
       <q-route-tab class="tab" slot="title" label="Register" name="register" to="register" />
-      <q-route-tab class="tab" slot="title" label="Routes" name="routes" to="routes" />
+      <!-- <q-route-tab class="tab" slot="title" label="Routes" name="routes" to="routes" /> -->
+      <q-tab class="tab involved" slot="title" label="Routes" name="routes">
+        <q-popover fit ref="popover" class="involved">
+          <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="All Routes" name="routes" to="routes" />
+          </q-item-main>
+          <q-item-main class="route-tab-cont">
+            <a class="route-tab" href="http://www.mapmyride.com/routes/view/996049745" target="_blank">
+              18 Mile
+            </a>
+          </q-item-main>
+          <q-item-main class="route-tab-cont">
+            <a class="route-tab" href="http://www.mapmyride.com/routes/view/1478990992" target="_blank">
+              31 Mile
+            </a>
+          </q-item-main>
+          <q-item-main class="route-tab-cont">
+            <a class="route-tab" href="http://www.mapmyride.com/routes/view/981667107" target="_blank">
+              62.8 Mile
+            </a>
+          </q-item-main>
+          <q-item-main class="route-tab-cont">
+            <a class="route-tab" href="http://www.mapmyride.com/routes/view/1462908562" target="_blank">
+              100 Mile
+            </a>
+          </q-item-main>
+        </q-popover>
+      </q-tab>
       <q-route-tab class="tab" slot="title" label="Donate" name="donate" to="donate" />
       <q-route-tab class="tab" slot="title" label="Raffle Items" name="raffle" to="raffle" />
-      <!-- <q-tab class="tab" slot="title" name="involved">
-        <q-collapsible class="involved" label="Get Involved">
-          <div class="overlay">
-            <q-item-main>
-              <q-route-tab class="tab" slot="title" label="Get Involved" name="involved" to="involved" />
-            </q-item-main>
-            <q-item-main>
-              <q-route-tab class="tab" slot="title" label="Volunteers" name="volunteers" to="volunteers" /> </q-item-main>
-            </q-item-main>
-            <q-item-main>
-              <q-route-tab class="tab" slot="title" label="Sponsors" name="sponsors" to="sponsors" />
-            </q-item-main>
-          </div>
-        </q-collapsible>
-      </q-tab> -->
       <q-tab class="tab involved" slot="title" label="Get Involved" name="involved">
         <q-popover fit ref="popover" class="involved">
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Get Involved" name="involved" to="involved" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Volunteers" name="volunteers" to="volunteers" /> </q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Volunteers" name="volunteers" to="volunteers" />
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Sponsors" name="sponsors" to="sponsors" />
@@ -85,7 +97,6 @@
       -->
 
       <q-list class="mobile-only" no-border link inset-delimiter>
-        <!-- <q-list-header>Ride For Hope</q-list-header> -->
         <q-side-link to="/">
           <q-item-main class="side" label="Home" />
           <hr class="tabhr">
@@ -98,10 +109,28 @@
           <q-item-main class="side" label="Register" />
           <hr class="tabhr">
         </q-side-link>
-        <q-side-link to="routes">
-          <q-item-main class="side" label="Routes" />
-          <hr class="tabhr">
-        </q-side-link>
+        <q-collapsible class="side-collapse" label="Routes">
+          <q-side-link to="routes">
+            <q-item-main class="small-side" label="All Routes" />
+          </q-side-link>
+          <hr class="tabhr"> 
+            <a href="http://www.mapmyride.com/routes/view/996049745" target="_blank">
+              <q-item-main class="small-side" label="18 Mile" />
+            </a>
+            <hr class="tabhrs">
+            <a href="http://www.mapmyride.com/routes/view/1478990992" target="_blank">
+              <q-item-main class="small-side" label="31 Mile" />
+            </a>
+            <hr class="tabhrs">
+            <a href="http://www.mapmyride.com/routes/view/981667107" target="_blank">
+              <q-item-main class="small-side" label="62.8 Mile" />
+            </a>
+            <hr class="tabhrs">
+            <a href="http://www.mapmyride.com/routes/view/1462908562" target="_blank">
+              <q-item-main class="small-side" label="100 Mile" />
+            </a>
+          </q-collapsible>
+          <hr class="tabhr">          
         <q-side-link to="donate">
           <q-item-main class="side" label="Donate" />
           <hr class="tabhr">
@@ -111,7 +140,7 @@
           <hr class="tabhr">
         </q-side-link>
         <q-collapsible class="side-collapse" label="Get Involved">
-          <hr class="tabhr">
+          <!-- <hr class="tabhr"> -->
           <q-side-link to="involved">
             <q-item-main class="small-side" label="General Information" />
           </q-side-link>
@@ -123,10 +152,8 @@
           <q-side-link to="sponsors">
             <q-item-main class="small-side" label="Sponsors" />
           </q-side-link>
-          <!-- <hr class="tabhrs"> -->
         </q-collapsible>
         <hr class="tabhr">
-        <!-- <q-item-main class="side" label="Get Involved" /> -->
         <q-side-link to="gallery">
           <q-item-main class="side" label="Photo Gallery" />
           <hr class="tabhr">
@@ -334,9 +361,16 @@
 </script>
 
 <style scoped>
-  .top-title{
+  .route-tab-cont{
+    margin-bottom: .75rem;
+  }
+  .route-tab{
+    color: white;
+  }
+  .top-title {
     margin-left: .5rem;
   }
+
   .strava-top {
     max-width: 8rem;
   }
@@ -362,16 +396,17 @@
 
   .tabhr {
     border-color: black;
-    width: 80%;
+    width: 100%;
   }
 
   .tabhrs {
     border-color: black;
-    width: 40%;
+    width: 100%;
   }
 
   .left-tab {
-    text-align: center;
+    text-align: left;
+    padding-left: 1rem;
   }
 
   .small-side {

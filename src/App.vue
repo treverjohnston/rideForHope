@@ -19,6 +19,7 @@
     text-align: center;
     padding: 0;
     font-weight: 400;
+    text-align: left;
   }
   .q-item-link:hover {
     background: transparent;
