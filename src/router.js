@@ -41,6 +41,22 @@ export default new VueRouter({
           component: load('Routes')
         },
         {
+          path: '18-Mile',
+          component: load('Eighteen')
+        },
+        {
+          path: '31-Mile',
+          component: load('Thirty')
+        },
+        {
+          path: 'Metric',
+          component: load('Metric')
+        },
+        {
+          path: 'Century',
+          component: load('Century')
+        },
+        {
           path: 'donate',
           component: load('Donate')
         },

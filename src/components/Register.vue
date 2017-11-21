@@ -9,7 +9,7 @@
             <q-btn @click="launch('https://www.bikereg.com/ride-for-hope0')" class="cbtn shadow-24">Register</q-btn>s
         </q-parallax>
         <div class="spacer">
-            <img class="ride" src="statics/tLogo.png" alt="ride for hope logo">
+            <img class="ride" src="statics/RFHIdahoLogo.png" alt="ride for hope logo">
         </div>
         <q-parallax :speed="1" :height="500" src="./statics/riders3.jpg">
             <div slot="loading">Loading...</div>

@@ -104,6 +104,11 @@
                     </q-btn>
                 </a>
             </div>
+            <q-fixed-position corner="bottom-right" :offset="[18, 18]">
+                <q-btn round v-back-to-top.animate="{offset: 400, duration: 200}" class="animate-pop back">
+                    <q-icon name="keyboard_arrow_up" />
+                </q-btn>
+            </q-fixed-position>
         </div>
     </q-layout>
 </template>
@@ -112,7 +117,11 @@
     import {
         QLayout,
         QTransition,
-        QBtn
+        QBtn,
+        BackToTop,
+        Ripple,
+        QFixedPosition,
+        QIcon
     } from 'quasar'
     export default {
         name: 'About',
@@ -122,12 +131,21 @@
         components: {
             QLayout,
             QTransition,
-            QBtn
+            QBtn,
+            QFixedPosition,
+            QIcon
+        },
+        directives: {
+            BackToTop,
+            Ripple
         }
     }
 </script>
 
 <style scoped>
+    .back{
+        background-color: transparent;
+    }
     .top {
         font-size: 1.25rem;
     }

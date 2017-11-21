@@ -88,6 +88,11 @@
                 </q-card-main>
             </q-card>
         </div>
+        <q-fixed-position corner="bottom-right" :offset="[18, 18]">
+            <q-btn round v-back-to-top.animate="{offset: 200, duration: 200}" class="animate-pop back">
+                <q-icon name="keyboard_arrow_up" />
+            </q-btn>
+        </q-fixed-position>
     </q-layout>
 </template>
 
@@ -100,7 +105,11 @@
         QCardMedia,
         QBtn,
         QTransition,
-        openURL
+        openURL,
+        BackToTop,
+        Ripple,
+        QFixedPosition,
+        QIcon
     } from 'quasar'
     export default {
         name: 'Raffle',
@@ -114,12 +123,18 @@
             QCardMain,
             QCardMedia,
             QBtn,
-            QTransition
+            QTransition,
+            QFixedPosition,
+            QIcon
         },
         computed: {
             items() {
                 return this.$store.state.raffles
             }
+        },
+        directives: {
+            BackToTop,
+            Ripple
         },
         methods: {
             launch(url) {
@@ -147,6 +162,10 @@
 </script>
 
 <style scoped>
+    .back {
+        background-color: transparent;
+    }
+
     .btn {
         background-color: rgba(197, 7, 7, 0.8);
         color: white;
@@ -156,7 +175,6 @@
 
     .fancy {
         font-family: 'Niconne', cursive;
-
     }
 
     .headline {

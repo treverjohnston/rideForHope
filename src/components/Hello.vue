@@ -4,7 +4,7 @@
       <q-btn class="mobile-only" flat @click="$refs.layout.toggleLeft()">
         <q-icon name="menu" />
       </q-btn>
-      <img src="statics/tLogo.png" alt="logo" class="mini">
+      <img src="statics/RFHIdahoLogo.png" alt="logo" class="mini">
       <q-toolbar-title class="desktop-only">
         Ride For Hope
       </q-toolbar-title>
@@ -20,16 +20,20 @@
       <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
         <a class="desktop-only" href="http://www.meridian-cycles.com/" target="_blank">
           <q-btn flat>
-            <img class="strava" src="https://static.wixstatic.com/media/a44970_2ceddec734c0451dbee6fad6f95a6616~mv2_d_2304_2304_s_2.png/v1/crop/x_520,y_514,w_1256,h_1270/fill/w_151,h_139,al_c,usm_0.66_1.00_0.01/a44970_2ceddec734c0451dbee6fad6f95a6616~mv2_d_2304_2304_s_2.png"
-              alt="Meridian Cycles logo">
+            <img class="meridian" src="statics/meridian.png" alt="Meridian Cycles logo">
           </q-btn>
         </a>
       </q-transition>
 
-      <h6 class="top-title mobile-only">Ride For Hope</h6>
-      <a class="mobile-only" href="https://www.strava.com/clubs/302822" target="_blank">
+      <!-- <h6 class="top-title mobile-only">Ride For Hope</h6> -->
+      <!-- <a class="mobile-only" href="https://www.strava.com/clubs/302822" target="_blank">
         <q-btn flat>
           <img class="strava-top" src="statics/strava.png" alt="strava logo">
+        </q-btn>
+      </a> -->
+      <a class="mobile-only" href="http://www.meridian-cycles.com/" target="_blank">
+        <q-btn flat>
+          <img class="meridian-mobile fixed-right" src="statics/meridian.png" alt="Meridian Cycles logo">
         </q-btn>
       </a>
 
@@ -44,29 +48,21 @@
       <q-route-tab class="tab" slot="title" label="Register" name="register" to="register" />
       <!-- <q-route-tab class="tab" slot="title" label="Routes" name="routes" to="routes" /> -->
       <q-tab class="tab involved" slot="title" label="Routes" name="routes">
-        <q-popover fit ref="popover" class="involved">
+        <q-popover fit ref="popoverRoutes">
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="All Routes" name="routes" to="routes" />
+            <q-route-tab @click="collapse" slot="title" label="All Routes" name="routes" to="routes" />
           </q-item-main>
-          <q-item-main class="route-tab-cont">
-            <a class="route-tab" href="http://www.mapmyride.com/routes/view/996049745" target="_blank">
-              18 Mile
-            </a>
+          <q-item-main>
+            <q-route-tab @click="collapse" slot="title" label="18 Mile" name="18" to="18-mile" />
           </q-item-main>
-          <q-item-main class="route-tab-cont">
-            <a class="route-tab" href="http://www.mapmyride.com/routes/view/1478990992" target="_blank">
-              31 Mile
-            </a>
+          <q-item-main>
+            <q-route-tab @click="collapse" slot="title" label="31 Mile" name="31" to="31-mile" />
           </q-item-main>
-          <q-item-main class="route-tab-cont">
-            <a class="route-tab" href="http://www.mapmyride.com/routes/view/981667107" target="_blank">
-              62.8 Mile
-            </a>
+          <q-item-main>
+            <q-route-tab @click="collapse" slot="title" label="62.8 Mile" name="62.8" to="metric" />
           </q-item-main>
-          <q-item-main class="route-tab-cont">
-            <a class="route-tab" href="http://www.mapmyride.com/routes/view/1462908562" target="_blank">
-              100 Mile
-            </a>
+          <q-item-main>
+            <q-route-tab @click="collapse" slot="title" label="100 Mile" name="100" to="Century" />
           </q-item-main>
         </q-popover>
       </q-tab>
@@ -113,24 +109,24 @@
           <q-side-link to="routes">
             <q-item-main class="small-side" label="All Routes" />
           </q-side-link>
-          <hr class="tabhr"> 
-            <a href="http://www.mapmyride.com/routes/view/996049745" target="_blank">
-              <q-item-main class="small-side" label="18 Mile" />
-            </a>
-            <hr class="tabhrs">
-            <a href="http://www.mapmyride.com/routes/view/1478990992" target="_blank">
-              <q-item-main class="small-side" label="31 Mile" />
-            </a>
-            <hr class="tabhrs">
-            <a href="http://www.mapmyride.com/routes/view/981667107" target="_blank">
-              <q-item-main class="small-side" label="62.8 Mile" />
-            </a>
-            <hr class="tabhrs">
-            <a href="http://www.mapmyride.com/routes/view/1462908562" target="_blank">
-              <q-item-main class="small-side" label="100 Mile" />
-            </a>
-          </q-collapsible>
-          <hr class="tabhr">          
+          <hr class="tabhr">
+          <q-side-link to="18-mile">
+            <q-item-main class="small-side" label="18 Mile" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="31-mile">
+            <q-item-main class="small-side" label="31 Mile" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="metric">
+            <q-item-main class="small-side" label="62.8 Mile" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="century">
+            <q-item-main class="small-side" label="100 Mile" />
+          </q-side-link>
+        </q-collapsible>
+        <hr class="tabhr">
         <q-side-link to="donate">
           <q-item-main class="side" label="Donate" />
           <hr class="tabhr">
@@ -141,7 +137,7 @@
         </q-side-link>
         <q-collapsible class="side-collapse" label="Get Involved">
           <!-- <hr class="tabhr"> -->
-          <q-side-link to="involved">
+          <q-side-link to="involved" class="left">
             <q-item-main class="small-side" label="General Information" />
           </q-side-link>
           <hr class="tabhrs">
@@ -163,14 +159,7 @@
         </q-side-link>
       </q-list>
     </div>
-
-    <!--
-      Replace following <div> with
-      <router-view /> component
-      if using subRoutes
-    -->
     <router-view />
-    <!--  -->
     <div v-if="home">
       <q-parallax :speed="1" :height="500" src="./statics/cover.jpg">
         <div slot="loading">Loading...</div>
@@ -188,7 +177,7 @@
         </div>
       </q-parallax>
       <div class="spacer">
-        <img class="ride" src="statics/tLogo.png" alt="ride for hope logo">
+        <img class="ride" src="statics/RFHIdahoLogo.png" alt="ride for hope logo">
       </div>
 
       <q-parallax class="desktop-only" :speed="1" :height="500" src="./statics/cover2.jpg">
@@ -347,7 +336,9 @@
         openURL(url)
       },
       collapse() {
+        // console.log('collapse')
         this.$refs.popover.close()
+        this.$refs.popoverRoutes.close()
       }
 
     },
@@ -361,18 +352,29 @@
 </script>
 
 <style scoped>
-  .route-tab-cont{
+  .route-tab-cont {
     margin-bottom: .75rem;
   }
-  .route-tab{
+
+  .route-tab {
     color: white;
   }
+
   .top-title {
     margin-left: .5rem;
   }
 
   .strava-top {
     max-width: 8rem;
+  }
+
+  .meridian {
+    max-width: 9rem;
+  }
+
+  .meridian-mobile {
+    max-width: 7.5rem;
+    margin-top: .5rem;
   }
 
   .strava {
@@ -485,6 +487,7 @@
 
   .ride {
     margin: 1rem 0 1rem 0;
+    max-height: 13rem;
   }
 
   .top-logo {
