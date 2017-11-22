@@ -1,6 +1,6 @@
 <template>
     <q-layout class="about">
-        <div class="row wrap xs-gutter">
+        <div class="row wrap">
             <h2 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">Our Mission</h2>
             <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10 ">
             <!-- <h5 class="text-italic text-bold offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">Ride For Hope Mission Statement</h5> -->

@@ -1,6 +1,6 @@
 <template>
     <q-layout class="gallery">
-        <q-gallery-carousel infinite autoplay handle-arrow-keys fullscreen :src="pictures"></q-gallery-carousel>
+        <q-gallery-carousel ref="gallery" class="pics" infinite autoplay handle-arrow-keys fullscreen :src="pictures"></q-gallery-carousel>
     </q-layout>
 </template>
 
@@ -23,6 +23,9 @@
             pictures(){
                 return this.$store.state.pictures
             }
+        },
+        mounted(){
+            this.$refs.gallery.toggleQuickView()
         }
     }
 </script>
@@ -32,6 +35,6 @@
         background-color: black;
     }
     .pics{
-        max-height: 100vh;
+        height: 85vh;
     }
 </style>

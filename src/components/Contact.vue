@@ -1,11 +1,19 @@
 <template>
     <q-layout class="contact">
         <div class="row wrap justify-center promo">
-            <div class="col-xs-11 col-md-8 text-center">
-                <h3>Contact Us</h3>
-                <hr color="red" class="hr">
-                <h5 class="light-paragraph desktop-only">Please contact us anytime with any questions, or other inquiries.</h5>
-                <h6 class="light-paragraph mobile-only">Please contact us anytime with any questions, or other inquiries.</h6>
+            <div class="col-xs-12 text-center">
+                <q-parallax src="statics/riders3.jpg" :height="200">
+                    <div slot="loading">
+                        <h3>Contact Us</h3>
+                        <hr color="red" class="hr">
+                        <h5 class="desktop-only">Please contact us anytime with any questions, or other inquiries.</h5>
+                        <h6 class="mobile-only">Please contact us anytime with any questions, or other inquiries.</h6>
+                    </div>
+                    <h3>Contact Us</h3>
+                    <hr color="red" class="hr">
+                    <h5 class="desktop-only">Please contact us anytime with any questions, or other inquiries.</h5>
+                    <h6 class="mobile-only">Please contact us anytime with any questions, or other inquiries.</h6>
+                </q-parallax>
             </div>
         </div>
         <div class="row wrap justify-center bot desktop-only xs-gutter">
@@ -32,7 +40,7 @@
                 <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
                 <q-btn @click="send" class="full-width">Send</q-btn>
             </div>
-            <div class="col-xs-11 bot">
+            <div class="col-xs-10 bot">
                 <h6 class="text-center">**Or contact Margo, (208) 608-2527</h6>
                 <img src="https://static.wixstatic.com/media/a44970_3bf0ccf89baf43a18b95b6d32d4c045d~mv2_d_2448_3264_s_4_2.jpg/v1/crop/x_387,y_554,w_1933,h_2697/fill/w_334,h_468,al_c,q_80,usm_0.66_1.00_0.01/a44970_3bf0ccf89baf43a18b95b6d32d4c045d~mv2_d_2448_3264_s_4_2.webp"
                     class="responsive img" alt="Picture of Margo">
@@ -47,7 +55,8 @@
         QLayout,
         QInput,
         QBtn,
-        Toast
+        Toast,
+        QParallax
     } from 'quasar'
     export default {
         name: 'Contact',
@@ -70,7 +79,8 @@
             QLayout,
             QInput,
             QBtn,
-            Toast
+            Toast,
+            QParallax
         },
         methods: {
             send() {
@@ -88,7 +98,7 @@
                         bgColor: 'red'
                     })
                     return
-                } 
+                }
                 // else {
                 //     Toast.create('Message Sending')
                 // }

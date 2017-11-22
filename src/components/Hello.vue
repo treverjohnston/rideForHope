@@ -1,10 +1,12 @@
 <template>
   <q-layout ref="layout" class="back" view="lHh Lpr fff" :left-class="{'bg-grey-2': true}">
-    <q-toolbar class="head" slot="header">
+    <q-toolbar class="head">
       <q-btn class="mobile-only" flat @click="$refs.layout.toggleLeft()">
         <q-icon name="menu" />
       </q-btn>
-      <img src="statics/RFHIdahoLogo.png" alt="logo" class="mini">
+      <q-btn @click="$router.push('/')">
+        <img src="statics/RFHIdahoLogo.png" alt="logo" class="mini">
+      </q-btn>
       <q-toolbar-title class="desktop-only">
         Ride For Hope
       </q-toolbar-title>
@@ -24,45 +26,32 @@
           </q-btn>
         </a>
       </q-transition>
-
-      <!-- <h6 class="top-title mobile-only">Ride For Hope</h6> -->
-      <!-- <a class="mobile-only" href="https://www.strava.com/clubs/302822" target="_blank">
-        <q-btn flat>
-          <img class="strava-top" src="statics/strava.png" alt="strava logo">
-        </q-btn>
-      </a> -->
       <a class="mobile-only" href="http://www.meridian-cycles.com/" target="_blank">
         <q-btn flat>
           <img class="meridian-mobile fixed-right" src="statics/meridian.png" alt="Meridian Cycles logo">
         </q-btn>
       </a>
-
     </q-toolbar class="head desktop-only">
-    <!-- IF LOGO IS WANTED ON TOP -->
-    <!-- <div class="top-logo">
-      <img class="ride" src="statics/tLogo.png" alt="ride for hope logo">
-    </div> -->
-    <q-tabs align="center" class="shadow-2 desktop-only tabs">
+    <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-route-tab class="tab" slot="title" label="About" name="about" to="about" />
       <q-route-tab class="tab" slot="title" label="Register" name="register" to="register" />
-      <!-- <q-route-tab class="tab" slot="title" label="Routes" name="routes" to="routes" /> -->
       <q-tab class="tab involved" slot="title" label="Routes" name="routes">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
-            <q-route-tab @click="collapse" slot="title" label="All Routes" name="routes" to="routes" />
+            <q-route-tab class="tab" @click="collapse" slot="title" label="All Routes" name="routes" to="routes" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" slot="title" label="18 Mile" name="18" to="18-mile" />
+            <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="18" to="18-mile" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" slot="title" label="31 Mile" name="31" to="31-mile" />
+            <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="31" to="31-mile" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" slot="title" label="62.8 Mile" name="62.8" to="metric" />
+            <q-route-tab class="tab" @click="collapse" slot="title" label="62.8 Mile" name="62.8" to="metric" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" slot="title" label="100 Mile" name="100" to="Century" />
+            <q-route-tab class="tab" @click="collapse" slot="title" label="100 Mile" name="100" to="Century" />
           </q-item-main>
         </q-popover>
       </q-tab>

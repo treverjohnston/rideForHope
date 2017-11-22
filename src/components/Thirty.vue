@@ -2,8 +2,12 @@
         <q-layout class="thirty">
             <div class="row wrap justify-center promo">
                 <div class="col-xs-12">
-                    <h2 class="headline text-center">31 Mile Ride</h2>
-                    <hr color="red" class="hr">
+                        <q-parallax src="statics/cover2.jpg" :height="200">
+                            <div slot="loading"><h2 class="headline text-center">31 Mile Ride</h2>
+                                <hr color="red" class="hr"></div>
+                            <h2 class="headline text-center">31 Mile Ride</h2>
+                            <hr color="red" class="hr">
+                        </q-parallax>
                 </div>
             </div>
             <div class="row wrap justify-center">
@@ -46,7 +50,8 @@
             QTransition,
             QCard,
             QCardMedia,
-            QCardActions
+            QCardActions,
+            QParallax
         } from 'quasar'
         export default {
             name: 'thirty',
@@ -62,7 +67,8 @@
                 QTransition,
                 QCard,
                 QCardMedia,
-                QCardActions
+                QCardActions,
+                QParallax
             },
             computed: {
                 pictures() {
