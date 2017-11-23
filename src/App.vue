@@ -13,6 +13,10 @@
 </script>
 
 <style>
+  .r-btn{
+        background-color: rgba(197, 7, 7, 0.8);
+        color: white;
+    }
   .q-item{
     font-size: 2rem;
     color: black;

@@ -30,7 +30,7 @@
                             </q-card-media>
                             <q-card-actions align="center">
                                 <a href="http://www.mapmyride.com/routes/view/1478990992" target="_blank">
-                                    <q-btn color="secondary" glossy no-caps>18 Mile Route Map</q-btn>
+                                    <q-btn class="r-btn" no-caps>Route Map</q-btn>
                                 </a>
                             </q-card-actions>
                         </div>
