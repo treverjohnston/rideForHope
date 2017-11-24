@@ -26,9 +26,9 @@
           </q-btn>
         </a>
       </q-transition>
-      <a class="mobile-only" href="http://www.meridian-cycles.com/" target="_blank">
+      <a class="mobile-only absolute-right" href="http://www.meridian-cycles.com/" target="_blank">
         <q-btn flat>
-          <img class="meridian-mobile fixed-right" src="statics/meridian.png" alt="Meridian Cycles logo">
+          <img class="meridian-mobile" src="statics/meridian.png" alt="Meridian Cycles logo">
         </q-btn>
       </a>
     </q-toolbar class="head desktop-only">
@@ -325,7 +325,6 @@
         openURL(url)
       },
       collapse() {
-        // console.log('collapse')
         this.$refs.popover.close()
         this.$refs.popoverRoutes.close()
       }
