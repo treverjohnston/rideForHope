@@ -33,11 +33,11 @@
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-4">
-                        <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="https://static.wixstatic.com/media/a44970_bd0f73ab3a3940a5af09f6afff708aad~mv2.jpg/v1/crop/x_5,y_6,w_286,h_64/fill/w_265,h_57,al_c,q_80,usm_0.66_1.00_0.01/a44970_bd0f73ab3a3940a5af09f6afff708aad~mv2.webp"
+                        <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="meats.jpg"
                             alt="Meats Royale">
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <img class="responsive silver" src="https://static.wixstatic.com/media/a44970_15c5ef847488461f8da005b8556c6c5b~mv2.jpeg/v1/fill/w_215,h_73,al_c,q_80,usm_0.66_1.00_0.01/a44970_15c5ef847488461f8da005b8556c6c5b~mv2.webp"
+                        <img class="responsive silver" src="sherwin.png"
                             alt="Sherwin Williams">
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                         <img class="responsive" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <img class="responsive" src="https://static.wixstatic.com/media/a44970_07b2037ca46a41ce8452f8e8a9817b49~mv2.jpeg/v1/fill/w_232,h_68,al_c,q_80,usm_0.66_1.00_0.01/a44970_07b2037ca46a41ce8452f8e8a9817b49~mv2.webp"
+                        <img class="responsive" src="lyle.jpg"
                             alt="Lyle Pearson">
                     </div>
                 </div>
