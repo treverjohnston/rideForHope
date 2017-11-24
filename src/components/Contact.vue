@@ -18,7 +18,7 @@
         </div>
         <div class="row wrap justify-center bot desktop-only xs-gutter">
             <div class="offset-xs-1 col-xs-5">
-                <img src="statics/margo.jpg"
+                <img src="http://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/margo.jpg"
                     class="responsive img" alt="Picture of Margo">
                 <h6>**Or contact Margo, (208) 608-2527</h6>
             </div>

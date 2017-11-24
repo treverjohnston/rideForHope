@@ -36,7 +36,7 @@
             <div class="row wrap justify-center pics desktop-only">
                 <q-card flat align="center" class="col-xs-12 col-lg-6">
                     <q-card-media>
-                        <img src="statics/cycle.jpg"
+                        <img src="http://res.cloudinary.com/treverscloud/image/upload/v1511556283/Ride/cycle.jpg"
                             class="img" alt="Raffle item picture">
                     </q-card-media>
                     <q-card-title>

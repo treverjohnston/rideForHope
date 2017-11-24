@@ -42,37 +42,37 @@ var store = new vuex.Store({
             //     description: '(Starlite Lazer 20 Youth Bike (Made to Order: Girls or Boys, various colors available)'
             // },
             {
-                link: 'statics/light.jpg',
+                link: 'http://res.cloudinary.com/treverscloud/image/upload/v1511556283/Ride/light.jpg',
                 donator: 'George\'s Cycles',
                 description: '(NightRider Headlight/Tail Light)'
             },
             {
-                link: 'statics/cycle2.jpg',
+                link: 'http://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/cycle2.jpg',
                 donator: 'Anonymous',
                 description: '(Woman\'s Del Sol 3spd Deluxe Cruiser)'
             },
             {
-                link: 'statics/fitbit.jpg',
+                link: 'http://res.cloudinary.com/treverscloud/image/upload/v1511556283/Ride/fitbit.jpg',
                 donator: 'Anonymous',
                 description: '(FitBit Charge 2)'
             },
             {
-                link: 'statics/pump.jpg',
+                link: 'http://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/pump.jpg',
                 donator: 'Reed Cycle',
                 description: '(Blackburn Bike Pump)'
             },
             {
-                link: 'statics/reed.jpg',
+                link: 'http://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/reed.jpg',
                 donator: 'Reed Cycle',
                 description: '($50 Gift Certificate)'
             },
             {
-                link: 'statics/shirt.jpg',
+                link: 'http://res.cloudinary.com/treverscloud/image/upload/v1511556283/Ride/shirt.jpg',
                 donator: 'Reed Cycle',
                 description: '(Smith Sweatshirt & Dakine Bage)'
             },
             {
-                link: 'statics/spud.jpg',
+                link: 'http://res.cloudinary.com/treverscloud/image/upload/v1511556283/Ride/spud.jpg',
                 donator: 'Idaho Candy Company',
                 description: '(24 Idaho Spud Bars)'
             },
