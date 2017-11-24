@@ -36,7 +36,7 @@
             <div class="row wrap justify-center pics desktop-only">
                 <q-card flat align="center" class="col-xs-12 col-lg-6">
                     <q-card-media>
-                        <img src="https://static.wixstatic.com/media/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.jpg/v1/fill/w_413,h_218,al_c,q_80,usm_0.66_1.00_0.01/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.webp"
+                        <img src="statics/cycle.jpg"
                             class="img" alt="Raffle item picture">
                     </q-card-media>
                     <q-card-title>
@@ -199,14 +199,11 @@
         background-image: url("~statics/road.jpg");
         background-size: cover;
         overflow: auto;
-        will-change: transform;
-        /* z-index: -500; */
-        position: fixed;
+        background-attachment: fixed;
         width: 100%;
         height: 100%;
-        top: 10;
+        top: 0;
         left: 0;
-        padding-bottom: 10rem;
     }
 
     .pics {

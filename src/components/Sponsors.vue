@@ -33,11 +33,11 @@
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-4">
-                        <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="meats.jpg"
+                        <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="statics/meats.jpg"
                             alt="Meats Royale">
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <img class="responsive silver" src="sherwin.png"
+                        <img class="responsive silver" src="statics/sherwin.png"
                             alt="Sherwin Williams">
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                         <img class="responsive" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <img class="responsive" src="lyle.jpg"
+                        <img class="responsive" src="statics/lyle.jpg"
                             alt="Lyle Pearson">
                     </div>
                 </div>

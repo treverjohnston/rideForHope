@@ -10,24 +10,21 @@
       <q-toolbar-title class="desktop-only">
         Ride For Hope
       </q-toolbar-title>
-      <span class="desktop-only ">Join Team Ride For Hope Idaho on Strava!
+      <span class="desktop-only">Join Team Ride For Hope Idaho on Strava!
         <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-          <a href="https://www.strava.com/clubs/302822" target="_blank">
-            <q-btn flat>
-              <img class="strava-top" src="statics/strava.png" alt="strava logo">
-            </q-btn>
-          </a>
+          <q-btn @click="launch('https://www.strava.com/clubs/302822')">
+            <img class="strava-top" src="statics/strava2.png" alt="strava logo">
+
+          </q-btn>
         </q-transition>
       </span>
       <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <a class="desktop-only" href="http://www.meridian-cycles.com/" target="_blank">
-          <q-btn flat>
-            <img class="meridian" src="statics/meridian.png" alt="Meridian Cycles logo">
+          <q-btn class="desktop-only" @click="launch('http://www.meridian-cycles.com/')">
+            <img class="meridian desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
           </q-btn>
-        </a>
       </q-transition>
       <a class="mobile-only absolute-right" href="http://www.meridian-cycles.com/" target="_blank">
-        <q-btn flat>
+        <q-btn>
           <img class="meridian-mobile" src="statics/meridian.png" alt="Meridian Cycles logo">
         </q-btn>
       </a>
@@ -353,15 +350,19 @@
   }
 
   .strava-top {
-    max-width: 8rem;
+    max-width: 4.5rem;
+    /* height: 4rem; */
   }
 
   .meridian {
     max-width: 9rem;
+        /* height: 4rem; */
+
   }
 
   .meridian-mobile {
-    max-width: 7.5rem;
+    height: 4rem;
+    /* max-width: 7.5rem; */
     margin-top: .5rem;
   }
 

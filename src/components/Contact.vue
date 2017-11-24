@@ -18,7 +18,7 @@
         </div>
         <div class="row wrap justify-center bot desktop-only xs-gutter">
             <div class="offset-xs-1 col-xs-5">
-                <img src="https://static.wixstatic.com/media/a44970_3bf0ccf89baf43a18b95b6d32d4c045d~mv2_d_2448_3264_s_4_2.jpg/v1/crop/x_387,y_554,w_1933,h_2697/fill/w_334,h_468,al_c,q_80,usm_0.66_1.00_0.01/a44970_3bf0ccf89baf43a18b95b6d32d4c045d~mv2_d_2448_3264_s_4_2.webp"
+                <img src="statics/margo.jpg"
                     class="responsive img" alt="Picture of Margo">
                 <h6>**Or contact Margo, (208) 608-2527</h6>
             </div>
