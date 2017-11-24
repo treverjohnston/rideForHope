@@ -72,12 +72,6 @@
     </q-tabs>
 
     <div class="mobile-only left-tab" slot="left">
-      <!--
-        Use <q-side-link> component
-        instead of <q-item> for
-        internal vue-router navigation
-      -->
-
       <q-list class="mobile-only" no-border link inset-delimiter>
         <q-side-link to="/">
           <q-item-main class="side" label="Home" />
