@@ -88,11 +88,6 @@
                 </q-card-main>
             </q-card>
         </div>
-        <q-fixed-position corner="bottom-right" :offset="[18, 18]">
-            <q-btn round v-back-to-top.animate="{offset: 200, duration: 200}" class="animate-pop back">
-                <q-icon name="keyboard_arrow_up" />
-            </q-btn>
-        </q-fixed-position>
     </q-layout>
 </template>
 

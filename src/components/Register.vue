@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="registration">
+    <q-layout class="registration black">
         <q-parallax :speed="1" :height="500" src="./statics/riders2.jpg">
             <div slot="loading">Loading...</div>
 

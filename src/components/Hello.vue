@@ -228,12 +228,12 @@
           </h6>
         </div>
         <div class="col-xs-12">
-            <q-btn @click="launch('https://www.strava.com/clubs/302822')" flat>
-              <img class="strava" src="statics/strava.png" alt="strava logo">
-            </q-btn>
-            <q-btn @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
-              <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
-            </q-btn>
+          <q-btn @click="launch('https://www.strava.com/clubs/302822')" flat>
+            <img class="strava" src="statics/strava.png" alt="strava logo">
+          </q-btn>
+          <q-btn @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
+            <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
+          </q-btn>
         </div>
         <!-- <hr class="hr"> -->
         <div class="col-xs-12 col-md-3">
@@ -249,13 +249,13 @@
           <hr class="hr">
           <h5 class="text-bold text-italic">Semper Fidelis Sponsors</h5>
           <!-- <hr class="hr"> -->
-          <q-btn  @click="launch('http://www.meatsroyaleidaho.com/')">
+          <q-btn @click="launch('http://www.meatsroyaleidaho.com/')">
             <h6>Meats Royale</h6>
           </q-btn>
-          <q-btn  @click="launch('https://10barrel.com/pub/boise/')">
+          <q-btn @click="launch('https://10barrel.com/pub/boise/')">
             <h6>10 Barrel Brewing Co.</h6>
           </q-btn>
-          <q-btn  @click="launch('https://www.sherwin-williams.com/homeowners')">
+          <q-btn @click="launch('https://www.sherwin-williams.com/homeowners')">
             <h6>Sherwin Williams</h6>
           </q-btn>
           <hr class="hr">
@@ -274,6 +274,11 @@
         </div>
       </div>
     </div>
+    <q-fixed-position corner="bottom-right" :offset="[18, 18]">
+      <q-btn round v-back-to-top.animate="{offset: 200, duration: 200}" class="animate-pop back">
+        <q-icon name="keyboard_arrow_up" />
+      </q-btn>
+    </q-fixed-position>
   </q-layout>
 </template>
 
@@ -303,7 +308,10 @@
     QTransition,
     QSideLink,
     QPopover,
-    QCollapsible
+    QCollapsible,
+    BackToTop,
+    Ripple,
+    QFixedPosition
   } from 'quasar'
 
 
@@ -332,7 +340,8 @@
       QTransition,
       QSideLink,
       QPopover,
-      QCollapsible
+      QCollapsible,
+      QFixedPosition,
     },
     data() {
       return {
@@ -358,6 +367,10 @@
       }
 
     },
+    directives: {
+      BackToTop,
+      Ripple
+    },
     mounted() {
       this.$refs.layout.toggleLeft()
 
@@ -368,9 +381,14 @@
 </script>
 
 <style scoped>
-  .hr{
+  .back{
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+  }
+  .hr {
     width: 80%;
   }
+
   .route-tab-cont {
     margin-bottom: .75rem;
   }
@@ -524,6 +542,7 @@
     /* margin-top: -6rem; */
     padding: 0 2rem 0 2rem;
     background-color: rgba(0, 128, 128, 0.6);
+    color: black;
   }
 
   .head {

@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="volunteers">
+    <q-layout class="volunteers black">
         <div class="row wrap justify-center promo">
             <div class="col-xs-11 col-md-8 text-center">
                 <h3>I'm Interested in Volunteering</h3>
@@ -113,5 +113,8 @@
 <style scoped>
     .red {
         color: rgb(212, 0, 0);
+    }
+    .volunteers{
+        background-color: rgb(206, 201, 201);
     }
 </style>

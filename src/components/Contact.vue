@@ -1,6 +1,6 @@
 <template>
     <q-layout class="contact">
-        <div class="row wrap justify-center promo">
+        <div class="row wrap justify-center promo black">
             <div class="col-xs-12 text-center">
                 <q-parallax src="statics/riders3.jpg" :height="200">
                     <div slot="loading">

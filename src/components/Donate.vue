@@ -115,6 +115,7 @@
 
     .font {
         font-family: 'Lobster', cursive;
+        color: black;
     }
 
     .fancy {

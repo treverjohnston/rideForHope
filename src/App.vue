@@ -40,4 +40,7 @@
   .bg-grey-2 {
     background: rgba(255,255,255, .85) !important;
   }
+  .black{
+    color:black
+  }
 </style>

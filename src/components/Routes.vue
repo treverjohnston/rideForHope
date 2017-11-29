@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="routes row">
+    <q-layout class="routes row black">
         <div class="promo text-center text-italic text-bold desktop-only col-xs-12">
             <q-parallax src="statics/riders4.jpg" :height="300">
                 <div slot="loading">

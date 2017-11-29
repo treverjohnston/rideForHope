@@ -1,11 +1,11 @@
 <template>
-    <q-layout class="metric">
+    <q-layout class="metric black">
         <div class="row wrap justify-center promo">
             <div class="col-xs-12">
                 <q-parallax src="statics/cover2.jpg" :height="200">
                     <div slot="loading"><h2 class="headline text-center">Metric Century Ride</h2>
                         <hr color="red" class="hr"></div>
-                    <h2 class="headline text-center">Metric Century Ride</h2>
+                    <h2 class="headline text-center black">Metric Century Ride</h2>
                     <hr color="red" class="hr">
                 </q-parallax>
             </div>

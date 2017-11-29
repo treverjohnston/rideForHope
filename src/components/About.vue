@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="about">
+    <q-layout class="about black">
         <div class="row wrap">
             <h2 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">Our Mission</h2>
             <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10 ">
@@ -104,11 +104,6 @@
                     </q-btn>
                 </a>
             </div>
-            <q-fixed-position corner="bottom-right" :offset="[18, 18]">
-                <q-btn round v-back-to-top.animate="{offset: 400, duration: 200}" class="animate-pop back">
-                    <q-icon name="keyboard_arrow_up" />
-                </q-btn>
-            </q-fixed-position>
         </div>
     </q-layout>
 </template>
