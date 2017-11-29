@@ -19,9 +19,9 @@
         </q-transition>
       </span>
       <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
-          <q-btn class="desktop-only" @click="launch('http://www.meridian-cycles.com/')">
-            <img class="meridian desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
-          </q-btn>
+        <q-btn class="desktop-only" @click="launch('http://www.meridian-cycles.com/')">
+          <img class="meridian desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
+        </q-btn>
       </q-transition>
       <a class="mobile-only absolute-right" href="http://www.meridian-cycles.com/" target="_blank">
         <q-btn>
@@ -217,26 +217,63 @@
 
     </div>
     <!--  -->
-    <q-toolbar class="footer text-center text-italic row justify-center" slot="footer">
-      <a href="https://www.strava.com/clubs/302822" target="_blank">
-        <q-btn flat>
-          <img class="strava" src="statics/strava.png" alt="strava logo">
-        </q-btn>
-      </a>
-      <!-- <q-toolbar-title> -->
-      <h6 class="desktop-only">
-        Thank you for supporting Ride for Hope!
-      </h6>
-      <small class="small mobile-only">
-        Thank you for supporting Ride for Hope!
-      </small>
-      <!-- </q-toolbar-title> -->
-      <a href="https://www.facebook.com/rideforhopeidaho/" target="_blank">
-        <q-btn flat>
-          <q-icon class="fb" name="fa-facebook-square" />
-        </q-btn>
-      </a>
-    </q-toolbar>
+    <div class="footer text-center text-bold" slot="footer">
+      <div class="row justify-center">
+        <div class="col-xs-12">
+          <h3 class="text-center desktop-only">
+            Thank you for supporting Ride for Hope!
+          </h3>
+          <h6 class="text-center mobile-only">
+            Thank you for supporting Ride for Hope!
+          </h6>
+        </div>
+        <div class="col-xs-12">
+            <q-btn @click="launch('https://www.strava.com/clubs/302822')" flat>
+              <img class="strava" src="statics/strava.png" alt="strava logo">
+            </q-btn>
+            <q-btn @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
+              <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
+            </q-btn>
+        </div>
+        <!-- <hr class="hr"> -->
+        <div class="col-xs-12 col-md-3">
+          <hr class="hr">
+          <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5>
+          <!-- <hr class="hr"> -->
+          <q-btn @click="launch('http://www.meridian-cycles.com/')">
+            <img class="meridian" src="statics/meridian.png" alt="Meridian Cycles logo">
+          </q-btn>
+          <hr class="hr">
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <hr class="hr">
+          <h5 class="text-bold text-italic">Semper Fidelis Sponsors</h5>
+          <!-- <hr class="hr"> -->
+          <q-btn  @click="launch('http://www.meatsroyaleidaho.com/')">
+            <h6>Meats Royale</h6>
+          </q-btn>
+          <q-btn  @click="launch('https://10barrel.com/pub/boise/')">
+            <h6>10 Barrel Brewing Co.</h6>
+          </q-btn>
+          <q-btn  @click="launch('https://www.sherwin-williams.com/homeowners')">
+            <h6>Sherwin Williams</h6>
+          </q-btn>
+          <hr class="hr">
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <hr class="hr">
+          <h5 class="text-bold text-italic">Carpe Diem Sponsors</h5>
+          <!-- <hr class="hr"> -->
+          <q-btn @click="launch('http://www.raymondjames.com/boiseid/')">
+            <h6>Riverside Associates</h6>
+          </q-btn>
+          <q-btn @click="launch('http://www.lylepearson.com/')">
+            <h6>Lyle Pearson</h6>
+          </q-btn>
+          <hr class="hr">
+        </div>
+      </div>
+    </div>
   </q-layout>
 </template>
 
@@ -331,6 +368,9 @@
 </script>
 
 <style scoped>
+  .hr{
+    width: 80%;
+  }
   .route-tab-cont {
     margin-bottom: .75rem;
   }
@@ -350,8 +390,7 @@
 
   .meridian {
     max-width: 9rem;
-        /* height: 4rem; */
-
+    /* height: 4rem; */
   }
 
   .meridian-mobile {
@@ -361,7 +400,7 @@
   }
 
   .strava {
-    max-width: 5rem;
+    width: 10rem;
   }
 
   .q-item-link:hover {
@@ -424,11 +463,13 @@
 
   .fb {
     color: rgb(59, 89, 152);
+    width: 10rem;
   }
 
   .footer {
     background-color: rgb(17, 17, 17);
-    color: rgb(0, 128, 128);
+    color: rgb(180, 0, 0);
+    padding-bottom: 3rem;
     /* margin-top: 15rem; */
   }
 

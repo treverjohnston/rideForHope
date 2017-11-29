@@ -10,8 +10,8 @@
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-11 col-md-10">
-                <h2 class="text-bold shadow desktop-only">A Special Thanks To Our Gold Level Sponsors</h2>
-                <h3 class="text-bold shadow mobile-only">A Special Thanks To Our Gold Level Sponsors</h3>
+                <h2 class="text-bold shadow desktop-only">Veni Vidi Vici Sponsors</h2>
+                <h3 class="text-bold shadow mobile-only">Veni Vidi Vici Sponsors</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-6">
@@ -28,8 +28,8 @@
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
-                <h2 class="text-bold shadow desktop-only">Silver Level Sponsors</h2>
-                <h3 class="text-bold shadow mobile-only">Silver Level Sponsors</h3>
+                <h2 class="text-bold shadow desktop-only">Semper Fidelis Sponsors</h2>
+                <h3 class="text-bold shadow mobile-only">Semper Fidelis Sponsors</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-4">
@@ -44,10 +44,10 @@
                 <hr color="red" class="hr">
             </div>
         </div>
-        <div class="row wrap justify-center text-center">
+        <!-- <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
-                    <h2 class="text-bold shadow desktop-only">Bronze Level Sponsors</h2>
-                    <h3 class="text-bold shadow mobile-only">Bronze Level Sponsors</h3>
+                    <h2 class="text-bold shadow desktop-only">Carpe Diem Level Sponsors</h2>
+                    <h3 class="text-bold shadow mobile-only">Carpe Diem Level Sponsors</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-4">
@@ -61,6 +61,23 @@
                 <hr color="red" class="hr">
             </div>
         </div>
+        <div class="row wrap justify-center text-center">
+            <div class="col-xs-8">
+                    <h2 class="text-bold shadow desktop-only">Virtutem Spei Level Sponsors</h2>
+                    <h3 class="text-bold shadow mobile-only">Virtutem Spei Level Sponsors</h3>
+                <hr color="red" class="hr">
+                <div class="mid row wrap justify-center">
+                    <div class="col-xs-12 col-md-4">
+                        <img class="responsive" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <img class="responsive" src="statics/lyle.jpg"
+                            alt="Lyle Pearson">
+                    </div>
+                </div>
+                <hr color="red" class="hr">
+            </div>
+        </div> -->
 
     </q-layout>
 </template>
