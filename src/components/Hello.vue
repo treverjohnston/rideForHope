@@ -267,6 +267,12 @@
           <q-btn @click="launch('http://www.raymondjames.com/boiseid/')">
             <h6>Riverside Associates</h6>
           </q-btn>
+          <hr class="hr">
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <hr class="hr">
+          <h5 class="text-bold text-italic">Virtitem Spei Sponsors</h5>
+          <!-- <hr class="hr"> -->
           <q-btn @click="launch('http://www.lylepearson.com/')">
             <h6>Lyle Pearson</h6>
           </q-btn>
