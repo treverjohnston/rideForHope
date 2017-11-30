@@ -229,38 +229,30 @@
         </div>
         <div class="col-xs-12">
           <div class="row justify-center">
-            <div class="col-md-3">
+            <div class="col-xs-6 col-md-3">
               <q-btn @click="launch('https://www.strava.com/clubs/302822')" flat>
                 <img class="strava" src="statics/strava.png" alt="strava logo">
               </q-btn>
             </div>
+            <div class="col-xs-6 col-md-3 mobile-only">
+                <q-btn @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
+                  <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
+                </q-btn>
+              </div>
             <div class="col-md-3">
               <hr class="hr">
               <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5>
-              <!-- <hr class="hr"> -->
               <q-btn @click="launch('http://www.meridian-cycles.com/')">
                 <img class="meridian-big" src="statics/meridian.png" alt="Meridian Cycles logo">
               </q-btn>
             </div>
-            
-            <!-- <hr class="hr"> -->
-
-            <div class="col-md-3">
+            <div class="col-md-3 desktop-only">
               <q-btn @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
                 <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
               </q-btn>
             </div>
           </div>
         </div>
-        <!-- <hr class="hr"> -->
-        <!-- <div class="col-xs-12 col-md-3">
-          <hr class="hr">
-          <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5>
-          <hr class="hr">
-          <q-btn @click="launch('http://www.meridian-cycles.com/')">
-            <img class="meridian" src="statics/meridian.png" alt="Meridian Cycles logo">
-          </q-btn>
-          <hr class="hr"> -->
       </div>
       <div class="row justify-center">
 
@@ -268,7 +260,6 @@
         <div class="col-xs-12 col-md-3">
           <hr class="hr">
           <h5 class="text-bold text-italic">Semper Fidelis Sponsors</h5>
-          <!-- <hr class="hr"> -->
           <q-btn @click="launch('http://www.meatsroyaleidaho.com/')">
             <h6>Meats Royale</h6>
           </q-btn>
@@ -514,6 +505,7 @@
 
   .footer {
     background-color: rgb(17, 17, 17);
+    /* background-image: url("~statics/dark-triangles.png"); */
     color: rgb(180, 0, 0);
     padding-bottom: 3rem;
     /* margin-top: 15rem; */

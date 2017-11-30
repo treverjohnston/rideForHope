@@ -33,6 +33,7 @@
 <style scoped>
     .gallery{
         background-color: black;
+
     }
     .pics{
         height: 85vh;

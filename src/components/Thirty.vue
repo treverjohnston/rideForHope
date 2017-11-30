@@ -104,6 +104,9 @@
         }
     
         .thirty {
-            background-color: rgb(206, 201, 201);
+            background-image: url("~statics/triangular.png");
+        }
+        .q-card-actions{
+            background-image: url("~statics/binding_dark.png");
         }
     </style>

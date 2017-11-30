@@ -14,22 +14,22 @@ var store = new vuex.Store({
     state: {
         routes: [
             {
-                url: 'http://www.mapmyride.com/routes/view/996049745',
+                url: '/#/18-mile',
                 length: 18,
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/18_mrihcr.jpg'
             },
             {
-                url: 'http://www.mapmyride.com/routes/view/1478990992',
+                url: '/#/31-mile',
                 length: 31,
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg'
             },
             {
-                url: 'http://www.mapmyride.com/routes/view/981667107',
+                url: '/#/metric',
                 length: 62.8,
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/62.8_obydkx.jpg'
             },
             {
-                url: 'http://www.mapmyride.com/routes/view/1462908562',
+                url: '/#/Century',
                 length: 100,
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg'
             }

@@ -32,7 +32,7 @@
                             <img :src="card.pic">
                         </q-card-media>
                         <q-card-actions align="center">
-                            <a :href="card.url" target="_blank">
+                            <a :href="card.url">
                                 <q-btn class="r-btn" no-caps>{{card.length}} Mile Route Map</q-btn>
                             </a>
                         </q-card-actions>
@@ -105,7 +105,7 @@
     }
 
     .routes {
-        background-color: rgb(34, 34, 34);
+        background-image: url("~statics/triangular.png")
     }
 
     .promo {

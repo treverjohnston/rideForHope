@@ -15,7 +15,7 @@
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-6">
-                        <img @click="launch('http://www.meridian-cycles.com/')" class="responsive gold" src="https://static.wixstatic.com/media/a44970_2ceddec734c0451dbee6fad6f95a6616~mv2_d_2304_2304_s_2.png/v1/crop/x_520,y_514,w_1256,h_1270/fill/w_151,h_139,al_c,usm_0.66_1.00_0.01/a44970_2ceddec734c0451dbee6fad6f95a6616~mv2_d_2304_2304_s_2.png"
+                        <img @click="launch('http://www.meridian-cycles.com/')" class="responsive gold" src="~statics/meridian.png"
                             alt="Meridian cycles">
                     </div>
                     <div class="col-xs-12 col-md-6">
@@ -118,7 +118,7 @@
 
 <style scoped>
     .gold{
-        width: 20rem;
+        height: 12rem;
     }
     .btn {
         background-color: rgba(197, 7, 7, 0.8);

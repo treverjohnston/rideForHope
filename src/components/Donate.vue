@@ -110,7 +110,7 @@
     }
 
     .donate {
-        background-color: rgb(0, 95, 95);
+        background-image: url("~statics/triangular.png")
     }
 
     .font {
