@@ -105,7 +105,7 @@
     }
 
     .routes {
-        background-color: rgb(206, 201, 201);
+        background-color: rgb(34, 34, 34);
     }
 
     .promo {

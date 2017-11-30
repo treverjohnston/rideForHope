@@ -228,23 +228,43 @@
           </h6>
         </div>
         <div class="col-xs-12">
-          <q-btn @click="launch('https://www.strava.com/clubs/302822')" flat>
-            <img class="strava" src="statics/strava.png" alt="strava logo">
-          </q-btn>
-          <q-btn @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
-            <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
-          </q-btn>
+          <div class="row justify-center">
+            <div class="col-md-3">
+              <q-btn @click="launch('https://www.strava.com/clubs/302822')" flat>
+                <img class="strava" src="statics/strava.png" alt="strava logo">
+              </q-btn>
+            </div>
+            <div class="col-md-3">
+              <hr class="hr">
+              <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5>
+              <!-- <hr class="hr"> -->
+              <q-btn @click="launch('http://www.meridian-cycles.com/')">
+                <img class="meridian-big" src="statics/meridian.png" alt="Meridian Cycles logo">
+              </q-btn>
+            </div>
+            
+            <!-- <hr class="hr"> -->
+
+            <div class="col-md-3">
+              <q-btn @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
+                <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
+              </q-btn>
+            </div>
+          </div>
         </div>
         <!-- <hr class="hr"> -->
-        <div class="col-xs-12 col-md-3">
+        <!-- <div class="col-xs-12 col-md-3">
           <hr class="hr">
           <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5>
-          <!-- <hr class="hr"> -->
+          <hr class="hr">
           <q-btn @click="launch('http://www.meridian-cycles.com/')">
             <img class="meridian" src="statics/meridian.png" alt="Meridian Cycles logo">
           </q-btn>
-          <hr class="hr">
-        </div>
+          <hr class="hr"> -->
+      </div>
+      <div class="row justify-center">
+
+
         <div class="col-xs-12 col-md-3">
           <hr class="hr">
           <h5 class="text-bold text-italic">Semper Fidelis Sponsors</h5>
@@ -279,6 +299,7 @@
           <hr class="hr">
         </div>
       </div>
+    </div>
     </div>
     <q-fixed-position corner="bottom-right" :offset="[18, 18]">
       <q-btn round v-back-to-top.animate="{offset: 200, duration: 200}" class="animate-pop back">
@@ -387,10 +408,11 @@
 </script>
 
 <style scoped>
-  .back{
+  .back {
     background-color: rgba(0, 0, 0, 0.589);
     color: white;
   }
+
   .hr {
     width: 80%;
   }
