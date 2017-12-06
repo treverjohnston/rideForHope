@@ -91,18 +91,14 @@
                 </h4>
             </div>
             <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5">
-                <a href="https://genesiscommunityhealth.com/about-us/" target="_blank">
-                    <q-btn flat>
+                    <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
                         <img class="responsive" src="statics/gch.png" alt="Genesis Community Health Logo">
                     </q-btn>
-                </a>
             </div>
             <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5">
-                <a href="https://boiserm.org/" target="_blank">
-                    <q-btn flat>
+                    <q-btn @click="launch('https://boiserm.org/')" flat>
                         <img class="responsive" src="statics/brm.png" alt="Boise Rescue Mission Logo">
                     </q-btn>
-                </a>
             </div>
         </div>
     </q-layout>
@@ -116,7 +112,8 @@
         BackToTop,
         Ripple,
         QFixedPosition,
-        QIcon
+        QIcon,
+        openURL
     } from 'quasar'
     export default {
         name: 'About',
@@ -128,19 +125,26 @@
             QTransition,
             QBtn,
             QFixedPosition,
-            QIcon
+            QIcon,
+            openURL
         },
         directives: {
             BackToTop,
             Ripple
+        },
+        methods: {
+            launch(url) {
+                openURL(url)
+            },
         }
     }
 </script>
 
 <style scoped>
-    .back{
+    .back {
         background-color: transparent;
     }
+
     .top {
         font-size: 1.25rem;
     }

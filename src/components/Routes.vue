@@ -26,7 +26,7 @@
         </div>
         <div class="row wrap justify-center">
             <q-card v-for="card in routes" inline class="route col-xs-11 col-sm-5 shadow-24">
-                <q-transition appear enter="zoomIn" leave="fadeOut">
+                <!-- <q-transition appear enter="zoomIn" leave="fadeOut"> -->
                     <div>
                         <q-card-media>
                             <img :src="card.pic">
@@ -37,7 +37,7 @@
                             </a>
                         </q-card-actions>
                     </div>
-                </q-transition>
+                <!-- </q-transition> -->
             </q-card>
         </div>
     </q-layout>
