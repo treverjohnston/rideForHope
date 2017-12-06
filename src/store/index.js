@@ -14,22 +14,22 @@ var store = new vuex.Store({
     state: {
         routes: [
             {
-                url: '/rideForHope/#/18-mile',
+                url: '/18-mile',
                 length: 18,
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/18_mrihcr.jpg'
             },
             {
-                url: '/rideForHope/#/31-mile',
+                url: '/31-mile',
                 length: 31,
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg'
             },
             {
-                url: '/rideForHope/#/metric',
+                url: '/metric',
                 length: 62.8,
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/62.8_obydkx.jpg'
             },
             {
-                url: '/rideForHope/#/Century',
+                url: '/Century',
                 length: 100,
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg'
             }
