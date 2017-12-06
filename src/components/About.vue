@@ -92,12 +92,12 @@
             </div>
             <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5">
                     <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
-                        <img class="responsive" src="statics/gch.png" alt="Genesis Community Health Logo">
+                        <img class="responsive check" src="statics/gch.png" alt="Genesis Community Health Logo">
                     </q-btn>
             </div>
             <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5">
                     <q-btn @click="launch('https://boiserm.org/')" flat>
-                        <img class="responsive" src="statics/brm.png" alt="Boise Rescue Mission Logo">
+                        <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
                     </q-btn>
             </div>
         </div>
@@ -141,6 +141,9 @@
 </script>
 
 <style scoped>
+    .check{
+        max-width: 30vw
+    }
     .back {
         background-color: transparent;
     }
