@@ -15,6 +15,7 @@ import Quasar from 'quasar'
 import router from './router'
 import store from './store'
 import Vuelidate from 'vuelidate'
+import anime from 'animejs'
 
 Vue.use(Vuelidate)
 Vue.config.productionTip = false

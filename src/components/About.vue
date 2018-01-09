@@ -1,6 +1,6 @@
 <template>
     <q-layout class="about black">
-        <div class="row wrap">
+        <div class="row wrap" id="app">
             <h2 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">Our Mission</h2>
             <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10 ">
             <!-- <h5 class="text-italic text-bold offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">Ride For Hope Mission Statement</h5> -->
@@ -105,70 +105,76 @@
 </template>
 
 <script>
-    import {
-        QLayout,
-        QTransition,
-        QBtn,
-        BackToTop,
-        Ripple,
-        QFixedPosition,
-        QIcon,
-        openURL
-    } from 'quasar'
-    export default {
-        name: 'About',
-        data() {
-            return {}
-        },
-        components: {
-            QLayout,
-            QTransition,
-            QBtn,
-            QFixedPosition,
-            QIcon,
-            openURL
-        },
-        directives: {
-            BackToTop,
-            Ripple
-        },
-        methods: {
-            launch(url) {
-                openURL(url)
-            },
-        }
+import anime from "animejs";
+import {
+  QLayout,
+  QTransition,
+  QBtn,
+  BackToTop,
+  Ripple,
+  QFixedPosition,
+  QIcon,
+  openURL
+} from "quasar";
+export default {
+  name: "About",
+  data() {
+    return {
+      width: 500
+    };
+  },
+  components: {
+    QLayout,
+    QTransition,
+    QBtn,
+    QFixedPosition,
+    QIcon,
+    openURL
+  },
+  directives: {
+    BackToTop,
+    Ripple
+  },
+  methods: {
+    launch(url) {
+      openURL(url);
     }
+  }
+};
 </script>
 
 <style scoped>
-    .check{
-        max-width: 30vw
-    }
-    .back {
-        background-color: transparent;
-    }
+.white {
+  color: transparent;
+}
+.check {
+  max-width: 30vw;
+}
+.back {
+  background-color: transparent;
+}
 
-    .top {
-        font-size: 1.25rem;
-    }
+.top {
+  font-size: 1.25rem;
+}
 
-    .signature {
-        color: rgb(180, 0, 0);
-        font-family: 'Niconne', cursive;
-    }
+.signature {
+  color: rgb(180, 0, 0);
+  font-family: "Niconne", cursive;
+}
 
-    .rider {
-        border: 5px solid black;
-        height: 18rem;
-        width: 18rem;
-    }
+.rider {
+  border: 5px solid black;
+  height: 18rem;
+  width: 18rem;
+}
 
-    .about {
-        /* background-color: rgb(206, 201, 201); */
-        background-image: url("~statics/triangular.png")
-    }
+.about {
+  /* background-color: rgb(206, 201, 201); */
+  background-image: url("~statics/triangular.png");
+}
 
-    .return {
-        background-color: red;
-    }
+.return {
+  background-color: red;
+}
 </style>

@@ -17,7 +17,12 @@
             </div>
             <div class="offset-xs-1 col-xs-5">
                 <h6 class="light-paragraph text-center red">Thanks to all of you who are volunteering ---- we couldn't do this without you!</h6>
-                <q-gallery :src="pictures"></q-gallery>
+                <div id="bar" class="row wrap justify center">
+                    <div v-for="pic in pictures" class="col-xs-6">
+                        <img data-x="80" class="el test" :src="pic" alt="ride picture">
+                    </div>
+                    <!-- <q-gallery data-x="80" class="el test" :src="pictures"></q-gallery> -->
+                </div>
                 <h6>**Or contact Margo, (208) 608-2527 and she will help coordinate which areas we need you most to help in.</h6>
             </div>
         </div>
@@ -32,32 +37,26 @@
             </div>
             <div class="col-xs-11 bot">
                 <h6 class="text-center">**Or contact Margo, (208) 608-2527 and she will help coordinate which areas we need you most to help in.</h6>
-                <q-gallery :src="pictures"></q-gallery>
+                <q-gallery :src="pictures" class="el"></q-gallery>
             </div>
         </div>
     </q-layout>
 </template>
 
 <script>
-    import { required, email, alpha, alphaNum } from 'vuelidate/lib/validators'
-    import {
-        QLayout,
-        QInput,
-        QBtn,
-        QGallery,
-        Toast
-    } from 'quasar'
+    import anime from "animejs";
+    import { required, email, alpha, alphaNum } from "vuelidate/lib/validators";
+    import { QLayout, QInput, QBtn, QGallery, Toast } from "quasar";
     export default {
-        name: 'Volunteers',
+        name: "Volunteers",
         data() {
             return {
-
-                name: '',
-                email: '',
-                phone: '',
-                subject: '',
-                message: ''
-            }
+                name: "",
+                email: "",
+                phone: "",
+                subject: "",
+                message: ""
+            };
         },
         validations: {
             name: { required, alpha },
@@ -74,47 +73,80 @@
         },
         computed: {
             pictures() {
-                return this.$store.state.pictures
+                return this.$store.state.pictures;
             }
         },
         methods: {
             send() {
-                this.$v.name.$touch()
-                this.$v.email.$touch()
-                this.$v.subject.$touch()
-                this.$v.message.$touch()
-                if (this.$v.name.$error || this.$v.email.$error || this.$v.subject.$error || this.$v.message.$error) {
-                    // console.log(this.$v.name.$error)
-                    // console.log(this.$v.email.$error)
-                    // console.log(this.$v.subject.$error)
-                    // console.log(this.$v.message.$error)
+                this.$v.name.$touch();
+                this.$v.email.$touch();
+                this.$v.subject.$touch();
+                this.$v.message.$touch();
+                if (
+                    this.$v.name.$error ||
+                    this.$v.email.$error ||
+                    this.$v.subject.$error ||
+                    this.$v.message.$error
+                ) {
                     Toast.create({
-                        html: 'Something went wrong, please try again. Be sure to check all fields are filled out correctly.',
-                        bgColor: 'red'
-                    })
-                    return
+                        html:
+                            "Something went wrong, please try again. Be sure to check all fields are filled out correctly.",
+                        bgColor: "red"
+                    });
+                    return;
                 }
-                // else {
-                //     Toast.create('Message Sending')
-                // }
                 var obj = {
                     name: this.name,
                     email: this.email,
                     phone: this.phone,
                     _subject: this.subject,
                     message: this.message
-                }
-                this.$store.dispatch('sendEmail', obj)
+                };
+                this.$store.dispatch("sendEmail", obj);
+            },
+            animate() {
+                console.log('running')
+                anime({
+                    targets: "#bar .el",
+                    translateX: function (el) {
+                        return el.getAttribute('data-x');
+                    },
+                    translateY: function (el, i) {
+                        return 50 + (-50 * i);
+                    },
+                    scale: function (el, i, l) {
+                        return 1.2;
+                    },
+                    rotate: function () { return anime.random(-360, 360); },
+                    duration: function () { return anime.random(500, 800); },
+                    duration: function () { return anime.random(800, 1100); },
+                    delay: function () { return anime.random(0, 500); },
+                    direction: 'reverse',
+                    // loop: true
+
+                    // targets: ".bar",
+                    // duration: 2500,
+                    // color: "rgb(0,0,0)",
+                    // easing: "easeInSine"
+                });
             }
+        },
+        mounted() {
+            this.animate()
         }
-    }
+    };
 </script>
 
 <style scoped>
+    .test {
+        width: 15vw;
+    }
+
     .red {
         color: rgb(212, 0, 0);
     }
-    .volunteers{
-        background-image: url("~statics/triangular.png")
+
+    .volunteers {
+        background-image: url("~statics/triangular.png");
     }
 </style>
