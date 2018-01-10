@@ -116,7 +116,6 @@
           <hr class="tabhr">
         </q-side-link>
         <q-collapsible class="side-collapse" label="Get Involved">
-          <!-- <hr class="tabhr"> -->
           <q-side-link to="involved" class="left">
             <q-item-main class="small-side" label="General Information" />
           </q-side-link>
@@ -235,10 +234,10 @@
               </q-btn>
             </div>
             <div class="col-xs-6 col-md-3 mobile-only">
-                <q-btn @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
-                  <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
-                </q-btn>
-              </div>
+              <q-btn @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
+                <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
+              </q-btn>
+            </div>
             <div class="col-md-3">
               <hr class="hr">
               <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5>
@@ -255,24 +254,36 @@
         </div>
       </div>
       <div class="row justify-center">
-
-
-        <div class="col-xs-12 col-md-3">
-          <hr class="hr">
-          <h5 class="text-bold text-italic">Semper Fidelis Sponsors</h5>
-          <q-btn @click="launch('http://www.meatsroyaleidaho.com/')">
-            <h6>Meats Royale</h6>
-          </q-btn>
-          <q-btn @click="launch('https://10barrel.com/pub/boise/')">
-            <h6>10 Barrel Brewing Co.</h6>
-          </q-btn>
-          <q-btn @click="launch('https://www.sherwin-williams.com/homeowners')">
-            <h6>Sherwin Williams</h6>
-          </q-btn>
-          <hr class="hr">
+        <div class="col-xs-12 col-md-12">
+          <div class="row justify-center">
+            <div class="col-xs-12">
+              <hr class="hr">
+              <h5 class="text-bold text-italic">Semper Fidelis Sponsors</h5>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <q-btn @click="launch('http://www.meatsroyaleidaho.com/')">
+                <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="~statics/meats.jpg" alt="Meats Royale">
+                <!-- <h6>Meats Royale</h6> -->
+              </q-btn>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <q-btn @click="launch('https://www.sherwin-williams.com/homeowners')">
+                <img class="responsive silver" src="statics/sherwin.png" alt="Sherwin Williams">
+                <!-- <h6>Sherwin Williams</h6> -->
+              </q-btn>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <q-btn @click="launch('https://10barrel.com/pub/boise/')">
+                <img @click="launch('https://10barrel.com/pub/boise/')" class="responsive silver" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"
+                  alt="10 Barrel BrewingCo.">
+                <!-- <h6>10 Barrel Brewing Co.</h6> -->
+              </q-btn>
+            </div>
+            <hr class="hr">
+          </div>
         </div>
-        <div class="col-xs-12 col-md-3">
-          <hr class="hr">
+        <div class="col-xs-12 col-md-5">
+          <!-- <hr class="hr"> -->
           <h5 class="text-bold text-italic">Carpe Diem Sponsors</h5>
           <!-- <hr class="hr"> -->
           <q-btn @click="launch('http://www.raymondjames.com/boiseid/')">
@@ -280,8 +291,8 @@
           </q-btn>
           <hr class="hr">
         </div>
-        <div class="col-xs-12 col-md-3">
-          <hr class="hr">
+        <div class="col-xs-12 col-md-5">
+          <!-- <hr class="hr"> -->
           <h5 class="text-bold text-italic">Virtitem Spei Sponsors</h5>
           <!-- <hr class="hr"> -->
           <q-btn @click="launch('http://www.lylepearson.com/')">
@@ -399,6 +410,11 @@
 </script>
 
 <style scoped>
+  .silver {
+    /* max-width: 20vw; */
+    padding: 1rem;
+  }
+
   .back {
     background-color: rgba(0, 0, 0, 0.589);
     color: white;

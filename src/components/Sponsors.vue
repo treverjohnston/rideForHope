@@ -33,7 +33,7 @@
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-4">
-                        <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="statics/meats.jpg"
+                        <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="~statics/meats.jpg" 
                             alt="Meats Royale">
                     </div>
                     <div class="col-xs-12 col-md-4">
