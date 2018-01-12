@@ -44,7 +44,7 @@
                 <hr color="red" class="hr">
             </div>
         </div>
-        <!-- <div class="row wrap justify-center text-center">
+        <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
                     <h2 class="text-bold shadow desktop-only">Carpe Diem Level Sponsors</h2>
                     <h3 class="text-bold shadow mobile-only">Carpe Diem Level Sponsors</h3>
@@ -77,7 +77,7 @@
                 </div>
                 <hr color="red" class="hr">
             </div>
-        </div> -->
+        </div>
 
     </q-layout>
 </template>

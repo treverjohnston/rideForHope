@@ -6,7 +6,7 @@
                     <hr color="red" class="hr">
                     <h2 class="headline text-bold">RAFFLE ITEMS</h2>
                     <h4 class="fancy">2018 raffle items coming soon</h4>
-                    <q-btn @click="launch('https://www.bikereg.com/ride-for-hope0')" class="btn" no-caps>Purchase Raffle Tickets</q-btn>
+                    <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="btn" no-caps>Purchase Raffle Tickets</q-btn>
                     <hr color="red" class="hr">
                     <h4 class="text-italic">
                         Congratulations to 2017 Raffle item winners!!!

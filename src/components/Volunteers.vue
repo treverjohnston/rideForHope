@@ -14,7 +14,7 @@
                 <q-input v-model="subject" float-label="Subject" name="subject" />
                 <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
                 <q-btn @click="send">Send</q-btn>
-            </div>
+            </div> 
             <div class="offset-xs-1 col-xs-5">
                 <h6 class="light-paragraph text-center red">Thanks to all of you who are volunteering ---- we couldn't do this without you!</h6>
                 <div id="bar" class="row wrap justify center">
@@ -23,7 +23,7 @@
                     </div>
                     <!-- <q-gallery data-x="80" class="el test" :src="pictures"></q-gallery> -->
                 </div>
-                <h6>**Or contact Margo, (208) 608-2527 and she will help coordinate which areas we need you most to help in.</h6>
+                <!-- <h6>**Or contact Margo, (208) 608-2527 and she will help coordinate which areas we need you most to help in.</h6> -->
             </div>
         </div>
         <div class="row wrap justify-center mobile-only">
@@ -36,7 +36,7 @@
                 <q-btn @click="send" class="full-width">Send</q-btn>
             </div>
             <div class="col-xs-11 bot">
-                <h6 class="text-center">**Or contact Margo, (208) 608-2527 and she will help coordinate which areas we need you most to help in.</h6>
+                <!-- <h6 class="text-center">**Or contact Margo, (208) 608-2527 and she will help coordinate which areas we need you most to help in.</h6> -->
                 <q-gallery :src="pictures" class="el"></q-gallery>
             </div>
         </div>
@@ -138,6 +138,9 @@
 </script>
 
 <style scoped>
+    .bot{
+        padding-top: 1rem;
+    }
     .test {
         width: 15vw;
     }

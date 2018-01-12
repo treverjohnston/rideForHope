@@ -3,7 +3,6 @@
         <div class="row wrap" id="app">
             <h2 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">Our Mission</h2>
             <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10 ">
-            <!-- <h5 class="text-italic text-bold offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">Ride For Hope Mission Statement</h5> -->
             <h6 class="top text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
                 <b>Ride For Hope</b> is a charity bicycle event with the firm belief that quality healthcare should be accessible
                 to everyone. We support the holistic approach to healthcare where true healing focuses not only on symptoms,

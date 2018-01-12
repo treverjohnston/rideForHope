@@ -24,7 +24,7 @@
                 </div>
                 <div class="row wrap">
                     <div class="col-xs-12 text-center">
-                        <q-btn @click="launch('https://www.bikereg.com/ride-for-hope0')" class="cbtn shadow-24">Donate Here</q-btn>
+                        <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Donate Here</q-btn>
                     </div>
                 </div>
                 <div class="row wrap justify-center desktop-only">

@@ -73,6 +73,10 @@ export default new VueRouter({
           component: load('Gallery')
         },
         {
+          path: 'merchandise',
+          component: load('Merch')
+        },
+        {
           path: 'volunteers',
           component: load('Volunteers')
         },
@@ -83,6 +87,10 @@ export default new VueRouter({
         {
           path: 'contact',
           component: load('Contact')
+        },
+        {
+          path: 'ride',
+          component: load('Ride')
         }
       ]
     },
