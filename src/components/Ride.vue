@@ -55,8 +55,8 @@
                     ducimus enim ad cupiditate temporibus recusandae! Rem quia qui dignissimos obcaecati facere. </p>
             </div>
             <div class="col-xs-10">
-                    <h3 class="desktop-only">Directions to Race Start (Kuna City Hall)</h3>
-                    <h4 class="mobile-only">Directions to Race Start (Kuna City Hall)</h4>
+                    <h3 class="desktop-only text-center">Directions to Race Start (Kuna City Hall)</h3>
+                    <h4 class="mobile-only text-center">Directions to Race Start (Kuna City Hall)</h4>
 
                     <iframe class="frame" src="//www.google.com/maps/embed/v1/place?q=Kuna%20City%20Hall
                     &zoom=13
@@ -74,7 +74,6 @@
 </template>
 
 <script>
-    import { required, email, alpha, alphaNum } from 'vuelidate/lib/validators'
     import {
         QLayout,
         QInput,
@@ -94,12 +93,7 @@
                 message: ''
             }
         },
-        validations: {
-            name: { required, alpha },
-            email: { required, email },
-            subject: { required },
-            message: { required }
-        },
+        
         components: {
             QLayout,
             QInput,
@@ -118,7 +112,7 @@
 
 <style scoped>
     .frame{
-        width: 80vw;
+        width: 100%;
         height: 80vh;
     }
     .img {

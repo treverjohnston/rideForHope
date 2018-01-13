@@ -52,16 +52,16 @@
             <q-route-tab class="tab" @click="collapse" slot="title" label="All Routes" name="routes" to="routes" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="18" to="18-mile" />
+            <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="routes" to="18-mile" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="31" to="31-mile" />
+            <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="routes" to="31-mile" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="Metric Century" name="62.8" to="metric" />
+            <q-route-tab class="tab" @click="collapse" slot="title" label="Metric Century" name="routes" to="metric" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="Century" name="100" to="Century" />
+            <q-route-tab class="tab" @click="collapse" slot="title" label="Century" name="routes" to="Century" />
           </q-item-main>
         </q-popover>
       </q-tab>
@@ -215,10 +215,10 @@
       <div class="row wrap">
         <div class="col-xs-12">
           <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="500" src="./statics/gray.png">
+            <q-parallax :speed="1" :height="500" src="./statics/cardboard.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
-                <div class="black-back">
+                <div class="black">
                 </div>
               </q-transition>
             </q-parallax>
@@ -257,7 +257,7 @@
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
             <!-- <img src="~statics/cover2.jpg"> -->
-            <q-parallax :speed="1" :height="460" src="./statics/gray.png">
+            <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
@@ -266,7 +266,9 @@
             </q-parallax>
             <div slot="overlay">
               <q-card-title class="text-center">
-                <h2>18 Mile</h2>
+                <q-btn class="route-btn" @click="$router.push('18-mile')" outline color="red">
+                  <h4>18 Mile</h4>
+                </q-btn>
                 <span slot="subtitle">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quis labore illo. Amet et, iure veniam ab molestias
                   repellendus non optio! Velit ducimus cumque dolorum perferendis, in nobis non adipisci quia placeat perspiciatis
@@ -274,16 +276,16 @@
                   porro ex quibusdam eius possimus.
                 </span>
               </q-card-title>
-              <q-card-actions align="center">
+              <!-- <q-card-actions align="center">
                 <q-btn @click="$router.push('18-mile')" class="cbtnm shadow-24 text-center align-center">View Route</q-btn>
-              </q-card-actions>
+              </q-card-actions> -->
             </div>
           </q-card-media>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
             <!-- <img src="~statics/cover2.jpg"> -->
-            <q-parallax :speed="1" :height="460" src="./statics/gray.png">
+            <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
@@ -292,7 +294,9 @@
             </q-parallax>
             <div slot="overlay">
               <q-card-title class="text-center">
-                <h2>30 Mile</h2>
+                <q-btn class="route-btn" @click="$router.push('31-mile')" outline color="red">
+                  <h4>31 Mile</h4>
+                </q-btn>
                 <span slot="subtitle">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quis labore illo. Amet et, iure veniam ab molestias
                   repellendus non optio! Velit ducimus cumque dolorum perferendis, in nobis non adipisci quia placeat perspiciatis
@@ -300,16 +304,16 @@
                   porro ex quibusdam eius possimus.
                 </span>
               </q-card-title>
-              <q-card-actions align="center">
-                <q-btn @click="$router.push('31-mile')" class="cbtnm shadow-24 text-center align-center">View Route</q-btn>
-              </q-card-actions>
+              <!-- <q-card-actions align="center">
+                <q-btn @click="$router.push('18-mile')" class="cbtnm shadow-24 text-center align-center">View Route</q-btn>
+              </q-card-actions> -->
             </div>
           </q-card-media>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
             <!-- <img src="~statics/cover2.jpg"> -->
-            <q-parallax :speed="1" :height="460" src="./statics/gray.png">
+            <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
@@ -318,7 +322,9 @@
             </q-parallax>
             <div slot="overlay">
               <q-card-title class="text-center">
-                <h2 class="ellipsis-2-lines">Metric Century</h2>
+                <q-btn class="route-btn" @click="$router.push('metric')" outline color="red">
+                  <h4>Metric Century</h4>
+                </q-btn>
                 <span slot="subtitle">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quis labore illo. Amet et, iure veniam ab molestias
                   repellendus non optio! Velit ducimus cumque dolorum perferendis, in nobis non adipisci quia placeat perspiciatis
@@ -326,16 +332,16 @@
                   porro ex quibusdam eius possimus.
                 </span>
               </q-card-title>
-              <q-card-actions align="center">
-                <q-btn @click="$router.push('metric')" class="cbtnm shadow-24 text-center align-center">View Route</q-btn>
-              </q-card-actions>
+              <!-- <q-card-actions align="center">
+                <q-btn @click="$router.push('18-mile')" class="cbtnm shadow-24 text-center align-center">View Route</q-btn>
+              </q-card-actions> -->
             </div>
           </q-card-media>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
             <!-- <img src="~statics/cover2.jpg"> -->
-            <q-parallax :speed="1" :height="460" src="./statics/gray.png">
+            <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
@@ -344,7 +350,9 @@
             </q-parallax>
             <div slot="overlay">
               <q-card-title class="text-center">
-                <h2>Century</h2>
+                <q-btn class="route-btn" @click="$router.push('1Century')" outline color="red">
+                  <h4>Century</h4>
+                </q-btn>
                 <span slot="subtitle">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quis labore illo. Amet et, iure veniam ab molestias
                   repellendus non optio! Velit ducimus cumque dolorum perferendis, in nobis non adipisci quia placeat perspiciatis
@@ -352,9 +360,9 @@
                   porro ex quibusdam eius possimus.
                 </span>
               </q-card-title>
-              <q-card-actions align="center">
-                <q-btn @click="$router.push('Century')" class="cbtnm shadow-24 text-center align-center">View Route</q-btn>
-              </q-card-actions>
+              <!-- <q-card-actions align="center">
+                <q-btn @click="$router.push('18-mile')" class="cbtnm shadow-24 text-center align-center">View Route</q-btn>
+              </q-card-actions> -->
             </div>
           </q-card-media>
         </div>
@@ -633,13 +641,22 @@
 </script>
 
 <style scoped>
+  .route-btn{
+    margin-bottom: 1rem;
+  }
   .routeshr {
     width: 90%;
     margin-bottom: 3rem;
   }
+.black{
+  height: 100%;
+    width: 100%;
+        background: rgba(0, 0, 0, 0.479);
 
+}
   .black-back {
-    background: rgba(29, 29, 29, 0.329);
+    /* background: rgba(29, 29, 29, 0.171); */
+    background: rgba(0, 0, 0, 0.808);
     height: 100%;
     width: 100%;
   }
@@ -748,9 +765,6 @@
     height: 4rem;
   }
 
-  .top-promo {
-    color: rgb(255, 255, 0);
-  }
 
   .q-btn {
     text-transform: none;
@@ -763,10 +777,8 @@
 
   .footer {
     background-color: rgb(17, 17, 17);
-    /* background-image: url("~statics/dark-triangles.png"); */
     color: rgb(180, 0, 0);
     padding-bottom: 3rem;
-    /* margin-top: 15rem; */
   }
 
   .spacer {
@@ -809,11 +821,6 @@
     justify-content: space-around;
     background-color: rgba(17, 17, 17, 0.88);
     padding: 3rem 5rem 3rem 5rem;
-    /* background-image: url("~statics/cover2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* justify-content: center; */
   }
 
   .ride {
@@ -821,25 +828,15 @@
     max-height: 13rem;
   }
 
-  .top-logo {
-    background-color: rgba(17, 17, 17, 0.88);
-    display: flex;
-    justify-content: center;
-  }
+ 
 
   .promo {
     /* margin-top: -6rem; */
-    padding: 0 2rem 0 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     background-color: rgba(0, 128, 128, 0.6);
     color: black;
   }
 
-  .bot-promo {
-    /* margin-top: -6rem; */
-    padding: 0 2rem 0 2rem;
-    background-color: rgba(0, 0, 0, 0.829);
-    color: rgb(134, 2, 2);
-  }
 
   .head {
     background-color: rgba(17, 17, 17, 0.88);

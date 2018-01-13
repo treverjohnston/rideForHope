@@ -13,6 +13,14 @@
 </script>
 
 <style>
+body{
+      font-family: 'Bellefair', serif;
+}
+.red-back{
+    background-color: rgba(218, 0, 0, 0.699);
+    padding: 1rem;
+    border-radius: 15px;
+}
   .r-btn{
         background-color: rgba(197, 7, 7, 0.8);
         color: white;
