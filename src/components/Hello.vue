@@ -85,7 +85,6 @@
       </q-tab> -->
       <q-route-tab class="tab" slot="title" label="Photo Gallery" name="gallery" to="gallery" />
       <q-route-tab class="tab" slot="title" label="Contact" name="contact" to="contact" />
-      <q-route-tab class="tab" slot="title" label="Ride!" name="ride" to="ride" />
     </q-tabs>
 
     <div class="mobile-only left-tab" slot="left">
@@ -171,10 +170,6 @@
         </q-side-link>
         <q-side-link to="contact">
           <q-item-main class="side" label="Contact" />
-          <hr class="tabhr">
-        </q-side-link>
-        <q-side-link to="ride">
-          <q-item-main class="side" label="Ride!" />
           <hr class="tabhr">
         </q-side-link>
       </q-list>
