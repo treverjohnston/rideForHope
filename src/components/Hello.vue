@@ -35,7 +35,17 @@
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-route-tab class="tab" slot="title" label="About" name="about" to="about" />
-      <q-route-tab class="tab" slot="title" label="Register" name="register" to="register" />
+      <!-- <q-route-tab class="tab" slot="title" label="Register" name="register" to="register" /> -->
+      <q-tab class="tab involved" slot="title" label="Register" name="register">
+        <q-popover fit ref="popover" class="involved">
+          <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Register" name="register" to="register" />
+          </q-item-main>
+          <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Ride Day Info" name="register" to="ride" />
+          </q-item-main>
+        </q-popover>
+      </q-tab>
       <q-tab class="tab involved" slot="title" label="Routes" name="routes">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
@@ -70,21 +80,9 @@
       </q-tab>
       <q-route-tab class="tab" slot="title" label="Volunteer" name="volunteers" to="volunteers" />
       <q-route-tab class="tab" slot="title" label="Sponsors" name="sponsors" to="sponsors" />
-      <!-- <q-tab class="tab involved" slot="title" label="Get Involved" name="involved">
-        <q-popover fit ref="popover" class="involved">
-          <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Get Involved" name="involved" to="involved" />
-          </q-item-main>
-          <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Volunteers" name="volunteers" to="volunteers" />
-          </q-item-main>
-          <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Sponsors" name="sponsors" to="sponsors" />
-          </q-item-main>
-        </q-popover>
-      </q-tab> -->
       <q-route-tab class="tab" slot="title" label="Photo Gallery" name="gallery" to="gallery" />
       <q-route-tab class="tab" slot="title" label="Contact" name="contact" to="contact" />
+      <!-- <q-route-tab class="tab" slot="title" label="Ride Day" name="ride" to="ride" /> -->
     </q-tabs>
 
     <div class="mobile-only left-tab" slot="left">
@@ -97,10 +95,20 @@
           <q-item-main class="side" label="About" />
           <hr class="tabhr">
         </q-side-link>
-        <q-side-link to="register">
+        <!-- <q-side-link to="register">
           <q-item-main class="side" label="Register" />
           <hr class="tabhr">
-        </q-side-link>
+        </q-side-link> -->
+        <q-collapsible class="side-collapse" label="Register">
+          <q-side-link to="register" class="left">
+            <q-item-main class="small-side" label="Register" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="ride">
+            <q-item-main class="small-side" label="Ride Day Info" />
+          </q-side-link>
+        </q-collapsible>
+        <hr class="tabhr">
         <q-collapsible class="side-collapse" label="Routes">
           <q-side-link to="routes">
             <q-item-main class="small-side" label="All Routes" />
@@ -137,7 +145,7 @@
             <q-item-main class="small-side" label="Merchandise" />
           </q-side-link>
         </q-collapsible>
-                <hr class="tabhr">
+        <hr class="tabhr">
         <!-- <q-side-link to="raffle">
           <q-item-main class="side" label="Raffle Items" />
           <hr class="tabhr">
@@ -150,20 +158,7 @@
           <q-item-main class="side" label="Sponsors" />
           <hr class="tabhr">
         </q-side-link>
-        <!-- <q-collapsible class="side-collapse" label="Get Involved">
-          <q-side-link to="involved" class="left">
-            <q-item-main class="small-side" label="General Information" />
-          </q-side-link>
-          <hr class="tabhrs">
-          <q-side-link to="volunteers">
-            <q-item-main class="small-side" label="Volunteers" />
-          </q-side-link>
-          <hr class="tabhrs">
-          <q-side-link to="sponsors">
-            <q-item-main class="small-side" label="Sponsors" />
-          </q-side-link>
-        </q-collapsible> -->
-        <!-- <hr class="tabhr"> -->
+
         <q-side-link to="gallery">
           <q-item-main class="side" label="Photo Gallery" />
           <hr class="tabhr">
@@ -172,6 +167,10 @@
           <q-item-main class="side" label="Contact" />
           <hr class="tabhr">
         </q-side-link>
+        <!-- <q-side-link to="ride">
+          <q-item-main class="side" label="Ride Day Info" />
+          <hr class="tabhr">
+        </q-side-link> -->
       </q-list>
     </div>
     <router-view />
@@ -179,17 +178,21 @@
       <q-parallax :speed="1" :height="500" src="./statics/cover.jpg">
         <div slot="loading">Loading...</div>
         <q-transition appear enter="slideInUp" leave="fadeOut">
-          <div class="promo text-center desktop-only">
-            <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
-            <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
-            <h2 class="text-bold">Kuna, ID</h2>
+          <div class="text-center">
+            <div class="promo text-center desktop-only">
+              <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
+              <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
+              <h2 class="text-bold">Kuna, ID</h2>
+            </div>
+            <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn>
           </div>
-        </q-transition>
+          </q-transition>
         <div class="promo text-center mobile-only">
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
           <h3 class="text-bold">2018 Event Date: Saturday, June 23</h3>
           <h3 class="text-bold">Kuna, ID</h3>
         </div>
+        <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center mobile-only">Ride Day Information</q-btn>
       </q-parallax>
       <div class="spacer row wrap">
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
@@ -504,7 +507,7 @@
 </template>
 
 <script>
-  import anime from "animejs"
+  import anime from "animejs";
   import {
     dom,
     event,
@@ -537,12 +540,10 @@
     ScrollFire,
     QCardMedia,
     QCardActions
-  } from 'quasar'
-
-
+  } from "quasar";
 
   export default {
-    name: 'index',
+    name: "index",
     components: {
       QLayout,
       QToolbar,
@@ -571,26 +572,24 @@
       QCardActions
     },
     data() {
-      return {
-      }
+      return {};
     },
     computed: {
       home() {
-        if (this.$route.path == '/') {
+        if (this.$route.path == "/") {
           return true;
-        }
-        else {
+        } else {
           return false;
         }
       }
     },
     methods: {
       launch(url) {
-        openURL(url)
+        openURL(url);
       },
       collapse() {
-        this.$refs.popover.close()
-        this.$refs.popoverRoutes.close()
+        this.$refs.popover.close();
+        this.$refs.popoverRoutes.close();
       },
       animate() {
         // console.log('running')
@@ -598,20 +597,26 @@
           targets: "#bar .el",
           translateX: function (el) {
             // return el.getAttribute('data-x');
-            return 0
+            return 0;
           },
           translateY: function (el, i) {
             // return 50 + (-50 * i);
-            return 0
+            return 0;
           },
           scale: function (el, i, l) {
             return 1.25;
           },
           // rotate: function () { return anime.random(-360, 360); },
-          duration: function () { return anime.random(500, 800); },
-          duration: function () { return anime.random(800, 1100); },
-          delay: function () { return anime.random(0, 500); },
-          direction: 'reverse'
+          duration: function () {
+            return anime.random(500, 800);
+          },
+          duration: function () {
+            return anime.random(800, 1100);
+          },
+          delay: function () {
+            return anime.random(0, 500);
+          },
+          direction: "reverse"
         });
       }
     },
@@ -621,12 +626,10 @@
       ScrollFire
     },
     mounted() {
-      this.$refs.layout.toggleLeft()
-
+      this.$refs.layout.toggleLeft();
     },
-    beforeDestroy() {
-    }
-  }
+    beforeDestroy() { }
+  };
 </script>
 
 <style scoped>
@@ -664,7 +667,7 @@
   }
 
   .route-tab-cont {
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
   }
 
   .route-tab {
@@ -672,7 +675,7 @@
   }
 
   .top-title {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
 
   .strava-top {
@@ -688,7 +691,7 @@
   .meridian-mobile {
     height: 4rem;
     /* max-width: 7.5rem; */
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
 
   .strava {
@@ -696,11 +699,11 @@
   }
 
   .q-item-link:hover {
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, 0.7);
   }
 
   .q-list-highlight {
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, 0.7);
     color: black;
     font-weight: 400;
   }
@@ -738,7 +741,7 @@
   }
 
   .small {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .mini {
@@ -767,11 +770,10 @@
   }
 
   .spacer {
-    padding: .5rem 0 .5rem 0;
+    padding: 0.5rem 0 0.5rem 0;
     background-color: black;
     display: flex;
     justify-content: center;
-
   }
 
   .cbtnm {
@@ -844,15 +846,12 @@
     /* color: rgba(17, 17, 17, 0.705); */
   }
 
-
-
   .tab {
     text-transform: none;
     /* background: rgba(8, 8, 8, 0.705); */
   }
 
   .logo-container {
-
     width: 255px;
     height: 242px;
     perspective: 800px;
