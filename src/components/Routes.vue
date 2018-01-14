@@ -30,18 +30,14 @@
         </div>
         <div class="row wrap justify-center">
             <q-card v-for="card in routes" class="route col-xs-11 col-sm-5 shadow-24">
-                <!-- <q-transition appear enter="zoomIn" leave="fadeOut"> -->
                 <div>
                     <q-card-media>
                         <img :src="card.pic">
                     </q-card-media>
                     <q-card-actions align="center">
-                        <!-- <a :href="card.url"> -->
                             <q-btn @click="$router.push(`${card.url}`)" class="r-btn" no-caps>{{card.length}} Mile Route Map</q-btn>
-                        <!-- </a> -->
                     </q-card-actions>
                 </div>
-                <!-- </q-transition> -->
             </q-card>
         </div>
     </q-layout>
@@ -99,7 +95,6 @@
     }
 
     .maps {
-        /* color: rgb(194, 0, 0); */
         color: white;
         margin-bottom: 1rem;
         background-color: rgba(197, 7, 7, 0.8);
@@ -114,9 +109,6 @@
     }
 
     .promo {
-        /* padding: 0 2rem 0 2rem; */
-        /* background-color: rgba(2, 182, 182, 0.6); */
-        /* color: white; */
         text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
     }
 </style>

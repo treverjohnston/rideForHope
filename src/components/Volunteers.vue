@@ -21,9 +21,7 @@
                     <div v-for="pic in pictures" class="col-xs-6">
                         <img data-x="80" class="el test" :src="pic" alt="ride picture">
                     </div>
-                    <!-- <q-gallery data-x="80" class="el test" :src="pictures"></q-gallery> -->
                 </div>
-                <!-- <h6>**Or contact Margo, (208) 608-2527 and she will help coordinate which areas we need you most to help in.</h6> -->
             </div>
         </div>
         <div class="row wrap justify-center mobile-only">
@@ -36,7 +34,6 @@
                 <q-btn @click="send" class="full-width">Send</q-btn>
             </div>
             <div class="col-xs-11 bot">
-                <!-- <h6 class="text-center">**Or contact Margo, (208) 608-2527 and she will help coordinate which areas we need you most to help in.</h6> -->
                 <q-gallery :src="pictures" class="el"></q-gallery>
             </div>
         </div>
@@ -105,7 +102,6 @@
                 this.$store.dispatch("sendEmail", obj);
             },
             animate() {
-                console.log('running')
                 anime({
                     targets: "#bar .el",
                     translateX: function (el) {
@@ -121,13 +117,7 @@
                     duration: function () { return anime.random(500, 800); },
                     duration: function () { return anime.random(800, 1100); },
                     delay: function () { return anime.random(0, 500); },
-                    direction: 'reverse',
-                    // loop: true
-
-                    // targets: ".bar",
-                    // duration: 2500,
-                    // color: "rgb(0,0,0)",
-                    // easing: "easeInSine"
+                    direction: 'reverse'
                 });
             }
         },

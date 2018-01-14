@@ -42,15 +42,9 @@
                     </div>
                 </div>
                 <div class="row wrap justify-center mobile-only">
-                    <!-- <div class="col-xs-11 img">
-                        <img class="responsive" src="statics/riders4.jpg">
-                    </div> -->
                     <div class="col-xs-11 img">
                         <img class="responsive" src="statics/riders5.jpg">
                     </div>
-                    <!-- <div class="col-xs-11">
-                        <img class="responsive" src="statics/riders3.jpg">
-                    </div> -->
                     <div class="col-xs-11">
                         <img class="responsive" src="statics/riders2.jpg">
                     </div>
@@ -121,11 +115,9 @@
     .fancy {
         background-color: rgba(202, 202, 202, 0.808);
         margin-top: 2rem;
-        /* margin: 2rem 0rem 0 0rem; */
     }
 
     .mid {
         background-color: white;
-        /* height: 100vh; */
     }
 </style>

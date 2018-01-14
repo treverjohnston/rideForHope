@@ -9,16 +9,10 @@
                     </div>
                     <h3>Ride Day Information</h3>
                     <hr color="red" class="hr">
-                    <!-- <h5 class="desktop-only">Please contact us anytime with any questions, or other inquiries.</h5>
-                    <h6 class="mobile-only">Please contact us anytime with any questions, or other inquiries.</h6> -->
                 </q-parallax>
             </div>
         </div>
         <div class="row wrap justify-center xs-gutter">
-            <!-- <div class="col-xs-11 col-md-9 text-center">
-                <h4>Join the Ride For Hope Idaho club on Strava to ride with us throughout the year!</h4>
-            </div> -->
-            <!-- <q-btn flat @click="launch('https://www.strava.com/clubs/302822')"> -->
             <div class="col-xs-6 desktop-only">
                 <img src="~/statics/RFHIdahoLogo.png" class="responsive img" alt="RFH Logo">
             </div>
@@ -27,7 +21,6 @@
                 <h4 class="mobile-only">Ride Day Information</h4>
                 <p>Registration opens at ----</p>
                 <hr class="ihr">
-                <!-- <p>Start Times</p> -->
                 <h5>Century/Metric Century Start Time</h5>
                 <p>7:00 AM</p>
                 <h5>18/31 Mile Start Time</h5>
@@ -47,7 +40,6 @@
             <div class="col-xs-10 text-center">
                 <h3 class="desktop-only">Rules of the Road</h3>
                 <h4 class="mobile-only">Rules of the Road</h4>
-                <!-- <p>Please Read Before Race Day</p> -->
                 <hr class="ihr">
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel eaque quibusdam aliquid, blanditiis, dolorem vitae minus neque,
@@ -65,10 +57,6 @@
                     &key=AIzaSyBLaoSdXeLvOkN5Tp5YkPZ35gXfi5-LhsI" allowfullscreen>
                 </iframe>
             </div>
-            <!-- <div class="col-xs-12 col-sm-6">
-                    <img src="~/statics/strava2.png" class="responsive img" alt="Strava Logo">
-                </div> -->
-            <!-- </q-btn> -->
         </div>
     </q-layout>
 </template>
@@ -116,8 +104,6 @@
         height: 80vh;
     }
     .img {
-        /* border: 5px solid black; */
-        /* width: 40vw; */
         height: 60vh;
     }
 
@@ -126,7 +112,6 @@
     }
 
     .promo {
-        /* padding: 0 2rem 0 2rem; */
         background-color: rgba(0, 128, 128, 0.6);
     }
 

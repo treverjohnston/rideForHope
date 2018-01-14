@@ -35,9 +35,8 @@
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-route-tab class="tab" slot="title" label="About" name="about" to="about" />
-      <!-- <q-route-tab class="tab" slot="title" label="Register" name="register" to="register" /> -->
       <q-tab class="tab involved" slot="title" label="Register" name="register">
-        <q-popover fit ref="popover" class="involved">
+        <q-popover fit ref="popoverReg" class="involved">
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Register" name="register" to="register" />
           </q-item-main>
@@ -65,8 +64,6 @@
           </q-item-main>
         </q-popover>
       </q-tab>
-      <!-- <q-route-tab class="tab" slot="title" label="Donate" name="donate" to="donate" /> -->
-      <!-- <q-route-tab class="tab" slot="title" label="Raffle Items" name="raffle" to="raffle" /> -->
       <q-tab class="tab involved" slot="title" label="Merchandise" name="marchandise">
         <q-popover fit ref="popover" class="involved">
           <q-item-main>
@@ -82,7 +79,6 @@
       <q-route-tab class="tab" slot="title" label="Sponsors" name="sponsors" to="sponsors" />
       <q-route-tab class="tab" slot="title" label="Photo Gallery" name="gallery" to="gallery" />
       <q-route-tab class="tab" slot="title" label="Contact" name="contact" to="contact" />
-      <!-- <q-route-tab class="tab" slot="title" label="Ride Day" name="ride" to="ride" /> -->
     </q-tabs>
 
     <div class="mobile-only left-tab" slot="left">
@@ -95,10 +91,6 @@
           <q-item-main class="side" label="About" />
           <hr class="tabhr">
         </q-side-link>
-        <!-- <q-side-link to="register">
-          <q-item-main class="side" label="Register" />
-          <hr class="tabhr">
-        </q-side-link> -->
         <q-collapsible class="side-collapse" label="Register">
           <q-side-link to="register" class="left">
             <q-item-main class="small-side" label="Register" />
@@ -131,10 +123,6 @@
           </q-side-link>
         </q-collapsible>
         <hr class="tabhr">
-        <!-- <q-side-link to="donate">
-          <q-item-main class="side" label="Donate" />
-          <hr class="tabhr">
-        </q-side-link> -->
         <q-collapsible class="side-collapse" label="Merchandise">
           <q-side-link to="raffle" class="left">
             <q-item-main class="small-side" label="Raffle Items" />
@@ -146,10 +134,6 @@
           </q-side-link>
         </q-collapsible>
         <hr class="tabhr">
-        <!-- <q-side-link to="raffle">
-          <q-item-main class="side" label="Raffle Items" />
-          <hr class="tabhr">
-        </q-side-link> -->
         <q-side-link to="volunteers">
           <q-item-main class="side" label="Volunteer" />
           <hr class="tabhr">
@@ -167,10 +151,6 @@
           <q-item-main class="side" label="Contact" />
           <hr class="tabhr">
         </q-side-link>
-        <!-- <q-side-link to="ride">
-          <q-item-main class="side" label="Ride Day Info" />
-          <hr class="tabhr">
-        </q-side-link> -->
       </q-list>
     </div>
     <router-view />
@@ -209,9 +189,6 @@
           cost of the event.
         </h6>
       </div>
-      <!--  -->
-      <!--  -->
-      <!--  -->
       <div class="row wrap">
         <div class="col-xs-12">
           <q-card-media overlay-position="full">
@@ -256,7 +233,6 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
-            <!-- <img src="~statics/cover2.jpg"> -->
             <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
@@ -276,15 +252,11 @@
                   porro ex quibusdam eius possimus.
                 </span>
               </q-card-title>
-              <!-- <q-card-actions align="center">
-                <q-btn @click="$router.push('18-mile')" class="cbtnm shadow-24 text-center align-center">View Route</q-btn>
-              </q-card-actions> -->
             </div>
           </q-card-media>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
-            <!-- <img src="~statics/cover2.jpg"> -->
             <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
@@ -304,15 +276,11 @@
                   porro ex quibusdam eius possimus.
                 </span>
               </q-card-title>
-              <!-- <q-card-actions align="center">
-                <q-btn @click="$router.push('18-mile')" class="cbtnm shadow-24 text-center align-center">View Route</q-btn>
-              </q-card-actions> -->
             </div>
           </q-card-media>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
-            <!-- <img src="~statics/cover2.jpg"> -->
             <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
@@ -332,15 +300,11 @@
                   porro ex quibusdam eius possimus.
                 </span>
               </q-card-title>
-              <!-- <q-card-actions align="center">
-                <q-btn @click="$router.push('18-mile')" class="cbtnm shadow-24 text-center align-center">View Route</q-btn>
-              </q-card-actions> -->
             </div>
           </q-card-media>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
-            <!-- <img src="~statics/cover2.jpg"> -->
             <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
@@ -360,15 +324,9 @@
                   porro ex quibusdam eius possimus.
                 </span>
               </q-card-title>
-              <!-- <q-card-actions align="center">
-                <q-btn @click="$router.push('18-mile')" class="cbtnm shadow-24 text-center align-center">View Route</q-btn>
-              </q-card-actions> -->
             </div>
           </q-card-media>
         </div>
-        <!--  -->
-        <!--  -->
-        <!--  -->
         <q-parallax class="desktop-only" :speed="1" :height="500" src="./statics/cover2.jpg">
           <div slot="loading">Loading...</div>
 
@@ -425,7 +383,7 @@
         </q-parallax>
       </div>
     </div>
-    <!--  -->
+<!-- Footer -->
     <div class="footer text-center text-bold" slot="footer">
       <div class="row justify-center">
         <div class="col-xs-12">
@@ -489,20 +447,6 @@
             <hr class="hr">
           </div>
         </div>
-        <!-- <div class="col-xs-12 col-md-5">
-          <h5 class="text-bold text-italic">Carpe Diem Sponsors</h5>
-          <q-btn @click="launch('http://www.raymondjames.com/boiseid/')">
-            <h6>Riverside Associates</h6>
-          </q-btn>
-          <hr class="hr">
-        </div>
-        <div class="col-xs-12 col-md-5">
-          <h5 class="text-bold text-italic">Virtitem Spei Sponsors</h5>
-          <q-btn @click="launch('http://www.lylepearson.com/')">
-            <h6>Lyle Pearson</h6>
-          </q-btn>
-          <hr class="hr">
-        </div> -->
       </div>
     </div>
     </div>
@@ -598,23 +542,20 @@
       collapse() {
         this.$refs.popover.close();
         this.$refs.popoverRoutes.close();
+        this.$refs.popoverReg.close();
       },
       animate() {
-        // console.log('running')
         anime({
           targets: "#bar .el",
           translateX: function (el) {
-            // return el.getAttribute('data-x');
             return 0;
           },
           translateY: function (el, i) {
-            // return 50 + (-50 * i);
             return 0;
           },
           scale: function (el, i, l) {
             return 1.25;
           },
-          // rotate: function () { return anime.random(-360, 360); },
           duration: function () {
             return anime.random(500, 800);
           },
@@ -655,7 +596,6 @@
 
 }
   .black-back {
-    /* background: rgba(29, 29, 29, 0.171); */
     background: rgba(0, 0, 0, 0.808);
     height: 100%;
     width: 100%;
@@ -670,7 +610,6 @@
   }
 
   .silver {
-    /* max-width: 20vw; */
     padding: 1rem;
   }
 
@@ -697,17 +636,14 @@
 
   .strava-top {
     max-width: 4.5rem;
-    /* height: 4rem; */
   }
 
   .meridian {
     max-width: 9rem;
-    /* height: 4rem; */
   }
 
   .meridian-mobile {
     height: 4rem;
-    /* max-width: 7.5rem; */
     margin-top: 0.5rem;
   }
 

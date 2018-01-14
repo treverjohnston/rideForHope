@@ -66,18 +66,9 @@
                 openURL(url)
             },
             bounceImage(element) {
-                // in this example, when the `<div>` comes into view,
-                // we bounce it for 2 seconds
-                // we add helper `nimate-bounce` Quasar CSS class
                 element.classList.add('animate-bounce')
                 setTimeout(() => {
-                    // we make sure the node is still in DOM
-                    // (user hasn't navigated away from the Vue component
-                    // rendering our `<div>`)
-                    // so we don't generate an error
                     if (document.body.contains(element)) {
-                        // then remove the helper class to
-                        // stop bouncing
                         element.classList.remove('animate-bounce')
                     }
                 }, 2000)

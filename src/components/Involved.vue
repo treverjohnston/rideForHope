@@ -51,7 +51,6 @@
     .btn {
         background-color: rgba(197, 7, 7, 0.8);
         color: white;
-        /* padding: 1rem 1rem 1rem 1rem; */
         margin: 1rem 0 1rem 0;
     }
 

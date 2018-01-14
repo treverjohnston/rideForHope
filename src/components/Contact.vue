@@ -20,7 +20,6 @@
             <div class="offset-xs-1 col-xs-5">
                 <img src="http://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/margo.jpg"
                     class="responsive img" alt="Picture of Margo">
-                <!-- <h6>**Or contact Margo, (208) 608-2527</h6> -->
             </div>
             <div class="col-xs-5">
                 <q-input v-model="name" float-label="Name" name="name" type="text" />
@@ -41,7 +40,6 @@
                 <q-btn @click="send" class="full-width">Send</q-btn>
             </div>
             <div class="col-xs-10 bot">
-                <!-- <h6 class="text-center">**Or contact Margo, (208) 608-2527</h6> -->
                 <img src="https://static.wixstatic.com/media/a44970_3bf0ccf89baf43a18b95b6d32d4c045d~mv2_d_2448_3264_s_4_2.jpg/v1/crop/x_387,y_554,w_1933,h_2697/fill/w_334,h_468,al_c,q_80,usm_0.66_1.00_0.01/a44970_3bf0ccf89baf43a18b95b6d32d4c045d~mv2_d_2448_3264_s_4_2.webp"
                     class="responsive img" alt="Picture of Margo">
             </div>
@@ -89,19 +87,12 @@
                 this.$v.subject.$touch()
                 this.$v.message.$touch()
                 if (this.$v.name.$error || this.$v.email.$error || this.$v.subject.$error || this.$v.message.$error) {
-                    // console.log(this.$v.name.$error)
-                    // console.log(this.$v.email.$error)
-                    // console.log(this.$v.subject.$error)
-                    // console.log(this.$v.message.$error)
                     Toast.create({
                         html: 'Something went wrong, please try again. Be sure to check all fields are filled out correctly.',
                         bgColor: 'red'
                     })
                     return
                 }
-                // else {
-                //     Toast.create('Message Sending')
-                // }
                 var obj = {
                     name: this.name,
                     email: this.email,
@@ -125,7 +116,6 @@
     }
 
     .promo {
-        /* padding: 0 2rem 0 2rem; */
         background-color: rgba(0, 128, 128, 0.6);
     }
 

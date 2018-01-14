@@ -17,7 +17,6 @@
       </div>
       <div class="col-xs-12 col-sm-6">
         <q-card-media overlay-position="full">
-          <!-- <img src="~statics/cover2.jpg"> -->
           <q-parallax :speed="1" :height="350" src="./statics/gray.png">
             <div slot="loading">Loading...</div>
               <div class="black-back">
@@ -68,15 +67,6 @@
       </div>
       </div>
     </div>
-
-    <!-- <q-parallax :speed="1" :height="500" src="./statics/riders3.jpg">
-            <div slot="loading">Loading...</div>
-            <div class="text-center">
-                <h2 class="text-bold">Routes</h2>
-                <q-btn @click="$router.push('routes')" class="cbtn shadow-24">View Routes Now</q-btn>
-            </div>
-        </q-parallax> -->
-  </q-layout>
 </template>
 
 <script>
@@ -130,7 +120,6 @@
 
   .ride {
     height: 7rem;
-    /* margin: 1rem 0 1rem 0; */
   }
 
   .cbtn {
