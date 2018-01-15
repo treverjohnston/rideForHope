@@ -1,19 +1,5 @@
-# Quasar App
+# Ride For Hope Idaho
 
-> A Quasar project
+> Ride For Hope Website
 
-## Build Setup
 
-``` bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:8080
-$ quasar dev
-
-# build for production with minification
-$ quasar build
-
-# lint code
-$ quasar lint
-```
