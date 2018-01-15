@@ -7,8 +7,8 @@
                         <h3>Ride Day Information</h3>
                         <hr color="red" class="hr">
                     </div>
-                    <h3>Ride Day Information</h3>
-                    <hr color="red" class="hr">
+                    <h3 class="red-back">Ride Day Information</h3>
+                    <!-- <hr color="red" class="hr"> -->
                 </q-parallax>
             </div>
         </div>

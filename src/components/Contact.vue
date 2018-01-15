@@ -9,17 +9,19 @@
                         <h5 class="desktop-only">Please contact us anytime with any questions, or other inquiries.</h5>
                         <h6 class="mobile-only">Please contact us anytime with any questions, or other inquiries.</h6>
                     </div>
-                    <h3>Contact Us</h3>
-                    <hr color="red" class="hr">
-                    <h5 class="desktop-only">Please contact us anytime with any questions, or other inquiries.</h5>
-                    <h6 class="mobile-only">Please contact us anytime with any questions, or other inquiries.</h6>
+                    <div class="red-back">
+
+                        <h3>Contact Us</h3>
+                        <hr class="hr">
+                        <h5 class="desktop-only">Please contact us anytime with any questions, or other inquiries.</h5>
+                        <h6 class="mobile-only">Please contact us anytime with any questions, or other inquiries.</h6>
+                    </div>
                 </q-parallax>
             </div>
         </div>
         <div class="row wrap justify-center bot desktop-only xs-gutter">
             <div class="offset-xs-1 col-xs-5">
-                <img src="http://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/margo.jpg"
-                    class="responsive img" alt="Picture of Margo">
+                <img src="http://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/margo.jpg" class="responsive img" alt="Picture of Margo">
             </div>
             <div class="col-xs-5">
                 <q-input v-model="name" float-label="Name" name="name" type="text" />

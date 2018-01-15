@@ -6,7 +6,7 @@
                             <div slot="loading"><h2 class="headline text-center">Century Ride</h2>
                                 <hr color="red" class="hr"></div>
                             <h2 class="headline text-center black red-back">Century Ride</h2>
-                            <hr color="red" class="hr">
+                            <!-- <hr color="red" class="hr"> -->
                         </q-parallax>
                 </div>
             </div>

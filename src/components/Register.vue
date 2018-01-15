@@ -19,8 +19,8 @@
         <q-card-media overlay-position="full">
           <q-parallax :speed="1" :height="350" src="./statics/gray.png">
             <div slot="loading">Loading...</div>
-              <div class="black-back">
-              </div>
+            <div class="black-back">
+            </div>
           </q-parallax>
           <div slot="overlay">
             <q-card-title class="text-center">
@@ -29,7 +29,7 @@
             </q-card-title>
             <q-card-title class="text-center">
               <p slot="subtitle">
-                  Register before July 1, 2018: $55
+                Register before July 1, 2018: $55
               </p>
             </q-card-title>
             <q-card-title class="text-center">
@@ -44,8 +44,8 @@
         <q-card-media overlay-position="full">
           <q-parallax :speed="1" :height="350" src="./statics/gray.png">
             <div slot="loading">Loading...</div>
-              <div class="black-back">
-              </div>
+            <div class="black-back">
+            </div>
           </q-parallax>
           <div slot="overlay">
             <q-card-title class="text-center">
@@ -65,8 +65,8 @@
           </div>
         </q-card-media>
       </div>
-      </div>
     </div>
+  </q-layout>
 </template>
 
 <script>
