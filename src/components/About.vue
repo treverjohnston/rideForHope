@@ -71,9 +71,9 @@
                         <b>Ride For Hope</b>
                     </em> has donated $28,500 in three years:</p>
                 <ul>
-                    <li>In 2015 over $7,000 wa donated.</li>
-                    <li>In 2016 over $9,000 wa donated.</li>
-                    <li>In 2017 over $12,500 wa donated.</li>
+                    <li>In 2015 over $7,000 was donated.</li>
+                    <li>In 2016 over $9,000 was donated.</li>
+                    <li>In 2017 over $12,500 was donated.</li>
                 </ul>
             </div>
             <div class="pic col-sm-4 col-xs-12 text-center">
