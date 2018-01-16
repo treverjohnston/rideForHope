@@ -1,6 +1,16 @@
 <template>
     <q-layout class="about black">
         <div class="row wrap" id="app">
+            <div class="col-xs-12 text-center">
+                <div class="row wrap justify-center white-back" id="number">
+                    <h4 class="text-bold col-xs-1 text-center text-italic">$</h4>
+                    <input readonly class="text-output text-bold col-xs-3" value="1"> 
+
+                    <h4 class="text-bold col-xs-9 text-center text-italic">Amount Raised by Ride For Hope Idaho With YOUR Help</h4>
+
+                </div>
+            </div>
+            <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10 ">
             <h2 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">Our Mission</h2>
             <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10 ">
             <h6 class="top text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
@@ -90,89 +100,116 @@
                 </h4>
             </div>
             <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5">
-                    <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
-                        <img class="responsive check" src="statics/gch.png" alt="Genesis Community Health Logo">
-                    </q-btn>
+                <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
+                    <img class="responsive check" src="statics/gch.png" alt="Genesis Community Health Logo">
+                </q-btn>
             </div>
             <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5">
-                    <q-btn @click="launch('https://boiserm.org/')" flat>
-                        <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
-                    </q-btn>
+                <q-btn @click="launch('https://boiserm.org/')" flat>
+                    <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
+                </q-btn>
             </div>
         </div>
     </q-layout>
 </template>
 
 <script>
-import anime from "animejs";
-import {
-  QLayout,
-  QTransition,
-  QBtn,
-  BackToTop,
-  Ripple,
-  QFixedPosition,
-  QIcon,
-  openURL
-} from "quasar";
-export default {
-  name: "About",
-  data() {
-    return {
-      width: 500
+    import anime from "animejs";
+    import {
+        QLayout,
+        QTransition,
+        QBtn,
+        BackToTop,
+        Ripple,
+        QFixedPosition,
+        QIcon,
+        openURL
+    } from "quasar";
+    export default {
+        name: "About",
+        data() {
+            return {
+                width: 500
+            };
+        },
+        components: {
+            QLayout,
+            QTransition,
+            QBtn,
+            QFixedPosition,
+            QIcon,
+            openURL
+        },
+        directives: {
+            BackToTop,
+            Ripple
+        },
+        methods: {
+            launch(url) {
+                openURL(url);
+            },
+            animate() {
+                anime({
+                    targets: '#number input',
+                    value: 28500,
+                    round: 1,
+                    easing: 'easeInOutExpo',
+                    duration: 3333
+                });
+            }
+        },
+        mounted(){
+            this.animate()
+        }
     };
-  },
-  components: {
-    QLayout,
-    QTransition,
-    QBtn,
-    QFixedPosition,
-    QIcon,
-    openURL
-  },
-  directives: {
-    BackToTop,
-    Ripple
-  },
-  methods: {
-    launch(url) {
-      openURL(url);
-    }
-  }
-};
 </script>
 
 <style scoped>
-.white {
-  color: transparent;
-}
-.check {
-  max-width: 30vw;
-}
-.back {
-  background-color: transparent;
-}
+    .white-back{
+        background-color: rgba(255, 255, 255, 0.295);
+        margin: 1rem 5rem 1rem 5rem;
+        border-radius: 9px;
+    }
+    .text-output{
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-size: 5rem;
+          font-family: "Bellefair", serif;
 
-.top {
-  font-size: 1.25rem;
-}
+    }
+    .white {
+        color: transparent;
+    }
 
-.signature {
-  color: rgb(180, 0, 0);
-  font-family: "Niconne", cursive;
-}
+    .check {
+        max-width: 30vw;
+    }
 
-.rider {
-  border: 5px solid black;
-  height: 18rem;
-  width: 18rem;
-}
+    .back {
+        background-color: transparent;
+    }
 
-.about {
-  background-image: url("~statics/triangular.png");
-}
+    .top {
+        font-size: 1.25rem;
+    }
 
-.return {
-  background-color: red;
-}
+    .signature {
+        color: rgb(180, 0, 0);
+        font-family: "Niconne", cursive;
+    }
+
+    .rider {
+        border: 5px solid black;
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .about {
+        background-image: url("~statics/triangular.png");
+    }
+
+    .return {
+        background-color: red;
+    }
 </style>
