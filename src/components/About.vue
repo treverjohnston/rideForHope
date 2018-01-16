@@ -1,12 +1,21 @@
 <template>
     <q-layout class="about black">
         <div class="row wrap" id="app">
-            <div class="col-xs-12 text-center">
+            <div class="col-xs-12 text-center desktop-only">
                 <div class="row wrap justify-center white-back" id="number">
                     <h4 class="text-bold col-xs-1 text-center text-italic">$</h4>
-                    <input readonly class="text-output text-bold col-xs-3" value="1"> 
+                    <input readonly class="text-output text-bold col-xs-3" value="1">
 
-                    <h4 class="text-bold col-xs-9 text-center text-italic">Amount Raised by Ride For Hope Idaho With YOUR Help</h4>
+                    <h4 class="text-bold col-xs-9 text-center text-italic">Amount Raised by Ride For Hope Idaho With <u>YOUR</u> Help</h4>
+
+                </div>
+            </div>
+            <div class="col-xs-12 text-center mobile-only">
+                <div class="row wrap justify-center white-back" id="number">
+                    <h4 class="text-bold col-xs-1 text-center text-italic">$</h4>
+                    <input readonly class="text-output text-bold col-xs-10" value="1">
+
+                    <p class="text-bold col-xs-9 text-center text-italic">Amount Raised by Ride For Hope Idaho With <u>YOUR</u> Help</p>
 
                 </div>
             </div>
@@ -158,26 +167,28 @@
                 });
             }
         },
-        mounted(){
+        mounted() {
             this.animate()
         }
     };
 </script>
 
 <style scoped>
-    .white-back{
+    .white-back {
         background-color: rgba(255, 255, 255, 0.295);
         margin: 1rem 5rem 1rem 5rem;
         border-radius: 9px;
     }
-    .text-output{
+
+    .text-output {
         background-color: transparent;
         border: none;
         text-align: center;
         font-size: 5rem;
-          font-family: "Bellefair", serif;
+        font-family: "Bellefair", serif;
 
     }
+
     .white {
         color: transparent;
     }

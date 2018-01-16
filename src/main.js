@@ -16,6 +16,8 @@ import router from './router'
 import store from './store'
 import Vuelidate from 'vuelidate'
 import anime from 'animejs'
+import { AddressbarColor } from 'quasar'
+AddressbarColor.set('#000000')
 
 Vue.use(Vuelidate)
 Vue.config.productionTip = false
