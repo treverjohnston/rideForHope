@@ -5,7 +5,6 @@
                 <div class="row wrap justify-center white-back" id="number">
                         <input readonly class="text-output large-text text-bold col-xs-4" value="$0">
                     <h4 class="text-bold col-xs-9 text-center text-italic">Amount Raised by Ride For Hope Idaho With <u>YOUR</u> Help</h4>
-
                 </div>
             </div>
             <div class="col-xs-12 text-center mobile-only">

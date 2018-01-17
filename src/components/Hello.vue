@@ -118,7 +118,7 @@
             <q-item-main class="small-side" label="Metric Century" />
           </q-side-link>
           <hr class="tabhrs">
-          <q-side-link to="century">
+          <q-side-link to="Century">
             <q-item-main class="small-side" label="Century" />
           </q-side-link>
         </q-collapsible>
