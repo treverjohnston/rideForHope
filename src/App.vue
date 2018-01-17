@@ -19,7 +19,7 @@ body {
 
 }
 .red-back {
-  background-color: rgba(175, 2, 2, 0.493);
+  background-color: rgba(65, 57, 57, 0.5);
   padding: 1rem;
   border-radius: 15px;
 }
