@@ -4,7 +4,7 @@
             <div class="col-xs-11 col-md-6 text-center">
                 <h3 class="text-bold shadow">We Love Our Sponsors!</h3>
                 <hr color="red" class="hr">
-                    <q-btn class="row wrap btn shadow-24" no-caps>Sponsor Ride For Hope</q-btn>
+                    <q-btn class="row wrap btn shadow-24" no-caps @click="$router.push('contact')">Sponsor Ride For Hope</q-btn>
                 <hr color="red" class="hr">
             </div>
         </div>
