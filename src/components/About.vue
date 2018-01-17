@@ -3,17 +3,16 @@
         <div class="row wrap" id="app">
             <div class="col-xs-12 text-center desktop-only">
                 <div class="row wrap justify-center white-back" id="number">
-                    <h4 class="text-bold col-xs-1 text-center text-italic">$</h4>
-                    <input readonly class="text-output text-bold col-xs-3" value="1">
-
+                        <input readonly class="text-output large-text text-bold col-xs-4" value="$0">
                     <h4 class="text-bold col-xs-9 text-center text-italic">Amount Raised by Ride For Hope Idaho With <u>YOUR</u> Help</h4>
 
                 </div>
             </div>
             <div class="col-xs-12 text-center mobile-only">
                 <div class="row wrap justify-center white-back" id="number">
-                    <h4 class="text-bold col-xs-1 text-center text-italic">$</h4>
-                    <input readonly class="text-output text-bold col-xs-10" value="1">
+                    <big>
+                        <input readonly class="text-output text-bold col-xs-10 emphasize" value="$0">
+                    </big>
 
                     <p class="text-bold col-xs-9 text-center text-italic">Amount Raised by Ride For Hope Idaho With <u>YOUR</u> Help</p>
 
@@ -160,7 +159,7 @@
             animate() {
                 anime({
                     targets: '#number input',
-                    value: 28500,
+                    value: '$' + '28500',
                     round: 1,
                     easing: 'easeInOutExpo',
                     duration: 3333
@@ -179,12 +178,14 @@
         margin: 1rem 5rem 1rem 5rem;
         border-radius: 9px;
     }
+    .large-text{
+        font-size: 5rem;
+    }
 
     .text-output {
         background-color: transparent;
         border: none;
         text-align: center;
-        font-size: 5rem;
         font-family: "Bellefair", serif;
 
     }
