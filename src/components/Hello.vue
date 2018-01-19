@@ -433,11 +433,11 @@
                 <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="~statics/meats.jpg" alt="Meats Royale">
               </q-btn>
             </div>
-            <div class="col-xs-6 col-md-3">
+            <!-- <div class="col-xs-6 col-md-3">
               <q-btn flat @click="launch('https://www.sherwin-williams.com/homeowners')">
                 <img class="responsive silver" src="statics/sherwin.png" alt="Sherwin Williams">
               </q-btn>
-            </div>
+            </div> -->
             <div class="col-xs-6 col-md-3">
               <q-btn flat @click="launch('https://10barrel.com/pub/boise/')">
                 <img @click="launch('https://10barrel.com/pub/boise/')" class="responsive silver" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"

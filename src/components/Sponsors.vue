@@ -4,7 +4,7 @@
             <div class="col-xs-11 col-md-6 text-center">
                 <h3 class="text-bold shadow">We Love Our Sponsors!</h3>
                 <hr color="red" class="hr">
-                    <q-btn class="row wrap btn shadow-24" no-caps @click="$router.push('contact')">Sponsor Ride For Hope</q-btn>
+                <q-btn class="row wrap btn shadow-24" no-caps @click="$router.push('contact')">Sponsor Ride For Hope</q-btn>
                 <hr color="red" class="hr">
             </div>
         </div>
@@ -15,12 +15,7 @@
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-6">
-                        <img @click="launch('http://www.meridian-cycles.com/')" class="responsive gold" src="~statics/meridian.png"
-                            alt="Meridian cycles">
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <img @click="launch('https://10barrel.com/pub/boise/')" class="responsive gold" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"
-                            alt="10 Barrel BrewingCo.">
+                        <img @click="launch('http://www.meridian-cycles.com/')" class="responsive gold" src="~statics/meridian.png" alt="Meridian cycles">
                     </div>
                 </div>
                 <hr color="red" class="hr">
@@ -33,12 +28,29 @@
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-4">
-                        <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="~statics/meats.jpg" 
-                            alt="Meats Royale">
+                        <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="~statics/meats.jpg" alt="Meats Royale">
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <img @click="launch('https://10barrel.com/pub/boise/')" class="responsive silver" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"
+                            alt="10 Barrel BrewingCo.">
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <img class="responsive silver" src="statics/sherwin.png"
-                            alt="Sherwin Williams">
+                        <img class="responsive silver" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
+                    </div>
+
+                </div>
+                <hr color="red" class="hr">
+            </div>
+        </div>
+        <div class="row wrap justify-center text-center">
+            <div class="col-xs-8">
+                <h2 class="text-bold shadow desktop-only">Carpe Diem Level Sponsors</h2>
+                <h3 class="text-bold shadow mobile-only">Carpe Diem Level Sponsors</h3>
+                <hr color="red" class="hr">
+                <div class="mid row wrap justify-center">
+
+                    <div class="col-xs-12 col-md-4">
+                        <img class="responsive" src="statics/sherwin.png" alt="Sherwin Williams">
                     </div>
                 </div>
                 <hr color="red" class="hr">
@@ -46,33 +58,13 @@
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
-                    <h2 class="text-bold shadow desktop-only">Carpe Diem Level Sponsors</h2>
-                    <h3 class="text-bold shadow mobile-only">Carpe Diem Level Sponsors</h3>
+                <h2 class="text-bold shadow desktop-only">Virtutem Spei Level Sponsors</h2>
+                <h3 class="text-bold shadow mobile-only">Virtutem Spei Level Sponsors</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
+
                     <div class="col-xs-12 col-md-4">
-                        <img class="responsive" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <img class="responsive" src="statics/lyle.jpg"
-                            alt="Lyle Pearson">
-                    </div>
-                </div>
-                <hr color="red" class="hr">
-            </div>
-        </div>
-        <div class="row wrap justify-center text-center">
-            <div class="col-xs-8">
-                    <h2 class="text-bold shadow desktop-only">Virtutem Spei Level Sponsors</h2>
-                    <h3 class="text-bold shadow mobile-only">Virtutem Spei Level Sponsors</h3>
-                <hr color="red" class="hr">
-                <div class="mid row wrap justify-center">
-                    <div class="col-xs-12 col-md-4">
-                        <img class="responsive" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <img class="responsive" src="statics/lyle.jpg"
-                            alt="Lyle Pearson">
+                        <img class="responsive" src="statics/lyle.jpg" alt="Lyle Pearson">
                     </div>
                 </div>
                 <hr color="red" class="hr">
@@ -117,9 +109,13 @@
 </script>
 
 <style scoped>
-    .gold{
+    .gold {
         height: 12rem;
     }
+    .silver{
+        /* width: 28rem */
+    }
+
     .btn {
         background-color: rgba(197, 7, 7, 0.8);
         color: white;
