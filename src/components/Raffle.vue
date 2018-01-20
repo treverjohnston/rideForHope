@@ -182,14 +182,7 @@
     }
 
     .raffle {
-        background-image: url("~statics/road.jpg");
-        background-size: cover;
-        overflow: auto;
-        background-attachment: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
+        background-image: url("~statics/triangular.png");
     }
 
     .pics {

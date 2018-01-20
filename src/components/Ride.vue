@@ -21,7 +21,7 @@
                 <h4 class="mobile-only">Ride Day Information</h4>
                 <p>Registration opens at ----</p>
                 <hr class="ihr">
-                <h5>Century/Metric Century Start Time</h5>
+                <h5>Metric Century/Century Start Time</h5>
                 <p>7:00 AM</p>
                 <h5>18/31 Mile Start Time</h5>
                 <p>8:00 AM</p>
