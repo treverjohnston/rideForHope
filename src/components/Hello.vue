@@ -230,7 +230,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
+            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
@@ -251,7 +251,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
+            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
@@ -273,7 +273,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
+            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
@@ -295,7 +295,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border">
           <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="360" src="./statics/subtle.png">
+            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
@@ -726,7 +726,7 @@
   }
 
   .card-routes {
-    background-color: rgba(255, 0, 0, 0.644);
+    background-color: rgba(255, 0, 0, 0.664);
     padding: 2rem 2rem 2rem 2rem;
   }
 
