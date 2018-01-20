@@ -3,9 +3,9 @@
             <div class="row wrap justify-center promo">
                 <div class="col-xs-12">
                         <q-parallax src="statics/cover2.jpg" :height="200">
-                            <div slot="loading"><h2 class="headline text-center">31 Mile Ride</h2>
+                            <div slot="loading"><h2 class="headline text-center">30 Mile Ride</h2>
                                 <hr color="red" class="hr"></div>
-                            <h2 class="headline text-center black red-back">31 Mile Ride</h2>
+                            <h2 class="headline text-center black red-back">30 Mile Ride</h2>
                             <!-- <hr color="red" class="hr"> -->
                         </q-parallax>
                 </div>
@@ -16,7 +16,7 @@
                 </h6>
             </div>
             <div class="row wrap justify-center">
-                    <p>Distance: 31 Miles</p>
+                    <p>Distance: 30 Miles</p>
                 </div>
                 <div class="row wrap justify-center">
                     <p>Elevation: +501ft</p>

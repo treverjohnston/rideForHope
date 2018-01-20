@@ -20,7 +20,7 @@ var store = new vuex.Store({
             },
             {
                 url: '/31-mile',
-                length: 31,
+                length: 30,
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg'
             },
             {
