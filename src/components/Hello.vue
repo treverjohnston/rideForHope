@@ -210,10 +210,7 @@
                 <div class="col-xs-12 col-md-4 self-center">
                   <q-card-main class="text-center">
                     <span slot="subtitle">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quis labore illo. Amet et, iure veniam ab molestias
-                      repellendus non optio! Velit ducimus cumque dolorum perferendis, in nobis non adipisci quia placeat
-                      perspiciatis voluptatum, voluptate repellendus laudantium iusto maiores? Qui quas vero repellendus
-                      quae accusantium porro ex quibusdam eius possimus.
+                      Something about all the routes. This whole section isn't necessary, but I thought I'd add it just in case you wanted it.
                     </span>
                   </q-card-main>
                 </div>
@@ -246,10 +243,7 @@
                   <h4>18 Mile</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quis labore illo. Amet et, iure veniam ab molestias
-                  repellendus non optio! Velit ducimus cumque dolorum perferendis, in nobis non adipisci quia placeat perspiciatis
-                  voluptatum, voluptate repellendus laudantium iusto maiores? Qui quas vero repellendus quae accusantium
-                  porro ex quibusdam eius possimus.
+                  A shortish description of the 18 mile race, see <a href="https://wackybikeride.com/" target="_blank">https://wackybikeride.com/</a> for inspiration
                 </span>
               </q-card-title>
             </div>
@@ -267,13 +261,11 @@
             <div slot="overlay">
               <q-card-title class="text-center">
                 <q-btn class="route-btn" @click="$router.push('31-mile')" outline color="red">
-                  <h4>31 Mile</h4>
+                  <h4>30 Mile</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quis labore illo. Amet et, iure veniam ab molestias
-                  repellendus non optio! Velit ducimus cumque dolorum perferendis, in nobis non adipisci quia placeat perspiciatis
-                  voluptatum, voluptate repellendus laudantium iusto maiores? Qui quas vero repellendus quae accusantium
-                  porro ex quibusdam eius possimus.
+                  A shortish description of the 30 mile race, see <a href="https://wackybikeride.com/" target="_blank">https://wackybikeride.com/</a> for inspiration
+
                 </span>
               </q-card-title>
             </div>
@@ -294,10 +286,8 @@
                   <h4>Metric Century</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quis labore illo. Amet et, iure veniam ab molestias
-                  repellendus non optio! Velit ducimus cumque dolorum perferendis, in nobis non adipisci quia placeat perspiciatis
-                  voluptatum, voluptate repellendus laudantium iusto maiores? Qui quas vero repellendus quae accusantium
-                  porro ex quibusdam eius possimus.
+                  A shortish description of the Metric Century race, see <a href="https://wackybikeride.com/" target="_blank">https://wackybikeride.com/</a> for inspiration
+
                 </span>
               </q-card-title>
             </div>
@@ -318,10 +308,8 @@
                   <h4>Century</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quis labore illo. Amet et, iure veniam ab molestias
-                  repellendus non optio! Velit ducimus cumque dolorum perferendis, in nobis non adipisci quia placeat perspiciatis
-                  voluptatum, voluptate repellendus laudantium iusto maiores? Qui quas vero repellendus quae accusantium
-                  porro ex quibusdam eius possimus.
+                  A shortish description of the Century race, see <a href="https://wackybikeride.com/" target="_blank">https://wackybikeride.com/</a> for inspiration
+
                 </span>
               </q-card-title>
             </div>

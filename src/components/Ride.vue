@@ -31,10 +31,7 @@
                 <h4 class="mobile-only">Additional Ride Day Information</h4>
                 <hr class="ihr">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, debitis doloribus sunt quibusdam earum fugiat mollitia est
-                    nam adipisci explicabo magnam porro voluptas aspernatur minus ipsa? Molestias, quos deleniti voluptates
-                    expedita ipsum nostrum iusto explicabo dolorem distinctio laborum deserunt libero eligendi eius ab officia
-                    recusandae enim ratione temporibus ducimus architecto?
+                    I can add as many of these sections as you want. You could put anything you like here, such as packet pickup information or lunch information
                 </p>
             </div>
             <div class="col-xs-10 text-center">

@@ -44,8 +44,8 @@
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
-                <h2 class="text-bold shadow desktop-only">Carpe Diem Level Sponsors</h2>
-                <h3 class="text-bold shadow mobile-only">Carpe Diem Level Sponsors</h3>
+                <h2 class="text-bold shadow desktop-only">Carpe Diem Sponsors</h2>
+                <h3 class="text-bold shadow mobile-only">Carpe Diem Sponsors</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
 
@@ -58,8 +58,8 @@
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
-                <h2 class="text-bold shadow desktop-only">Virtutem Spei Level Sponsors</h2>
-                <h3 class="text-bold shadow mobile-only">Virtutem Spei Level Sponsors</h3>
+                <h2 class="text-bold shadow desktop-only">Virtutem Spei Sponsors</h2>
+                <h3 class="text-bold shadow mobile-only">Virtutem Spei Sponsors</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
 

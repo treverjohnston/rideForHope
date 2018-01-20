@@ -17,7 +17,7 @@
       </div>
       <div class="col-xs-12 col-sm-6">
         <q-card-media overlay-position="full">
-          <q-parallax :speed="1" :height="350" src="./statics/gray.png">
+          <q-parallax :speed="1" :height="350" src="./statics/cardboard.png">
             <div slot="loading">Loading...</div>
             <div class="black-back">
             </div>
@@ -42,7 +42,7 @@
       </div>
       <div class="col-xs-12 col-sm-6">
         <q-card-media overlay-position="full">
-          <q-parallax :speed="1" :height="350" src="./statics/gray.png">
+          <q-parallax :speed="1" :height="350" src="./statics/cardboard.png">
             <div slot="loading">Loading...</div>
             <div class="black-back">
             </div>
