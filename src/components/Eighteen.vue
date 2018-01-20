@@ -22,6 +22,11 @@
         <div class="row wrap justify-center">
             <p>Elevation: +281ft</p>
         </div>
+        <!-- <div class="row wrap justify-center">
+            <div class="col-xs-11 shadow-24">
+                <iframe src="http://www.mapmyride.com/routes/fullscreen/996049745/"  class="map"></iframe>
+            </div>
+        </div> -->
         <div class="row wrap justify-center">
             <q-card class="route col-xs-11 col-md-8 shadow-24">
                 <q-transition appear enter="zoomIn" leave="fadeOut">
@@ -86,6 +91,10 @@
 </script>
 
 <style scoped>
+    .map{
+        height: 90vh;
+        width: 100%;
+    }
     .route {
         border: 5px solid black;
     }

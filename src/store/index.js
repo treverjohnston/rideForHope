@@ -15,22 +15,22 @@ var store = new vuex.Store({
         routes: [
             {
                 url: '/18-mile',
-                length: 18,
+                length: '18 Mile',
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/18_mrihcr.jpg'
             },
             {
                 url: '/31-mile',
-                length: 30,
+                length: '30 Mile',
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg'
             },
             {
                 url: '/metric',
-                length: 62.8,
+                length: 'Metric Century',
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/62.8_obydkx.jpg'
             },
             {
                 url: '/Century',
-                length: 100,
+                length: 'Century',
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg'
             }
             

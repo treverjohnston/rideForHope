@@ -35,7 +35,7 @@
                         <img :src="card.pic">
                     </q-card-media>
                     <q-card-actions align="center">
-                            <q-btn @click="$router.push(`${card.url}`)" class="r-btn" no-caps>{{card.length}} Mile Route Map</q-btn>
+                            <q-btn @click="$router.push(`${card.url}`)" class="r-btn" no-caps>{{card.length}} Route Map</q-btn>
                     </q-card-actions>
                 </div>
             </q-card>
