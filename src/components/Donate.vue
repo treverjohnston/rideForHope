@@ -6,7 +6,7 @@
                     <div class="fancy col-xs-12">
                         <div class="row wrap desktop-only">
                             <h2 class="font text-center offset-xs-1 col-xs-10">
-                                Why Ride For Hope?
+                                Why Ride For Hope Idaho?
                             </h2>
                             <h4 class="light-paragraph text-center offset-xs-1 col-xs-10">
                                 SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED
@@ -14,7 +14,7 @@
                         </div>
                         <div class="row wrap mobile-only">
                             <h4 class="font text-center offset-xs-1 col-xs-10">
-                                Why Ride For Hope?
+                                Why Ride For Hope Idaho?
                             </h4>
                             <h6 class="light-paragraph text-center offset-xs-1 col-xs-10">
                                 SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED

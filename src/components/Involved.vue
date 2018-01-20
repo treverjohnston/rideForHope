@@ -12,7 +12,7 @@
             <div class="col-xs-12 col-sm-6 text-center right">
                 <q-parallax :speed="1" :height="500" src="./statics/riders2.jpg">
                     <div slot="loading">Loading...</div>
-                    <h2 class="headline text-bold">Sponsor Ride For Hope</h2>
+                    <h2 class="headline text-bold">Sponsor Ride For Hope Idaho</h2>
                     <q-btn @click="$router.push('sponsors')" class="btn">More Info</q-btn>
                 </q-parallax>
             </div>

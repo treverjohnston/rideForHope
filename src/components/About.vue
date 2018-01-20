@@ -21,12 +21,12 @@
             <h2 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">Our Mission</h2>
             <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10 ">
             <h6 class="top text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
-                <b>Ride For Hope</b> is a charity bicycle event with the firm belief that quality healthcare should be accessible
+                <b>Ride For Hope Idaho</b> is a charity bicycle event with the firm belief that quality healthcare should be accessible
                 to everyone. We support the holistic approach to healthcare where true healing focuses not only on symptoms,
                 but the underlying root cause of disease.
             </h6>
             <h6 class="top text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
-                <b>Ride For Hope</b> is committed to ensuring that 100% of participant fees and donations go directly to charity.
+                <b>Ride For Hope Idaho</b> is committed to ensuring that 100% of participant fees and donations go directly to charity.
                 This unique commitment is made possible by charitable contributions from local sponsors which cover the entire
                 cost of the event.
             </h6>
@@ -35,7 +35,7 @@
             <div class="para offset-sm-2 col-sm-5 offset-xs-1 col-xs-10">
                 <p class="text-justify">
                     <em>
-                        <b>Ride For Hope</b>
+                        <b>Ride For Hope Idaho</b>
                     </em> is a small, but growing group of volunteers who have been moved to action for a deep compassion for our
                     fellow citizens. We feel a moral obligation to fight for individuals and families who do not have access
                     to basic healthcare and fundamental human necessities. Many of these individuals and families are grappling
@@ -66,7 +66,7 @@
                 </p>
                 <p class="text-justify">
                     <em>
-                        <b>Ride For Hope</b>
+                        <b>Ride For Hope Idaho</b>
                     </em> has donated $28,500 in three years:</p>
                 <ul>
                     <li>In 2015 over $7,000 was donated.</li>
@@ -102,7 +102,7 @@
             <div class="paragroup offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
                 <h4 class="text-center signature">
                     <em>
-                        <b>Team Ride For Hope</b>
+                        <b>Team Ride For Hope Idaho</b>
                     </em>
                 </h4>
             </div>

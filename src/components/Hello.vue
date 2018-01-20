@@ -176,7 +176,7 @@
       </q-parallax>
       <div class="spacer row wrap">
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
-          <b>Ride For Hope</b> is a charity bicycle event with the firm belief that quality healthcare should be accessible
+          <b>Ride For Hope Idaho</b> is a charity bicycle event with the firm belief that quality healthcare should be accessible
           to everyone. We support the holistic approach to healthcare where true healing focuses not only on symptoms, but
           the underlying root cause of disease.
         </h6>
@@ -184,7 +184,7 @@
           <img class="ride self-center xs-gutter" src="statics/RFHIdahoLogo.png" alt="ride for hope logo">
         </div>
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
-          <b>Ride For Hope</b> is committed to ensuring that 100% of participant fees and donations go directly to charity.
+          <b>Ride For Hope Idaho</b> is committed to ensuring that 100% of participant fees and donations go directly to charity.
           This unique commitment is made possible by charitable contributions from local sponsors which cover the entire
           cost of the event.
         </h6>
