@@ -12,10 +12,8 @@
         </div>
         <div class="row wrap justify-center">
             <h6 class="text-italic light-paragraph text-justify col-xs-11 col-md-8">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit nostrum, rem libero neque doloremque quasi fugiat ut earum
-                culpa provident aspernatur obcaecati magni corrupti est necessitatibus quisquam laborum expedita quas asperiores
-                eum dignissimos eaque odio. Ipsam ipsa vitae pariatur eligendi, ab magni quasi reiciendis reprehenderit possimus
-                deserunt soluta quis ut.
+                A shortish description of the race, see <a href="https://wackybikeride.com/routes/12-mile-family-ride/" target="_blank">https://wackybikeride.com/routes/12-mile-family-ride/</a> for inspiration
+
             </h6>
         </div>
         <div class="row wrap justify-center">
