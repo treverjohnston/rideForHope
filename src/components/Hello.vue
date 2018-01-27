@@ -12,7 +12,7 @@
       </q-toolbar-title>
       <span class="desktop-only">Join Team Ride For Hope Idaho on Strava!
         <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-          <q-btn @click="launch('https://www.strava.com/clubs/302822')">
+          <q-btn flat @click="launch('https://www.strava.com/clubs/302822')">
             <img class="strava-top" src="statics/strava2.png" alt="strava logo">
           </q-btn>
         </q-transition>
