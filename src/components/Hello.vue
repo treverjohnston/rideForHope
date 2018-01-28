@@ -301,7 +301,7 @@
             </q-parallax>
             <div slot="overlay">
               <q-card-title class="text-center">
-                <q-btn class="route-btn" @click="$router.push('1Century')" outline color="red">
+                <q-btn class="route-btn" @click="$router.push('Century')" outline color="red">
                   <h4>Century</h4>
                 </q-btn>
                 <span slot="subtitle">
