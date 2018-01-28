@@ -4,7 +4,7 @@ import $ from 'jquery'
 import vuex from 'vuex'
 import router from '../router'
 import { Toast } from 'quasar'
-
+quas
 
 // var production = !window.location.host.includes('localhost');
 // var baseUrl = production ? '//inspireq.herokuapp.com/' : '//localhost:3000/';
