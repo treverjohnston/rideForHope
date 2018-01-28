@@ -13,6 +13,9 @@ export default {};
 </script>
 
 <style>
+  .header{
+    height: 200px;
+  }
 body {
   /* font-family: "Bellefair", serif; */
   font-family: 'Quattrocento', serif;

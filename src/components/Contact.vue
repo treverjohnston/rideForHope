@@ -2,7 +2,7 @@
     <q-layout class="contact black">
         <div class="row wrap justify-center promo">
             <div class="col-xs-12 text-center">
-                <q-parallax src="statics/riders3.jpg" :height="200">
+                <q-parallax src="statics/road.jpg" :height="200">
                     <div slot="loading">
                         <h3>Contact Us</h3>
                         <hr color="red" class="hr">

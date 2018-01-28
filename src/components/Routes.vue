@@ -3,7 +3,16 @@
         <div class="row wrap justify-center ">
 
             <div class="promo text-center text-italic text-bold desktop-only col-xs-12">
-                <q-parallax src="statics/riders4.jpg" :height="300">
+                    <q-card-media class="header" overlay-position="full">
+                            <img src="statics/road.jpg" class="responsive" alt="picture">
+                            <q-card-title slot="overlay" class="text-center">
+                                    <h2>2018 Routes</h2>
+                                    <q-btn @click="launch('https://docs.wixstatic.com/ugd/a44970_c113c732a6f2426a9e905f46e2c30034.pdf')" class="maps shadow-24"
+                                        big no-caps>Click Here for Map Options: STRAVA/Map My Ride/Garmin/Ride with GPS</q-btn>
+        
+                            </q-card-title>
+                        </q-card-media>
+                <!-- <q-parallax src="statics/ride/IMGP9819.JPG.jpg" :height="300">
                     <div slot="loading">
                         <h2>2018 Routes</h2>
                         <q-btn @click="launch('https://docs.wixstatic.com/ugd/a44970_c113c732a6f2426a9e905f46e2c30034.pdf')" class="maps shadow-24"
@@ -12,11 +21,11 @@
                     <h2>2018 Routes</h2>
                     <q-btn @click="launch('https://docs.wixstatic.com/ugd/a44970_c113c732a6f2426a9e905f46e2c30034.pdf')" class="maps shadow-24"
                         big no-caps>Click Here for Map Options: STRAVA/Map My Ride/Garmin/Ride with GPS</q-btn>
-                </q-parallax>
+                </q-parallax> -->
             </div>
 
             <div class="promo text-center text-italic text-bold mobile-only col-xs-12">
-                <q-parallax src="statics/riders.jpg" :height="200">
+                <q-parallax src="statics/road.jpg" :height="200">
                     <div slot="loading">
                         <h4>2018 Routes</h4>
                         <q-btn @click="launch('https://docs.wixstatic.com/ugd/a44970_c113c732a6f2426a9e905f46e2c30034.pdf')" class="maps shadow-24"

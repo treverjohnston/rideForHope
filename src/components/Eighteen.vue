@@ -2,7 +2,7 @@
     <q-layout class="eighteen black">
         <div class="row wrap justify-center promo">
             <div class="col-xs-12">
-                <q-parallax src="statics/cover2.jpg" :height="200">
+                <q-parallax src="statics/road.jpg" :speed=".1" :height="200">
                     <div slot="loading"><h2 class="headline text-center">18 Mile Ride</h2>
                         <hr color="red" class="hr"></div>
                     <h2 class="headline text-center black red-back">18 Mile Ride</h2>

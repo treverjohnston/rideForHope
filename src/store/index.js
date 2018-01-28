@@ -3,7 +3,8 @@ import axios from 'axios'
 import $ from 'jquery'
 import vuex from 'vuex'
 import router from '../router'
-import {Toast} from 'quasar'
+import { Toast } from 'quasar'
+
 
 // var production = !window.location.host.includes('localhost');
 // var baseUrl = production ? '//inspireq.herokuapp.com/' : '//localhost:3000/';
@@ -33,7 +34,7 @@ var store = new vuex.Store({
                 length: 'Century',
                 pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg'
             }
-            
+
         ],
         raffles: [
             // {
@@ -83,22 +84,46 @@ var store = new vuex.Store({
             },
         ],
         pictures: [
-            'statics/cover.jpg',
-            'statics/cover2.jpg',
-            'statics/riders2.jpg',
-            'statics/riders3.jpg',
-            'statics/riders4.jpg',
-            'statics/riders5.jpg',
-        ]
+            'statics/ride/IMG_8884.JPG.jpg',
+            'statics/ride/IMG_8882.JPG.jpg',
+            'statics/ride/IMG_8815.JPG.jpg',
+            'statics/ride/IMG_8818.JPG.jpg',
+            'statics/ride/IMG_8876.JPG.jpg',
+            'statics/ride/IMG_8894.JPG.jpg',
+        ],
+        gallery: []
     },
     mutations: {
         handleError(state, err) {
             console.error(err)
             // state.error = err
         },
+        setPics(state, pics) {
+            console.log('pics', pics)
+            var arr = []
+            for (let i = 0; i < pics.length; i++) {
+                const pic = pics[i];
+                var url = `http://res.cloudinary.com/treverscloud/image/upload/v${pic.version}/${pic.public_id}.${pic.format}`
+                arr.push(url)
+            }
+            state.gallery = arr
+            console.log('gal', state.gallery)
+        }
 
     },
     actions: {
+        getPictures({ commit, dispatch }) {
+            // cl.imageTag('rfh.json', { type: "list" }).toHtml();
+            axios.get('https://res.cloudinary.com/treverscloud/image/list/rfh.json')
+                .then((res) => {
+                    var pics = res.data.resources
+                    commit('setPics', pics)
+                })
+                .catch(err => {
+                    commit('handleError', err)
+                })
+
+        },
         sendEmail({ commit, dispatch }, obj) {
             console.log('email obj', obj)
             $.ajax({

@@ -2,13 +2,19 @@
     <q-layout class="contact black">
         <div class="row wrap justify-center promo">
             <div class="col-xs-12 text-center">
-                <q-parallax src="statics/riders3.jpg" :height="200">
+                <q-card-media class="header desktop-only" overlay-position="full">
+                    <img src="statics/ride/IMG_8932.JPG.jpg" class="responsive" alt="picture">
+                    <q-card-title slot="overlay" class="text-center">
+                        <h3 class="red-back">Ride Day Information</h3>
+
+                    </q-card-title>
+                </q-card-media>
+                <q-parallax class="mobile-only" src="statics/road.jpg" :speed=".8" :height="200">
                     <div slot="loading">
                         <h3>Ride Day Information</h3>
                         <hr color="red" class="hr">
                     </div>
                     <h3 class="red-back">Ride Day Information</h3>
-                    <!-- <hr color="red" class="hr"> -->
                 </q-parallax>
             </div>
         </div>
@@ -31,7 +37,8 @@
                 <h4 class="mobile-only">Additional Ride Day Information</h4>
                 <hr class="ihr">
                 <p>
-                    I can add as many of these sections as you want. You could put anything you like here, such as packet pickup information or lunch information
+                    I can add as many of these sections as you want. You could put anything you like here, such as packet pickup information
+                    or lunch information
                 </p>
             </div>
             <div class="col-xs-10 text-center">
@@ -44,10 +51,10 @@
                     ducimus enim ad cupiditate temporibus recusandae! Rem quia qui dignissimos obcaecati facere. </p>
             </div>
             <div class="col-xs-10">
-                    <h3 class="desktop-only text-center">Directions to Race Start (Kuna City Hall)</h3>
-                    <h4 class="mobile-only text-center">Directions to Race Start (Kuna City Hall)</h4>
+                <h3 class="desktop-only text-center">Directions to Race Start (Kuna City Hall)</h3>
+                <h4 class="mobile-only text-center">Directions to Race Start (Kuna City Hall)</h4>
 
-                    <iframe class="frame" src="//www.google.com/maps/embed/v1/place?q=Kuna%20City%20Hall
+                <iframe class="frame" src="//www.google.com/maps/embed/v1/place?q=Kuna%20City%20Hall
                     &zoom=13
                     &attribution_source=Google+Maps+Embed+API
                     &attribution_web_url=https://developers.google.com/maps/documentation/embed/
@@ -65,7 +72,9 @@
         QBtn,
         Toast,
         QParallax,
-        openURL
+        openURL,
+        QCardMedia,
+        QCardTitle
     } from 'quasar'
     export default {
         name: 'Ride',
@@ -78,13 +87,15 @@
                 message: ''
             }
         },
-        
+
         components: {
             QLayout,
             QInput,
             QBtn,
             Toast,
-            QParallax
+            QParallax,
+            QCardMedia,
+            QCardTitle
         },
         methods: {
             launch(url) {
@@ -96,10 +107,11 @@
 </script>
 
 <style scoped>
-    .frame{
+    .frame {
         width: 100%;
         height: 80vh;
     }
+
     .img {
         height: 60vh;
         margin-top: 3rem;

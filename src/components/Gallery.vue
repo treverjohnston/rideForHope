@@ -21,11 +21,12 @@
         },
         computed:{
             pictures(){
-                return this.$store.state.pictures
+                return this.$store.state.gallery
             }
         },
         mounted(){
             this.$refs.gallery.toggleQuickView()
+            this.$store.dispatch('getPictures')
         }
     }
 </script>

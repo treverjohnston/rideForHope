@@ -6,14 +6,14 @@
                     <hr color="red" class="hr">
                     <h2 class="headline text-bold">RAFFLE ITEMS</h2>
                     <h4 class="fancy">2018 raffle items coming soon</h4>
-                    <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="btn" no-caps>Purchase Raffle Tickets</q-btn>
+                    <!-- <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="btn" no-caps>Purchase Raffle Tickets</q-btn> -->
                     <hr color="red" class="hr">
-                    <h4 class="text-italic">
+                    <!-- <h4 class="text-italic">
                         Congratulations to 2017 Raffle item winners!!!
                     </h4>
                     <h4 class="text-italic">
                         2017 Raffle Items were Donated By:
-                    </h4>
+                    </h4> -->
                 </div>
             </q-transition>
         </div>
@@ -22,17 +22,17 @@
                 <hr color="red" class="hr">
                 <h4 class="headline text-bold">RAFFLE ITEMS</h4>
                 <h5 class="fancy">2018 raffle items coming soon</h5>
-                <q-btn class="btn shadow-24" no-caps>Purchase Raffle Tickets</q-btn>
-                <hr color="red" class="hr">
+                <!-- <q-btn class="btn shadow-24" no-caps>Purchase Raffle Tickets</q-btn> -->
+                <!-- <hr color="red" class="hr">
                 <h6 class="text-italic">
                     Congratulations to 2017 Raffle item winners!!!
                 </h6>
                 <h6 class="text-italic">
                     2017 Raffle Items were Donated By:
-                </h6>
+                </h6> -->
             </div>
         </div>
-        <q-transition appear enter="fadeIn" leave="fadeOut">
+        <!-- <q-transition appear enter="fadeIn" leave="fadeOut">
             <div class="row wrap justify-center pics desktop-only">
                 <q-card flat align="center" class="col-xs-12 col-lg-6">
                     <q-card-media>
@@ -87,7 +87,7 @@
                     <p>{{item.description}}</p>
                 </q-card-main>
             </q-card>
-        </div>
+        </div> -->
     </q-layout>
 </template>
 
@@ -182,8 +182,14 @@
     }
 
     .raffle {
-        background-image: url("~statics/triangular.png");
-    }
+        background-image: url("~statics/road.jpg");
+        background-size: cover;
+        overflow: auto;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;    }
 
     .pics {
         background-color: rgba(160, 160, 160, 0.507);

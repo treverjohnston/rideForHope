@@ -139,7 +139,7 @@
 
 
     .sponsors {
-        background-image: url("~statics/riders3.jpg");
+        background-image: url("~statics/ride/IMG_9025.JPG.jpg");
         background-size: cover;
         overflow: auto;
         background-attachment: fixed;

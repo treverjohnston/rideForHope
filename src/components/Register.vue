@@ -2,13 +2,20 @@
   <q-layout class="registration black">
     <div class="row wrap">
       <div class="col-xs-12">
-        <q-parallax :speed="1" :height="500" src="./statics/riders2.jpg">
-          <div slot="loading">Loading...</div>
-          <div class="text-center">
+        <q-card-media class="desktop-only" overlay-position="full" >
+          <img src="statics/ride/IMGP9801.JPG.jpg" class="responsive" alt="picture">
+          <q-card-title slot="overlay" class="text-center">
             <h2 class="text-bold">Registration for 2018 will be opening in the near future, check back soon!</h2>
-          </div>
-          <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Register</q-btn>
-        </q-parallax>
+            <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Register</q-btn>
+          </q-card-title>
+        </q-card-media>
+        <q-card-media class="mobile-only" overlay-position="full" >
+          <img src="statics/ride/IMGP9801.JPG.jpg" class="responsive" alt="picture">
+          <q-card-title slot="overlay" class="text-center">
+            <h5 class="text-bold">Registration for 2018 will be opening in the near future, check back soon!</h5>
+            <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Register</q-btn>
+          </q-card-title>
+        </q-card-media>
       </div>
       <div class="col-xs-12">
         <div class="spacer">
