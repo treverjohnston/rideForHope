@@ -4,7 +4,6 @@ import $ from 'jquery'
 import vuex from 'vuex'
 import router from '../router'
 import { Toast } from 'quasar'
-quas
 
 // var production = !window.location.host.includes('localhost');
 // var baseUrl = production ? '//inspireq.herokuapp.com/' : '//localhost:3000/';
@@ -89,7 +88,7 @@ var store = new vuex.Store({
             'statics/ride/IMG_8815.JPG.jpg',
             'statics/ride/IMG_8818.JPG.jpg',
             'statics/ride/IMG_8876.JPG.jpg',
-            'statics/ride/IMG_8894.JPG.jpg',
+            'statics/ride/IMG_8894.JPG.jpg'
         ],
         gallery: []
     },
@@ -99,15 +98,13 @@ var store = new vuex.Store({
             // state.error = err
         },
         setPics(state, pics) {
-            console.log('pics', pics)
             var arr = []
             for (let i = 0; i < pics.length; i++) {
                 const pic = pics[i];
                 var url = `http://res.cloudinary.com/treverscloud/image/upload/v${pic.version}/${pic.public_id}.${pic.format}`
-                arr.push(url)
+                arr.unshift(url)
             }
             state.gallery = arr
-            console.log('gal', state.gallery)
         }
 
     },

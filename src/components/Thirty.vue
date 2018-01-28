@@ -3,20 +3,24 @@
             <div class="row wrap justify-center promo">
                 <div class="col-xs-12">
                         <q-parallax src="statics/road.jpg" :speed=".5" :height="200">
-                            <div slot="loading"><h2 class="headline text-center">30 Mile Ride</h2>
+                            <div slot="loading"><h2 class="headline text-center">31 Mile Ride</h2>
                                 <hr color="red" class="hr"></div>
-                            <h2 class="headline text-center black red-back">30 Mile Ride</h2>
+                            <h2 class="headline text-center black red-back">31 Mile Ride</h2>
                             <!-- <hr color="red" class="hr"> -->
                         </q-parallax>
                 </div>
             </div>
             <div class="row wrap justify-center">
-                <h6 class="top text-italic light-paragraph text-justify col-xs-11 col-md-8">
-                    A shortish description of the race, see <a href="https://wackybikeride.com/routes/12-mile-family-ride/" target="_blank">https://wackybikeride.com/routes/12-mile-family-ride/</a> for inspiration
-                </h6>
+                <h6 class="top light-paragraph text-justify col-xs-11 col-md-8">
+                    Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland.
+                    This is a course that will delight those who want to establish a new 40k personal best. But
+                    remember, you surely didn’t train all that time just to come to the ride and get it over with as
+                    fast as you can; did you?! Stop and smell the roses, converse with your riding partners, and
+                    don’t forget to experience a fancy porta-john at one of the three rest stops you will encounter
+                    along the route!            </h6>
             </div>
             <div class="row wrap justify-center">
-                    <p>Distance: 30 Miles</p>
+                    <p>Distance: 31 Miles</p>
                 </div>
                 <div class="row wrap justify-center">
                     <p>Elevation: +501ft</p>

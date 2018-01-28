@@ -11,9 +11,16 @@
                 </div>
             </div>
             <div class="row wrap justify-center">
-                <h6 class="top text-italic light-paragraph text-justify col-xs-11 col-md-8">
-                    A shortish description of the race, see <a href="https://wackybikeride.com/routes/12-mile-family-ride/" target="_blank">https://wackybikeride.com/routes/12-mile-family-ride/</a> for inspiration
-                </h6>
+                <h6 class="top  light-paragraph text-justify col-xs-11 col-md-8">
+                    100 mile course. Over hill, over dale while avoiding the dusty mountain bike trail. This route is
+                    for those who believe toenails are for sissys and blisters are braille for success. There are 6 rest
+                    stops with ample opportunity to visit your favorite porta-john. The course has a little of
+                    everything including short climbs, rolling hills, and flats. You will trek southward and dip onto
+                    the Snake River Scenic Byway before returning to Melba and then on toward Marsing. With
+                    your fat cells crying (aka sweating) you will ride through vineyards, orchards and past scenic
+                    overlooks. You will skirt Lake Lowell headed toward the finish line with your riding buddies;
+                    who will know more about your bodily functions than your significant other by the time you
+                    reach Kuna.                </h6>
             </div>
             <div class="row wrap justify-center">
                     <p>Distance: 100 Miles</p>

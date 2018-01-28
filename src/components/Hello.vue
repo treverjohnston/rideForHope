@@ -54,7 +54,7 @@
             <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="routes" to="18-mile" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="30 Mile" name="routes" to="31-mile" />
+            <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="routes" to="31-mile" />
           </q-item-main>
           <q-item-main>
             <q-route-tab class="tab" @click="collapse" slot="title" label="Metric Century" name="routes" to="metric" />
@@ -111,7 +111,7 @@
           </q-side-link>
           <hr class="tabhrs">
           <q-side-link to="31-mile">
-            <q-item-main class="small-side" label="30 Mile" />
+            <q-item-main class="small-side" label="31 Mile" />
           </q-side-link>
           <hr class="tabhrs">
           <q-side-link to="metric">
@@ -210,8 +210,7 @@
                 <div class="col-xs-12 col-md-4 self-center">
                   <q-card-main class="text-center">
                     <span slot="subtitle">
-                      Something about all the routes. This whole section isn't necessary, but I thought I'd add it just in case you wanted it.
-                    </span>
+                      Ride along Lake Lowell, among the orchards, down into the lush Melba Valley and through beautiful open farming communities                    </span>
                   </q-card-main>
                 </div>
                 <div class="col-xs-12 col-md-3 text-center self-center">
@@ -243,8 +242,8 @@
                   <h4>18 Mile</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  A shortish description of the 18 mile race, see <a href="https://wackybikeride.com/" target="_blank">https://wackybikeride.com/</a> for inspiration
-                </span>
+                  Flat and mellow ride through farmland with one rest stop half-way through course. Race with
+                  the bumble bees, fly with the birds and burn up the road with human powered speed!                </span>
               </q-card-title>
             </div>
           </q-card-media>
@@ -261,11 +260,10 @@
             <div slot="overlay">
               <q-card-title class="text-center">
                 <q-btn class="route-btn" @click="$router.push('31-mile')" outline color="red">
-                  <h4>30 Mile</h4>
+                  <h4>31 Mile</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  A shortish description of the 30 mile race, see <a href="https://wackybikeride.com/" target="_blank">https://wackybikeride.com/</a> for inspiration
-
+                  Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight those who want to establish a new 40k personal best. 
                 </span>
               </q-card-title>
             </div>
@@ -286,8 +284,7 @@
                   <h4>Metric Century</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  A shortish description of the Metric Century race, see <a href="https://wackybikeride.com/" target="_blank">https://wackybikeride.com/</a> for inspiration
-
+                  Completely redesigned course for 2018. This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops.
                 </span>
               </q-card-title>
             </div>
@@ -308,8 +305,8 @@
                   <h4>Century</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  A shortish description of the Century race, see <a href="https://wackybikeride.com/" target="_blank">https://wackybikeride.com/</a> for inspiration
-
+                  Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails are for sissys and blisters are braille for success. 
+                  <!-- The course has a little of everything including short climbs, rolling hills, and flats -->
                 </span>
               </q-card-title>
             </div>

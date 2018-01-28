@@ -11,9 +11,15 @@
             </div>
         </div>
         <div class="row wrap justify-center">
-            <h6 class="top text-italic light-paragraph text-justify col-xs-11 col-md-8">
-                A shortish description of the race, see <a href="https://wackybikeride.com/routes/12-mile-family-ride/" target="_blank">https://wackybikeride.com/routes/12-mile-family-ride/</a> for inspiration
-            </h6>
+            <h6 class="top light-paragraph text-justify col-xs-11 col-md-8">
+                62.5 miles long (because 62.6 would just be CRAZY!). Completely redesigned course for 2018.
+                This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The route Includes
+                rolling hills, scenic overlooks, vineyards and 4 rest stops. The course meets up with the last half
+                of the Century route (so you have additional riders to share your misery with along the way).
+                You will continue northwest toward Marsing and then turn back toward Kuna and pedal, pedal,
+                pedal, to Lake Shore Drive skirting Lake Lowell on your way back to the finish line where
+                festivities and food await, (if you are fast enough!). Just remember, Humpty Dumpty had wall
+                issues too but he overcame; so can you!</h6>
         </div>
         <div class="row wrap justify-center">
             <p>Distance: 62.8 Miles</p>

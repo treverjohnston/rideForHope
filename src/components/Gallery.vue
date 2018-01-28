@@ -1,6 +1,6 @@
 <template>
     <q-layout class="gallery">
-        <q-gallery-carousel ref="gallery" class="pics" infinite autoplay handle-arrow-keys fullscreen :src="pictures"></q-gallery-carousel>
+        <q-gallery-carousel ref="gallery" class="pics" infinite handle-arrow-keys fullscreen :src="pictures"></q-gallery-carousel>
     </q-layout>
 </template>
 
@@ -25,7 +25,7 @@
             }
         },
         mounted(){
-            this.$refs.gallery.toggleQuickView()
+            // this.$refs.gallery.toggleQuickView()
             this.$store.dispatch('getPictures')
         }
     }

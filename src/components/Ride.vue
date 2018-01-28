@@ -20,7 +20,7 @@
         </div>
         <div class="row wrap justify-center xs-gutter">
             <div class="col-xs-6 desktop-only">
-                <img src="~/statics/ride/ride1.jpg" class="responsive img" alt="RFH Logo">
+                <img src="statics/ride/ride1.jpg" class="responsive img" alt="RFH Logo">
             </div>
             <div class="col-xs-11 col-md-5 text-center">
                 <h3 class="desktop-only">Ride Day Information</h3>

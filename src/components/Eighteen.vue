@@ -11,9 +11,9 @@
             </div>
         </div>
         <div class="row wrap justify-center">
-            <h6 class="text-italic light-paragraph text-justify col-xs-11 col-md-8">
-                A shortish description of the race, see <a href="https://wackybikeride.com/routes/12-mile-family-ride/" target="_blank">https://wackybikeride.com/routes/12-mile-family-ride/</a> for inspiration
-
+            <h6 class="light-paragraph text-justify col-xs-11 col-md-8">
+                Flat and mellow ride through farmland with one rest stop half-way through course. Race with
+                the bumble bees, fly with the birds and burn up the road with human powered speed!
             </h6>
         </div>
         <div class="row wrap justify-center">
