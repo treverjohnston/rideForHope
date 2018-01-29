@@ -10,13 +10,6 @@
       <q-toolbar-title class="desktop-only">
         Ride For Hope Idaho
       </q-toolbar-title>
-      <span class="desktop-only">Join Team Ride For Hope Idaho on Strava!
-        <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-          <q-btn flat @click="launch('https://www.strava.com/clubs/302822')">
-            <img class="strava-top" src="statics/strava2.png" alt="strava logo">
-          </q-btn>
-        </q-transition>
-      </span>
       <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
         <q-btn class="desktop-only" @click="launch('http://www.meridian-cycles.com/')">
           <img class="meridian desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
@@ -35,32 +28,43 @@
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-route-tab class="tab" slot="title" label="About" name="about" to="about" />
-      <q-tab class="tab involved" slot="title" label="Register" name="register">
-        <q-popover fit ref="popoverReg" class="involved">
-          <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Register" name="register" to="register" />
-          </q-item-main>
-          <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Ride Day Info" name="register" to="ride" />
-          </q-item-main>
-        </q-popover>
-      </q-tab>
-      <q-tab class="tab involved" slot="title" label="Routes" name="routes">
+      <q-tab class="tab involved" slot="title" label="Rider Info" name="routes">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="All Routes" name="routes" to="routes" />
+            <q-tab class="tab" slot="title" label="Routes" name="routes" />
+            <q-popover anchor="top left" fit ref="routePop">
+              <q-item-main>
+                <q-route-tab class="tab" @click="collapse" slot="title" label="All Routes" name="routes" to="routes" />
+              </q-item-main>
+              <q-item-main>
+                <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="routes" to="18-mile" />
+              </q-item-main>
+              <q-item-main>
+                <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="routes" to="31-mile" />
+              </q-item-main>
+              <q-item-main>
+                <q-route-tab class="tab" @click="collapse" slot="title" label="Metric Century" name="routes" to="metric" />
+              </q-item-main>
+              <q-item-main>
+                <q-route-tab class="tab" @click="collapse" slot="title" label="Century" name="routes" to="Century" />
+              </q-item-main>
+            </q-popover>
           </q-item-main>
           <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="routes" to="18-mile" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Register" name="routes" to="register" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="routes" to="31-mile" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Start Times And Directions" name="routes" to="ride" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="Metric Century" name="routes" to="metric" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Rules Of The Road" name="routes" to="rules" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="Century" name="routes" to="Century" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="How Climbs Are Categorized" name="routes" to="climbs" />
+          </q-item-main>
+          <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Team Ride For Hope Idaho Information" name="routes" to="team"
+            />
           </q-item-main>
         </q-popover>
       </q-tab>
@@ -72,7 +76,6 @@
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Merchandise" name="merchandise" to="merchandise" />
           </q-item-main>
-
         </q-popover>
       </q-tab>
       <q-route-tab class="tab" slot="title" label="Volunteer" name="volunteers" to="volunteers" />
@@ -101,25 +104,46 @@
           </q-side-link>
         </q-collapsible>
         <hr class="tabhr">
-        <q-collapsible class="side-collapse" label="Routes">
-          <q-side-link to="routes">
-            <q-item-main class="small-side" label="All Routes" />
+        <q-collapsible class="side-collapse" label="Rider Information">
+          <q-collapsible class="side-collapse" label="Routes">
+            <q-side-link to="routes">
+              <q-item-main class="small-side" label="All Routes" />
+            </q-side-link>
+            <hr class="tabhr">
+            <q-side-link to="18-mile">
+              <q-item-main class="small-side" label="18 Mile" />
+            </q-side-link>
+            <hr class="tabhrs">
+            <q-side-link to="31-mile">
+              <q-item-main class="small-side" label="31 Mile" />
+            </q-side-link>
+            <hr class="tabhrs">
+            <q-side-link to="metric">
+              <q-item-main class="small-side" label="Metric Century" />
+            </q-side-link>
+            <hr class="tabhrs">
+            <q-side-link to="Century">
+              <q-item-main class="small-side" label="Century" />
+            </q-side-link>
+          </q-collapsible>
+          <hr class="tabhrs">
+          <q-side-link to="register" class="left">
+            <q-item-main class="small-side" label="Register" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="ride">
+            <q-item-main class="small-side" label="Start Time And Directions" />
           </q-side-link>
           <hr class="tabhr">
-          <q-side-link to="18-mile">
-            <q-item-main class="small-side" label="18 Mile" />
+          <q-side-link to="rules">
+            <q-item-main class="small-side" label="Rules Of The Road" />
           </q-side-link>
-          <hr class="tabhrs">
-          <q-side-link to="31-mile">
-            <q-item-main class="small-side" label="31 Mile" />
+          <q-side-link to="climbs">
+            <q-item-main class="small-side" label="How Climbs Are Categorized" />
           </q-side-link>
-          <hr class="tabhrs">
-          <q-side-link to="metric">
-            <q-item-main class="small-side" label="Metric Century" />
-          </q-side-link>
-          <hr class="tabhrs">
-          <q-side-link to="Century">
-            <q-item-main class="small-side" label="Century" />
+          <hr class="tabhr">
+          <q-side-link to="team">
+            <q-item-main class="small-side" label="Team Ride For Hope Idaho Information" />
           </q-side-link>
         </q-collapsible>
         <hr class="tabhr">
@@ -166,7 +190,7 @@
             </div>
             <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn>
           </div>
-          </q-transition>
+        </q-transition>
         <div class="promo text-center mobile-only">
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
           <h3 class="text-bold">2018 Event Date: Saturday, June 23</h3>
@@ -210,7 +234,8 @@
                 <div class="col-xs-12 col-md-4 self-center">
                   <q-card-main class="text-center">
                     <span slot="subtitle">
-                      Ride along Lake Lowell, among the orchards, down into the lush Melba Valley and through beautiful open farming communities                    </span>
+                      Ride along Lake Lowell, among the orchards, down into the lush Melba Valley and through beautiful open farming communities
+                    </span>
                   </q-card-main>
                 </div>
                 <div class="col-xs-12 col-md-3 text-center self-center">
@@ -242,8 +267,8 @@
                   <h4>18 Mile</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  Flat and mellow ride through farmland with one rest stop half-way through course. Race with
-                  the bumble bees, fly with the birds and burn up the road with human powered speed!                </span>
+                  Flat and mellow ride through farmland with one rest stop half-way through course. Race with the bumble bees, fly with the
+                  birds and burn up the road with human powered speed! </span>
               </q-card-title>
             </div>
           </q-card-media>
@@ -263,7 +288,8 @@
                   <h4>31 Mile</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight those who want to establish a new 40k personal best. 
+                  Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight
+                  those who want to establish a new 40k personal best.
                 </span>
               </q-card-title>
             </div>
@@ -284,7 +310,8 @@
                   <h4>Metric Century</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  Completely redesigned course for 2018. This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops.
+                  Completely redesigned course for 2018. This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The
+                  route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops.
                 </span>
               </q-card-title>
             </div>
@@ -305,7 +332,8 @@
                   <h4>Century</h4>
                 </q-btn>
                 <span slot="subtitle">
-                  Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails are for sissys and blisters are braille for success. 
+                  Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails are for sissys
+                  and blisters are braille for success.
                   <!-- The course has a little of everything including short climbs, rolling hills, and flats -->
                 </span>
               </q-card-title>
@@ -368,7 +396,7 @@
         </q-parallax>
       </div>
     </div>
-<!-- Footer -->
+    <!-- Footer -->
     <div class="footer text-center text-bold" slot="footer">
       <div class="row justify-center">
         <div class="col-xs-12">
@@ -527,7 +555,8 @@
       collapse() {
         this.$refs.popover.close();
         this.$refs.popoverRoutes.close();
-        this.$refs.popoverReg.close();
+        // this.$refs.popoverReg.close();
+        this.$refs.routePop.close();
       },
       animate() {
         anime({
@@ -567,19 +596,22 @@
 </script>
 
 <style scoped>
-  .route-btn{
+  .route-btn {
     margin-bottom: 1rem;
   }
+
   .routeshr {
     width: 90%;
     margin-bottom: 3rem;
   }
-.black{
-  height: 100%;
-    width: 100%;
-        background: rgba(0, 0, 0, 0.479);
 
-}
+  .black {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.479);
+
+  }
+
   .black-back {
     background: rgba(0, 0, 0, 0.808);
     height: 100%;
@@ -749,7 +781,7 @@
     max-height: 13rem;
   }
 
- 
+
 
   .promo {
     /* margin-top: -6rem; */

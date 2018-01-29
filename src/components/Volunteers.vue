@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="row wrap justify-center bot desktop-only sm-gutter">
-            <div class="col-xs-3">
+            <div class="col-xs-4">
                 <q-input v-model="name" float-label="Name" name="name" />
                 <q-input v-model="email" float-label="Email" name="email" />
                 <q-input v-model="phone" float-label="Phone" name="phone" />
@@ -15,7 +15,7 @@
                 <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
                 <q-btn @click="send">Send</q-btn>
             </div> 
-            <div class="col-xs-8">
+            <div class="col-xs-7">
                 <h6 class="light-paragraph text-center red">Thanks to all of you who are volunteering ---- we couldn't do this without you!</h6>
                 <div id="bar" class="row wrap justify center">
                     <div v-for="pic in pictures" class="col-xs-6">
@@ -132,7 +132,8 @@
         padding-top: 1rem;
     }
     .test {
-        width: 30vw;
+        width: 20vw;
+        padding-bottom: 1rem;
     }
 
     .red {

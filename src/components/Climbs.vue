@@ -10,9 +10,9 @@
                         </div>
                         <!-- <h3 class="red-back">Ride Day Information</h3> -->
                     </q-parallax>
-                            <q-card-title slot="overlay" class="text-center">
-                                <h3 class="red-back">Ride Day Information</h3>
-                            </q-card-title>
+                    <q-card-title slot="overlay" class="text-center">
+                        <h3 class="red-back">Ride Day Information</h3>
+                    </q-card-title>
                     <!-- <img src="statics/ride/IMG_8932.JPG.jpg" class="responsive" alt="picture"> -->
                 </q-card-media>
                 <q-parallax class="mobile-only" src="statics/road.jpg" :speed=".8" :height="200">
@@ -29,14 +29,22 @@
                 <img src="statics/ride/ride1.jpg" class="responsive img" alt="RFH Logo">
             </div>
             <div class="col-xs-11 col-md-5 text-center">
-                <h3 class="desktop-only">Ride Day Information</h3>
-                <h4 class="mobile-only">Ride Day Information</h4>
-                <p>Registration opens at ----</p>
-                <hr class="ihr">
-                <h5>Metric Century/Century Start Time</h5>
-                <p>7:00 AM</p>
-                <h5>18/31 Mile Start Time</h5>
-                <p>8:00 AM</p>
+                <h3 class="desktop-only">INFORMATION ABOUT CLIMBS (modified from www.mapmyride)
+                </h3>
+                <h4 class="mobile-only">INFORMATION ABOUT CLIMBS (modified from www.mapmyride)
+                </h4>
+                <p>For any climb to be rated (receive a climb score/category) it must be 500 meters in length with an average
+                    grade of 3% or more . Climbs are categorized from 4 (easiest) to beyond category (HC) most difficult.
+                    Map My Ride has added an additional category 5 rating. All climb scores are based on distance, grade/elevation
+                    change, and maximum elevation. The combination of these factors drives all final climb categories and
+                    there is no subjective analysis used in the final scoring of any climb score. All other climbs that do
+                    not meet the criteria for categorization are simply too small to rate and can usually be crossed easily
+                    by bicycle, running or walking. Categorized climb ratings are given by the UCI for races like the Tour
+                    de France and other professional cycling events. There are only three categorized climbs involving Ride
+                    For Hope Idaho routes. All three of the climbs are rated as category 5 climbs using Map My Ride methodology.
+                    Two of the climbs are on the Century Route and one climb is on the Metric Century course. Neither the
+                    18 mile or 31 mile routes have climbs that are steep enough, or long enough, to categorize. If you would
+                    like additional information on climbs please go to www.mapmyride. </p>
             </div>
             <div class="col-xs-10 text-center">
                 <h3 class="desktop-only">Additional Ride Day Information</h3>
@@ -56,17 +64,7 @@
                     tenetur repudiandae architecto provident ipsam eligendi unde ipsa obcaecati hic facere debitis omnis
                     ducimus enim ad cupiditate temporibus recusandae! Rem quia qui dignissimos obcaecati facere. </p>
             </div>
-            <div class="col-xs-10">
-                <h3 class="desktop-only text-center">Directions to Race Start (Kuna City Hall)</h3>
-                <h4 class="mobile-only text-center">Directions to Race Start (Kuna City Hall)</h4>
 
-                <iframe class="frame" src="//www.google.com/maps/embed/v1/place?q=Kuna%20City%20Hall
-                    &zoom=13
-                    &attribution_source=Google+Maps+Embed+API
-                    &attribution_web_url=https://developers.google.com/maps/documentation/embed/
-                    &key=AIzaSyBLaoSdXeLvOkN5Tp5YkPZ35gXfi5-LhsI" allowfullscreen>
-                </iframe>
-            </div>
         </div>
     </q-layout>
 </template>

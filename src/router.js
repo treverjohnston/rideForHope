@@ -91,6 +91,18 @@ export default new VueRouter({
         {
           path: 'ride',
           component: load('Ride')
+        },
+        {
+          path: 'rules',
+          component: load('Rules')
+        },
+        {
+          path: 'climbs',
+          component: load('Climbs')
+        },
+        {
+          path: 'team',
+          component: load('Team')
         }
       ]
     },

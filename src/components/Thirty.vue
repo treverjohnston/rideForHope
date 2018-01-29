@@ -12,35 +12,41 @@
             </div>
             <div class="row wrap justify-center">
                 <h6 class="top light-paragraph text-justify col-xs-11 col-md-8">
-                    Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland.
-                    This is a course that will delight those who want to establish a new 40k personal best. But
-                    remember, you surely didn’t train all that time just to come to the ride and get it over with as
-                    fast as you can; did you?! Stop and smell the roses, converse with your riding partners, and
-                    don’t forget to experience a fancy porta-john at one of the three rest stops you will encounter
-                    along the route!            </h6>
+                        Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland.
+                        This is a course that will delight those who want to establish a new 40k personal best. But you surely didn’t train all that time to come to Ride For Hope Idaho just to get it over with as fast as you can; did you?! Stop and smell the roses, converse with your riding partners,  and don’t forget to experience a fancy porta-john at one of the three rest stops you will encounter along the route!
+                                   </h6>
             </div>
-            <div class="row wrap justify-center">
-                    <p>Distance: 31 Miles</p>
-                </div>
-                <div class="row wrap justify-center">
-                    <p>Elevation: +501ft</p>
-                </div>
             <div class="row wrap justify-center">
                 <q-card class="route col-xs-11 col-md-8 shadow-24">
                     <q-transition appear enter="zoomIn" leave="fadeOut">
                         <div>
                             <q-card-media>
-                                <img src="http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg" alt="18-mile preview">
+                                <img src="http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg" alt="31-mile preview">
                             </q-card-media>
                             <q-card-actions align="center">
-                                <a href="http://www.mapmyride.com/routes/view/1478990992" target="_blank">
-                                    <q-btn class="r-btn" no-caps>Route Map</q-btn>
-                                </a>
-                            </q-card-actions>
+                                    <q-collapsible class="white-text" label="View More Map Options">
+                                        <q-btn class="r-btn" @click="launch('http://www.mapmyride.com/routes/view/1478990992')" no-caps>Map My Ride</q-btn>
+                                        <q-btn class="r-btn" @click="launch('http://www.strava.com/routes/3647308')" no-caps>Strava</q-btn>
+                                        <q-btn class="r-btn" @click="launch('https://connect.garmin.com/modern/course/16760417')" no-caps>Garmin</q-btn>
+                                        <q-btn class="r-btn" @click="launch('https://ridewithgps.com/routes/26451284')" no-caps>Ride With GPS</q-btn>
+                                    </q-collapsible>
+                                </q-card-actions>
                         </div>
                     </q-transition>
                 </q-card>
             </div>
+            <div class="row wrap justify-center">
+                    <q-card class="route col-xs-11 col-md-8 shadow-24">
+                        <q-transition appear enter="zoomIn" leave="fadeOut">
+                            <div>
+                                <q-card-media>
+                                    <img src="http://res.cloudinary.com/treverscloud/image/upload/v1517248679/31_Mile_Elevation_Profile_Only_oztpv1.jpg" alt="31-mile elevation profile">
+                                </q-card-media>
+                                
+                            </div>
+                        </q-transition>
+                    </q-card>
+                </div>
         </q-layout>
     </template>
     
@@ -55,7 +61,8 @@
             QCard,
             QCardMedia,
             QCardActions,
-            QParallax
+            QParallax,
+            QCollapsible
         } from 'quasar'
         export default {
             name: 'thirty',
@@ -72,7 +79,8 @@
                 QCard,
                 QCardMedia,
                 QCardActions,
-                QParallax
+                QParallax,
+                QCollapsible
             },
             computed: {
                 pictures() {
@@ -109,8 +117,5 @@
     
         .thirty {
             background-image: url("~statics/triangular.png");
-        }
-        .q-card-actions{
-            background-image: url("~statics/binding_dark.png");
         }
     </style>
