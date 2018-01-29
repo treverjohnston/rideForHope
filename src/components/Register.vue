@@ -8,9 +8,9 @@
             <div class="row justify-center">
               <div class="col-xs-12">
                 <q-card-title slot="overlay" class="text-center">
-                  <h2 class="text-bold desktop-only">Registration for 2018 will be opening in the near future, check back soon!</h2>
-                  <h4 class="text-bold mobile-only">Registration for 2018 will be opening in the near future, check back soon!</h4>
-                  <q-btn no-caps @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Register</q-btn>
+                  <h2 class="text-bold desktop-only">Registration Opens February 1, 2018</h2>
+                  <h4 class="text-bold mobile-only">Registration Opens February 1, 2018</h4>
+                  <!-- <q-btn no-caps @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Register</q-btn> -->
                 </q-card-title>
               </div>
             </div>

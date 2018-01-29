@@ -5,7 +5,8 @@
                 <div class="col-lg-8 top text-center">
                     <hr color="red" class="hr">
                     <h2 class="headline text-bold">Merchandise</h2>
-                    <h4 class="fancy">Check back soon for merchandise</h4>
+                    <hr color="red" class="hr">
+                    <!-- <h4 class="fancy">Check back soon for merchandise</h4> -->
                 </div>
             </q-transition>
         </div>
@@ -14,10 +15,26 @@
                 <div class="col-xs-11 top text-center">
                     <hr color="red" class="hr">
                     <h4 class="headline text-bold">Merchandise</h4>
-                    <h5 class="fancy">Check back soon for merchandise</h5>
+                    <hr color="red" class="hr">
+                    <!-- <h5 class="fancy">Check back soon for merchandise</h5> -->
                 </div>
             </q-transition>
         </div>
+        <q-transition appear enter="fadeIn" leave="fadeOut">
+            <div class="row wrap justify-center pics desktop-only">
+                <q-card flat align="center" class="col-xs-12 col-md-6">
+                    <q-card-media>
+                        <img src="~statics/jersey.jpg" class="responsive" alt="Jersey">
+                    </q-card-media>
+                    <q-card-title class="black-text">
+                        Ride For Hope Idaho Jersey </q-card-title>
+                    <q-card-main>
+                        <q-btn no-caps @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">$40.00</q-btn>
+                    </q-card-main>
+                </q-card>
+            </div>
+        </q-transition>
+
     </q-layout>
 </template>
 
@@ -82,12 +99,11 @@
         background-color: transparent;
     }
 
-    .btn {
-        background-color: rgba(197, 7, 7, 0.8);
+    .cbtn {
+        background-color: rgba(218, 0, 0, 0.699);
         color: white;
-        padding: 1rem 1rem 1rem 1rem;
-        margin: 1rem 0 1rem 0;
-    }
+        padding: 0 2rem 0 2rem;
+      }
 
     .fancy {
         font-family: 'Niconne', cursive;
@@ -107,10 +123,9 @@
         padding: 2rem 0 1rem 0;
     }
 
-    .img {
-        max-height: 20rem;
+    .black-text{
+        color: black;
     }
-
     .raffle {
         background-image: url("~statics/road.jpg");
         background-size: cover;
