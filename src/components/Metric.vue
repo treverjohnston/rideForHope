@@ -22,7 +22,7 @@
                         <q-card-media>
                             <img src="http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/62.8_obydkx.jpg" alt="metric century preview">
                         </q-card-media>
-                        <q-card-actions align="center">
+                        <q-card-actions class="desktop-only" align="center">
                                 <q-collapsible class="white-text" label="View More Map Options">
                                     <q-btn class="r-btn" @click="launch('http://www.mapmyride.com/routes/view/981667107')" no-caps>Map My Ride</q-btn>
                                     <q-btn class="r-btn" @click="launch('http://www.strava.com/routes/4093800')" no-caps>Strava</q-btn>
@@ -30,6 +30,13 @@
                                     <q-btn class="r-btn" @click="launch('https://ridewithgps.com/routes/26451173')" no-caps>Ride With GPS</q-btn>
                                 </q-collapsible>
                             </q-card-actions>
+                            <div align="center" class="white-text mobile-only" label="View More Map Options">
+                                    <q-btn class="btn" @click="launch('http://www.mapmyride.com/routes/view/981667107')" no-caps>Map My Ride</q-btn>
+                                    <q-btn class="btn" @click="launch('http://www.strava.com/routes/4093800')" no-caps>Strava</q-btn>
+                                    <q-btn class="btn" @click="launch('https://connect.garmin.com/modern/course/16760339')" no-caps>Garmin</q-btn>
+                                    <q-btn class="btn" @click="launch('https://ridewithgps.com/routes/26451173')" no-caps>Ride With GPS</q-btn>
+
+</div>
                     </div>
                 </q-transition>
             </q-card>
@@ -108,7 +115,11 @@
 </script>
 
 <style scoped>
-
+.btn {
+        margin: .5rem .5rem .5rem 0;
+        background-color: rgba(197, 7, 7, 0.8);
+        color: white;
+    }
     .route {
         border: 5px solid black;
     }

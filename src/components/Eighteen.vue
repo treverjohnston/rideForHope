@@ -33,14 +33,20 @@
                         <q-card-media>
                             <img src="http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/18_mrihcr.jpg" alt="18-mile preview">
                         </q-card-media>
-                        <q-card-actions align="center">
-                                <q-collapsible class="white-text" label="View More Map Options">
-                                    <q-btn class="r-btn" @click="launch('http://www.mapmyride.com/routes/view/996049745')" no-caps>Map My Ride</q-btn>
-                                    <q-btn class="r-btn" @click="launch('http://www.strava.com/routes/4176344')" no-caps>Strava</q-btn>
-                                    <q-btn class="r-btn" @click="launch('https://connect.garmin.com/modern/course/16760460')" no-caps>Garmin</q-btn>
-                                    <q-btn class="r-btn" @click="launch('https://ridewithgps.com/routes/12352336')" no-caps>Ride With GPS</q-btn>
-                                </q-collapsible>
-                            </q-card-actions>
+                        <q-card-actions class="desktop-only" align="center">
+                            <q-collapsible class="white-text" label="View More Map Options">
+                                <q-btn class="r-btn" @click="launch('http://www.mapmyride.com/routes/view/996049745')" no-caps>Map My Ride</q-btn>
+                                <q-btn class="r-btn" @click="launch('http://www.strava.com/routes/4176344')" no-caps>Strava</q-btn>
+                                <q-btn class="r-btn" @click="launch('https://connect.garmin.com/modern/course/16760460')" no-caps>Garmin</q-btn>
+                                <q-btn class="r-btn" @click="launch('https://ridewithgps.com/routes/12352336')" no-caps>Ride With GPS</q-btn>
+                            </q-collapsible>
+                        </q-card-actions>
+                        <div align="center" class="white-text mobile-only small" label="View More Map Options">
+                            <q-btn class="btn" @click="launch('http://www.mapmyride.com/routes/view/996049745')" no-caps>Map My Ride</q-btn>
+                            <q-btn class="btn" @click="launch('http://www.strava.com/routes/4176344')" no-caps>Strava</q-btn>
+                            <q-btn class="btn" @click="launch('https://connect.garmin.com/modern/course/16760460')" no-caps>Garmin</q-btn>
+                            <q-btn class="btn" @click="launch('https://ridewithgps.com/routes/12352336')" no-caps>Ride With GPS</q-btn>
+                        </div>
                     </div>
                 </q-transition>
             </q-card>
@@ -52,7 +58,7 @@
                         <q-card-media>
                             <img src="http://res.cloudinary.com/treverscloud/image/upload/v1517248679/18_Mile_Elevation_Profile_Only_a0jjur.jpg" alt="18-mile elevation profile">
                         </q-card-media>
-                        
+
                     </div>
                 </q-transition>
             </q-card>
@@ -107,9 +113,20 @@
 </script>
 
 <style scoped>
-    .white-text{
+    .btn {
+        margin: .5rem .5rem .5rem 0;
+        background-color: rgba(197, 7, 7, 0.8);
         color: white;
     }
+
+    .small {
+        font-size: .5rem;
+    }
+
+    .white-text {
+        color: white;
+    }
+
     .map {
         height: 90vh;
         width: 100%;
@@ -135,9 +152,5 @@
 
     .eighteen {
         background-image: url("~statics/triangular.png");
-    }
-
-    .q-card-actions {
-        /* background-image: url("~statics/binding_dark.png"); */
     }
 </style>

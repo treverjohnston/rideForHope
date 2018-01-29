@@ -94,7 +94,7 @@
           <q-item-main class="side" label="About" />
           <hr class="tabhr">
         </q-side-link>
-        <q-collapsible class="side-collapse" label="Register">
+        <!-- <q-collapsible class="side-collapse" label="Register">
           <q-side-link to="register" class="left">
             <q-item-main class="small-side" label="Register" />
           </q-side-link>
@@ -103,7 +103,7 @@
             <q-item-main class="small-side" label="Ride Day Info" />
           </q-side-link>
         </q-collapsible>
-        <hr class="tabhr">
+        <hr class="tabhr"> -->
         <q-collapsible class="side-collapse" label="Rider Information">
           <q-collapsible class="side-collapse" label="Routes">
             <q-side-link to="routes">
@@ -138,6 +138,7 @@
           <q-side-link to="rules">
             <q-item-main class="small-side" label="Rules Of The Road" />
           </q-side-link>
+          <hr class="tabhr">
           <q-side-link to="climbs">
             <q-item-main class="small-side" label="How Climbs Are Categorized" />
           </q-side-link>
@@ -193,8 +194,8 @@
         </q-transition>
         <div class="promo text-center mobile-only">
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
-          <h3 class="text-bold">2018 Event Date: Saturday, June 23</h3>
-          <h3 class="text-bold">Kuna, ID</h3>
+          <h4 class="text-bold">2018 Event Date: Saturday, June 23</h4>
+          <h4 class="text-bold">Kuna, ID</h4>
         </div>
         <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center mobile-only">Ride Day Information</q-btn>
       </q-parallax>
@@ -613,7 +614,7 @@
   }
 
   .black-back {
-    background: rgba(0, 0, 0, 0.808);
+    background: rgba(0, 0, 0, 0.308);
     height: 100%;
     width: 100%;
   }
