@@ -192,7 +192,7 @@
       <div class="row wrap">
         <div class="col-xs-12">
           <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="500" src="./statics/cardboard.png">
+            <q-parallax :speed=".7" :height="500" src="./statics/zoomout.jpg">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black">
