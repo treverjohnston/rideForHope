@@ -53,7 +53,7 @@
                 <p>
                     You must attend every Saturday training ride. (Begins March 3 -- We leave from Meridian Cycles)
                 </p>
-                <p>You must commit to another charity ride. (i.e. Cycle for Independece)</p>
+                <p>You must commit to another charity ride. (i.e. Cycle for Independence)</p>
             </div>
             
 
