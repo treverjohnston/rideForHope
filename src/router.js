@@ -101,6 +101,10 @@ export default new VueRouter({
           component: load('Climbs')
         },
         {
+          path: 'packet',
+          component: load('Packet')
+        },
+        {
           path: 'team',
           component: load('Team')
         }

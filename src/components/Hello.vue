@@ -16,54 +16,64 @@
         </q-btn>
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')">Donate Now
+        <q-btn outline color="red" @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')">Donate
         </q-btn>
       </q-transition>
-      <a class="mobile-only absolute-right" href="http://www.meridian-cycles.com/" target="_blank">
-        <q-btn>
-          <img class="meridian-mobile" src="statics/meridian.png" alt="Meridian Cycles logo">
+      <q-transition appear enter="lightSpeedIn" leave="fadeOut">
+        <q-btn outline @click="$router.push('/register')" color="red" >Register
         </q-btn>
-      </a>
+      </q-transition>
+      <q-btn class="mobile-only">
+        <img class="meridian-mobile" @click="launch('http://www.meridian-cycles.com/')" src="statics/meridian.png" alt="Meridian Cycles logo">
+      </q-btn>
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-route-tab class="tab" slot="title" label="About" name="about" to="about" />
-      <q-tab class="tab involved" slot="title" label="Rider Info" name="routes">
+      <q-route-tab @click="collapse" class="tab" slot="title" color="red" label="Register" name="reg" to="register" />
+      <q-tab class="tab" slot="title" label="Routes" name="routes">
+      <q-popover fit ref="routePop">
+        <q-item-main>
+          <q-route-tab class="tab" @click="collapse" slot="title" label="All Routes" name="routes" to="routes" />
+        </q-item-main>
+        <q-item-main>
+          <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="routes" to="18-mile" />
+        </q-item-main>
+        <q-item-main>
+          <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="routes" to="31-mile" />
+        </q-item-main>
+        <q-item-main>
+          <q-route-tab class="tab" @click="collapse" slot="title" label="Metric Century" name="routes" to="metric" />
+        </q-item-main>
+        <q-item-main>
+          <q-route-tab class="tab" @click="collapse" slot="title" label="Century" name="routes" to="Century" />
+        </q-item-main>
+      </q-popover>
+      </q-tab>
+      <q-tab class="tab involved" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
-            <q-tab class="tab" slot="title" label="Routes" name="routes" />
-            <q-popover anchor="top left" fit ref="routePop">
-              <q-item-main>
-                <q-route-tab class="tab" @click="collapse" slot="title" label="All Routes" name="routes" to="routes" />
-              </q-item-main>
-              <q-item-main>
-                <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="routes" to="18-mile" />
-              </q-item-main>
-              <q-item-main>
-                <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="routes" to="31-mile" />
-              </q-item-main>
-              <q-item-main>
-                <q-route-tab class="tab" @click="collapse" slot="title" label="Metric Century" name="routes" to="metric" />
-              </q-item-main>
-              <q-item-main>
-                <q-route-tab class="tab" @click="collapse" slot="title" label="Century" name="routes" to="Century" />
-              </q-item-main>
-            </q-popover>
+            <q-item-main>
+              <q-route-tab class="tab" @click="collapse" slot="title" label="All Routes" name="rider" to="routes" />
+            </q-item-main>
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Register" name="routes" to="register" />
+            <q-route-tab @click="collapse" class="tab" slot="title" color="red" label="Register" name="rider" to="register" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Start Times And Directions" name="routes" to="ride" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Start Times And Directions" name="rider" to="ride" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Rules Of The Road" name="routes" to="rules" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Packet Pick Up" name="rider" to="packet" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="How Climbs Are Categorized" name="routes" to="climbs" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Rules Of The Road" name="rider" to="rules" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Team Ride For Hope Idaho Information" name="routes" to="team"
+            <q-route-tab @click="collapse" class="tab" slot="title" label="How Climbs Are Categorized" name="rider" to="climbs" />
+          </q-item-main>
+          <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Team Ride For Hope Idaho Information" name="rider" to="team"
             />
           </q-item-main>
         </q-popover>
@@ -94,45 +104,51 @@
           <q-item-main class="side" label="About" />
           <hr class="tabhr">
         </q-side-link>
-        <!-- <q-collapsible class="side-collapse" label="Register">
-          <q-side-link to="register" class="left">
-            <q-item-main class="small-side" label="Register" />
+        <q-side-link to="register">
+          <q-item-main class="side register" label="Register" />
+        </q-side-link>
+        <hr class="tabhrs">
+        <q-collapsible class="side-collapse" label="Routes">
+          <q-side-link to="routes">
+            <q-item-main class="small-side" label="All Routes" />
+          </q-side-link>
+          <hr class="tabhr">
+          <q-side-link to="18-mile">
+            <q-item-main class="small-side" label="18 Mile" />
           </q-side-link>
           <hr class="tabhrs">
-          <q-side-link to="ride">
-            <q-item-main class="small-side" label="Ride Day Info" />
+          <q-side-link to="31-mile">
+            <q-item-main class="small-side" label="31 Mile" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="metric">
+            <q-item-main class="small-side" label="Metric Century" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="Century">
+            <q-item-main class="small-side" label="Century" />
           </q-side-link>
         </q-collapsible>
-        <hr class="tabhr"> -->
+        <hr class="tabhrs">
+        </q-collapsible>
+
+
         <q-collapsible class="side-collapse" label="Rider Information">
-          <q-collapsible class="side-collapse" label="Routes">
-            <q-side-link to="routes">
-              <q-item-main class="small-side" label="All Routes" />
-            </q-side-link>
-            <hr class="tabhr">
-            <q-side-link to="18-mile">
-              <q-item-main class="small-side" label="18 Mile" />
-            </q-side-link>
-            <hr class="tabhrs">
-            <q-side-link to="31-mile">
-              <q-item-main class="small-side" label="31 Mile" />
-            </q-side-link>
-            <hr class="tabhrs">
-            <q-side-link to="metric">
-              <q-item-main class="small-side" label="Metric Century" />
-            </q-side-link>
-            <hr class="tabhrs">
-            <q-side-link to="Century">
-              <q-item-main class="small-side" label="Century" />
-            </q-side-link>
-          </q-collapsible>
-          <hr class="tabhrs">
+
           <q-side-link to="register" class="left">
-            <q-item-main class="small-side" label="Register" />
+            <q-item-main class="small-side register" label="Register" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="routes">
+            <q-item-main class="small-side" label="All Routes" />
           </q-side-link>
           <hr class="tabhrs">
           <q-side-link to="ride">
-            <q-item-main class="small-side" label="Start Time And Directions" />
+            <q-item-main class="small-side" label="Start Time/Directions" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="packet">
+            <q-item-main class="small-side" label="Packet Pick Up" />
           </q-side-link>
           <hr class="tabhr">
           <q-side-link to="rules">
@@ -442,11 +458,11 @@
               <hr class="hr">
               <h5 class="text-bold text-italic">Semper Fidelis Sponsors</h5>
             </div>
-            <div class="col-xs-6 col-md-3">
+            <!-- <div class="col-xs-6 col-md-3">
               <q-btn flat @click="launch('http://www.meatsroyaleidaho.com/')">
                 <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="~statics/meats.jpg" alt="Meats Royale">
               </q-btn>
-            </div>
+            </div> -->
             <!-- <div class="col-xs-6 col-md-3">
               <q-btn flat @click="launch('https://www.sherwin-williams.com/homeowners')">
                 <img class="responsive silver" src="statics/sherwin.png" alt="Sherwin Williams">
@@ -597,6 +613,10 @@
 </script>
 
 <style scoped>
+  .register {
+    color: red;
+  }
+
   .route-btn {
     margin-bottom: 1rem;
   }
@@ -661,7 +681,7 @@
   }
 
   .meridian-mobile {
-    height: 4rem;
+    max-height: 3rem;
     margin-top: 0.5rem;
   }
 

@@ -27,10 +27,12 @@
                 <h3 class="desktop-only">INFORMATION ABOUT CLIMBS
                 </h3>
                 <h4 class="desktop-only">
-                        (modified from www.mapmyride)
+                    (modified from www.mapmyride)
                 </h4>
-                <h5 class="mobile-only">INFORMATION ABOUT CLIMBS (modified from www.mapmyride)
+                <h5 class="mobile-only">INFORMATION ABOUT CLIMBS
                 </h5>
+                <h6 class="mobile-only">(modified from www.mapmyride)
+                </h6>
                 <p class="text-justify">For any climb to be rated (receive a climb score/category) it must be 500 meters in length with an average
                     grade of 3% or more . Climbs are categorized from 4 (easiest) to beyond category (HC) most difficult.
                     Map My Ride has added an additional category 5 rating. All climb scores are based on distance, grade/elevation
@@ -41,10 +43,16 @@
                     de France and other professional cycling events. There are only three categorized climbs involving Ride
                     For Hope Idaho routes. All three of the climbs are rated as category 5 climbs using Map My Ride methodology.
                     Two of the climbs are on the Century Route and one climb is on the Metric Century course. Neither the
-                    18 mile or 31 mile routes have climbs that are steep enough, or long enough, to categorize. If you would
-                    like additional information on climbs please go to <a href="https://www.mapmyride.com" target="_blank">www.mapmyride.com</a>  </p>
+                    18 mile or 31 mile routes have climbs that are steep enough, or long enough, to categorize.
+                </p>
             </div>
-           
+            <q-card class="route col-xs-11 col-md-8">
+                <q-transition appear enter="zoomIn" leave="fadeOut">
+                        <q-card-media>
+                            <img src="http://res.cloudinary.com/treverscloud/image/upload/v1517248679/Climb_Ratings_Graph_xnzecm.jpg" class="responsive" alt="Climb info">
+                        </q-card-media>
+                </q-transition>
+            </q-card>
 
         </div>
     </q-layout>
@@ -59,7 +67,9 @@
         QParallax,
         openURL,
         QCardMedia,
-        QCardTitle
+        QCardTitle,
+        QCard,
+        QTransition
     } from 'quasar'
     export default {
         name: 'Ride',
@@ -80,7 +90,9 @@
             Toast,
             QParallax,
             QCardMedia,
-            QCardTitle
+            QCardTitle,
+            QCard,
+            QTransition
         },
         methods: {
             launch(url) {
@@ -92,6 +104,7 @@
 </script>
 
 <style scoped>
+
     .frame {
         width: 100%;
         height: 80vh;

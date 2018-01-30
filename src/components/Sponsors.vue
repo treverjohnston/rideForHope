@@ -10,11 +10,11 @@
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-11 col-md-10">
-                <h2 class="text-bold shadow desktop-only">Veni Vidi Vici Sponsors</h2>
-                <h3 class="text-bold shadow mobile-only">Veni Vidi Vici Sponsors</h3>
+                <h2 class="text-bold shadow desktop-only">Veni Vidi Vici Sponsors ($2500+)</h2>
+                <h3 class="text-bold shadow mobile-only">Veni Vidi Vici Sponsors ($2500+)</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
-                    <div class="col-xs-12 col-md-6">
+                    <div class="col-xs-12 col-md-10">
                         <img @click="launch('http://www.meridian-cycles.com/')" class="responsive gold" src="~statics/meridian.png" alt="Meridian cycles">
                     </div>
                 </div>
@@ -23,20 +23,20 @@
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
-                <h2 class="text-bold shadow desktop-only">Semper Fidelis Sponsors</h2>
-                <h3 class="text-bold shadow mobile-only">Semper Fidelis Sponsors</h3>
+                <h2 class="text-bold shadow desktop-only">Semper Fidelis Sponsors ($1500+)</h2>
+                <h3 class="text-bold shadow mobile-only">Semper Fidelis Sponsors ($1500+)</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
-                    <div class="col-xs-12 col-md-4">
+                    <!-- <div class="col-xs-12 col-md-4">
                         <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="~statics/meats.jpg" alt="Meats Royale">
-                    </div>
+                    </div> -->
                     <div class="col-xs-12 col-md-6">
                         <img @click="launch('https://10barrel.com/pub/boise/')" class="responsive silver" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"
                             alt="10 Barrel BrewingCo.">
                     </div>
-                    <div class="col-xs-12 col-md-4">
+                    <!-- <div class="col-xs-12 col-md-4">
                         <img class="responsive silver" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
-                    </div>
+                    </div> -->
 
                 </div>
                 <hr color="red" class="hr">
@@ -44,27 +44,44 @@
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
-                <h2 class="text-bold shadow desktop-only">Carpe Diem Sponsors</h2>
-                <h3 class="text-bold shadow mobile-only">Carpe Diem Sponsors</h3>
+                <h2 class="text-bold shadow desktop-only">Carpe Diem Sponsors ($500+)</h2>
+                <h3 class="text-bold shadow mobile-only">Carpe Diem Sponsors ($500+)</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
-
-                    <div class="col-xs-12 col-md-4">
+                    <div class="col-xs-12 col-md-4 self-center">
+                        <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="~statics/meats.jpg" alt="Meats Royale">
+                    </div>
+                    <div class="col-xs-12 col-md-4 self-center">
                         <img class="responsive" src="statics/sherwin.png" alt="Sherwin Williams">
                     </div>
+                    <div class="col-xs-12 col-md-4 self-center">
+                        <img class="responsive silver" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
+                    </div>
+                    <div class="col-xs-12 col-md-4 self-center">
+                            <img class="responsive" src="statics/lyle.jpg" alt="Lyle Pearson">
+                        </div>
+                    <div class="col-xs-12 col-md-4 self-center">
+                            <img class="responsive" src="statics/firstI.png" alt="1st Interstate Bank">
+                        </div>
+                    <div class="col-xs-12 col-md-4 self-center">
+                            <img class="responsive" src="statics/power.png" alt="Idaho Power">
+                        </div>
                 </div>
                 <hr color="red" class="hr">
             </div>
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
-                <h2 class="text-bold shadow desktop-only">Virtutem Spei Sponsors</h2>
-                <h3 class="text-bold shadow mobile-only">Virtutem Spei Sponsors</h3>
+                <h2 class="text-bold shadow desktop-only">Virtutem Spei Sponsors (<$500)</h2>
+                <h3 class="text-bold shadow mobile-only">Virtutem Spei Sponsors (<$500)</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
 
-                    <div class="col-xs-12 col-md-4">
-                        <img class="responsive" src="statics/lyle.jpg" alt="Lyle Pearson">
+                    <div class="col-xs-12 col-md-4 self-center">
+                        <img class="responsive" src="statics/franz.png" alt="Franz Bakery">
+                    </div>
+                    <div class="col-xs-12 col-md-4 self-center">
+                        <img class="responsive" src="statics/falls.png" alt="Falls Brand">
                     </div>
                 </div>
                 <hr color="red" class="hr">
@@ -110,9 +127,10 @@
 
 <style scoped>
     .gold {
-        height: 12rem;
+        height: 15rem;
     }
-    .silver{
+
+    .silver {
         /* width: 28rem */
     }
 
