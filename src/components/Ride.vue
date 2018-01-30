@@ -23,18 +23,22 @@
             </div>
         </div> -->
         <div class="row wrap justify-center xs-gutter">
-            <div class="col-xs-6 desktop-only">
+            <div class="col-xs-6 desktop-only self-center">
                 <img src="statics/ride/ride1.jpg" class="responsive img" alt="RFH Logo">
             </div>
-            <div class="col-xs-11 col-md-5 text-center">
+            <div class="col-xs-11 col-md-5 text-center self-center">
                 <h3 class="desktop-only">Ride Day Information</h3>
                 <h4 class="mobile-only">Ride Day Information</h4>
                 <p>Registration opens at ----</p>
                 <hr class="ihr">
-                <h5>Metric Century/Century Start Time</h5>
-                <p>7:00 AM</p>
-                <h5>18/31 Mile Start Time</h5>
-                <p>8:00 AM</p>
+                <h5>Century Start Time</h5>
+                <p>6:30 AM</p>
+                <h5>Metric Century Start Time</h5>
+                <p>8:30 AM</p>
+                <h5>31 Mile Start Time</h5>
+                <p>10:30 AM</p>
+                <h5>18 Mile Start Time</h5>
+                <p>11:00 AM</p>
             </div>
             <div class="col-xs-10">
                 <h3 class="desktop-only text-center">Directions to Race Start (Kuna City Hall)</h3>
