@@ -23,9 +23,6 @@
                 </div>
             </div> -->
         <div class="row wrap justify-center">
-            <!-- <div class="col-xs-6 desktop-only">
-                    <img src="statics/ride/ride1.jpg" class="responsive img" alt="RFH Logo">
-                </div> -->
             <div class="col-xs-11 col-md-8 text-center">
                 <h3 class="desktop-only">Rules of the Road</h3>
                 <h4 class="mobile-only">Rules of the Road</h4>
@@ -72,7 +69,14 @@
                 <hr class="ihr">
 
             </div>
+            <div class="col-xs-12">
+                <div class="spacer">
+                    <img class="ride" src="statics/RFHIdahoLogo.png" alt="ride for hope logo">
+                </div>
+            </div>
             <div class="col-xs-11 col-md-8 ">
+                <hr class="ihr">
+
                 <h3 class="desktop-only text-center">Idaho Biking Laws</h3>
                 <h4 class="mobile-only text-center">Idaho Biking Laws</h4>
                 <hr class="ihr">
@@ -136,19 +140,18 @@
                 </dl>
                 <hr class="ihr">
 
-                    <dt>49-721: BICYCLES ON SIDEWALKS.
+                <dt>49-721: BICYCLES ON SIDEWALKS.
 
-                    </dt>
-                    <dd>(1) A person operating a bicycle upon and along a sidewalk, or across a highway upon and along a crosswalk,
-                            shall yield the right-of-way to any pedestrian, and shall give an audible signal before overtaking and
-                            passing a pedestrian or another bicyclist. </dd>
-                    <dd> (2) A person shall not operate a bicycle along and upon a
-                            sidewalk or across a highway upon and along a crosswalk, where the use of bicycles is prohibited by official
-                            traffic control devices.</dd>
-                    <dd> (3) A person operating a vehicle by human power, or operating a motorized wheelchair
-                            or an electric personal assistive mobility device upon and along a sidewalk, or across a highway upon
-                            and along a crosswalk, shall have all the rights and duties applicable to a pedestrian under the same
-                            circumstances.</dd>
+                </dt>
+                <dd>(1) A person operating a bicycle upon and along a sidewalk, or across a highway upon and along a crosswalk,
+                    shall yield the right-of-way to any pedestrian, and shall give an audible signal before overtaking and
+                    passing a pedestrian or another bicyclist. </dd>
+                <dd> (2) A person shall not operate a bicycle along and upon a sidewalk or across a highway upon and along a crosswalk,
+                    where the use of bicycles is prohibited by official traffic control devices.</dd>
+                <dd> (3) A person operating a vehicle by human power, or operating a motorized wheelchair or an electric personal
+                    assistive mobility device upon and along a sidewalk, or across a highway upon and along a crosswalk,
+                    shall have all the rights and duties applicable to a pedestrian under the same circumstances.
+                </dd>
                 </dl>
                 <hr class="ihr">
                 <h6 class="text-center">For a complete list of Idaho biking laws, visit
@@ -203,6 +206,17 @@
 </script>
 
 <style scoped>
+    .ride {
+        height: 7rem;
+    }
+
+    .spacer {
+        padding: 0.5rem 0 0.5rem 0;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+    }
+
     .frame {
         width: 100%;
         height: 80vh;

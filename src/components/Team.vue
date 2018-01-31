@@ -29,7 +29,7 @@
             <div class="col-xs-11 col-md-5 text-center">
                 <h3 class="desktop-only">Team Ride For Hope Idaho</h3>
                 <h4 class="mobile-only">Team Ride For Hope Idaho</h4>
-                <p>Interested in joining Team For Hope Idaho?</p>
+                <p>Interested in joining Team Ride For Hope Idaho?</p>
                 <hr class="ihr">
                 <p>You Can Look at our club on Strava or view our Facebook page</p>
                 <div class="row justify-about">

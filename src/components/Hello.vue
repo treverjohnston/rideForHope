@@ -152,29 +152,29 @@
             </q-side-link>
           </q-collapsible>
           <hr class="tabhrs">
-        <q-side-link to="register" class="left">
-          <q-item-main class="small-side register" label="Register" />
-        </q-side-link>
-        <hr class="tabhrs">
-        <q-side-link to="ride">
-          <q-item-main class="small-side" label="Start Time/Directions" />
-        </q-side-link>
-        <hr class="tabhrs">
-        <q-side-link to="packet">
-          <q-item-main class="small-side" label="Packet Pick Up" />
-        </q-side-link>
-        <hr class="tabhr">
-        <q-side-link to="rules">
-          <q-item-main class="small-side" label="Rules Of The Road" />
-        </q-side-link>
-        <hr class="tabhr">
-        <q-side-link to="climbs">
-          <q-item-main class="small-side" label="How Climbs Are Categorized" />
-        </q-side-link>
-        <hr class="tabhr">
-        <q-side-link to="team">
-          <q-item-main class="small-side" label="Team Ride For Hope Idaho Information" />
-        </q-side-link>
+          <q-side-link to="register" class="left">
+            <q-item-main class="small-side register" label="Register" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="ride">
+            <q-item-main class="small-side" label="Start Time/Directions" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="packet">
+            <q-item-main class="small-side" label="Packet Pick Up" />
+          </q-side-link>
+          <hr class="tabhr">
+          <q-side-link to="rules">
+            <q-item-main class="small-side" label="Rules Of The Road" />
+          </q-side-link>
+          <hr class="tabhr">
+          <q-side-link to="climbs">
+            <q-item-main class="small-side" label="How Climbs Are Categorized" />
+          </q-side-link>
+          <hr class="tabhr">
+          <q-side-link to="team">
+            <q-item-main class="small-side" label="Team Ride For Hope Idaho Information" />
+          </q-side-link>
         </q-collapsible>
         <hr class="tabhr">
         <q-collapsible class="side-collapse" label="Merchandise">
@@ -201,9 +201,9 @@
           <hr class="tabhr">
         </q-side-link>
         <q-side-link to="about">
-            <q-item-main class="side" label="About" />
-            <hr class="tabhr">
-          </q-side-link>
+          <q-item-main class="side" label="About" />
+          <hr class="tabhr">
+        </q-side-link>
         <q-side-link to="contact">
           <q-item-main class="side" label="Contact" />
           <hr class="tabhr">
@@ -249,7 +249,14 @@
       <div class="row wrap">
         <div class="col-xs-12">
           <q-card-media overlay-position="full">
-            <q-parallax :speed=".7" :height="500" src="./statics/zoomout.jpg">
+            <q-parallax class="desktop-only" :speed=".7" :height="500" src="./statics/zoomout.jpg">
+              <div slot="loading">Loading...</div>
+              <q-transition appear enter="slideInUp" leave="fadeOut">
+                <div class="black">
+                </div>
+              </q-transition>
+            </q-parallax>
+            <q-parallax class="mobile-only" :speed=".7" :height="200" src="./statics/zoomout.jpg">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black">
@@ -264,7 +271,95 @@
                   </q-card-title>
                   <hr class="routeshr">
                 </div>
-                <div class="col-xs-12 col-md-4 self-center">
+                <div class="col-xs-12 col-sm-6 col-md-3 border desktop-only">
+                  <q-card-media overlay-position="full">
+                    <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+                      <div slot="loading">Loading...</div>
+                      <q-transition appear enter="slideInUp" leave="fadeOut">
+                        <div class="black-back">
+                        </div>
+                      </q-transition>
+                    </q-parallax>
+                    <div slot="overlay">
+                      <q-card-title class="text-center">
+                        <q-btn class="route-btn" @click="$router.push('18-mile')" outline color="red">
+                          <h4>18 Mile</h4>
+                        </q-btn>
+                        <span slot="subtitle">
+                          Flat and mellow ride through farmland with one rest stop half-way through course. Race with the bumble bees, fly with the
+                          birds and burn up the road with human powered speed! </span>
+                      </q-card-title>
+                    </div>
+                  </q-card-media>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 border desktop-only">
+                  <q-card-media overlay-position="full">
+                    <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+                      <div slot="loading">Loading...</div>
+                      <q-transition appear enter="slideInUp" leave="fadeOut">
+                        <div class="black-back">
+                        </div>
+                      </q-transition>
+                    </q-parallax>
+                    <div slot="overlay">
+                      <q-card-title class="text-center">
+                        <q-btn class="route-btn" @click="$router.push('31-mile')" outline color="red">
+                          <h4>31 Mile</h4>
+                        </q-btn>
+                        <span slot="subtitle">
+                          Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight
+                          those who want to establish a new 40k personal best.
+                        </span>
+                      </q-card-title>
+                    </div>
+                  </q-card-media>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 border desktop-only">
+                  <q-card-media overlay-position="full">
+                    <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+                      <div slot="loading">Loading...</div>
+                      <q-transition appear enter="slideInUp" leave="fadeOut">
+                        <div class="black-back">
+                        </div>
+                      </q-transition>
+                    </q-parallax>
+                    <div slot="overlay">
+                      <q-card-title class="text-center">
+                        <q-btn class="route-btn" @click="$router.push('metric')" outline color="red">
+                          <h4>Metric Century</h4>
+                        </q-btn>
+                        <span slot="subtitle">
+                          Completely redesigned course for 2018. This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The
+                          route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops.
+                        </span>
+                      </q-card-title>
+                    </div>
+                  </q-card-media>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 border desktop-only">
+                  <q-card-media overlay-position="full">
+                    <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+                      <div slot="loading">Loading...</div>
+                      <q-transition appear enter="slideInUp" leave="fadeOut">
+                        <div class="black-back">
+                        </div>
+                      </q-transition>
+                    </q-parallax>
+                    <div slot="overlay">
+                      <q-card-title class="text-center">
+                        <q-btn class="route-btn" @click="$router.push('Century')" outline color="red">
+                          <h4>Century</h4>
+                        </q-btn>
+                        <span slot="subtitle">
+                          Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails are for sissys
+                          and blisters are braille for success.
+                          <!-- The course has a little of everything including short climbs, rolling hills, and flats -->
+                        </span>
+                      </q-card-title>
+                    </div>
+                  </q-card-media>
+                </div>
+                <!-- <div class="col-xs-12 col-md-4 self-center">
                   <q-card-main class="text-center">
                     <span slot="subtitle">
                       Ride along Lake Lowell, among the orchards, down into the lush Melba Valley and through beautiful open farming communities
@@ -280,99 +375,100 @@
                         <hr>
                     </q-card-main>
                   </q-card>
-                </div>
+                </div> -->
               </div>
             </div>
           </q-card-media>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 border">
-          <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-              <div slot="loading">Loading...</div>
-              <q-transition appear enter="slideInUp" leave="fadeOut">
-                <div class="black-back">
-                </div>
-              </q-transition>
-            </q-parallax>
-            <div slot="overlay">
-              <q-card-title class="text-center">
-                <q-btn class="route-btn" @click="$router.push('18-mile')" outline color="red">
-                  <h4>18 Mile</h4>
-                </q-btn>
-                <span slot="subtitle">
-                  Flat and mellow ride through farmland with one rest stop half-way through course. Race with the bumble bees, fly with the
-                  birds and burn up the road with human powered speed! </span>
-              </q-card-title>
-            </div>
-          </q-card-media>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 border">
-          <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-              <div slot="loading">Loading...</div>
-              <q-transition appear enter="slideInUp" leave="fadeOut">
-                <div class="black-back">
-                </div>
-              </q-transition>
-            </q-parallax>
-            <div slot="overlay">
-              <q-card-title class="text-center">
-                <q-btn class="route-btn" @click="$router.push('31-mile')" outline color="red">
-                  <h4>31 Mile</h4>
-                </q-btn>
-                <span slot="subtitle">
-                  Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight
-                  those who want to establish a new 40k personal best.
-                </span>
-              </q-card-title>
-            </div>
-          </q-card-media>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 border">
-          <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-              <div slot="loading">Loading...</div>
-              <q-transition appear enter="slideInUp" leave="fadeOut">
-                <div class="black-back">
-                </div>
-              </q-transition>
-            </q-parallax>
-            <div slot="overlay">
-              <q-card-title class="text-center">
-                <q-btn class="route-btn" @click="$router.push('metric')" outline color="red">
-                  <h4>Metric Century</h4>
-                </q-btn>
-                <span slot="subtitle">
-                  Completely redesigned course for 2018. This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The
-                  route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops.
-                </span>
-              </q-card-title>
-            </div>
-          </q-card-media>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 border">
-          <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-              <div slot="loading">Loading...</div>
-              <q-transition appear enter="slideInUp" leave="fadeOut">
-                <div class="black-back">
-                </div>
-              </q-transition>
-            </q-parallax>
-            <div slot="overlay">
-              <q-card-title class="text-center">
-                <q-btn class="route-btn" @click="$router.push('Century')" outline color="red">
-                  <h4>Century</h4>
-                </q-btn>
-                <span slot="subtitle">
-                  Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails are for sissys
-                  and blisters are braille for success.
-                  <!-- The course has a little of everything including short climbs, rolling hills, and flats -->
-                </span>
-              </q-card-title>
-            </div>
-          </q-card-media>
-        </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
+            <q-card-media overlay-position="full">
+              <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+                <div slot="loading">Loading...</div>
+                <q-transition appear enter="slideInUp" leave="fadeOut">
+                  <div class="black-back">
+                  </div>
+                </q-transition>
+              </q-parallax>
+              <div slot="overlay">
+                <q-card-title class="text-center">
+                  <q-btn class="route-btn" @click="$router.push('18-mile')" outline color="red">
+                    <h4>18 Mile</h4>
+                  </q-btn>
+                  <span slot="subtitle">
+                    Flat and mellow ride through farmland with one rest stop half-way through course. Race with the bumble bees, fly with the
+                    birds and burn up the road with human powered speed! </span>
+                </q-card-title>
+              </div>
+            </q-card-media>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
+            <q-card-media overlay-position="full">
+              <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+                <div slot="loading">Loading...</div>
+                <q-transition appear enter="slideInUp" leave="fadeOut">
+                  <div class="black-back">
+                  </div>
+                </q-transition>
+              </q-parallax>
+              <div slot="overlay">
+                <q-card-title class="text-center">
+                  <q-btn class="route-btn" @click="$router.push('31-mile')" outline color="red">
+                    <h4>31 Mile</h4>
+                  </q-btn>
+                  <span slot="subtitle">
+                    Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight
+                    those who want to establish a new 40k personal best.
+                  </span>
+                </q-card-title>
+              </div>
+            </q-card-media>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
+            <q-card-media overlay-position="full">
+              <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+                <div slot="loading">Loading...</div>
+                <q-transition appear enter="slideInUp" leave="fadeOut">
+                  <div class="black-back">
+                  </div>
+                </q-transition>
+              </q-parallax>
+              <div slot="overlay">
+                <q-card-title class="text-center">
+                  <q-btn class="route-btn" @click="$router.push('metric')" outline color="red">
+                    <h4>Metric Century</h4>
+                  </q-btn>
+                  <span slot="subtitle">
+                    Completely redesigned course for 2018. This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The
+                    route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops.
+                  </span>
+                </q-card-title>
+              </div>
+            </q-card-media>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
+            <q-card-media overlay-position="full">
+              <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+                <div slot="loading">Loading...</div>
+                <q-transition appear enter="slideInUp" leave="fadeOut">
+                  <div class="black-back">
+                  </div>
+                </q-transition>
+              </q-parallax>
+              <div slot="overlay">
+                <q-card-title class="text-center">
+                  <q-btn class="route-btn" @click="$router.push('Century')" outline color="red">
+                    <h4>Century</h4>
+                  </q-btn>
+                  <span slot="subtitle">
+                    Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails are for sissys
+                    and blisters are braille for success.
+                    <!-- The course has a little of everything including short climbs, rolling hills, and flats -->
+                  </span>
+                </q-card-title>
+              </div>
+            </q-card-media>
+          </div>
+
         <q-parallax class="desktop-only" :speed="1" :height="500" src="./statics/cover2.jpg">
           <div slot="loading">Loading...</div>
 

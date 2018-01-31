@@ -28,20 +28,20 @@
                         <q-card-media>
                             <img src="http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg" alt="century preview">
                         </q-card-media>
-                            <q-card-actions class="desktop-only" align="center">
-                                <q-collapsible class="white-text" label="View Map Options">
-                                    <q-btn class="r-btn" @click="launch('http://www.mapmyride.com/routes/view/1462908562')" no-caps>Map My Ride</q-btn>
-                                    <q-btn class="r-btn" @click="launch('http://www.strava.com/routes/7741956')" no-caps>Strava</q-btn>
-                                    <q-btn class="r-btn" @click="launch('https://connect.garmin.com/modern/course/16760220')" no-caps>Garmin</q-btn>
-                                    <q-btn class="r-btn" @click="launch('https://ridewithgps.com/routes/26451231')" no-caps>Ride With GPS</q-btn>
-                                </q-collapsible>
-                            </q-card-actions>
-                            <div align="center" class="white-text mobile-only" label="View More Map Options">
-                                    <q-btn class="btn" @click="launch('http://www.mapmyride.com/routes/view/1462908562')" no-caps>Map My Ride</q-btn>
-                                    <q-btn class="btn" @click="launch('http://www.strava.com/routes/7741956')" no-caps>Strava</q-btn>
-                                    <q-btn class="btn" @click="launch('https://connect.garmin.com/modern/course/16760220')" no-caps>Garmin</q-btn>
-                                    <q-btn class="btn" @click="launch('https://ridewithgps.com/routes/26451231')" no-caps>Ride With GPS</q-btn>
-</div>
+                        <q-card-actions class="desktop-only" align="center">
+                            <q-collapsible class="white-text" label="View Map Options">
+                                <q-btn class="r-btn" @click="launch('http://www.mapmyride.com/routes/view/1462908562')" no-caps>Map My Ride</q-btn>
+                                <q-btn class="r-btn" @click="launch('http://www.strava.com/routes/7741956')" no-caps>Strava</q-btn>
+                                <q-btn class="r-btn" @click="launch('https://connect.garmin.com/modern/course/16760220')" no-caps>Garmin</q-btn>
+                                <q-btn class="r-btn" @click="launch('https://ridewithgps.com/routes/26451231')" no-caps>Ride With GPS</q-btn>
+                            </q-collapsible>
+                        </q-card-actions>
+                        <div align="center" class="white-text mobile-only" label="View More Map Options">
+                            <q-btn class="btn" @click="launch('http://www.mapmyride.com/routes/view/1462908562')" no-caps>Map My Ride</q-btn>
+                            <q-btn class="btn" @click="launch('http://www.strava.com/routes/7741956')" no-caps>Strava</q-btn>
+                            <q-btn class="btn" @click="launch('https://connect.garmin.com/modern/course/16760220')" no-caps>Garmin</q-btn>
+                            <q-btn class="btn" @click="launch('https://ridewithgps.com/routes/26451231')" no-caps>Ride With GPS</q-btn>
+                        </div>
                     </div>
                 </q-transition>
             </q-card>
@@ -124,6 +124,7 @@
         background-color: rgba(197, 7, 7, 0.8);
         color: white;
     }
+
     .route {
         border: 5px solid black;
     }
