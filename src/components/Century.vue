@@ -7,8 +7,13 @@
                         <h2 class="headline text-center">Century Ride</h2>
                         <hr color="red" class="hr">
                     </div>
-                    <h2 class="headline text-center black red-back">Century Ride</h2>
-                </q-parallax>
+                    <div class="row justify-center">
+                            <div class="col-xs-12 text-center red-back">
+                                <h2 class="headline text-center black">Century Ride</h2>
+                                <h5 class="headline text-center black">Veni Vidi Vici</h5>
+                                <big class="headline text-center black">"I Came. I Saw. I Conquered."</big>
+                            </div>
+                        </div>                </q-parallax>
             </div>
         </div>
         <div class="row wrap justify-center">
@@ -69,6 +74,11 @@
                 </q-transition>
             </q-card>
         </div>
+        <div class="row wrap justify-center">
+                <div class="col-xs-12 text-center">
+                    <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
+                </div>
+            </div>
     </q-layout>
 </template>
 
@@ -119,6 +129,9 @@
 </script>
 
 <style scoped>
+    .top{
+        padding-top: 1rem;
+    }
     .btn {
         margin: .5rem .5rem .5rem 0;
         background-color: rgba(197, 7, 7, 0.8);

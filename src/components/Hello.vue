@@ -31,7 +31,7 @@
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-route-tab @click="collapse" class="tab" slot="title" color="red" label="Register" name="reg" to="register" />
       <q-tab class="tab" slot="title" label="Routes" name="routes">
-        <q-popover fit ref="routePop">
+        <q-popover fit ref="routePopA">
           <q-item-main>
             <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="routes" to="18-mile" />
           </q-item-main>
@@ -50,7 +50,7 @@
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
             <q-tab class="tab" slot="title" label="Routes" name="rider">
-              <q-popover fit anchor="top left" ref="routePop">
+              <q-popover fit anchor="top left" ref="routePopB">
                 <q-item-main>
                   <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="routes" to="18-mile" />
                 </q-item-main>
@@ -93,7 +93,7 @@
             <q-route-tab @click="collapse" class="tab" slot="title" label="Raffle Items" name="raffle" to="raffle" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Merchandise" name="merchandise" to="merchandise" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Jerseys" name="merchandise" to="merchandise" />
           </q-item-main>
         </q-popover>
       </q-tab>
@@ -184,7 +184,7 @@
           <hr class="tabhrs">
 
           <q-side-link to="merchandise" class="left">
-            <q-item-main class="small-side" label="Merchandise" />
+            <q-item-main class="small-side" label="Jerseys" />
           </q-side-link>
         </q-collapsible>
         <hr class="tabhr">
@@ -231,6 +231,101 @@
         </div>
         <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center mobile-only">Ride Day Information</q-btn>
       </q-parallax>
+
+
+      <!-- <div class="row wrap justify-center gen">
+        <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
+          This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
+          healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
+          to the low-income and uninsured.
+        </h6>
+        <div class="text-center col-xs-12 col-md-4 self-center">
+          <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
+            <img class="gch" src="statics/gch.png" alt="genesis community health logo">
+          </q-btn>
+        </div>
+        <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
+          To learn more about Genesis Community Health, please watch the videos below.
+
+        </h6>
+        <div class="col-xs-10">
+        </div>
+      </div>
+      <div class="row justify-center xs-gutter video">
+        <div class="col-xs-10">
+          <hr>
+        </div>
+        <div class="col-xs-12 col-md-4 text-center">
+          <q-btn @click="$refs.vid1.open()" class="shadow-24 container desktop-only">
+            <img src="~statics/gen1.jpg" alt="Genesis Info Video" class="responsive">
+            <div class="overlay desktop-only">
+              <h5> Patient Perspective on Genesis Community Healthcare</h5>
+            </div>
+          </q-btn>
+          <div class="q-video mobile-only">
+            <h6> Patient Perspective on Genesis Community Healthcare</h6>
+            <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center">
+          <q-btn @click="$refs.vid2.open()" class="shadow-24 two desktop-only">
+            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+            <div class="otwo desktop-only">
+              <h5>Genesis Community Healthcare Overview</h5>
+            </div>
+          </q-btn>
+          <div class="q-video mobile-only">
+            <h6>Genesis Community Healthcare Overview</h6>
+            <iframe class="mid" width="640" height="360" style="border-width:0" src="http://interactive.tegna-media.com/video/embed/embed.html?id=2758268&type=video&title=Low-income health clinic seeks new patients&site=277&playerid=6918249996585&dfpid=32805352&dfpposition=embed_preroll§ion=home"></iframe>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center">
+          <q-btn @click="$refs.vid3.open()" class="shadow-24 three desktop-only">
+            <img src="~statics/gen2.jpg" alt="Genesis Info Video" class="responsive">
+            <div class="othree desktop-only">
+              <h5>Volunteer Perspective On Genesis Community Healthcare</h5>
+            </div>
+          </q-btn>
+          <div class="q-video mobile-only">
+            <h6>Volunteer Perspective On Genesis Community Healthcare</h6>
+            <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+              allowfullscreen></iframe>
+          </div>
+
+        </div>
+        <div class="col-xs-10">
+          <hr>
+        </div>
+      </div> -->
+
+      <q-modal ref="vid1" class="vid">
+        <div class="row justify-center">
+          <div class="col-xs-12">
+            <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </q-modal>
+
+      </q-modal>
+      <q-modal ref="vid2" class="vid">
+        <div class="row justify-center">
+          <div class="col-xs-12">
+            <iframe width="640" height="360" style="border-width:0" src="http://interactive.tegna-media.com/video/embed/embed.html?id=2758268&type=video&title=Low-income health clinic seeks new patients&site=277&playerid=6918249996585&dfpid=32805352&dfpposition=embed_preroll§ion=home"></iframe>
+          </div>
+        </div>
+      </q-modal>
+      <q-modal ref="vid3" class="vid">
+        <div class="row justify-center">
+          <div class="col-xs-12">
+            <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </q-modal>
+
       <div class="spacer row wrap">
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
           <b>Ride For Hope Idaho</b> is a charity bicycle event with the firm belief that quality healthcare should be accessible
@@ -353,121 +448,103 @@
                         <span slot="subtitle">
                           Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails are for sissys
                           and blisters are braille for success.
-                          <!-- The course has a little of everything including short climbs, rolling hills, and flats -->
                         </span>
                       </q-card-title>
                     </div>
                   </q-card-media>
                 </div>
-                <!-- <div class="col-xs-12 col-md-4 self-center">
-                  <q-card-main class="text-center">
-                    <span slot="subtitle">
-                      Ride along Lake Lowell, among the orchards, down into the lush Melba Valley and through beautiful open farming communities
-                    </span>
-                  </q-card-main>
-                </div>
-                <div class="col-xs-12 col-md-3 text-center self-center">
-                  <q-btn @click="$router.push('routes')" class="cbtnm shadow-24 text-center mobile-only">View All Routes</q-btn>
-                  <q-card class="card-routes text-center desktop-only">
-                    <q-card-main>
-                      <hr>
-                      <q-btn@click="$router.push('routes')" class="cbtn shadow-24">View All Routes</q-btn>
-                        <hr>
-                    </q-card-main>
-                  </q-card>
-                </div> -->
               </div>
             </div>
           </q-card-media>
         </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
-            <q-card-media overlay-position="full">
-              <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-                <div slot="loading">Loading...</div>
-                <q-transition appear enter="slideInUp" leave="fadeOut">
-                  <div class="black-back">
-                  </div>
-                </q-transition>
-              </q-parallax>
-              <div slot="overlay">
-                <q-card-title class="text-center">
-                  <q-btn class="route-btn" @click="$router.push('18-mile')" outline color="red">
-                    <h4>18 Mile</h4>
-                  </q-btn>
-                  <span slot="subtitle">
-                    Flat and mellow ride through farmland with one rest stop half-way through course. Race with the bumble bees, fly with the
-                    birds and burn up the road with human powered speed! </span>
-                </q-card-title>
-              </div>
-            </q-card-media>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
-            <q-card-media overlay-position="full">
-              <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-                <div slot="loading">Loading...</div>
-                <q-transition appear enter="slideInUp" leave="fadeOut">
-                  <div class="black-back">
-                  </div>
-                </q-transition>
-              </q-parallax>
-              <div slot="overlay">
-                <q-card-title class="text-center">
-                  <q-btn class="route-btn" @click="$router.push('31-mile')" outline color="red">
-                    <h4>31 Mile</h4>
-                  </q-btn>
-                  <span slot="subtitle">
-                    Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight
-                    those who want to establish a new 40k personal best.
-                  </span>
-                </q-card-title>
-              </div>
-            </q-card-media>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
-            <q-card-media overlay-position="full">
-              <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-                <div slot="loading">Loading...</div>
-                <q-transition appear enter="slideInUp" leave="fadeOut">
-                  <div class="black-back">
-                  </div>
-                </q-transition>
-              </q-parallax>
-              <div slot="overlay">
-                <q-card-title class="text-center">
-                  <q-btn class="route-btn" @click="$router.push('metric')" outline color="red">
-                    <h4>Metric Century</h4>
-                  </q-btn>
-                  <span slot="subtitle">
-                    Completely redesigned course for 2018. This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The
-                    route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops.
-                  </span>
-                </q-card-title>
-              </div>
-            </q-card-media>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
-            <q-card-media overlay-position="full">
-              <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-                <div slot="loading">Loading...</div>
-                <q-transition appear enter="slideInUp" leave="fadeOut">
-                  <div class="black-back">
-                  </div>
-                </q-transition>
-              </q-parallax>
-              <div slot="overlay">
-                <q-card-title class="text-center">
-                  <q-btn class="route-btn" @click="$router.push('Century')" outline color="red">
-                    <h4>Century</h4>
-                  </q-btn>
-                  <span slot="subtitle">
-                    Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails are for sissys
-                    and blisters are braille for success.
-                    <!-- The course has a little of everything including short climbs, rolling hills, and flats -->
-                  </span>
-                </q-card-title>
-              </div>
-            </q-card-media>
-          </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
+          <q-card-media overlay-position="full">
+            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+              <div slot="loading">Loading...</div>
+              <q-transition appear enter="slideInUp" leave="fadeOut">
+                <div class="black-back">
+                </div>
+              </q-transition>
+            </q-parallax>
+            <div slot="overlay">
+              <q-card-title class="text-center">
+                <q-btn class="route-btn" @click="$router.push('18-mile')" outline color="red">
+                  <h4>18 Mile</h4>
+                </q-btn>
+                <span slot="subtitle">
+                  Flat and mellow ride through farmland with one rest stop half-way through course. Race with the bumble bees, fly with the
+                  birds and burn up the road with human powered speed! </span>
+              </q-card-title>
+            </div>
+          </q-card-media>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
+          <q-card-media overlay-position="full">
+            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+              <div slot="loading">Loading...</div>
+              <q-transition appear enter="slideInUp" leave="fadeOut">
+                <div class="black-back">
+                </div>
+              </q-transition>
+            </q-parallax>
+            <div slot="overlay">
+              <q-card-title class="text-center">
+                <q-btn class="route-btn" @click="$router.push('31-mile')" outline color="red">
+                  <h4>31 Mile</h4>
+                </q-btn>
+                <span slot="subtitle">
+                  Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight
+                  those who want to establish a new 40k personal best.
+                </span>
+              </q-card-title>
+            </div>
+          </q-card-media>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
+          <q-card-media overlay-position="full">
+            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+              <div slot="loading">Loading...</div>
+              <q-transition appear enter="slideInUp" leave="fadeOut">
+                <div class="black-back">
+                </div>
+              </q-transition>
+            </q-parallax>
+            <div slot="overlay">
+              <q-card-title class="text-center">
+                <q-btn class="route-btn" @click="$router.push('metric')" outline color="red">
+                  <h4>Metric Century</h4>
+                </q-btn>
+                <span slot="subtitle">
+                  Completely redesigned course for 2018. This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The
+                  route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops.
+                </span>
+              </q-card-title>
+            </div>
+          </q-card-media>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
+          <q-card-media overlay-position="full">
+            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
+              <div slot="loading">Loading...</div>
+              <q-transition appear enter="slideInUp" leave="fadeOut">
+                <div class="black-back">
+                </div>
+              </q-transition>
+            </q-parallax>
+            <div slot="overlay">
+              <q-card-title class="text-center">
+                <q-btn class="route-btn" @click="$router.push('Century')" outline color="red">
+                  <h4>Century</h4>
+                </q-btn>
+                <span slot="subtitle">
+                  Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails are for sissys
+                  and blisters are braille for success.
+                  <!-- The course has a little of everything including short climbs, rolling hills, and flats -->
+                </span>
+              </q-card-title>
+            </div>
+          </q-card-media>
+        </div>
 
         <q-parallax class="desktop-only" :speed="1" :height="500" src="./statics/cover2.jpg">
           <div slot="loading">Loading...</div>
@@ -525,6 +602,79 @@
         </q-parallax>
       </div>
     </div>
+    <div class="row wrap justify-center gen">
+      <div class="text-center col-xs-12 col-md-4 self-center">
+        <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
+          <img class="gch responsive" src="statics/gch.png" alt="genesis community health logo">
+        </q-btn>
+      </div>
+          <h6 class="text-italic text-center light-paragraph col-xs-12 col-md-4 self-center text" data-x="80">
+            This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
+            healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
+            to the low-income and uninsured. Boise Rescue Mission provides programs and services including addiction recovery and food and shelter for homeless men, women and children.
+          </h6>
+          
+          <!-- <h6 class="text-italic text-center light-paragraph col-xs-12 self-center text" data-x="80">
+            To learn more about Genesis Community Health, please watch the videos below.  
+          </h6> -->
+          <div class="text-center col-xs-12 col-md-4 self-center">
+              <q-btn @click="launch('https://boiserm.org/')" flat>
+                <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
+            </q-btn>
+          </div>
+        <div class="col-xs-10">
+        </div>
+      </div>
+      <div class="row justify-center xs-gutter video">
+        <div class="col-xs-10 text-center">
+          <hr>
+          <big>Genesis Community Health Videos</big>
+          <hr>
+        </div>
+        <div class="col-xs-12 col-md-4 text-center">
+          <q-btn @click="$refs.vid1.open()" class="shadow-24 container desktop-only">
+            <img src="~statics/gen1.jpg" alt="Genesis Info Video" class="responsive">
+            <div class="overlay desktop-only">
+              <h5> Patient Perspective on Genesis Community Healthcare</h5>
+            </div>
+          </q-btn>
+          <div class="q-video mobile-only">
+            <h6> Patient Perspective on Genesis Community Healthcare</h6>
+            <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center">
+          <q-btn @click="$refs.vid2.open()" class="shadow-24 two desktop-only">
+            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+            <div class="otwo desktop-only">
+              <h5>Genesis Community Healthcare Overview</h5>
+            </div>
+          </q-btn>
+          <div class="q-video mobile-only">
+            <h6>Genesis Community Healthcare Overview</h6>
+            <iframe class="mid" width="640" height="360" style="border-width:0" src="http://interactive.tegna-media.com/video/embed/embed.html?id=2758268&type=video&title=Low-income health clinic seeks new patients&site=277&playerid=6918249996585&dfpid=32805352&dfpposition=embed_preroll§ion=home"></iframe>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center">
+          <q-btn @click="$refs.vid3.open()" class="shadow-24 three desktop-only">
+            <img src="~statics/gen2.jpg" alt="Genesis Info Video" class="responsive">
+            <div class="othree desktop-only">
+              <h5>Volunteer Perspective On Genesis Community Healthcare</h5>
+            </div>
+          </q-btn>
+          <div class="q-video mobile-only">
+            <h6>Volunteer Perspective On Genesis Community Healthcare</h6>
+            <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+              allowfullscreen></iframe>
+          </div>
+
+        </div>
+        <div class="col-xs-10">
+          <hr>
+        </div>
+      </div>
     <!-- Footer -->
     <div class="footer text-center text-bold" slot="footer">
       <div class="row justify-center">
@@ -633,7 +783,9 @@
     QFixedPosition,
     ScrollFire,
     QCardMedia,
-    QCardActions
+    QCardActions,
+    QVideo,
+    QModal
   } from "quasar";
 
   export default {
@@ -663,7 +815,9 @@
       QCollapsible,
       QFixedPosition,
       QCardMedia,
-      QCardActions
+      QCardActions,
+      QVideo,
+      QModal
     },
     data() {
       return {};
@@ -685,7 +839,8 @@
         this.$refs.popover.close();
         this.$refs.popoverRoutes.close();
         // this.$refs.popoverReg.close();
-        this.$refs.routePop.close();
+        this.$refs.routePopA.close();
+        this.$refs.routePopB.close();
       },
       animate() {
         anime({
@@ -725,6 +880,90 @@
 </script>
 
 <style scoped>
+  .check {
+        max-width: 30vw;
+    }
+  .mid{
+    height: 35vh;
+  }
+  .gen {
+    background-color: white;
+    color: black;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(150, 0, 0, 0.699);
+  }
+
+  .two:hover .otwo {
+    opacity: 1;
+
+  }
+
+  .otwo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(150, 0, 0, 0.699);
+  }
+
+  .three:hover .othree {
+    opacity: 1;
+
+  }
+
+  .othree {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(150, 0, 0, 0.699);
+  }
+
+  .vid {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .vid-mobile {
+    width: 100vw;
+    /* height: 100vh; */
+  }
+
+  .video {
+    background-color: black;
+  }
+
+  .gch {
+    width: 20rem;
+  }
+
   .register {
     color: red;
   }

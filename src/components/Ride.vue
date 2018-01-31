@@ -41,8 +41,8 @@
                 <p>11:00 AM</p>
             </div>
             <div class="col-xs-10">
-                <h3 class="desktop-only text-center">Directions to Race Start (Kuna City Hall)</h3>
-                <h4 class="mobile-only text-center">Directions to Race Start (Kuna City Hall)</h4>
+                <h3 class="desktop-only text-center">Directions (Kuna City Hall)</h3>
+                <h4 class="mobile-only text-center">Directions (Kuna City Hall)</h4>
 
                 <iframe class="frame" src="//www.google.com/maps/embed/v1/place?q=Kuna%20City%20Hall
                     &zoom=13

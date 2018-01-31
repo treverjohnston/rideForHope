@@ -7,8 +7,13 @@
                         <h2 class="headline text-center">Metric Century Ride</h2>
                         <hr color="red" class="hr">
                     </div>
-                    <h2 class="headline text-center black red-back">Metric Century Ride</h2>
-                    <!-- <hr color="red" class="hr"> -->
+                    <div class="row justify-center">
+                            <div class="col-xs-12 text-center red-back">
+                                <h2 class="headline text-center black">Metric Century Ride</h2>
+                                <h5 class="headline text-center black">Semper Fidelis</h5>
+                                <big class="headline text-center black">"Always Faithful"</big>
+                            </div>
+                        </div>                    
                 </q-parallax>
             </div>
         </div>
@@ -17,7 +22,7 @@
                 62.8 miles long (because 62.9 would just be CRAZY!). Completely redesigned course for 2018. This is a ride for true bikers
                 (i.e. no longer embarrassed to wear spandex). The route Includes rolling hills, scenic overlooks, vineyards
                 and 4 rest stops. The course meets up with the last half of the Century route (so you will have additional
-                riders to share your misery with along the way). You will continue northwest toward Marsing and then turn
+                riders to share your challenge with along the way). You will continue northwest toward Marsing and then turn
                 back toward Kuna and pedal, pedal, pedal, to Lake Shore Drive skirting Lake Lowell on your way back to the
                 finish line where beer and food await, (if you are fast enough!). Just remember, Humpty Dumpty had wall issues
                 too but he overcame; so can you!
@@ -74,6 +79,11 @@
                 </q-transition>
             </q-card>
         </div>
+        <div class="row wrap justify-center">
+                <div class="col-xs-12 text-center">
+                    <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
+                </div>
+            </div>
     </q-layout>
 </template>
 
@@ -124,6 +134,9 @@
 </script>
 
 <style scoped>
+    .top{
+        padding-top: 1rem;
+    }
     .btn {
         margin: .5rem .5rem .5rem 0;
         background-color: rgba(197, 7, 7, 0.8);
