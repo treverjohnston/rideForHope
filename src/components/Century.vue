@@ -34,7 +34,7 @@
                     W. Dickman - 18 Miles
                 </h6>
                 <h6>
-                    Melba - 14 Miles
+                    Melba - 32 Miles
                 </h6>
                 <h6>
                     Bowmont - 50 Miles

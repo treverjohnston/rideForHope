@@ -29,23 +29,8 @@
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
-      <q-route-tab @click="collapse" class="tab" slot="title" color="red" label="Register" name="reg" to="register" />
-      <q-tab class="tab" slot="title" label="Routes" name="routes">
-        <q-popover fit ref="routePopA">
-          <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="routes" to="18-mile" />
-          </q-item-main>
-          <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="routes" to="31-mile" />
-          </q-item-main>
-          <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="Metric Century" name="routes" to="metric" />
-          </q-item-main>
-          <q-item-main>
-            <q-route-tab class="tab" @click="collapse" slot="title" label="Century" name="routes" to="Century" />
-          </q-item-main>
-        </q-popover>
-      </q-tab>
+      <q-route-tab class="tab" slot="title" color="red" label="Register" name="reg" to="register" />
+      <q-route-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" to="fundraising" />
       <q-tab class="tab involved" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
@@ -74,9 +59,6 @@
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Packet Pick Up" name="rider" to="packet" />
-          </q-item-main>
-          <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Rider Fundraising" name="rider" to="fundraising" />
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Rules Of The Road" name="rider" to="rules" />
@@ -117,24 +99,10 @@
           <q-item-main class="side register" label="Register" />
         </q-side-link>
         <hr class="tabhrs">
-        <q-collapsible class="side-collapse" label="Routes">
-          <q-side-link to="18-mile">
-            <q-item-main class="small-side" label="18 Mile" />
-          </q-side-link>
-          <hr class="tabhrs">
-          <q-side-link to="31-mile">
-            <q-item-main class="small-side" label="31 Mile" />
-          </q-side-link>
-          <hr class="tabhrs">
-          <q-side-link to="metric">
-            <q-item-main class="small-side" label="Metric Century" />
-          </q-side-link>
-          <hr class="tabhrs">
-          <q-side-link to="Century">
-            <q-item-main class="small-side" label="Century" />
-          </q-side-link>
-        </q-collapsible>
-        <hr class="tabhrs">
+        <q-side-link to="fundraising">
+          <q-item-main class="side" label="Rider Fundraising" />
+        </q-side-link>
+        <hr class="tabhr">
         </q-collapsible>
         <q-collapsible class="side-collapse" label="Rider Information">
           <q-collapsible class="side-collapse" label="Routes">
@@ -165,10 +133,6 @@
           <hr class="tabhrs">
           <q-side-link to="packet">
             <q-item-main class="small-side" label="Packet Pick Up" />
-          </q-side-link>
-          <hr class="tabhr">
-          <q-side-link to="fundraising">
-            <q-item-main class="small-side" label="Rider Fundraising" />
           </q-side-link>
           <hr class="tabhr">
           <q-side-link to="rules">
@@ -615,73 +579,74 @@
           <img class="gch responsive" src="statics/gch.png" alt="genesis community health logo">
         </q-btn>
       </div>
-          <h6 class="text-italic text-center light-paragraph col-xs-12 col-md-4 self-center text" data-x="80">
-            This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
-            healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
-            to the low-income and uninsured. Boise Rescue Mission provides programs and services including addiction recovery and food and shelter for homeless men, women and children.
-          </h6>
-          
-          <!-- <h6 class="text-italic text-center light-paragraph col-xs-12 self-center text" data-x="80">
+      <h6 class="text-italic text-center light-paragraph col-xs-12 col-md-4 self-center text" data-x="80">
+        This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
+        healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
+        to the low-income and uninsured. Boise Rescue Mission provides programs and services including addiction recovery
+        and food and shelter for homeless men, women and children.
+      </h6>
+
+      <!-- <h6 class="text-italic text-center light-paragraph col-xs-12 self-center text" data-x="80">
             To learn more about Genesis Community Health, please watch the videos below.  
           </h6> -->
-          <div class="text-center col-xs-12 col-md-4 self-center">
-              <q-btn @click="launch('https://boiserm.org/')" flat>
-                <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
-            </q-btn>
+      <div class="text-center col-xs-12 col-md-4 self-center">
+        <q-btn @click="launch('https://boiserm.org/')" flat>
+          <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
+        </q-btn>
+      </div>
+      <div class="col-xs-10">
+      </div>
+    </div>
+    <div class="row justify-center xs-gutter video">
+      <div class="col-xs-10 text-center">
+        <hr>
+        <big>Genesis Community Health Videos</big>
+        <hr>
+      </div>
+      <div class="col-xs-12 col-md-4 text-center">
+        <q-btn @click="$refs.vid1.open()" class="shadow-24 container desktop-only">
+          <img src="~statics/gen1.jpg" alt="Genesis Info Video" class="responsive">
+          <div class="overlay desktop-only">
+            <h5> Patient Perspective on Genesis Community Healthcare</h5>
           </div>
-        <div class="col-xs-10">
+        </q-btn>
+        <div class="q-video mobile-only">
+          <h6> Patient Perspective on Genesis Community Healthcare</h6>
+          <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+            allowfullscreen></iframe>
         </div>
       </div>
-      <div class="row justify-center xs-gutter video">
-        <div class="col-xs-10 text-center">
-          <hr>
-          <big>Genesis Community Health Videos</big>
-          <hr>
-        </div>
-        <div class="col-xs-12 col-md-4 text-center">
-          <q-btn @click="$refs.vid1.open()" class="shadow-24 container desktop-only">
-            <img src="~statics/gen1.jpg" alt="Genesis Info Video" class="responsive">
-            <div class="overlay desktop-only">
-              <h5> Patient Perspective on Genesis Community Healthcare</h5>
-            </div>
-          </q-btn>
-          <div class="q-video mobile-only">
-            <h6> Patient Perspective on Genesis Community Healthcare</h6>
-            <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
-              allowfullscreen></iframe>
+      <div class="col-xs-12 col-sm-4 text-center">
+        <q-btn @click="$refs.vid2.open()" class="shadow-24 two desktop-only">
+          <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+          <div class="otwo desktop-only">
+            <h5>Genesis Community Healthcare Overview</h5>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 text-center">
-          <q-btn @click="$refs.vid2.open()" class="shadow-24 two desktop-only">
-            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
-            <div class="otwo desktop-only">
-              <h5>Genesis Community Healthcare Overview</h5>
-            </div>
-          </q-btn>
-          <div class="q-video mobile-only">
-            <h6>Genesis Community Healthcare Overview</h6>
-            <iframe class="mid" width="640" height="360" style="border-width:0" src="http://interactive.tegna-media.com/video/embed/embed.html?id=2758268&type=video&title=Low-income health clinic seeks new patients&site=277&playerid=6918249996585&dfpid=32805352&dfpposition=embed_preroll§ion=home"></iframe>
+        </q-btn>
+        <div class="q-video mobile-only">
+          <h6>Genesis Community Healthcare Overview</h6>
+          <iframe class="mid" width="640" height="360" style="border-width:0" src="http://interactive.tegna-media.com/video/embed/embed.html?id=2758268&type=video&title=Low-income health clinic seeks new patients&site=277&playerid=6918249996585&dfpid=32805352&dfpposition=embed_preroll§ion=home"></iframe>
 
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 text-center">
-          <q-btn @click="$refs.vid3.open()" class="shadow-24 three desktop-only">
-            <img src="~statics/gen2.jpg" alt="Genesis Info Video" class="responsive">
-            <div class="othree desktop-only">
-              <h5>Volunteer Perspective On Genesis Community Healthcare</h5>
-            </div>
-          </q-btn>
-          <div class="q-video mobile-only">
-            <h6>Volunteer Perspective On Genesis Community Healthcare</h6>
-            <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
-              allowfullscreen></iframe>
-          </div>
-
-        </div>
-        <div class="col-xs-10">
-          <hr>
         </div>
       </div>
+      <div class="col-xs-12 col-sm-4 text-center">
+        <q-btn @click="$refs.vid3.open()" class="shadow-24 three desktop-only">
+          <img src="~statics/gen2.jpg" alt="Genesis Info Video" class="responsive">
+          <div class="othree desktop-only">
+            <h5>Volunteer Perspective On Genesis Community Healthcare</h5>
+          </div>
+        </q-btn>
+        <div class="q-video mobile-only">
+          <h6>Volunteer Perspective On Genesis Community Healthcare</h6>
+          <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <div class="col-xs-10">
+        <hr>
+      </div>
+    </div>
     <!-- Footer -->
     <div class="footer text-center text-bold" slot="footer">
       <div class="row justify-center">
@@ -846,7 +811,7 @@
         this.$refs.popover.close();
         this.$refs.popoverRoutes.close();
         // this.$refs.popoverReg.close();
-        this.$refs.routePopA.close();
+        // this.$refs.routePopA.close();
         this.$refs.routePopB.close();
       },
       animate() {
@@ -888,11 +853,13 @@
 
 <style scoped>
   .check {
-        max-width: 30vw;
-    }
-  .mid{
+    max-width: 30vw;
+  }
+
+  .mid {
     height: 35vh;
   }
+
   .gen {
     background-color: white;
     color: black;
