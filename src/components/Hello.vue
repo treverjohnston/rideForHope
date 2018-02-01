@@ -572,79 +572,75 @@
           </div>
         </q-parallax>
       </div>
-    </div>
-    <div class="row wrap justify-center gen">
-      <div class="text-center col-xs-12 col-md-4 self-center">
-        <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
-          <img class="gch responsive" src="statics/gch.png" alt="genesis community health logo">
-        </q-btn>
-      </div>
-      <h6 class="text-italic text-center light-paragraph col-xs-12 col-md-4 self-center text" data-x="80">
-        This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
-        healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
-        to the low-income and uninsured. Boise Rescue Mission provides programs and services including addiction recovery
-        and food and shelter for homeless men, women and children.
-      </h6>
-
-      <!-- <h6 class="text-italic text-center light-paragraph col-xs-12 self-center text" data-x="80">
-            To learn more about Genesis Community Health, please watch the videos below.  
-          </h6> -->
-      <div class="text-center col-xs-12 col-md-4 self-center">
-        <q-btn @click="launch('https://boiserm.org/')" flat>
-          <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
-        </q-btn>
-      </div>
-      <div class="col-xs-10">
-      </div>
-    </div>
-    <div class="row justify-center xs-gutter video">
-      <div class="col-xs-10 text-center">
-        <hr>
-        <big>Genesis Community Health Videos</big>
-        <hr>
-      </div>
-      <div class="col-xs-12 col-md-4 text-center">
-        <q-btn @click="$refs.vid1.open()" class="shadow-24 container desktop-only">
-          <img src="~statics/gen1.jpg" alt="Genesis Info Video" class="responsive">
-          <div class="overlay desktop-only">
-            <h5> Patient Perspective on Genesis Community Healthcare</h5>
-          </div>
-        </q-btn>
-        <div class="q-video mobile-only">
-          <h6> Patient Perspective on Genesis Community Healthcare</h6>
-          <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
-            allowfullscreen></iframe>
+      <div class="row wrap justify-center gen">
+        <div class="text-center col-xs-12 col-md-4 self-center">
+          <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
+            <img class="gch responsive" src="statics/gch.png" alt="genesis community health logo">
+          </q-btn>
+        </div>
+        <h6 class="text-italic text-center light-paragraph col-xs-12 col-md-4 self-center text" data-x="80">
+          This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
+          healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
+          to the low-income and uninsured. Boise Rescue Mission provides programs and services including addiction recovery
+          and food and shelter for homeless men, women and children.
+        </h6>
+        <div class="text-center col-xs-12 col-md-4 self-center">
+          <q-btn @click="launch('https://boiserm.org/')" flat>
+            <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
+          </q-btn>
+        </div>
+        <div class="col-xs-10">
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4 text-center">
-        <q-btn @click="$refs.vid2.open()" class="shadow-24 two desktop-only">
-          <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
-          <div class="otwo desktop-only">
-            <h5>Genesis Community Healthcare Overview</h5>
+      <div class="row justify-center xs-gutter video">
+        <div class="col-xs-10 text-center">
+          <hr>
+          <big>Genesis Community Health Videos</big>
+          <hr>
+        </div>
+        <div class="col-xs-12 col-md-4 text-center">
+          <q-btn @click="$refs.vid1.open()" class="shadow-24 container desktop-only">
+            <img src="~statics/gen1.jpg" alt="Genesis Info Video" class="responsive">
+            <div class="overlay desktop-only">
+              <h5> Patient Perspective on Genesis Community Healthcare</h5>
+            </div>
+          </q-btn>
+          <div class="q-video mobile-only">
+            <h6> Patient Perspective on Genesis Community Healthcare</h6>
+            <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+              allowfullscreen></iframe>
           </div>
-        </q-btn>
-        <div class="q-video mobile-only">
-          <h6>Genesis Community Healthcare Overview</h6>
-          <iframe class="mid" width="640" height="360" style="border-width:0" src="http://interactive.tegna-media.com/video/embed/embed.html?id=2758268&type=video&title=Low-income health clinic seeks new patients&site=277&playerid=6918249996585&dfpid=32805352&dfpposition=embed_preroll§ion=home"></iframe>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center">
+          <q-btn @click="$refs.vid2.open()" class="shadow-24 two desktop-only">
+            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+            <div class="otwo desktop-only">
+              <h5>Genesis Community Healthcare Overview</h5>
+            </div>
+          </q-btn>
+          <div class="q-video mobile-only">
+            <h6>Genesis Community Healthcare Overview</h6>
+            <iframe class="mid" width="640" height="360" style="border-width:0" src="http://interactive.tegna-media.com/video/embed/embed.html?id=2758268&type=video&title=Low-income health clinic seeks new patients&site=277&playerid=6918249996585&dfpid=32805352&dfpposition=embed_preroll§ion=home"></iframe>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center">
+          <q-btn @click="$refs.vid3.open()" class="shadow-24 three desktop-only">
+            <img src="~statics/gen2.jpg" alt="Genesis Info Video" class="responsive">
+            <div class="othree desktop-only">
+              <h5>Volunteer Perspective On Genesis Community Healthcare</h5>
+            </div>
+          </q-btn>
+          <div class="q-video mobile-only">
+            <h6>Volunteer Perspective On Genesis Community Healthcare</h6>
+            <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+              allowfullscreen></iframe>
+          </div>
 
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 text-center">
-        <q-btn @click="$refs.vid3.open()" class="shadow-24 three desktop-only">
-          <img src="~statics/gen2.jpg" alt="Genesis Info Video" class="responsive">
-          <div class="othree desktop-only">
-            <h5>Volunteer Perspective On Genesis Community Healthcare</h5>
-          </div>
-        </q-btn>
-        <div class="q-video mobile-only">
-          <h6>Volunteer Perspective On Genesis Community Healthcare</h6>
-          <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
-            allowfullscreen></iframe>
+        <div class="col-xs-10">
+          <hr>
         </div>
-
-      </div>
-      <div class="col-xs-10">
-        <hr>
       </div>
     </div>
     <!-- Footer -->
@@ -692,16 +688,6 @@
               <hr class="hr">
               <h5 class="text-bold text-italic">Semper Fidelis Sponsors</h5>
             </div>
-            <!-- <div class="col-xs-6 col-md-3">
-              <q-btn flat @click="launch('http://www.meatsroyaleidaho.com/')">
-                <img @click="launch('http://www.meatsroyaleidaho.com/')" class="responsive silver" src="~statics/meats.jpg" alt="Meats Royale">
-              </q-btn>
-            </div> -->
-            <!-- <div class="col-xs-6 col-md-3">
-              <q-btn flat @click="launch('https://www.sherwin-williams.com/homeowners')">
-                <img class="responsive silver" src="statics/sherwin.png" alt="Sherwin Williams">
-              </q-btn>
-            </div> -->
             <div class="col-xs-6 col-md-3">
               <q-btn flat @click="launch('https://10barrel.com/pub/boise/')">
                 <img @click="launch('https://10barrel.com/pub/boise/')" class="responsive silver" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"

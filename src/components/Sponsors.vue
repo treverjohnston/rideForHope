@@ -15,11 +15,11 @@
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-10">
-                            <q-btn class="el" @click="launch('http://www.meridian-cycles.com/')">
-                                <img class="responsive gold desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
-                                <img @click="launch('http://www.meridian-cycles.com/')" class="responsive gold-mobile mobile-only" src="~statics/meridian.png"
-                                    alt="Meridian cycles">
-                              </q-btn>
+                        <q-btn class="el" @click="launch('http://www.meridian-cycles.com/')">
+                            <img class="responsive gold desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
+                            <img @click="launch('http://www.meridian-cycles.com/')" class="responsive gold-mobile mobile-only" src="~statics/meridian.png"
+                                alt="Meridian cycles">
+                        </q-btn>
                     </div>
                 </div>
                 <hr color="red" class="hr">
@@ -27,14 +27,14 @@
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
-                <h2 class="text-bold shadow desktop-only">Semper Fidelis Sponsors ($1500+)</h2>
-                <h3 class="text-bold shadow mobile-only">Semper Fidelis Sponsors ($1500+)</h3>
+                <h2 class="text-bold shadow desktop-only">Semper Fidelis Sponsors ($1500)</h2>
+                <h3 class="text-bold shadow mobile-only">Semper Fidelis Sponsors ($1500)</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-8">
                         <q-btn @click="launch('https://10barrel.com/pub/boise/')">
                             <img class="responsive silver" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"
-                            alt="10 Barrel BrewingCo.">
+                                alt="10 Barrel BrewingCo.">
                         </q-btn>
                     </div>
                 </div>
@@ -43,40 +43,42 @@
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
-                <h2 class="text-bold shadow desktop-only">Carpe Diem Sponsors ($500+)</h2>
-                <h3 class="text-bold shadow mobile-only">Carpe Diem Sponsors ($500+)</h3>
+                <h2 class="text-bold shadow desktop-only">Carpe Diem Sponsors ($500)</h2>
+                <h3 class="text-bold shadow mobile-only">Carpe Diem Sponsors ($500)</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn>
+                        <q-btn flat @click="launch('https://www.firstinterstatebank.com/')">
                             <img class="responsive" src="statics/firstI.png" alt="1st Interstate Bank">
                         </q-btn>
                     </div>
                     <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn>
+                        <q-btn flat @click="launch('http://www.lylepearson.com/')">
+                            <img class="responsive" src="statics/lyle.jpg" alt="Lyle Pearson">
+                        </q-btn>
+                    </div>
+                    <div class="col-xs-12 col-md-4 self-center">
+                        <q-btn flat @click="launch('http://www.raymondjames.com/boiseid/')">
+                            <img class="responsive" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
+                        </q-btn>
+                    </div>
+                    <div class="col-xs-12 col-md-4 self-center">
+                        <q-btn flat @click="launch('https://www.idahopower.com/')">
                             <img class="responsive" src="statics/power.png" alt="Idaho Power">
                         </q-btn>
                     </div>
                     <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn @click="launch('http://www.meatsroyaleidaho.com/')">
-                            <img class="responsive silver" src="~statics/meats.jpg" alt="Meats Royale">
+                        <q-btn flat @click="launch('http://www.meatsroyaleidaho.com/')">
+                            <img class="responsive" src="~statics/meats.jpg" alt="Meats Royale">
                         </q-btn>
                     </div>
                     <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn>
+                        <q-btn flat @click="launch('https://www.sherwin-williams.com/')">
                             <img class="responsive" src="statics/sherwin.png" alt="Sherwin Williams">
                         </q-btn>
                     </div>
-                    <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn>
-                            <img class="responsive silver" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
-                        </q-btn>
-                    </div>
-                    <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn>
-                            <img class="responsive" src="statics/lyle.jpg" alt="Lyle Pearson">
-                        </q-btn>
-                    </div>
+
+
 
                 </div>
                 <hr color="red" class="hr">
@@ -92,13 +94,15 @@
                                 <div class="mid row wrap justify-center">
 
                                     <div class="col-xs-12 col-md-4 self-center">
-                                        <q-btn>
-                                            <img class="responsive" src="statics/franz.png" alt="Franz Bakery">
+                                        <q-btn outline color="black" no-caps @click="launch('https://franzbakery.com/')">
+                                            <h5 class="black">Franz Bakery</h5>
+                                            <!-- <img class="responsive" src="statics/franz.png" alt="Franz Bakery"> -->
                                         </q-btn>
                                     </div>
                                     <div class="col-xs-12 col-md-4 self-center">
-                                        <q-btn>
-                                            <img class="responsive" src="statics/falls.png" alt="Falls Brand">
+                                        <q-btn color="black" outline no-caps @click="launch('https://www.fallsbrand.com/')">
+                                            <h5 class="black">Falls Brand</h5>
+                                            <!-- <img class="responsive" src="statics/falls.png" alt="Falls Brand"> -->
                                         </q-btn>
                                     </div>
                                 </div>
@@ -144,8 +148,8 @@
 </script>
 
 <style scoped>
-    .gold {
-        height: 15rem;
+    .black {
+        color: black;
     }
 
     .gold {
@@ -153,7 +157,7 @@
     }
 
     .silver {
-        /* width: 28rem */
+        height: 8rem;
     }
 
     .btn {
