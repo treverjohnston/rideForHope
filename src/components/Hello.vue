@@ -16,7 +16,7 @@
         </q-btn>
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')">Just Donate
+        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')">Just Donate
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
@@ -31,7 +31,7 @@
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
       />
-      <q-route-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" to="fundraising" />
+      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" />
       <q-tab class="tab involved" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
@@ -102,9 +102,7 @@
         />
         <!-- </q-side-link> -->
         <hr class="tabhrs">
-        <q-side-link to="fundraising">
-          <q-item-main class="side" label="Rider Fundraising" />
-        </q-side-link>
+          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" class="side" label="Rider Fundraising" />
         <hr class="tabhr">
         </q-collapsible>
         <q-collapsible class="side-collapse" label="Rider Information">

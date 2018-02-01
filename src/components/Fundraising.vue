@@ -6,6 +6,7 @@
                     <h4 class="mobile-only">Fundraising</h4>
                     <hr class="ihr">
                    <p>Check back soon for information about Fundraising</p>
+                   <q-btn>Fundraise</q-btn>
                 </div>
     
     
