@@ -658,6 +658,9 @@
         </div>
         <div class="col-xs-12">
           <div class="row justify-center">
+            <div class="col-xs-12">
+              <hr class="hr">
+            </div>
             <div class="col-xs-6 col-md-3">
               <q-btn flat @click="launch('https://www.strava.com/clubs/302822')" flat>
                 <img class="strava" src="statics/strava.png" alt="strava logo">
@@ -668,9 +671,9 @@
                 <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
               </q-btn>
             </div>
-            <div class="col-md-3" id="bar">
-              <hr class="hr">
-              <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5>
+            <div v-scroll-fire="animate" class="col-md-3" id="bar">
+              <!-- <hr class="hr"> -->
+              <!-- <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5> -->
               <q-btn flat data-x="360" class="el" @click="launch('http://www.meridian-cycles.com/')">
                 <img class="meridian-big" src="statics/meridian.png" alt="Meridian Cycles logo">
               </q-btn>

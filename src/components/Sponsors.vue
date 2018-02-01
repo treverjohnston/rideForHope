@@ -9,15 +9,15 @@
             </div>
         </div>
         <div class="row wrap justify-center text-center">
-            <div class="col-xs-11 col-md-10">
+            <div v-scroll-fire="animate" class="col-xs-11 col-md-10">
                 <h2 class="text-bold shadow desktop-only">Veni Vidi Vici Sponsors ($2500+)</h2>
                 <h3 class="text-bold shadow mobile-only">Veni Vidi Vici Sponsors ($2500+)</h3>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
-                    <div class="col-xs-12 col-md-10">
-                        <q-btn class="el" @click="launch('http://www.meridian-cycles.com/')">
+                    <div id="bar" class="col-xs-12 col-md-10">
+                        <q-btn class="el" data-x="360" @click="launch('//www.meridian-cycles.com/')">
                             <img class="responsive gold desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
-                            <img @click="launch('http://www.meridian-cycles.com/')" class="responsive gold-mobile mobile-only" src="~statics/meridian.png"
+                            <img class="responsive gold-mobile mobile-only" src="~statics/meridian.png"
                                 alt="Meridian cycles">
                         </q-btn>
                     </div>
@@ -32,7 +32,7 @@
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-8">
-                        <q-btn @click="launch('https://10barrel.com/pub/boise/')">
+                        <q-btn @click="launch('//10barrel.com/pub/boise/')">
                             <img class="responsive silver" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"
                                 alt="10 Barrel BrewingCo.">
                         </q-btn>
@@ -48,32 +48,32 @@
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn flat @click="launch('https://www.firstinterstatebank.com/')">
+                        <q-btn flat @click="launch('//www.firstinterstatebank.com/')">
                             <img class="responsive" src="statics/firstI.png" alt="1st Interstate Bank">
                         </q-btn>
                     </div>
                     <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn flat @click="launch('http://www.lylepearson.com/')">
+                        <q-btn flat @click="launch('//www.lylepearson.com/')">
                             <img class="responsive" src="statics/lyle.jpg" alt="Lyle Pearson">
                         </q-btn>
                     </div>
                     <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn flat @click="launch('http://www.raymondjames.com/boiseid/')">
+                        <q-btn flat @click="launch('//www.raymondjames.com/boiseid/')">
                             <img class="responsive" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
                         </q-btn>
                     </div>
                     <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn flat @click="launch('https://www.idahopower.com/')">
+                        <q-btn flat @click="launch('//www.idahopower.com/')">
                             <img class="responsive" src="statics/power.png" alt="Idaho Power">
                         </q-btn>
                     </div>
                     <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn flat @click="launch('http://www.meatsroyaleidaho.com/')">
+                        <q-btn flat @click="launch('//www.meatsroyaleidaho.com/')">
                             <img class="responsive" src="~statics/meats.jpg" alt="Meats Royale">
                         </q-btn>
                     </div>
                     <div class="col-xs-12 col-md-4 self-center">
-                        <q-btn flat @click="launch('https://www.sherwin-williams.com/')">
+                        <q-btn flat @click="launch('//www.sherwin-williams.com/')">
                             <img class="responsive" src="statics/sherwin.png" alt="Sherwin Williams">
                         </q-btn>
                     </div>
@@ -86,21 +86,19 @@
         </div>
         <div class="row wrap justify-center text-center">
             <div class="col-xs-8">
-                <h2 class="text-bold shadow desktop-only">Virtutem Spei Sponsors (
-                    <$500)</h2>
-                        <h3 class="text-bold shadow mobile-only">Virtutem Spei Sponsors (
-                            <$500)</h3>
+                <h2 class="text-bold shadow desktop-only">Virtutem Spei Sponsors (<$500)</h2>
+                        <h3 class="text-bold shadow mobile-only">Virtutem Spei Sponsors (<$500)</h3>
                                 <hr color="red" class="hr">
                                 <div class="mid row wrap justify-center">
 
-                                    <div class="col-xs-12 col-md-4 self-center">
-                                        <q-btn outline color="black" no-caps @click="launch('https://franzbakery.com/')">
+                                    <div class="col-xs-12 col-md-4 self-center last">
+                                        <q-btn outline color="black" no-caps @click="launch('//franzbakery.com/')">
                                             <h5 class="black">Franz Bakery</h5>
                                             <!-- <img class="responsive" src="statics/franz.png" alt="Franz Bakery"> -->
                                         </q-btn>
                                     </div>
-                                    <div class="col-xs-12 col-md-4 self-center">
-                                        <q-btn color="black" outline no-caps @click="launch('https://www.fallsbrand.com/')">
+                                    <div class="col-xs-12 col-md-4 self-center last">
+                                        <q-btn color="black" outline no-caps @click="launch('//www.fallsbrand.com/')">
                                             <h5 class="black">Falls Brand</h5>
                                             <!-- <img class="responsive" src="statics/falls.png" alt="Falls Brand"> -->
                                         </q-btn>
@@ -114,18 +112,24 @@
 </template>
 
 <script>
+    import anime from "animejs";
     import {
         QLayout,
         QInput,
         QBtn,
         QGallery,
-        openURL
+        openURL,
+        ScrollFire,
+
     } from 'quasar'
     export default {
         name: 'Sponsors',
         data() {
             return {
             }
+        },
+        directives:{
+            ScrollFire
         },
         components: {
             QLayout,
@@ -142,12 +146,38 @@
             launch(url) {
                 openURL(url)
             },
-
+            animate() {
+                anime({
+                    targets: "#bar .el",
+                    translateX: function (el) {
+                        return 0;
+                    },
+                    translateY: function (el, i) {
+                        return 0;
+                    },
+                    scale: function (el, i, l) {
+                        return 1.25;
+                    },
+                    duration: function () {
+                        return anime.random(500, 800);
+                    },
+                    duration: function () {
+                        return anime.random(800, 1100);
+                    },
+                    delay: function () {
+                        return anime.random(0, 500);
+                    },
+                    direction: "reverse"
+                });
+            }
         }
     }
 </script>
 
 <style scoped>
+    .last{
+        margin-bottom: .5rem;
+    }
     .black {
         color: black;
     }

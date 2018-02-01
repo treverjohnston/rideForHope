@@ -16,22 +16,22 @@ var store = new vuex.Store({
             {
                 url: '/18-mile',
                 length: '18 Mile',
-                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/18_mrihcr.jpg'
+                pic: '//res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/18_mrihcr.jpg'
             },
             {
                 url: '/31-mile',
                 length: '30 Mile',
-                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg'
+                pic: '//res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg'
             },
             {
                 url: '/metric',
                 length: 'Metric Century',
-                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/62.8_obydkx.jpg'
+                pic: '//res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/62.8_obydkx.jpg'
             },
             {
                 url: '/Century',
                 length: 'Century',
-                pic: 'http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg'
+                pic: '//res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg'
             }
 
         ],
@@ -101,7 +101,7 @@ var store = new vuex.Store({
             var arr = []
             for (let i = 0; i < pics.length; i++) {
                 const pic = pics[i];
-                var url = `http://res.cloudinary.com/treverscloud/image/upload/v${pic.version}/${pic.public_id}.${pic.format}`
+                var url = `//res.cloudinary.com/treverscloud/image/upload/v${pic.version}/${pic.public_id}.${pic.format}`
                 arr.unshift(url)
             }
             state.gallery = arr
