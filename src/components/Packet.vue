@@ -30,7 +30,7 @@
                 <h3 class="desktop-only">Packet Pick Up</h3>
                 <h4 class="mobile-only">Packet Pick Up</h4>
                 <hr class="ihr">
-               <p>Check back soon for information aobut Packet Pick Up</p>
+               <p>Check back soon for information about Packet Pick Up</p>
             </div>
 
 

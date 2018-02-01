@@ -43,6 +43,9 @@
                             <q-icon class="fb" size="10rem" name="fa-facebook-square" />
                         </q-btn>
                     </div>
+                    <div class="col-xs-12">
+                        <p>Or call David Marsey at ----</p>
+                    </div>
                 </div>
             </div>
 

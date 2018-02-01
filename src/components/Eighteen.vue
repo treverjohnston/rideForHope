@@ -10,8 +10,8 @@
                     <div class="row justify-center">
                         <div class="col-xs-12 text-center red-back">
                             <h2 class="headline text-center black">18 Mile Ride</h2>
-                            <h5 class="headline text-center black">Virtutem Spei</h5>
-                            <big class="headline text-center black">"Hope and Strength"</big>
+                            <h5 class="headline text-center black">Virtutem Spei - "Hope and Strength"</h5>
+                            <!-- <big class="headline text-center black">"Hope and Strength"</big> -->
                         </div>
                     </div>
                     <!-- <hr color="red" class="hr"> -->
@@ -24,6 +24,14 @@
                 birds and burn up the road with with human powered speed! This is a “honey” of a course and flat as a pancake;
                 except for one little blueberry bump on top that is too small to categorize. No blackberries, huckleberries
                 or strawberry mountains on this course!
+            </h6>
+        </div>
+        <div class="col-xs-12 col-md-8 text-center border">
+            <h5>
+                18 Mile Rest Stops:
+            </h5>
+            <h6>
+                Bowmont - 9.5 Miles
             </h6>
         </div>
         <!-- <div class="row wrap justify-center">

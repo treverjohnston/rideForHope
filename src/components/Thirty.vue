@@ -10,8 +10,8 @@
                     <div class="row justify-center">
                             <div class="col-xs-12 text-center red-back">
                                 <h2 class="headline text-center black">31 Mile Ride</h2>
-                                <h5 class="headline text-center black">Cerpe Diem</h5>
-                                <big class="headline text-center black">"Seize The Day"</big>
+                                <h5 class="headline text-center black">Cerpe Diem - "Seize The Day"</h5>
+                                <!-- <big class="headline text-center black">"Seize The Day"</big> -->
                             </div>
                         </div>                    <!-- <hr color="red" class="hr"> -->
                 </q-parallax>
@@ -25,6 +25,20 @@
                 with your riding partners, and don’t forget to experience a fancy porta-john at one of the three rest stops
                 you will encounter along the route!
             </h6>
+            <div class="col-xs-11 col-md-8 text-center">
+                    <h5>
+                        31 Mile Rest Stops:
+                    </h5>
+                    <h6>
+                        W. Dickman - 9.5 Miles
+                    </h6>
+                    <h6>
+                        Melba - 14 Miles
+                    </h6>
+                    <h6>
+                        Bowmont - 22 Miles
+                    </h6>
+                </div>
         </div>
         <div class="row wrap justify-center">
             <q-card class="route col-xs-11 col-md-8 shadow-24">

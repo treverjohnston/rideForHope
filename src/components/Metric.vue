@@ -10,8 +10,8 @@
                     <div class="row justify-center">
                             <div class="col-xs-12 text-center red-back">
                                 <h2 class="headline text-center black">Metric Century Ride</h2>
-                                <h5 class="headline text-center black">Semper Fidelis</h5>
-                                <big class="headline text-center black">"Always Faithful"</big>
+                                <h5 class="headline text-center black">Semper Fidelis - "Always Faithful"</h5>
+                                <!-- <big class="headline text-center black">"Always Faithful"</big> -->
                             </div>
                         </div>                    
                 </q-parallax>
@@ -27,6 +27,23 @@
                 finish line where beer and food await, (if you are fast enough!). Just remember, Humpty Dumpty had wall issues
                 too but he overcame; so can you!
             </h6>
+            <div class="col-xs-11 col-md-8 text-center">
+                    <h5>
+                        Metric Century Rest Stops:
+                    </h5>
+                    <h6>
+                        Bowmont - 12.5 Miles
+                    </h6>
+                    <h6>
+                        Gun Range- 28 Miles
+                    </h6>
+                    <h6>
+                        Lake Shore Dr. - 42.5 Miles
+                    </h6>
+                    <h6>
+                        Bowmont - 54.5 Miles
+                    </h6>
+                </div>
         </div>
         <div class="row wrap justify-center">
             <q-card class="route col-xs-11 col-md-8 shadow-24">

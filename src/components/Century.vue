@@ -8,12 +8,13 @@
                         <hr color="red" class="hr">
                     </div>
                     <div class="row justify-center">
-                            <div class="col-xs-12 text-center red-back">
-                                <h2 class="headline text-center black">Century Ride</h2>
-                                <h5 class="headline text-center black">Veni Vidi Vici</h5>
-                                <big class="headline text-center black">"I Came. I Saw. I Conquered."</big>
-                            </div>
-                        </div>                </q-parallax>
+                        <div class="col-xs-12 text-center red-back">
+                            <h2 class="headline text-center black">Century Ride</h2>
+                            <h5 class="headline text-center black">Veni Vidi Vici - "I Came. I Saw. I Conquered."</h5>
+                            <!-- <big class="headline text-center black">"I Came. I Saw. I Conquered."</big> -->
+                        </div>
+                    </div>
+                </q-parallax>
             </div>
         </div>
         <div class="row wrap justify-center">
@@ -25,6 +26,29 @@
                 on toward Marsing. With your fat cells crying (aka sweating) you will ride through vineyards, orchards and
                 past scenic overlooks. You will skirt Lake Lowell as you head toward the finish line with your riding buddies;
                 who will know more about your bodily functions than your significant other by the time you reach Kuna. </h6>
+            <div class="col-xs-11 col-md-8 text-center">
+                <h5>
+                    Century Rest Stops:
+                </h5>
+                <h6>
+                    W. Dickman - 18 Miles
+                </h6>
+                <h6>
+                    Melba - 14 Miles
+                </h6>
+                <h6>
+                    Bowmont - 50 Miles
+                </h6>
+                <h6>
+                    Gun Range - 65 Miles
+                </h6>
+                <h6>
+                    Lake Shore Dr. - 80 Miles
+                </h6>
+                <h6>
+                    Bowmont - 91.5 Miles
+                </h6>
+            </div>
         </div>
         <div class="row wrap justify-center">
             <q-card class="route col-xs-11 col-md-8 shadow-24">
@@ -75,10 +99,10 @@
             </q-card>
         </div>
         <div class="row wrap justify-center">
-                <div class="col-xs-12 text-center">
-                    <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
-                </div>
+            <div class="col-xs-12 text-center">
+                <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
             </div>
+        </div>
     </q-layout>
 </template>
 
@@ -129,9 +153,10 @@
 </script>
 
 <style scoped>
-    .top{
+    .top {
         padding-top: 1rem;
     }
+
     .btn {
         margin: .5rem .5rem .5rem 0;
         background-color: rgba(197, 7, 7, 0.8);
