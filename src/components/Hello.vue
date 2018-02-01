@@ -19,7 +19,7 @@
         <q-btn outline color="red" @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')">Donate
         </q-btn>
       </q-transition>
-      <q-transition appear enter="lightSpeedIn" leave="fadeOut">
+      <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
         <q-btn outline @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" color="red">Register
         </q-btn>
       </q-transition>
