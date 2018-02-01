@@ -55,7 +55,7 @@
                 <q-transition appear enter="zoomIn" leave="fadeOut">
                     <div>
                         <q-card-media>
-                            <img src="http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg" alt="century preview">
+                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg" alt="century preview">
                         </q-card-media>
                         <q-card-actions class="desktop-only" align="center">
                             <q-collapsible class="white-text" label="View Map Options">
@@ -80,7 +80,7 @@
                 <q-transition appear enter="zoomIn" leave="fadeOut">
                     <div>
                         <q-card-media>
-                            <img src="http://res.cloudinary.com/treverscloud/image/upload/v1517248679/Century_Elevation_Profile_Only_i9lr2i.jpg" alt="century elevation profile">
+                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248679/Century_Elevation_Profile_Only_i9lr2i.jpg" alt="century elevation profile">
                         </q-card-media>
 
                     </div>
@@ -92,7 +92,7 @@
                 <q-transition appear enter="zoomIn" leave="fadeOut">
                     <div>
                         <q-card-media>
-                            <img src="http://res.cloudinary.com/treverscloud/image/upload/v1517248680/Century_Climb_Details_yhmkjr.jpg" alt="century climb profile">
+                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248680/Century_Climb_Details_yhmkjr.jpg" alt="century climb profile">
                         </q-card-media>
                     </div>
                 </q-transition>

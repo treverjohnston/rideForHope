@@ -49,7 +49,7 @@
             <q-card class="route col-xs-11 col-md-8">
                 <q-transition appear enter="zoomIn" leave="fadeOut">
                         <q-card-media>
-                            <img src="http://res.cloudinary.com/treverscloud/image/upload/v1517248679/Climb_Ratings_Graph_xnzecm.jpg" class="responsive" alt="Climb info">
+                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248679/Climb_Ratings_Graph_xnzecm.jpg" class="responsive" alt="Climb info">
                         </q-card-media>
                 </q-transition>
             </q-card>

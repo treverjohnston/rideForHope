@@ -45,7 +45,7 @@
                 <q-transition appear enter="zoomIn" leave="fadeOut">
                     <div>
                         <q-card-media>
-                            <img src="http://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg" alt="31-mile preview">
+                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg" alt="31-mile preview">
                         </q-card-media>
                         <q-card-actions class="desktop-only" align="center">
                             <q-collapsible class="white-text" label="View More Map Options">
@@ -70,7 +70,7 @@
                 <q-transition appear enter="zoomIn" leave="fadeOut">
                     <div>
                         <q-card-media>
-                            <img src="http://res.cloudinary.com/treverscloud/image/upload/v1517248679/31_Mile_Elevation_Profile_Only_oztpv1.jpg" alt="31-mile elevation profile">
+                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248679/31_Mile_Elevation_Profile_Only_oztpv1.jpg" alt="31-mile elevation profile">
                         </q-card-media>
 
                     </div>

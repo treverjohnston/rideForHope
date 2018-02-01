@@ -21,7 +21,7 @@
         </div>
         <div class="row wrap justify-center bot desktop-only xs-gutter">
             <div class="offset-xs-1 col-xs-5">
-                <img src="http://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/margo.jpg" class="responsive img" alt="Picture of Margo">
+                <img src="https://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/margo.jpg" class="responsive img" alt="Picture of Margo">
             </div>
             <div class="col-xs-5">
                 <q-input v-model="name" float-label="Name" name="name" type="text" />

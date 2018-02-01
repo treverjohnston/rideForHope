@@ -11,12 +11,12 @@
         Ride For Hope Idaho
       </q-toolbar-title>
       <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn class="desktop-only" @click="launch('http://www.meridian-cycles.com/')">
+        <q-btn class="desktop-only" @click="launch('//www.meridian-cycles.com/')">
           <img class="meridian desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
         </q-btn>
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')">Just Donate
+        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
@@ -24,7 +24,7 @@
         </q-btn>
       </q-transition>
       <q-btn class="mobile-only">
-        <img class="meridian-mobile" @click="launch('http://www.meridian-cycles.com/')" src="statics/meridian.png" alt="Meridian Cycles logo">
+        <img class="meridian-mobile" @click="launch('//www.meridian-cycles.com/')" src="statics/meridian.png" alt="Meridian Cycles logo">
       </q-btn>
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
@@ -273,7 +273,7 @@
         </div>
       </div> -->
 
-      <q-modal ref="vid1" class="vid">
+      <!-- <q-modal ref="vid1" class="vid">
         <div class="row justify-center">
           <div class="col-xs-12">
             <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
@@ -297,7 +297,7 @@
               allowfullscreen></iframe>
           </div>
         </div>
-      </q-modal>
+      </q-modal> -->
 
       <div class="spacer row wrap">
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
@@ -518,61 +518,6 @@
             </div>
           </q-card-media>
         </div>
-
-        <!-- <q-parallax class="desktop-only" :speed="1" :height="500" src="./statics/cover2.jpg">
-          <div slot="loading">Loading...</div>
-
-          <div class="row options">
-            <q-card class="card">
-              <q-card-main>
-                <hr>
-                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Register Now</q-btn>
-                <hr>
-              </q-card-main>
-            </q-card>
-            <q-card class="card">
-              <q-card-main>
-                <hr>
-                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Donate Now</q-btn>
-                <hr>
-              </q-card-main>
-            </q-card>
-            <q-card class="card">
-              <q-card-main>
-                <hr>
-                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
-                <hr>
-              </q-card-main>
-            </q-card>
-          </div>
-        </q-parallax>
-        <q-parallax class="mobile-only" :speed="1" :height="500" src="./statics/cover2.jpg">
-          <div slot="loading">Loading...</div>
-
-          <div class="row options">
-            <q-card class="card-mobile col-xs-12 text-center">
-              <q-card-main>
-                <hr>
-                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Register Now</q-btn>
-                <hr>
-              </q-card-main>
-            </q-card>
-            <q-card class="card-mobile col-xs-12 text-center">
-              <q-card-main>
-                <hr>
-                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Donate Now</q-btn>
-                <hr>
-              </q-card-main>
-            </q-card>
-            <q-card class="card-mobile col-xs-12 text-center">
-              <q-card-main>
-                <hr>
-                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
-                <hr>
-              </q-card-main>
-            </q-card>
-          </div>
-        </q-parallax> -->
       </div>
       <div class="row wrap justify-center gen">
         <div class="text-center col-xs-12 col-md-4 self-center">
@@ -594,7 +539,7 @@
         <div class="col-xs-10">
         </div>
       </div>
-      <div class="row justify-center xs-gutter video">
+      <!-- <div class="row justify-center xs-gutter video">
         <div class="col-xs-10 text-center">
           <hr>
           <big>Genesis Community Health Videos</big>
@@ -643,7 +588,7 @@
         <div class="col-xs-10">
           <hr>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- Footer -->
     <div class="footer text-center text-bold" slot="footer">
@@ -674,7 +619,7 @@
             <div v-scroll-fire="animate" class="col-md-3" id="bar">
               <!-- <hr class="hr"> -->
               <!-- <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5> -->
-              <q-btn flat data-x="360" class="el" @click="launch('http://www.meridian-cycles.com/')">
+              <q-btn flat data-x="360" class="el" @click="launch('//www.meridian-cycles.com/')">
                 <img class="meridian-big" src="statics/meridian.png" alt="Meridian Cycles logo">
               </q-btn>
             </div>
@@ -750,8 +695,6 @@
     ScrollFire,
     QCardMedia,
     QCardActions,
-    QVideo,
-    QModal
   } from "quasar";
 
   export default {
@@ -781,10 +724,7 @@
       QCollapsible,
       QFixedPosition,
       QCardMedia,
-      QCardActions,
-      QVideo,
-      QModal
-    },
+      QCardActions,    },
     data() {
       return {};
     },
