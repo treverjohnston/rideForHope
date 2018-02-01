@@ -124,7 +124,7 @@ var store = new vuex.Store({
         sendEmail({ commit, dispatch }, obj) {
             console.log('email obj', obj)
             $.ajax({
-                url: "https://formspree.io/treverj1029@gmail.com",
+                url: "https://formspree.io/rideforhopeidaho@gmail.com",
                 method: "POST",
                 data: {
                     name: obj.name,

@@ -16,11 +16,11 @@
         </q-btn>
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')">Just Donate
+        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')">Just Donate
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn class="mobile-only" outline @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" color="red">Register
+        <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" color="red">Register
         </q-btn>
       </q-transition>
       <q-btn class="mobile-only">
@@ -29,7 +29,7 @@
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
-      <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')"
+      <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
       />
       <q-route-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" to="fundraising" />
       <q-tab class="tab involved" slot="title" label="Rider Info" name="rider">
@@ -53,7 +53,7 @@
             </q-tab>
           </q-item-main>
           <q-item-main>
-            <q-tab @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" name="home" class="tab" slot="title" color="red"
+            <q-tab @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" name="home" class="tab" slot="title" color="red"
               label="Register" />
           </q-item-main>
           <q-item-main>
@@ -98,7 +98,7 @@
           <hr class="tabhr">
         </q-side-link>
         <!-- <q-side-link> -->
-        <q-item-main @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="side register" label="Register"
+        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="side register" label="Register"
         />
         <!-- </q-side-link> -->
         <hr class="tabhrs">
@@ -127,7 +127,7 @@
           </q-collapsible>
           <hr class="tabhrs">
           <!-- <q-side-link  class="left"> -->
-          <q-item-main @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="small-side register" label="Register"
+          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="small-side register" label="Register"
           />
           <!-- </q-side-link> -->
           <hr class="tabhrs">
@@ -528,21 +528,21 @@
             <q-card class="card">
               <q-card-main>
                 <hr>
-                <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Register Now</q-btn>
+                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Register Now</q-btn>
                 <hr>
               </q-card-main>
             </q-card>
             <q-card class="card">
               <q-card-main>
                 <hr>
-                <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Donate Now</q-btn>
+                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Donate Now</q-btn>
                 <hr>
               </q-card-main>
             </q-card>
             <q-card class="card">
               <q-card-main>
                 <hr>
-                <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
+                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
                 <hr>
               </q-card-main>
             </q-card>
@@ -555,21 +555,21 @@
             <q-card class="card-mobile col-xs-12 text-center">
               <q-card-main>
                 <hr>
-                <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Register Now</q-btn>
+                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Register Now</q-btn>
                 <hr>
               </q-card-main>
             </q-card>
             <q-card class="card-mobile col-xs-12 text-center">
               <q-card-main>
                 <hr>
-                <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Donate Now</q-btn>
+                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Donate Now</q-btn>
                 <hr>
               </q-card-main>
             </q-card>
             <q-card class="card-mobile col-xs-12 text-center">
               <q-card-main>
                 <hr>
-                <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
+                <q-btn @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="cbtn shadow-24">Buy Raffle Tickets</q-btn>
                 <hr>
               </q-card-main>
             </q-card>
