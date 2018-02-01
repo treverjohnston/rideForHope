@@ -29,7 +29,8 @@
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
-      <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')"/>
+      <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')"
+      />
       <q-route-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" to="fundraising" />
       <q-tab class="tab involved" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
@@ -52,7 +53,8 @@
             </q-tab>
           </q-item-main>
           <q-item-main>
-            <q-tab @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" name="home" class="tab" slot="title" color="red" label="Register"  />
+            <q-tab @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" name="home" class="tab" slot="title" color="red"
+              label="Register" />
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Start Times And Directions" name="rider" to="ride" />
@@ -96,7 +98,8 @@
           <hr class="tabhr">
         </q-side-link>
         <!-- <q-side-link> -->
-          <q-item-main @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="side register" label="Register" />
+        <q-item-main @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="side register" label="Register"
+        />
         <!-- </q-side-link> -->
         <hr class="tabhrs">
         <q-side-link to="fundraising">
@@ -124,7 +127,8 @@
           </q-collapsible>
           <hr class="tabhrs">
           <!-- <q-side-link  class="left"> -->
-            <q-item-main @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="small-side register" label="Register" />
+          <q-item-main @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="small-side register" label="Register"
+          />
           <!-- </q-side-link> -->
           <hr class="tabhrs">
           <q-side-link to="ride">
@@ -517,7 +521,7 @@
           </q-card-media>
         </div>
 
-        <q-parallax class="desktop-only" :speed="1" :height="500" src="./statics/cover2.jpg">
+        <!-- <q-parallax class="desktop-only" :speed="1" :height="500" src="./statics/cover2.jpg">
           <div slot="loading">Loading...</div>
 
           <div class="row options">
@@ -570,7 +574,7 @@
               </q-card-main>
             </q-card>
           </div>
-        </q-parallax>
+        </q-parallax> -->
       </div>
       <div class="row wrap justify-center gen">
         <div class="text-center col-xs-12 col-md-4 self-center">
@@ -678,10 +682,13 @@
                 <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
               </q-btn>
             </div>
+            <div class="col-xs-12">
+              <hr class="hr">
+            </div>
           </div>
         </div>
       </div>
-      <div v-scroll-fire="animate" class="row justify-center">
+      <!-- <div v-scroll-fire="animate" class="row justify-center">
         <div class="col-xs-12 col-md-12">
           <div class="row justify-center">
             <div class="col-xs-12">
@@ -697,7 +704,7 @@
             <hr class="hr">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     </div>
     <q-fixed-position corner="bottom-right" :offset="[18, 18]">
