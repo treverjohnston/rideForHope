@@ -76,6 +76,9 @@
             <q-route-tab @click="collapse" class="tab" slot="title" label="Packet Pick Up" name="rider" to="packet" />
           </q-item-main>
           <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Rider Fundraising" name="rider" to="fundraising" />
+          </q-item-main>
+          <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Rules Of The Road" name="rider" to="rules" />
           </q-item-main>
           <q-item-main>
@@ -162,6 +165,10 @@
           <hr class="tabhrs">
           <q-side-link to="packet">
             <q-item-main class="small-side" label="Packet Pick Up" />
+          </q-side-link>
+          <hr class="tabhr">
+          <q-side-link to="fundraising">
+            <q-item-main class="small-side" label="Rider Fundraising" />
           </q-side-link>
           <hr class="tabhr">
           <q-side-link to="rules">
