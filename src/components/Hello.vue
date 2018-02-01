@@ -20,7 +20,7 @@
         </q-btn>
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline @click="$router.push('/register')" color="red">Register
+        <q-btn outline @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" color="red">Register
         </q-btn>
       </q-transition>
       <q-btn class="mobile-only">
@@ -29,7 +29,7 @@
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
-      <q-route-tab class="tab" slot="title" color="red" label="Register" name="reg" to="register" />
+      <q-tab class="tab" slot="title" color="red" label="Register" name="home" @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')"/>
       <q-route-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" to="fundraising" />
       <q-tab class="tab involved" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
@@ -52,7 +52,7 @@
             </q-tab>
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" color="red" label="Register" name="reg" to="register" />
+            <q-tab @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" name="home" class="tab" slot="title" color="red" label="Register"  />
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Start Times And Directions" name="rider" to="ride" />
@@ -95,9 +95,9 @@
           <q-item-main class="side" label="Home" />
           <hr class="tabhr">
         </q-side-link>
-        <q-side-link to="register">
-          <q-item-main class="side register" label="Register" />
-        </q-side-link>
+        <!-- <q-side-link> -->
+          <q-item-main @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="side register" label="Register" />
+        <!-- </q-side-link> -->
         <hr class="tabhrs">
         <q-side-link to="fundraising">
           <q-item-main class="side" label="Rider Fundraising" />
@@ -123,9 +123,9 @@
             </q-side-link>
           </q-collapsible>
           <hr class="tabhrs">
-          <q-side-link to="register" class="left">
-            <q-item-main class="small-side register" label="Register" />
-          </q-side-link>
+          <!-- <q-side-link  class="left"> -->
+            <q-item-main @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="small-side register" label="Register" />
+          <!-- </q-side-link> -->
           <hr class="tabhrs">
           <q-side-link to="ride">
             <q-item-main class="small-side" label="Start Time/Directions" />

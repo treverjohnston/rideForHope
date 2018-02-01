@@ -29,7 +29,7 @@
                     <q-card-title class="black-text">
                         Ride For Hope Idaho Jersey </q-card-title>
                     <q-card-main>
-                        <q-btn no-caps @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">$40.00</q-btn>
+                        <q-btn no-caps @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">$45.00</q-btn>
                     </q-card-main>
                 </q-card>
             </div>
