@@ -24,7 +24,7 @@
                 and 4 rest stops. The course meets up with the last half of the Century route (so you will have additional
                 riders to share your challenge with along the way). You will continue northwest toward Marsing and then turn
                 back toward Kuna and pedal, pedal, pedal, to Lake Shore Drive skirting Lake Lowell on your way back to the
-                finish line where beer and food await, (if you are fast enough!). Just remember, Humpty Dumpty had wall issues
+                finish line where festivities and food await, (if you are fast enough!). Just remember, Humpty Dumpty had wall issues
                 too but he overcame; so can you!
             </h6>
             <div class="col-xs-11 col-md-8 text-center">

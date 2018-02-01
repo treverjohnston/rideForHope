@@ -29,7 +29,7 @@
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
-      <q-tab class="tab" slot="title" color="red" label="Register" name="home" @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')"/>
+      <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')"/>
       <q-route-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" to="fundraising" />
       <q-tab class="tab involved" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
