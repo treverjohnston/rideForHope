@@ -20,7 +20,8 @@
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" color="red">Register
+        <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
+          color="red">Register
         </q-btn>
       </q-transition>
       <q-btn class="mobile-only">
@@ -31,8 +32,9 @@
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
       />
-      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" />
-      <q-tab class="tab involved" slot="title" label="Rider Info" name="rider">
+      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
+      />
+      <q-tab class="tab involved" align="left" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
             <q-tab class="tab" slot="title" label="Routes" name="rider">
@@ -53,17 +55,17 @@
             </q-tab>
           </q-item-main>
           <q-item-main>
-            <q-tab @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" name="home" class="tab" slot="title" color="red"
-              label="Register" />
-          </q-item-main>
-          <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Start Times And Directions" name="rider" to="ride" />
+            <q-tab @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
+              name="home" class="tab" slot="title" color="red" label="Register" />
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Packet Pick Up" name="rider" to="packet" />
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Rules Of The Road" name="rider" to="rules" />
+          </q-item-main>
+          <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Start Times And Directions" name="rider" to="ride" />
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="How Climbs Are Categorized" name="rider" to="climbs" />
@@ -98,11 +100,12 @@
           <hr class="tabhr">
         </q-side-link>
         <!-- <q-side-link> -->
-        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="side register" label="Register"
-        />
+        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
+          class="side register" label="Register" />
         <!-- </q-side-link> -->
         <hr class="tabhrs">
-          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" class="side" label="Rider Fundraising" />
+        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" class="side"
+          label="Rider Fundraising" />
         <hr class="tabhr">
         </q-collapsible>
         <q-collapsible class="side-collapse" label="Rider Information">
@@ -124,14 +127,8 @@
             </q-side-link>
           </q-collapsible>
           <hr class="tabhrs">
-          <!-- <q-side-link  class="left"> -->
-          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')" class="small-side register" label="Register"
-          />
-          <!-- </q-side-link> -->
-          <hr class="tabhrs">
-          <q-side-link to="ride">
-            <q-item-main class="small-side" label="Start Time/Directions" />
-          </q-side-link>
+          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
+            class="small-side register" label="Register" />
           <hr class="tabhrs">
           <q-side-link to="packet">
             <q-item-main class="small-side" label="Packet Pick Up" />
@@ -139,6 +136,10 @@
           <hr class="tabhr">
           <q-side-link to="rules">
             <q-item-main class="small-side" label="Rules Of The Road" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="ride">
+            <q-item-main class="small-side" label="Start Time/Directions" />
           </q-side-link>
           <hr class="tabhr">
           <q-side-link to="climbs">
@@ -539,56 +540,56 @@
         <div class="col-xs-10">
         </div>
       </div>
-      <!-- <div class="row justify-center xs-gutter video">
+      <div class="row justify-center xs-gutter video">
         <div class="col-xs-10 text-center">
           <hr>
           <big>Genesis Community Health Videos</big>
           <hr>
         </div>
         <div class="col-xs-12 col-md-4 text-center">
-          <q-btn @click="$refs.vid1.open()" class="shadow-24 container desktop-only">
+          <q-btn @click="launch('https://vimeo.com/214745227 ')" class="shadow-24 container">
             <img src="~statics/gen1.jpg" alt="Genesis Info Video" class="responsive">
             <div class="overlay desktop-only">
               <h5> Patient Perspective on Genesis Community Healthcare</h5>
             </div>
           </q-btn>
-          <div class="q-video mobile-only">
+          <!-- <div class="q-video mobile-only">
             <h6> Patient Perspective on Genesis Community Healthcare</h6>
             <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
-          </div>
+          </div> -->
         </div>
         <div class="col-xs-12 col-sm-4 text-center">
-          <q-btn @click="$refs.vid2.open()" class="shadow-24 two desktop-only">
+          <q-btn @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')" class="shadow-24 two ">
             <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
             <div class="otwo desktop-only">
               <h5>Genesis Community Healthcare Overview</h5>
             </div>
           </q-btn>
-          <div class="q-video mobile-only">
+          <!-- <div class="q-video mobile-only">
             <h6>Genesis Community Healthcare Overview</h6>
             <iframe class="mid" width="640" height="360" style="border-width:0" src="http://interactive.tegna-media.com/video/embed/embed.html?id=2758268&type=video&title=Low-income health clinic seeks new patients&site=277&playerid=6918249996585&dfpid=32805352&dfpposition=embed_preroll§ion=home"></iframe>
 
-          </div>
+          </div> -->
         </div>
         <div class="col-xs-12 col-sm-4 text-center">
-          <q-btn @click="$refs.vid3.open()" class="shadow-24 three desktop-only">
+          <q-btn @click="launch('https://vimeo.com/217763499')" class="shadow-24 three ">
             <img src="~statics/gen2.jpg" alt="Genesis Info Video" class="responsive">
             <div class="othree desktop-only">
               <h5>Volunteer Perspective On Genesis Community Healthcare</h5>
             </div>
           </q-btn>
-          <div class="q-video mobile-only">
+          <!-- <div class="q-video mobile-only">
             <h6>Volunteer Perspective On Genesis Community Healthcare</h6>
             <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
-          </div>
+          </div> -->
 
         </div>
         <div class="col-xs-10">
           <hr>
         </div>
-      </div> -->
+      </div>
     </div>
     <!-- Footer -->
     <div class="footer text-center text-bold" slot="footer">
@@ -724,7 +725,8 @@
       QCollapsible,
       QFixedPosition,
       QCardMedia,
-      QCardActions,    },
+      QCardActions,
+    },
     data() {
       return {};
     },

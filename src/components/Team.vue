@@ -44,7 +44,7 @@
                         </q-btn>
                     </div>
                     <div class="col-xs-12">
-                        <p>Or call David Marsey at (720)-474-5507</p>
+                        <p>For more information, call David Marsey at (720)-474-5507</p>
                     </div>
                 </div>
             </div>

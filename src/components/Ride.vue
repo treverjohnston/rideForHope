@@ -29,16 +29,19 @@
             <div class="col-xs-11 col-md-5 text-center self-center">
                 <h3 class="desktop-only">Ride Day Information</h3>
                 <h4 class="mobile-only">Ride Day Information</h4>
-                <p>Registration opens at ----</p>
+                <p>Registration opens at 5:30 AM</p>
+                <!-- <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p> -->
                 <hr class="ihr">
                 <h5>Century Start Time</h5>
-                <p>6:30 AM</p>
+                <p>6:30 AM*</p>
                 <h5>Metric Century Start Time</h5>
-                <p>8:30 AM</p>
+                <p>8:30 AM*</p>
                 <h5>31 Mile Start Time</h5>
-                <p>10:30 AM</p>
+                <p>10:30 AM*</p>
                 <h5>18 Mile Start Time</h5>
-                <p>11:00 AM</p>
+                <p>11:00 AM*</p>
+                <hr class="ihr">
+                <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p>
             </div>
             <div class="col-xs-10">
                 <h3 class="desktop-only text-center">Directions (Kuna City Hall)</h3>
