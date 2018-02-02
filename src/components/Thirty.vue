@@ -30,13 +30,13 @@
                         31 Mile Rest Stops:
                     </h5>
                     <h6>
-                        W. Dickman - 9.5 Miles
+                        W. Dickman - 9.7 Miles
                     </h6>
                     <h6>
                         Melba - 14 Miles
                     </h6>
                     <h6>
-                        Bowmont - 22 Miles
+                        Bowmont - 22.6 Miles
                     </h6>
                 </div>
         </div>
@@ -45,7 +45,7 @@
                 <q-transition appear enter="zoomIn" leave="fadeOut">
                     <div>
                         <q-card-media>
-                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg" alt="31-mile preview">
+                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517598418/31_MILE_2018_ynauc9.jpg" alt="31-mile preview">
                         </q-card-media>
                         <q-card-actions class="desktop-only" align="center">
                             <q-collapsible class="white-text" label="View More Map Options">

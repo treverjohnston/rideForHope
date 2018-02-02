@@ -547,43 +547,35 @@
           <hr>
         </div>
         <div class="col-xs-12 col-md-4 text-center">
-          <q-btn @click="launch('https://vimeo.com/214745227 ')" class="shadow-24 container">
-            <img src="~statics/gen1.jpg" alt="Genesis Info Video" class="responsive">
-            <div class="overlay desktop-only">
-              <h5> Patient Perspective on Genesis Community Healthcare</h5>
-            </div>
-          </q-btn>
-          <!-- <div class="q-video mobile-only">
+          <div class="q-video">
             <h6> Patient Perspective on Genesis Community Healthcare</h6>
             <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
-          </div> -->
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center self-center">
+  
+            <q-card-media @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')" class="mobile-only" overlay-postion="full">
+                <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+                <div slot="overlay" >
+                  <q-card-title>
+                    <h5>Genesis Community Healthcare Overview</h5>
+                  </q-card-title>  
+                </div>
+              </q-card-media>
+              <q-btn @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')" class="shadow-24 two desktop-only">
+                <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+                <div class="otwo desktop-only">
+                  <h5>Genesis Community Healthcare Overview</h5>
+                </div>
+              </q-btn>
         </div>
         <div class="col-xs-12 col-sm-4 text-center">
-          <q-btn @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')" class="shadow-24 two ">
-            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
-            <div class="otwo desktop-only">
-              <h5>Genesis Community Healthcare Overview</h5>
-            </div>
-          </q-btn>
-          <!-- <div class="q-video mobile-only">
-            <h6>Genesis Community Healthcare Overview</h6>
-            <iframe class="mid" width="640" height="360" style="border-width:0" src="http://interactive.tegna-media.com/video/embed/embed.html?id=2758268&type=video&title=Low-income health clinic seeks new patients&site=277&playerid=6918249996585&dfpid=32805352&dfpposition=embed_preroll§ion=home"></iframe>
-
-          </div> -->
-        </div>
-        <div class="col-xs-12 col-sm-4 text-center">
-          <q-btn @click="launch('https://vimeo.com/217763499')" class="shadow-24 three ">
-            <img src="~statics/gen2.jpg" alt="Genesis Info Video" class="responsive">
-            <div class="othree desktop-only">
-              <h5>Volunteer Perspective On Genesis Community Healthcare</h5>
-            </div>
-          </q-btn>
-          <!-- <div class="q-video mobile-only">
+          <div class="q-video ">
             <h6>Volunteer Perspective On Genesis Community Healthcare</h6>
             <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
-          </div> -->
+          </div>
 
         </div>
         <div class="col-xs-10">

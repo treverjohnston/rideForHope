@@ -27,11 +27,16 @@
             </h6>
         </div>
         <div class="col-xs-12 col-md-8 text-center border">
+            <!-- <q-item>
+                <q-list-header>18 Mile Rest Stops:</q-list-header>
+                <q-item-side avatar="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg" />
+                <q-item-main label="Bowmont - 9.7 Miles" label-lines="1" />
+            </q-item> -->
             <h5>
                 18 Mile Rest Stops:
             </h5>
             <h6>
-                Bowmont - 9.5 Miles
+                Bowmont - 9.7 Miles
             </h6>
         </div>
         <!-- <div class="row wrap justify-center">
@@ -45,7 +50,7 @@
                 <q-transition appear enter="zoomIn" leave="fadeOut">
                     <div>
                         <q-card-media>
-                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/18_mrihcr.jpg" alt="18-mile preview">
+                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517598417/18_MILE_2018_keltgt.jpg" alt="18-mile preview">
                         </q-card-media>
                         <q-card-actions class="desktop-only" align="center">
                             <q-collapsible class="white-text" label="View More Map Options">
@@ -78,10 +83,10 @@
             </q-card>
         </div>
         <div class="row wrap justify-center">
-                <div class="col-xs-12 text-center">
-                    <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
-                </div>
+            <div class="col-xs-12 text-center">
+                <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
             </div>
+        </div>
     </q-layout>
 </template>
 
@@ -97,7 +102,11 @@
         QCardMedia,
         QCardActions,
         QParallax,
-        QCollapsible
+        QCollapsible,
+        QItem,
+        QItemSide,
+        QItemMain,
+        QListHeader
     } from 'quasar'
     export default {
         name: 'Eighteen',
@@ -115,7 +124,11 @@
             QCardMedia,
             QCardActions,
             QParallax,
-            QCollapsible
+            QCollapsible,
+            QItem,
+            QItemSide,
+            QItemMain,
+            QListHeader
         },
         computed: {
             pictures() {
@@ -132,9 +145,10 @@
 </script>
 
 <style scoped>
-    .top{
+    .top {
         padding-top: 1rem;
     }
+
     .btn {
         margin: .5rem .5rem .5rem 0;
         background-color: rgba(197, 7, 7, 0.8);

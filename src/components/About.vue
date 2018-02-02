@@ -75,7 +75,7 @@
                 </ul>
             </div>
             <div class="pic col-sm-4 col-xs-12 text-center">
-                <img class="rider" src="statics/rider.png" alt="rider">
+                <img class="rider responsive" src="https://res.cloudinary.com/treverscloud/image/upload/v1517606065/margo_kuo44h.jpg" alt="rider">
             </div>
             <div class="paragroup offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
                 <p class="text-justify">
@@ -212,8 +212,8 @@
 
     .rider {
         border: 5px solid black;
-        height: 18rem;
-        width: 18rem;
+        /* height: 18rem; */
+        max-width: 18rem;
     }
 
     .about {

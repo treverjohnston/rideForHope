@@ -31,22 +31,22 @@
                     Century Rest Stops:
                 </h5>
                 <h6>
-                    W. Dickman - 18 Miles
+                    W. Dickman - 18.7 Miles
                 </h6>
                 <h6>
-                    Melba - 32 Miles
+                    Melba - 32.2 Miles
                 </h6>
                 <h6>
-                    Bowmont - 50 Miles
+                    Bowmont - 49.6 Miles
                 </h6>
                 <h6>
-                    Gun Range - 65 Miles
+                    Gun Range - 64.9 Miles
                 </h6>
                 <h6>
-                    Lake Shore Dr. - 80 Miles
+                    Lake Shore Dr. - 79.8 Miles
                 </h6>
                 <h6>
-                    Bowmont - 91.5 Miles
+                    Bowmont - 91.9 Miles
                 </h6>
             </div>
         </div>
@@ -55,7 +55,7 @@
                 <q-transition appear enter="zoomIn" leave="fadeOut">
                     <div>
                         <q-card-media>
-                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg" alt="century preview">
+                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517598416/CENTURY_2018_gj2tra.jpg" alt="century preview">
                         </q-card-media>
                         <q-card-actions class="desktop-only" align="center">
                             <q-collapsible class="white-text" label="View Map Options">

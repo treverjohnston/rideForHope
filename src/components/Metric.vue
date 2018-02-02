@@ -36,7 +36,7 @@
                         Bowmont - 12.5 Miles
                     </h6>
                     <h6>
-                        Gun Range- 28 Miles
+                        Gun Range- 27.9 Miles
                     </h6>
                     <h6>
                         Lake Shore Dr. - 42.5 Miles
@@ -51,7 +51,7 @@
                 <q-transition appear enter="zoomIn" leave="fadeOut">
                     <div>
                         <q-card-media>
-                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/62.8_obydkx.jpg" alt="metric century preview">
+                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517598417/METRIC_CENTURY_2018_xc3agh.jpg" alt="metric century preview">
                         </q-card-media>
                         <q-card-actions class="desktop-only" align="center">
                             <q-collapsible class="white-text" label="View More Map Options">
