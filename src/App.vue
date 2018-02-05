@@ -13,6 +13,12 @@ export default {};
 </script>
 
 <style>
+  .r-links{
+        margin-top: 3rem;
+        background-color: rgba(224, 226, 226, 0.65);
+padding: .5rem;
+border-radius: 15px;
+    }
   .swal-modal {
     background-color: rgba(0, 0, 0, 0.767);
 

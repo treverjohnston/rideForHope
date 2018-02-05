@@ -17,100 +17,114 @@
                 </q-parallax>
             </div>
         </div>
-        <div class="row wrap justify-center">
-            <h6 class="top  light-paragraph text-justify col-xs-11 col-md-8">
-                100 mile course. Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails
-                are for sissys and blisters are braille for success. There are 6 rest stops with ample opportunity to visit
-                your favorite porta-john. The course has a little of everything including short climbs, rolling hills, and
-                flats. You will trek southward and dip onto the Snake River Scenic Byway before returning to Melba and then
-                on toward Marsing. With your fat cells crying (aka sweating) you will ride through vineyards, orchards and
-                past scenic overlooks. You will skirt Lake Lowell as you head toward the finish line with your riding buddies;
-                who will know more about your bodily functions than your significant other by the time you reach Kuna. </h6>
-            <div class="col-xs-11 col-md-8 text-center">
-                <div class="row justify-center">
-                    <div class="col-xs-2">
-                        <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
-                            alt="rest stop">
-                    </div>
-                    <div class="col-xs-12">
-                        <h5>
-                            Century Rest Stops
-                        </h5>
-                    </div>
-                    <div class="col-xs-12">
-                        <h6>
-                            W. Dickman - 18.7 Miles
-                        </h6>
-                        <h6>
-                            Melba - 32.2 Miles
-                        </h6>
-                        <h6>
-                            Bowmont - 49.6 Miles
-                        </h6>
-                        <h6>
-                            Gun Range - 64.9 Miles
-                        </h6>
-                        <h6>
-                            Lake Shore Dr. - 79.8 Miles
-                        </h6>
-                        <h6>
-                            Bowmont - 91.9 Miles
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row wrap justify-center">
-            <q-card class="route col-xs-11 col-md-8 shadow-24">
-                <q-transition appear enter="zoomIn" leave="fadeOut">
-                    <div>
-                        <q-card-media>
-                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517598416/CENTURY_2018_gj2tra.jpg" alt="century preview">
-                        </q-card-media>
-                        <q-card-actions class="desktop-only" align="center">
-                            <q-collapsible class="white-text" label="View Map Options">
-                                <q-btn class="r-btn" @click="launch('//www.mapmyride.com/routes/view/1462908562')" no-caps>Map My Ride</q-btn>
-                                <q-btn class="r-btn" @click="launch('//www.strava.com/routes/7741956')" no-caps>Strava</q-btn>
-                                <q-btn class="r-btn" @click="launch('//connect.garmin.com/modern/course/16760220')" no-caps>Garmin</q-btn>
-                                <q-btn class="r-btn" @click="launch('//ridewithgps.com/routes/26451231')" no-caps>Ride With GPS</q-btn>
-                            </q-collapsible>
-                        </q-card-actions>
-                        <div align="center" class="white-text mobile-only" label="View More Map Options">
-                            <q-btn class="btn" @click="launch('//www.mapmyride.com/routes/view/1462908562')" no-caps>Map My Ride</q-btn>
-                            <q-btn class="btn" @click="launch('//www.strava.com/routes/7741956')" no-caps>Strava</q-btn>
-                            <q-btn class="btn" @click="launch('//connect.garmin.com/modern/course/16760220')" no-caps>Garmin</q-btn>
-                            <q-btn class="btn" @click="launch('//ridewithgps.com/routes/26451231')" no-caps>Ride With GPS</q-btn>
+        <div class="row justify-center">
+            <div class="col-xs-12 col-md-4">
+                <div class="row wrap justify-center">
+                    <h6 class="top  light-paragraph text-center col-xs-11 col-md-11 r-links">
+                        100 mile course. Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails
+                        are for sissys and blisters are braille for success. There are 6 rest stops with ample opportunity to visit
+                        your favorite porta-john. The course has a little of everything including short climbs, rolling hills, and
+                        flats. You will trek southward and dip onto the Snake River Scenic Byway before returning to Melba and then
+                        on toward Marsing. With your fat cells crying (aka sweating) you will ride through vineyards, orchards and
+                        past scenic overlooks. You will skirt Lake Lowell as you head toward the finish line with your riding buddies;
+                        who will know more about your bodily functions than your significant other by the time you reach Kuna. </h6>
+                    <div class="col-xs-11 col-md-11 text-center r-links">
+                        <div class="row justify-center">
+                            <div class="col-xs-2">
+                                <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
+                                    alt="rest stop">
+                            </div>
+                            <div class="col-xs-9">
+                                <h5>
+                                    Century Rest Stops
+                                </h5>
+                            </div>
+                            <div class="col-xs-12">
+                                <h6>
+                                    W. Dickman - 18.7 Miles
+                                </h6>
+                                <h6>
+                                    Melba - 32.2 Miles
+                                </h6>
+                                <h6>
+                                    Bowmont - 49.6 Miles
+                                </h6>
+                                <h6>
+                                    Gun Range - 64.9 Miles
+                                </h6>
+                                <h6>
+                                    Lake Shore Dr. - 79.8 Miles
+                                </h6>
+                                <h6>
+                                    Bowmont - 91.9 Miles
+                                </h6>
+                            </div>
                         </div>
                     </div>
-                </q-transition>
-            </q-card>
-        </div>
-        <div class="row wrap justify-center">
-            <q-card class="route col-xs-11 col-md-8 shadow-24">
-                <q-transition appear enter="zoomIn" leave="fadeOut">
-                    <div>
-                        <q-card-media>
-                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248679/Century_Elevation_Profile_Only_i9lr2i.jpg" alt="century elevation profile">
-                        </q-card-media>
-
+                    <div class="row justify-center r-links desktop-only">
+                            <div class="col-xs-11 text-center">
+                                <h5>Quick Links To Other Routes</h5>
+                                <q-btn class="r-btn" @click="$router.push('/18-mile')" no-caps>18 Mile</q-btn>
+                                    <q-btn class="r-btn" @click="$router.push('/31-mile')" no-caps>31 Mile</q-btn>
+                                    <q-btn class="r-btn" @click="$router.push('/metric')" no-caps>Metric Century</q-btn>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <div class="row wrap justify-center">
+                    <q-card class="route col-xs-11 col-md-11 shadow-24">
+                        <q-transition appear enter="zoomIn" leave="fadeOut">
+                            <div>
+                                <q-card-media>
+                                    <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517598416/CENTURY_2018_gj2tra.jpg" alt="century preview">
+                                </q-card-media>
+                                <q-card-actions class="desktop-only" align="center">
+                                    <q-collapsible class="white-text" label="View Map Options">
+                                        <q-btn class="r-btn" @click="launch('//www.mapmyride.com/routes/view/1462908562')" no-caps>Map My Ride</q-btn>
+                                        <q-btn class="r-btn" @click="launch('//www.strava.com/routes/7741956')" no-caps>Strava</q-btn>
+                                        <q-btn class="r-btn" @click="launch('//connect.garmin.com/modern/course/16760220')" no-caps>Garmin</q-btn>
+                                        <q-btn class="r-btn" @click="launch('//ridewithgps.com/routes/26451231')" no-caps>Ride With GPS</q-btn>
+                                    </q-collapsible>
+                                </q-card-actions>
+                                <div align="center" class="white-text mobile-only" label="View More Map Options">
+                                    <q-btn class="btn" @click="launch('//www.mapmyride.com/routes/view/1462908562')" no-caps>Map My Ride</q-btn>
+                                    <q-btn class="btn" @click="launch('//www.strava.com/routes/7741956')" no-caps>Strava</q-btn>
+                                    <q-btn class="btn" @click="launch('//connect.garmin.com/modern/course/16760220')" no-caps>Garmin</q-btn>
+                                    <q-btn class="btn" @click="launch('//ridewithgps.com/routes/26451231')" no-caps>Ride With GPS</q-btn>
+                                </div>
+                            </div>
+                        </q-transition>
+                    </q-card>
+                </div>
+                <div class="row wrap justify-center">
+                    <q-card class="route col-xs-11 col-md-11 shadow-24">
+                        <q-transition appear enter="zoomIn" leave="fadeOut">
+                            <div>
+                                <q-card-media>
+                                    <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248679/Century_Elevation_Profile_Only_i9lr2i.jpg" alt="century elevation profile">
+                                </q-card-media>
+        
+                            </div>
+                        </q-transition>
+                    </q-card>
+                </div>
+                <div class="row wrap justify-center">
+                    <q-card class="route col-xs-11 col-md-11 shadow-24">
+                        <q-transition appear enter="zoomIn" leave="fadeOut">
+                            <div>
+                                <q-card-media>
+                                    <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248680/Century_Climb_Details_yhmkjr.jpg" alt="century climb profile">
+                                </q-card-media>
+                            </div>
+                        </q-transition>
+                    </q-card>
+                </div>
+                <div class="row wrap justify-center">
+                    <div class="col-xs-12 text-center">
+                        <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                     </div>
-                </q-transition>
-            </q-card>
-        </div>
-        <div class="row wrap justify-center">
-            <q-card class="route col-xs-11 col-md-8 shadow-24">
-                <q-transition appear enter="zoomIn" leave="fadeOut">
-                    <div>
-                        <q-card-media>
-                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248680/Century_Climb_Details_yhmkjr.jpg" alt="century climb profile">
-                        </q-card-media>
-                    </div>
-                </q-transition>
-            </q-card>
-        </div>
-        <div class="row wrap justify-center">
-            <div class="col-xs-12 text-center">
-                <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
+                </div>
             </div>
         </div>
     </q-layout>

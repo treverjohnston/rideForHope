@@ -16,7 +16,8 @@
         </q-btn>
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="donSwal">Just Donate
+        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
+        <!-- <q-btn outline color="red" @click="donSwal">Just Donate -->
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
@@ -25,14 +26,15 @@
         </q-btn>
       </q-transition>
       <q-btn class="mobile-only">
-        <img class="meridian-mobile" @click="launch('//www.meridian-cycles.com/')" src="statics/meridian.png" alt="Meridian Cycles logo">
+        <img class="meridian-mobile" @click="launch('http://www.meridian-cycles.com/')" src="statics/meridian.png" alt="Meridian Cycles logo">
       </q-btn>
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
       />
-      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="funSwal" />
+      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" />
+      <!-- <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="funSwal" /> -->
       <q-tab class="tab involved" align="left" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
