@@ -16,7 +16,7 @@
         </q-btn>
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
+        <q-btn outline color="red" @click="donSwal">Just Donate
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
@@ -32,8 +32,7 @@
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
       />
-      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
-      />
+      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="funSwal" />
       <q-tab class="tab involved" align="left" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
@@ -554,21 +553,23 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-4 text-center self-center">
-  
-            <q-card-media @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')" class="mobile-only" overlay-postion="full">
-                <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
-                <div slot="overlay" >
-                  <q-card-title>
-                    <h5>Genesis Community Healthcare Overview</h5>
-                  </q-card-title>  
-                </div>
-              </q-card-media>
-              <q-btn @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')" class="shadow-24 two desktop-only">
-                <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
-                <div class="otwo desktop-only">
-                  <h5>Genesis Community Healthcare Overview</h5>
-                </div>
-              </q-btn>
+
+          <q-card-media @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')"
+            class="mobile-only" overlay-postion="full">
+            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+            <div slot="overlay">
+              <q-card-title>
+                <h5>Genesis Community Healthcare Overview</h5>
+              </q-card-title>
+            </div>
+          </q-card-media>
+          <q-btn @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')"
+            class="shadow-24 two desktop-only">
+            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+            <div class="otwo desktop-only">
+              <h5>Genesis Community Healthcare Overview</h5>
+            </div>
+          </q-btn>
         </div>
         <div class="col-xs-12 col-sm-4 text-center">
           <div v-if="showVid" class="q-video ">
@@ -599,24 +600,24 @@
             <div class="col-xs-12">
               <hr class="hr">
             </div>
-            <div class="col-xs-6 col-md-3">
+            <div class="col-xs-6 col-md-3 self-center">
               <q-btn flat @click="launch('https://www.strava.com/clubs/302822')" flat>
                 <img class="strava" src="statics/strava.png" alt="strava logo">
               </q-btn>
             </div>
-            <div class="col-xs-6 col-md-3 mobile-only">
+            <div class="col-xs-6 col-md-3 mobile-only self-center">
               <q-btn flat @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
                 <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
               </q-btn>
             </div>
-            <div v-scroll-fire="animate" class="col-md-3" id="bar">
+            <div v-scroll-fire="animate" class="col-md-3 self-center" id="bar">
               <!-- <hr class="hr"> -->
               <!-- <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5> -->
               <q-btn flat data-x="360" class="el" @click="launch('http://www.meridian-cycles.com/')">
                 <img class="meridian-big" src="statics/meridian.png" alt="Meridian Cycles logo">
               </q-btn>
             </div>
-            <div class="col-md-3 desktop-only">
+            <div class="col-md-3 desktop-only self-center">
               <q-btn flat @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
                 <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
               </q-btn>
@@ -742,7 +743,7 @@
         this.$refs.popoverRoutes.close();
         this.$refs.routePopB.close();
       },
-      showVideos(){
+      showVideos() {
         this.showVid = true;
       },
       animate() {
@@ -768,6 +769,46 @@
           },
           direction: "reverse"
         });
+      },
+      funSwal() {
+        return swal({
+          title: 'Rider Fundraising',
+          text: 'This year, each participant has the goal of raising $250 in additional funds for Ride For Hope Idaho. If you wish to simply donate, you can either choose one of these riders to donate to, or just donate to the ride in general.',
+          buttons: {
+            sponsor: {text: "Sponsor a Rider", value: "sponsor"}, 
+            give: {text: "Give to Ride For Hope Idaho", value: "give"}
+          }
+        })
+        .then((value)=>{
+          switch(value){
+            case 'sponsor':
+            this.launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')
+            break;
+            case 'give':
+            this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')
+            break;
+          }
+        })
+      },
+      donSwal() {
+        return swal({
+          title: 'Donate',
+          text: 'This year, each participant has the goal of raising $250 in additional funds for Ride For Hope Idaho. If you wish to simply donate, you can either choose one of these riders to donate to, or just donate to the ride in general.',
+          buttons: {
+            sponsor: {text: "Sponsor a Rider", value: "sponsor"}, 
+            give: {text: "Give to Ride For Hope Idaho", value: "give"}
+          }
+        })
+        .then((value)=>{
+          switch(value){
+            case 'sponsor':
+            this.launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')
+            break;
+            case 'give':
+            this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')
+            break;
+          }
+        })
       }
     },
     directives: {

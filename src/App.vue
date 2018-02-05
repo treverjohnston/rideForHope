@@ -13,6 +13,26 @@ export default {};
 </script>
 
 <style>
+  .swal-modal {
+    background-color: rgba(0, 0, 0, 0.767);
+
+  }
+
+  .swal-button {
+    background-color: rgb(77, 75, 75);
+    font-family: 'Bellefair', serif;
+
+  }
+
+  .swal-title{
+    color: white;
+    font-family: 'Bellefair', serif;
+  }
+  .swal-text{
+    color: white;
+    font-family: 'Bellefair', serif;
+
+  }
   .rest{
         max-height: 3rem;
     }

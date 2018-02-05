@@ -16,6 +16,7 @@ import router from './router'
 import store from './store'
 import Vuelidate from 'vuelidate'
 import anime from 'animejs'
+import swal from 'sweetalert'
 import { AddressbarColor } from 'quasar'
 AddressbarColor.set('#000000')
 
