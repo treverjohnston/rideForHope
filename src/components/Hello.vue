@@ -11,7 +11,7 @@
         Ride For Hope Idaho
       </q-toolbar-title>
       <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn class="desktop-only" @click="launch('//www.meridian-cycles.com/')">
+        <q-btn class="desktop-only" @click="launch('http://www.meridian-cycles.com/')">
           <img class="meridian desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
         </q-btn>
       </q-transition>
@@ -520,7 +520,7 @@
           </q-card-media>
         </div>
       </div>
-      <div class="row wrap justify-center gen">
+      <div v-scroll-fire="showVideos" class="row wrap justify-center gen">
         <div class="text-center col-xs-12 col-md-4 self-center">
           <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
             <img class="gch responsive" src="statics/gch.png" alt="genesis community health logo">
@@ -547,7 +547,7 @@
           <hr>
         </div>
         <div class="col-xs-12 col-md-4 text-center">
-          <div class="q-video">
+          <div v-if="showVid" class="q-video">
             <h6> Patient Perspective on Genesis Community Healthcare</h6>
             <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
@@ -571,7 +571,7 @@
               </q-btn>
         </div>
         <div class="col-xs-12 col-sm-4 text-center">
-          <div class="q-video ">
+          <div v-if="showVid" class="q-video ">
             <h6>Volunteer Perspective On Genesis Community Healthcare</h6>
             <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
@@ -720,7 +720,9 @@
       QCardActions,
     },
     data() {
-      return {};
+      return {
+        showVid: false
+      };
     },
     computed: {
       home() {
@@ -738,9 +740,10 @@
       collapse() {
         this.$refs.popover.close();
         this.$refs.popoverRoutes.close();
-        // this.$refs.popoverReg.close();
-        // this.$refs.routePopA.close();
         this.$refs.routePopB.close();
+      },
+      showVideos(){
+        this.showVid = true;
       },
       animate() {
         anime({
