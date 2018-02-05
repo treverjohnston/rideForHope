@@ -17,7 +17,7 @@
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div id="bar" class="col-xs-12 col-md-10">
-                        <q-btn class="el" data-x="360" @click="launch('//www.meridian-cycles.com/')">
+                        <q-btn class="el" data-x="360" @click="launch('http://www.meridian-cycles.com/')">
                             <img class="responsive gold desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
                             <img class="responsive gold-mobile mobile-only" src="~statics/meridian.png" alt="Meridian cycles">
                         </q-btn>
@@ -58,12 +58,12 @@
                         </q-btn>
                     </div>
                     <div class="col-xs-9 col-md-5 self-center">
-                        <q-btn flat @click="launch('//www.lylepearson.com/')">
+                        <q-btn flat @click="launch('http://www.lylepearson.com/')">
                             <img class="responsive carp" src="statics/lyle.jpg" alt="Lyle Pearson">
                         </q-btn>
                     </div>
                     <div class="col-xs-9 col-md-5 self-center">
-                        <q-btn flat @click="launch('//www.raymondjames.com/boiseid/')">
+                        <q-btn flat @click="launch('http://www.raymondjames.com/boiseid/')">
                             <img class="responsive carp" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
                         </q-btn>
                     </div>
@@ -73,7 +73,7 @@
                         </q-btn>
                     </div>
                     <div class="col-xs-9 col-md-5 self-center">
-                        <q-btn flat @click="launch('//www.meatsroyaleidaho.com/')">
+                        <q-btn flat @click="launch('http://www.meatsroyaleidaho.com/')">
                             <img class="responsive carp" src="~statics/meats.jpg" alt="Meats Royale">
                         </q-btn>
                     </div>
@@ -104,7 +104,7 @@
                                         </q-btn>
                                     </div>
                                     <div class="col-xs-12 col-md-4 self-center last">
-                                        <q-btn color="black" outline no-caps @click="launch('//www.fallsbrand.com/')">
+                                        <q-btn color="black" outline no-caps @click="launch('http://www.fallsbrand.com/')">
                                             <h5 class="black">Falls Brand</h5>
                                             <!-- <img class="responsive" src="statics/falls.png" alt="Falls Brand"> -->
                                         </q-btn>

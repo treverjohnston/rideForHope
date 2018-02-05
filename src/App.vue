@@ -13,6 +13,9 @@ export default {};
 </script>
 
 <style>
+  .rest{
+        max-height: 3rem;
+    }
   .header{
     height: 200px;
   }

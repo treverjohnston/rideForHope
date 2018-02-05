@@ -26,18 +26,27 @@
                 you will encounter along the route!
             </h6>
             <div class="col-xs-11 col-md-8 text-center">
-                    <h5>
-                        31 Mile Rest Stops:
-                    </h5>
-                    <h6>
-                        W. Dickman - 9.7 Miles
-                    </h6>
-                    <h6>
-                        Melba - 14 Miles
-                    </h6>
-                    <h6>
-                        Bowmont - 22.6 Miles
-                    </h6>
+                    <div class="row justify-center">
+                            <div class="col-xs-2">
+                                <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg" alt="rest stop">
+                            </div>
+                            <div class="col-xs-12">
+                                <h5>
+                                    31 Mile Rest Stops
+                                </h5>
+                            </div>
+                            <div class="col-xs-12">
+                                    <h6>
+                                            W. Dickman - 9.7 Miles
+                                        </h6>
+                                        <h6>
+                                            Melba - 14 Miles
+                                        </h6>
+                                        <h6>
+                                            Bowmont - 22.6 Miles
+                                        </h6>
+                            </div>
+                        </div>
                 </div>
         </div>
         <div class="row wrap justify-center">

@@ -26,18 +26,25 @@
                 or strawberry mountains on this course!
             </h6>
         </div>
-        <div class="col-xs-12 col-md-8 text-center border">
-            <!-- <q-item>
-                <q-list-header>18 Mile Rest Stops:</q-list-header>
-                <q-item-side avatar="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg" />
-                <q-item-main label="Bowmont - 9.7 Miles" label-lines="1" />
-            </q-item> -->
-            <h5>
-                18 Mile Rest Stops:
-            </h5>
-            <h6>
-                Bowmont - 9.7 Miles
-            </h6>
+        <div class="row justify-center">
+
+            <div class="col-xs-12 col-md-8 text-center border">
+                <div class="row justify-center">
+                    <div class="col-xs-2">
+                        <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg" alt="rest stop">
+                    </div>
+                    <div class="col-xs-12">
+                        <h5>
+                            18 Mile Rest Stops
+                        </h5>
+                    </div>
+                    <div class="col-xs-12">
+                        <h6>
+                            Bowmont - 9.7 Miles
+                        </h6>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- <div class="row wrap justify-center">
             <p>Distance: 18 Miles</p>
@@ -145,6 +152,9 @@
 </script>
 
 <style scoped>
+    .rest{
+        max-height: 3rem;
+    }
     .top {
         padding-top: 1rem;
     }

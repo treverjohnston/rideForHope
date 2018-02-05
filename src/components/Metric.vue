@@ -8,13 +8,13 @@
                         <hr color="red" class="hr">
                     </div>
                     <div class="row justify-center">
-                            <div class="col-xs-12 text-center red-back">
-                                <h2 class="headline text-center black desktop-only">Metric Century Ride</h2>
-                                <h4 class="headline text-center black mobile-only">Metric Century Ride</h4>
-                                <h5 class="headline text-center black">Semper Fidelis - "Always Faithful"</h5>
-                                <!-- <big class="headline text-center black">"Always Faithful"</big> -->
-                            </div>
-                        </div>                    
+                        <div class="col-xs-12 text-center red-back">
+                            <h2 class="headline text-center black desktop-only">Metric Century Ride</h2>
+                            <h4 class="headline text-center black mobile-only">Metric Century Ride</h4>
+                            <h5 class="headline text-center black">Semper Fidelis - "Always Faithful"</h5>
+                            <!-- <big class="headline text-center black">"Always Faithful"</big> -->
+                        </div>
+                    </div>
                 </q-parallax>
             </div>
         </div>
@@ -25,26 +25,37 @@
                 and 4 rest stops. The course meets up with the last half of the Century route (so you will have additional
                 riders to share your challenge with along the way). You will continue northwest toward Marsing and then turn
                 back toward Kuna and pedal, pedal, pedal, to Lake Shore Drive skirting Lake Lowell on your way back to the
-                finish line where festivities and food await, (if you are fast enough!). Just remember, Humpty Dumpty had wall issues
-                too but he overcame; so can you!
+                finish line where festivities and food await, (if you are fast enough!). Just remember, Humpty Dumpty had
+                wall issues too but he overcame; so can you!
             </h6>
             <div class="col-xs-11 col-md-8 text-center">
-                    <h5>
-                        Metric Century Rest Stops:
-                    </h5>
-                    <h6>
-                        Bowmont - 12.5 Miles
-                    </h6>
-                    <h6>
-                        Gun Range- 27.9 Miles
-                    </h6>
-                    <h6>
-                        Lake Shore Dr. - 42.5 Miles
-                    </h6>
-                    <h6>
-                        Bowmont - 54.5 Miles
-                    </h6>
+                <div class="row justify-center">
+                    <div class="col-xs-2">
+                        <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
+                            alt="rest stop">
+                    </div>
+                    <div class="col-xs-12">
+                        <h5>
+                            Metric Century Rest Stops
+                        </h5>
+                    </div>
+                    <div class="col-xs-12">
+                        <h6>
+                            Bowmont - 12.5 Miles
+                        </h6>
+                        <h6>
+                            Gun Range- 27.9 Miles
+                        </h6>
+                        <h6>
+                            Lake Shore Dr. - 42.5 Miles
+                        </h6>
+                        <h6>
+                            Bowmont - 54.5 Miles
+                        </h6>
+
+                    </div>
                 </div>
+            </div>
         </div>
         <div class="row wrap justify-center">
             <q-card class="route col-xs-11 col-md-8 shadow-24">
@@ -98,10 +109,10 @@
             </q-card>
         </div>
         <div class="row wrap justify-center">
-                <div class="col-xs-12 text-center">
-                    <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
-                </div>
+            <div class="col-xs-12 text-center">
+                <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
             </div>
+        </div>
     </q-layout>
 </template>
 
@@ -152,9 +163,10 @@
 </script>
 
 <style scoped>
-    .top{
+    .top {
         padding-top: 1rem;
     }
+
     .btn {
         margin: .5rem .5rem .5rem 0;
         background-color: rgba(197, 7, 7, 0.8);

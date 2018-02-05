@@ -27,27 +27,37 @@
                 past scenic overlooks. You will skirt Lake Lowell as you head toward the finish line with your riding buddies;
                 who will know more about your bodily functions than your significant other by the time you reach Kuna. </h6>
             <div class="col-xs-11 col-md-8 text-center">
-                <h5>
-                    Century Rest Stops:
-                </h5>
-                <h6>
-                    W. Dickman - 18.7 Miles
-                </h6>
-                <h6>
-                    Melba - 32.2 Miles
-                </h6>
-                <h6>
-                    Bowmont - 49.6 Miles
-                </h6>
-                <h6>
-                    Gun Range - 64.9 Miles
-                </h6>
-                <h6>
-                    Lake Shore Dr. - 79.8 Miles
-                </h6>
-                <h6>
-                    Bowmont - 91.9 Miles
-                </h6>
+                <div class="row justify-center">
+                    <div class="col-xs-2">
+                        <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
+                            alt="rest stop">
+                    </div>
+                    <div class="col-xs-12">
+                        <h5>
+                            Century Rest Stops
+                        </h5>
+                    </div>
+                    <div class="col-xs-12">
+                        <h6>
+                            W. Dickman - 18.7 Miles
+                        </h6>
+                        <h6>
+                            Melba - 32.2 Miles
+                        </h6>
+                        <h6>
+                            Bowmont - 49.6 Miles
+                        </h6>
+                        <h6>
+                            Gun Range - 64.9 Miles
+                        </h6>
+                        <h6>
+                            Lake Shore Dr. - 79.8 Miles
+                        </h6>
+                        <h6>
+                            Bowmont - 91.9 Miles
+                        </h6>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row wrap justify-center">
