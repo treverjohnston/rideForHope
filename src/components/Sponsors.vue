@@ -228,7 +228,7 @@ color: black;
 
 
     .sponsors {
-        background-image: url("~statics/bw.jpg");
+        background-image: url("https://res.cloudinary.com/treverscloud/image/upload/v1517856029/bw_icaeha.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;

@@ -612,7 +612,7 @@
             <div v-scroll-fire="animate" class="col-md-3" id="bar">
               <!-- <hr class="hr"> -->
               <!-- <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5> -->
-              <q-btn flat data-x="360" class="el" @click="launch('//www.meridian-cycles.com/')">
+              <q-btn flat data-x="360" class="el" @click="launch('http://www.meridian-cycles.com/')">
                 <img class="meridian-big" src="statics/meridian.png" alt="Meridian Cycles logo">
               </q-btn>
             </div>
@@ -773,7 +773,7 @@
       ScrollFire
     },
     mounted() {
-      this.$refs.layout.toggleLeft();
+      this.$refs.layout.hideLeft();
     },
     beforeDestroy() { }
   };
