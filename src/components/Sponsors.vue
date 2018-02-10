@@ -82,6 +82,11 @@
                             <img class="responsive carp" src="statics/sherwin.png" alt="Sherwin Williams">
                         </q-btn>
                     </div>
+                    <div class="col-xs-9 col-md-5 self-center">
+                        <q-btn flat @click="launch('http://www.mycoffeestudios.com/')">
+                            <img class="responsive carp" src="statics/coffee.jpg" alt="Coffee Studio">
+                        </q-btn>
+                    </div>
 
 
 
