@@ -626,6 +626,10 @@
             </div>
             <div class="col-xs-12">
               <hr class="hr">
+              <q-btn flat @click="launch('https://www.cycleforindependence.org/')">
+                <img class="meridian-big" src="statics/cfi.jpg" alt="Cycle for independence logo">
+              </q-btn>
+              <hr class="hr">
             </div>
           </div>
         </div>

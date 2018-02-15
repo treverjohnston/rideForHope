@@ -4,7 +4,7 @@
             <div class="col-xs-12 text-center desktop-only">
                 <div class="row wrap justify-center white-back" id="number">
                         <input readonly class="text-output large-text text-bold col-xs-4" value="$0">
-                    <h4 class="text-bold col-xs-9 text-center text-italic">Amount Raised by Ride For Hope Idaho With <u>YOUR</u> Help</h4>
+                    <h4 class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho With <u>YOUR</u> Help</h4>
                 </div>
             </div>
             <div class="col-xs-12 text-center mobile-only">
@@ -13,7 +13,7 @@
                         <input readonly class="text-output text-bold col-xs-10 emphasize" value="$0">
                     </big>
 
-                    <p class="text-bold col-xs-9 text-center text-italic">Amount Raised by Ride For Hope Idaho With <u>YOUR</u> Help</p>
+                    <p class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho With <u>YOUR</u> Help</p>
 
                 </div>
             </div>
