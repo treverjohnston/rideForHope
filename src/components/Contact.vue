@@ -19,11 +19,11 @@
                 </q-parallax>
             </div>
         </div>
-        <div class="row wrap justify-center bot desktop-only xs-gutter">
-            <div class="offset-xs-1 col-xs-5">
-                <img src="https://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/margo.jpg" class="responsive img" alt="Picture of Margo">
+        <div class="row justify-center bot desktop-only xs-gutter">
+            <div class="col-xs-5 self-center space">
+                <img src="statics/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
             </div>
-            <div class="col-xs-5">
+            <div class="col-xs-5 self-center">
                 <q-input v-model="name" float-label="Name" name="name" type="text" />
                 <q-input v-model="email" float-label="Email" name="email" type="email" />
                 <q-input v-model="phone" float-label="Phone" name="phone" type="tel" />
@@ -42,8 +42,7 @@
                 <q-btn @click="send" class="full-width">Send</q-btn>
             </div>
             <div class="col-xs-10 bot">
-                <img src="https://static.wixstatic.com/media/a44970_3bf0ccf89baf43a18b95b6d32d4c045d~mv2_d_2448_3264_s_4_2.jpg/v1/crop/x_387,y_554,w_1933,h_2697/fill/w_334,h_468,al_c,q_80,usm_0.66_1.00_0.01/a44970_3bf0ccf89baf43a18b95b6d32d4c045d~mv2_d_2448_3264_s_4_2.webp"
-                    class="responsive img" alt="Picture of Margo">
+                    <img src="statics/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
             </div>
         </div>
     </q-layout>
@@ -109,12 +108,15 @@
 </script>
 
 <style scoped>
+    .space{
+        padding-right: 3rem;
+    }
     .img {
         border: 5px solid black;
     }
 
     .bot {
-        margin: 3rem 0 0 0;
+        margin: 3rem 0 3rem 0;
     }
 
     .promo {

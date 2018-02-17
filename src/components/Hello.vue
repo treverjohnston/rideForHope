@@ -17,7 +17,7 @@
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
         <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
-        <!-- <q-btn outline color="red" @click="donSwal">Just Donate -->
+          <!-- <q-btn outline color="red" @click="donSwal">Just Donate -->
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
@@ -33,7 +33,8 @@
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
       <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
       />
-      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" />
+      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
+      />
       <!-- <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="funSwal" /> -->
       <q-tab class="tab involved" align="left" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
@@ -206,100 +207,6 @@
         </div>
         <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center mobile-only">Ride Day Information</q-btn>
       </q-parallax>
-
-
-      <!-- <div class="row wrap justify-center gen">
-        <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
-          This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
-          healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
-          to the low-income and uninsured.
-        </h6>
-        <div class="text-center col-xs-12 col-md-4 self-center">
-          <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
-            <img class="gch" src="statics/gch.png" alt="genesis community health logo">
-          </q-btn>
-        </div>
-        <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
-          To learn more about Genesis Community Health, please watch the videos below.
-
-        </h6>
-        <div class="col-xs-10">
-        </div>
-      </div>
-      <div class="row justify-center xs-gutter video">
-        <div class="col-xs-10">
-          <hr>
-        </div>
-        <div class="col-xs-12 col-md-4 text-center">
-          <q-btn @click="$refs.vid1.open()" class="shadow-24 container desktop-only">
-            <img src="~statics/gen1.jpg" alt="Genesis Info Video" class="responsive">
-            <div class="overlay desktop-only">
-              <h5> Patient Perspective on Genesis Community Healthcare</h5>
-            </div>
-          </q-btn>
-          <div class="q-video mobile-only">
-            <h6> Patient Perspective on Genesis Community Healthcare</h6>
-            <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 text-center">
-          <q-btn @click="$refs.vid2.open()" class="shadow-24 two desktop-only">
-            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
-            <div class="otwo desktop-only">
-              <h5>Genesis Community Healthcare Overview</h5>
-            </div>
-          </q-btn>
-          <div class="q-video mobile-only">
-            <h6>Genesis Community Healthcare Overview</h6>
-            <iframe class="mid" width="640" height="360" style="border-width:0" src="http://interactive.tegna-media.com/video/embed/embed.html?id=2758268&type=video&title=Low-income health clinic seeks new patients&site=277&playerid=6918249996585&dfpid=32805352&dfpposition=embed_preroll§ion=home"></iframe>
-
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 text-center">
-          <q-btn @click="$refs.vid3.open()" class="shadow-24 three desktop-only">
-            <img src="~statics/gen2.jpg" alt="Genesis Info Video" class="responsive">
-            <div class="othree desktop-only">
-              <h5>Volunteer Perspective On Genesis Community Healthcare</h5>
-            </div>
-          </q-btn>
-          <div class="q-video mobile-only">
-            <h6>Volunteer Perspective On Genesis Community Healthcare</h6>
-            <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
-              allowfullscreen></iframe>
-          </div>
-
-        </div>
-        <div class="col-xs-10">
-          <hr>
-        </div>
-      </div> -->
-
-      <!-- <q-modal ref="vid1" class="vid">
-        <div class="row justify-center">
-          <div class="col-xs-12">
-            <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
-              allowfullscreen></iframe>
-          </div>
-        </div>
-      </q-modal>
-
-      </q-modal>
-      <q-modal ref="vid2" class="vid">
-        <div class="row justify-center">
-          <div class="col-xs-12">
-            <iframe width="640" height="360" style="border-width:0" src="http://interactive.tegna-media.com/video/embed/embed.html?id=2758268&type=video&title=Low-income health clinic seeks new patients&site=277&playerid=6918249996585&dfpid=32805352&dfpposition=embed_preroll§ion=home"></iframe>
-          </div>
-        </div>
-      </q-modal>
-      <q-modal ref="vid3" class="vid">
-        <div class="row justify-center">
-          <div class="col-xs-12">
-            <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
-              allowfullscreen></iframe>
-          </div>
-        </div>
-      </q-modal> -->
 
       <div class="spacer row wrap">
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
@@ -538,48 +445,96 @@
             <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
           </q-btn>
         </div>
-        <div class="col-xs-10">
-        </div>
+      </div>
+      <div class="row justify-center">
+        <div class="col-xs-12">
+            <div class="spacer">
+              <img class="ride-spacer" src="statics/RFHIdahoLogo.png" alt="ride for hope logo">
+            </div>
+          </div>
       </div>
       <div class="row justify-center xs-gutter video">
         <div class="col-xs-10 text-center">
-          <hr>
+          <hr class="desktop-only">
           <big>Genesis Community Health Videos</big>
-          <hr>
+          <hr class="desktop-only">
         </div>
         <div class="col-xs-12 col-md-4 text-center">
           <div v-if="showVid" class="q-video">
-            <h6> Patient Perspective on Genesis Community Healthcare</h6>
+              <hr class="s">
+            <h6>Patient Perspective on</h6>
+             <h6> Genesis Community Healthcare</h6>
+            <hr class="s">
             <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4 text-center self-center">
-
+        <div class="col-xs-12 text-center self-center mobile-only">
+            <hr class="s">
+            <h6>Genesis Community</h6>
+             <h6> Healthcare Overview</h6>
+            <hr class="s">
+        </div>
+        <div class="col-xs-10 col-md-4 text-center self-center">
           <q-card-media @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')"
             class="mobile-only" overlay-postion="full">
             <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
-            <div slot="overlay">
-              <q-card-title>
-                <h5>Genesis Community Healthcare Overview</h5>
-              </q-card-title>
-            </div>
           </q-card-media>
-          <q-btn @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')"
-            class="shadow-24 two desktop-only">
+          <q-btn flat @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')"
+            class="shadow-24 two desktop-only ">
             <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
             <div class="otwo desktop-only">
               <h5>Genesis Community Healthcare Overview</h5>
             </div>
           </q-btn>
         </div>
-        <div class="col-xs-12 col-sm-4 text-center">
+        <div class="col-xs-12 col-md-4 text-center">
           <div v-if="showVid" class="q-video ">
-            <h6>Volunteer Perspective On Genesis Community Healthcare</h6>
+              <hr class="s">
+            <h6>Volunteer Perspective on</h6> 
+            <h6> Genesis Community Healthcare</h6>
+            <hr class="s">
             <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
           </div>
 
+        </div>
+      </div>
+      <div class="row justify-center xs-gutter brm-video">
+        <div class="col-xs-10 text-center self-center">
+          <hr class="desktop-only">
+          <big>Boise Rescue Mission Videos</big>
+          <hr class="desktop-only">
+        </div>
+        <div class="col-xs-12 col-md-4 text-center self-center">
+          <div v-if="showVid" class="q-video">
+            <hr class="s">
+            <h6> 60 Years of Hope</h6>
+            <hr class="s">
+            <video width="350"  controls poster="statics/brm.png" preload="none">
+              <source src="statics/hope.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 text-center self-center">
+          <div v-if="showVid" class="q-video">
+            <hr class="s">
+            <h6> New Life Program</h6>
+            <hr class="s">
+            <video width="350"  controls poster="statics/brm.png" preload="none">
+              <source src="statics/new.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 text-center self-center">
+          <div v-if="showVid" class="q-video">
+              <hr class="s">
+            <h6> Welcome to Rescue Mission</h6>
+            <hr class="s">
+            <video width="350" controls poster="statics/brm.png" preload="none">
+              <source src="statics/welcome.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+            </video>
+          </div>
         </div>
         <div class="col-xs-10">
           <hr>
@@ -626,6 +581,9 @@
             </div>
             <div class="col-xs-12">
               <hr class="hr">
+              <small class="text-center">
+                Be sure to check out this other great charity ride!
+              </small>
               <q-btn flat @click="launch('https://www.cycleforindependence.org/')">
                 <img class="meridian-big" src="statics/cfi.jpg" alt="Cycle for independence logo">
               </q-btn>
@@ -695,6 +653,7 @@
     ScrollFire,
     QCardMedia,
     QCardActions,
+    QVideo
   } from "quasar";
 
   export default {
@@ -725,6 +684,7 @@
       QFixedPosition,
       QCardMedia,
       QCardActions,
+      QVideo
     },
     data() {
       return {
@@ -781,40 +741,40 @@
           title: 'Rider Fundraising',
           text: 'This year, each participant has the goal of raising $250 in additional funds for Ride For Hope Idaho. If you wish to simply donate, you can either choose one of these riders to donate to, or just donate to the ride in general.',
           buttons: {
-            sponsor: {text: "Sponsor a Rider", value: "sponsor"}, 
-            give: {text: "Give to Ride For Hope Idaho", value: "give"}
+            sponsor: { text: "Sponsor a Rider", value: "sponsor" },
+            give: { text: "Give to Ride For Hope Idaho", value: "give" }
           }
         })
-        .then((value)=>{
-          switch(value){
-            case 'sponsor':
-            this.launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')
-            break;
-            case 'give':
-            this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')
-            break;
-          }
-        })
+          .then((value) => {
+            switch (value) {
+              case 'sponsor':
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')
+                break;
+              case 'give':
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')
+                break;
+            }
+          })
       },
       donSwal() {
         return swal({
           title: 'Donate',
           text: 'This year, each participant has the goal of raising $250 in additional funds for Ride For Hope Idaho. If you wish to simply donate, you can either choose one of these riders to donate to, or just donate to the ride in general.',
           buttons: {
-            sponsor: {text: "Sponsor a Rider", value: "sponsor"}, 
-            give: {text: "Give to Ride For Hope Idaho", value: "give"}
+            sponsor: { text: "Sponsor a Rider", value: "sponsor" },
+            give: { text: "Give to Ride For Hope Idaho", value: "give" }
           }
         })
-        .then((value)=>{
-          switch(value){
-            case 'sponsor':
-            this.launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')
-            break;
-            case 'give':
-            this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')
-            break;
-          }
-        })
+          .then((value) => {
+            switch (value) {
+              case 'sponsor':
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')
+                break;
+              case 'give':
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')
+                break;
+            }
+          })
       }
     },
     directives: {
@@ -830,6 +790,12 @@
 </script>
 
 <style scoped>
+  .ride-spacer{
+    height: 7rem;
+  }
+  .s{
+    width: 70%;
+  }
   .check {
     max-width: 30vw;
   }
@@ -866,7 +832,6 @@
     opacity: 1;
 
   }
-
   .otwo {
     position: absolute;
     top: 0;
@@ -877,7 +842,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(150, 0, 0, 0.699);
+    background-color: rgba(163, 163, 163, 0.699);
   }
 
   .three:hover .othree {
@@ -895,7 +860,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(150, 0, 0, 0.699);
+    background-color: rgba(70, 28, 28, 0.699);
   }
 
   .vid {
@@ -908,8 +873,14 @@
     /* height: 100vh; */
   }
 
-  .video {
+  .brm-video {
     background-color: black;
+    color: white;
+  }
+  .video {
+    background-color: white;
+    color: black;
+    padding: 1rem 0 2rem 0;
   }
 
   .gch {

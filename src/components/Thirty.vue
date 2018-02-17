@@ -8,56 +8,69 @@
                         <hr color="red" class="hr">
                     </div>
                     <div class="row justify-center">
-                            <div class="col-xs-12 text-center red-back">
-                                <h2 class="headline text-center black">31 Mile Ride</h2>
-                                <h5 class="headline text-center black">Cerpe Diem - "Seize The Day"</h5>
-                                <!-- <big class="headline text-center black">"Seize The Day"</big> -->
-                            </div>
-                        </div>                    <!-- <hr color="red" class="hr"> -->
+                        <div class="col-xs-12 text-center red-back">
+                            <h2 class="headline text-center black">31 Mile Ride</h2>
+                            <h5 class="headline text-center black">Cerpe Diem - "Seize The Day"</h5>
+                            <!-- <big class="headline text-center black">"Seize The Day"</big> -->
+                        </div>
+                    </div>
+                    <!-- <hr color="red" class="hr"> -->
                 </q-parallax>
             </div>
         </div>
         <div class="row justify-center">
             <div class="col-xs-12 col-md-4">
+                    <div class="row wrap r-links justify-center">
+                            <div class="col-xs-11 text-center">
+                                <q-btn no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')">Register Now
+                                </q-btn>
+                            </div>
+                        </div>
                 <div class="row wrap justify-center">
                     <h6 class="top light-paragraph text-center col-xs-11 col-md-11 r-links">
                         Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight
-                        those who want to establish a new 40k personal best. But you surely didn’t train all that time to come to
-                        Ride For Hope Idaho just to get it over with as fast as you can; did you?! Stop and smell the roses, converse
-                        with your riding partners, and don’t forget to experience a fancy porta-john at one of the three rest stops
-                        you will encounter along the route!
+                        those who want to establish a new 40k personal best. But you surely didn’t train all that time to
+                        come to Ride For Hope Idaho just to get it over with as fast as you can; did you?! Stop and smell
+                        the roses, converse with your riding partners, and don’t forget to experience a fancy porta-john
+                        at one of the three rest stops you will encounter along the route!
                     </h6>
                     <div class="col-xs-11 col-md-11 text-center r-links">
-                            <div class="row justify-center">
-                                    <div class="col-xs-2">
-                                        <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg" alt="rest stop">
-                                    </div>
-                                    <div class="col-xs-9">
-                                        <h5>
-                                            31 Mile Rest Stops
-                                        </h5>
-                                    </div>
-                                    <div class="col-xs-12">
-                                            <h6>
-                                                    W. Dickman - 9.7 Miles
-                                                </h6>
-                                                <h6>
-                                                    Melba - 14 Miles
-                                                </h6>
-                                                <h6>
-                                                    Bowmont - 22.6 Miles
-                                                </h6>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="row justify-center r-links desktop-only">
-                                <div class="col-xs-11 text-center">
-                                    <h5>Quick Links To Other Routes</h5>
-                                        <q-btn class="r-btn" @click="$router.push('/18-mile')" no-caps>18 Mile</q-btn>
-                                        <q-btn class="r-btn" @click="$router.push('/metric')" no-caps>Metric Century</q-btn>
-                                        <q-btn class="r-btn" @click="$router.push('/Century')" no-caps>Century</q-btn>
-                                </div>
+                        <div class="row justify-center">
+                            <div class="col-xs-4">
+                                <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
+                                    alt="rest stop">
                             </div>
+                            <div class="col-xs-12">
+                                <h5>
+                                    Rest Stops
+                                </h5>
+                            </div>
+                            <div class="col-xs-12">
+                                <h6>
+                                    W. Dickman - 9.7 Miles
+                                </h6>
+                                <h6>
+                                    Melba - 14 Miles
+                                </h6>
+                                <h6>
+                                    Bowmont - 22.6 Miles
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-center r-links desktop-only">
+                        <div class="col-xs-11 text-center">
+                            <h5>Quick Links To Other Routes</h5>
+                            <q-btn class="r-btn" @click="$router.push('/18-mile')" no-caps>18 Mile</q-btn>
+                            <q-btn class="r-btn" @click="$router.push('/metric')" no-caps>Metric Century</q-btn>
+                            <q-btn class="r-btn" @click="$router.push('/Century')" no-caps>Century</q-btn>
+                        </div>
+                    </div>
+                    <div class="row wrap r-links justify-center desktop-only last">
+                        <div class="col-xs-11 text-center">
+                            <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-md-8">
@@ -94,12 +107,12 @@
                                 <q-card-media>
                                     <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248679/31_Mile_Elevation_Profile_Only_oztpv1.jpg" alt="31-mile elevation profile">
                                 </q-card-media>
-        
+
                             </div>
                         </q-transition>
                     </q-card>
                 </div>
-                <div class="row wrap justify-center">
+                <div class="row wrap justify-center mobile-only">
                     <div class="col-xs-12 text-center">
                         <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                     </div>
@@ -156,9 +169,13 @@
 </script>
 
 <style scoped>
-    .top{
+    .last{
+        margin-bottom: 1rem;
+    }
+    .top {
         padding-top: 1rem;
     }
+
     .btn {
         margin: .5rem .5rem .5rem 0;
         background-color: rgba(197, 7, 7, 0.8);

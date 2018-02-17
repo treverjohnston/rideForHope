@@ -18,6 +18,12 @@
         </div>
         <div class="row justify-center">
             <div class="col-xs-12 col-md-4">
+                    <div class="row wrap r-links justify-center">
+                            <div class="col-xs-11 text-center">
+                                <q-btn no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')">Register Now
+                                </q-btn>
+                            </div>
+                        </div>
                 <div class="row wrap justify-center r-links">
                     <h6 class="light-paragraph text-center col-xs-11 col-md-11">
                         Flat and mellow ride through farmland with one rest stop half-way through course. Race with the bumble bees, fly wth the
@@ -29,16 +35,16 @@
                 <div class="row justify-center r-links">
                     <div class="col-xs-12 col-md-12 text-center border">
                         <div class="row justify-center">
-                            <div class="col-xs-2">
+                            <div class="col-xs-4">
                                 <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
                                     alt="rest stop">
                             </div>
-                            <div class="col-xs-9">
+                            <div class="col-xs-12 self-center">
                                 <h5>
-                                    18 Mile Rest Stops
+                                    Rest Stops
                                 </h5>
                             </div>
-                            <div class="col-xs-12">
+                            <div class="col-xs-12 self-center">
                                 <h6>
                                     Bowmont - 9.7 Miles
                                 </h6>
@@ -49,11 +55,17 @@
                 <div class="row justify-center r-links desktop-only">
                     <div class="col-xs-11 text-center">
                         <h5>Quick Links To Other Routes</h5>
-                            <q-btn class="r-btn" @click="$router.push('/31-mile')" no-caps>31 Mile</q-btn>
-                            <q-btn class="r-btn" @click="$router.push('/metric')" no-caps>Metric Century</q-btn>
-                            <q-btn class="r-btn" @click="$router.push('/Century')" no-caps>Century</q-btn>
+                        <q-btn class="r-btn" @click="$router.push('/31-mile')" no-caps>31 Mile</q-btn>
+                        <q-btn class="r-btn" @click="$router.push('/metric')" no-caps>Metric Century</q-btn>
+                        <q-btn class="r-btn" @click="$router.push('/Century')" no-caps>Century</q-btn>
                     </div>
                 </div>
+                <div class="row wrap r-links justify-center desktop-only last">
+                    <div class="col-xs-11 text-center">
+                        <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
+                    </div>
+                </div>
+               
             </div>
             <div class="col-xs-12 col-md-8">
                 <div class="row wrap justify-center">
@@ -93,7 +105,7 @@
                         </q-transition>
                     </q-card>
                 </div>
-                <div class="row wrap justify-center">
+                <div class="row wrap justify-center mobile-only">
                     <div class="col-xs-12 text-center">
                         <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                     </div>
@@ -158,12 +170,16 @@
 </script>
 
 <style scoped>
-    .r-links{
+    .last{
+        margin-bottom: 1rem;
+    }
+    .r-links {
         margin-top: 3rem;
         background-color: rgba(224, 226, 226, 0.65);
-padding: .5rem;
-border-radius: 15px;
+        padding: .5rem;
+        border-radius: 15px;
     }
+
     .rest {
         max-height: 3rem;
     }

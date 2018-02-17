@@ -20,6 +20,12 @@
         </div>
         <div class="row justify-center">
             <div class="col-xs-12 col-md-4">
+                    <div class="row wrap r-links justify-center">
+                            <div class="col-xs-11 text-center">
+                                <q-btn no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')">Register Now
+                                </q-btn>
+                            </div>
+                        </div>
                 <div class="row wrap justify-center">
                     <h6 class="top light-paragraph text-center col-xs-11 col-md-11 r-links">
                         62.8 miles long (because 62.9 would just be CRAZY!). Completely redesigned course for 2018. This is a ride for true bikers
@@ -32,13 +38,13 @@
                     </h6>
                     <div class="col-xs-11 col-md-11 text-center r-links">
                         <div class="row justify-center">
-                            <div class="col-xs-2">
+                            <div class="col-xs-4">
                                 <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
                                     alt="rest stop">
                             </div>
-                            <div class="col-xs-9">
+                            <div class="col-xs-12">
                                 <h5>
-                                    Metric Century Rest Stops
+                                    Rest Stops
                                 </h5>
                             </div>
                             <div class="col-xs-12">
@@ -64,6 +70,12 @@
                         <q-btn class="r-btn" @click="$router.push('/31-mile')" no-caps>31 Mile</q-btn>
                         <q-btn class="r-btn" @click="$router.push('/Century')" no-caps>Century</q-btn>
                     </div>
+                    
+                <div class="row wrap r-links justify-center desktop-only last">
+                    <div class="col-xs-11 text-center">
+                        <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
+                    </div>
+                </div>
                 </div>
             </div>
             <div class="col-xs-12 col-md-8">
@@ -113,7 +125,7 @@
                             </div>
                         </q-transition>
                     </q-card>
-                    <div class="col-xs-12 text-center">
+                    <div class="col-xs-12 text-center mobile-only">
                         <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                     </div>
                 </div>
@@ -169,6 +181,9 @@
 </script>
 
 <style scoped>
+    .last{
+        margin-bottom: 1rem;
+    }
     .top {
         padding-top: 1rem;
     }

@@ -17,7 +17,7 @@
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
                     <div id="bar" class="col-xs-12 col-md-10">
-                        <q-btn class="el" data-x="360" @click="launch('http://www.meridian-cycles.com/')">
+                        <q-btn flat class="el" data-x="360" @click="launch('http://www.meridian-cycles.com/')">
                             <img class="responsive gold desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
                             <img class="responsive gold-mobile mobile-only" src="~statics/meridian.png" alt="Meridian cycles">
                         </q-btn>
@@ -33,12 +33,25 @@
                 <big class="text-italic">"Always Faithful"</big>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
-                    <div class="col-xs-12 col-md-8">
-                        <q-btn @click="launch('//10barrel.com/pub/boise/')">
+                    <div class="col-xs-12 col-md-6 self-center">
+                        <q-btn flat @click="launch('//10barrel.com/pub/boise/')">
                             <img class="responsive silver desktop-only" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"
                                 alt="10 Barrel BrewingCo.">
                             <img class="responsive silver-mobile mobile-only" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"
                                 alt="10 Barrel BrewingCo.">
+                        </q-btn>
+                    </div>
+                    <div class="col-xs-12 col-md-6 self-center">
+                        <q-btn flat @click="launch('https://www.villagercreative.com/')">
+                            <img class="responsive silver desktop-only" src="https://res.cloudinary.com/treverscloud/image/upload/v1518848726/VillagerLogo_youxql.png"
+                                alt="Villager Creative">
+                            <img class="responsive silver-mobile mobile-only" src="https://res.cloudinary.com/treverscloud/image/upload/v1518848726/VillagerLogo_youxql.png"
+                                alt="Villager Creative">
+                        </q-btn>
+                    </div>
+                    <div class="col-xs-12 col-md-6 self-center silver-space">
+                        <q-btn flat color="black"  no-caps>
+                            <h5 class="black silver-text">R__B Ranch</h5>
                         </q-btn>
                     </div>
                 </div>
@@ -87,6 +100,11 @@
                             <img class="responsive carp" src="statics/coffee.jpg" alt="Coffee Studio">
                         </q-btn>
                     </div>
+                    <div class="col-xs-9 col-md-5 self-center">
+                        <q-btn flat @click="launch('http://www.summitcancercenters.com/contact-us/summit-locations/boise-cancer-treatment/')">
+                            <img class="responsive carp" src="https://res.cloudinary.com/treverscloud/image/upload/v1518848308/SummitBoise-logo-jpeg_rwizxi.jpg" alt="Summit Cancer Center">
+                        </q-btn>
+                    </div>
 
 
 
@@ -111,7 +129,6 @@
                                     <div class="col-xs-12 col-md-4 self-center last">
                                         <q-btn color="black" outline no-caps @click="launch('http://www.fallsbrand.com/')">
                                             <h5 class="black">Falls Brand</h5>
-                                            <!-- <img class="responsive" src="statics/falls.png" alt="Falls Brand"> -->
                                         </q-btn>
                                     </div>
                                 </div>
@@ -186,6 +203,14 @@
 </script>
 
 <style scoped>
+    .silver-space{
+        margin-top: .5rem;
+    }
+    .silver-text{
+        font-size: 3.5rem;
+        font-family: "Niconne", cursive;
+
+    }
     .back{
         background-color: rgba(224, 226, 226, 0.65);
         color: black;
