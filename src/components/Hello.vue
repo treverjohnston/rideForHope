@@ -516,7 +516,7 @@
             </video>
           </div>
         </div>
-        <div class="col-xs-12 col-md-4 text-center self-center">
+        <!-- <div class="col-xs-12 col-md-4 text-center self-center">
           <div v-if="showVid" class="q-video">
             <hr class="s">
             <h6> New Life Program</h6>
@@ -525,7 +525,7 @@
               <source src="statics/new.mp4" type="video/mp4"> Your browser does not support HTML5 video.
             </video>
           </div>
-        </div>
+        </div> -->
         <div class="col-xs-12 col-md-4 text-center self-center">
           <div v-if="showVid" class="q-video">
               <hr class="s">
