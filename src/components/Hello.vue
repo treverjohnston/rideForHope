@@ -434,6 +434,16 @@
             <img class="gch responsive" src="statics/gch.png" alt="genesis community health logo">
           </q-btn>
         </div>
+        <!-- <div  class="text-italic text-center light-paragraph col-xs-12 col-md-4 self-center text">
+
+            <h6>
+              This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
+              healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
+              to the low-income and uninsured. Boise Rescue Mission provides programs and services including addiction recovery
+              and food and shelter for homeless men, women and children.
+            </h6>
+            <q-btn @click="$router.push('/about')" class="cbtnm">Learn More About These Organizations</q-btn>
+          </div> -->
         <h6 class="text-italic text-center light-paragraph col-xs-12 col-md-4 self-center text" data-x="80">
           This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
           healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
@@ -446,28 +456,22 @@
           </q-btn>
         </div>
       </div>
-      <div class="row justify-center">
+      <!-- <div class="row justify-center">
         <div class="col-xs-12">
             <div class="spacer">
               <img class="ride-spacer" src="statics/RFHIdahoLogo.png" alt="ride for hope logo">
             </div>
           </div>
-      </div>
-      <div class="row justify-center xs-gutter video">
+      </div> -->
+      <div class="row justify-center xs-gutter brm-video">
         <div class="col-xs-10 text-center">
-          <hr class="desktop-only">
-          <big>Genesis Community Health Videos</big>
-          <hr class="desktop-only">
+          <!-- <hr class="desktop-only"> -->
+          <big>Learn More About Genesis Community Health</big>
+          <!-- <hr class="desktop-only"> -->
         </div>
-        <div class="col-xs-12 col-md-4 text-center">
-          <div v-if="showVid" class="q-video">
-              <hr class="s">
-            <h6>Patient Perspective on</h6>
-             <h6> Genesis Community Healthcare</h6>
-            <hr class="s">
-            <iframe src="https://player.vimeo.com/video/214745227" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+        <div class="col-xs-12 col-md-4 text-center">\
+            <iframe src="https://player.vimeo.com/video/214745227" width="325" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
-          </div>
         </div>
         <div class="col-xs-12 text-center self-center mobile-only">
             <hr class="s">
@@ -489,32 +493,19 @@
           </q-btn>
         </div>
         <div class="col-xs-12 col-md-4 text-center">
-          <div v-if="showVid" class="q-video ">
-              <hr class="s">
-            <h6>Volunteer Perspective on</h6> 
-            <h6> Genesis Community Healthcare</h6>
-            <hr class="s">
-            <iframe src="https://player.vimeo.com/video/217763499" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+            <iframe src="https://player.vimeo.com/video/217763499" width="325" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
-          </div>
-
         </div>
       </div>
-      <div class="row justify-center xs-gutter brm-video">
+      <div class="row justify-center xs-gutter video">
         <div class="col-xs-10 text-center self-center">
-          <hr class="desktop-only">
-          <big>Boise Rescue Mission Videos</big>
-          <hr class="desktop-only">
+          <!-- <hr class="desktop-only"> -->
+          <big>Learn More About Boise Rescue Mission</big>
+          <!-- <hr class="desktop-only"> -->
         </div>
         <div class="col-xs-12 col-md-4 text-center self-center">
-          <div v-if="showVid" class="q-video">
-            <hr class="s">
-            <h6> 60 Years of Hope</h6>
-            <hr class="s">
-            <video width="350"  controls poster="statics/brm.png" preload="none">
-              <source src="statics/hope.mp4" type="video/mp4"> Your browser does not support HTML5 video.
-            </video>
-          </div>
+            <iframe width="350" height="300" src="https://www.youtube.com/embed/xH7_FBH2oiU?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                            allowfullscreen></iframe>
         </div>
         <!-- <div class="col-xs-12 col-md-4 text-center self-center">
           <div v-if="showVid" class="q-video">
@@ -527,17 +518,8 @@
           </div>
         </div> -->
         <div class="col-xs-12 col-md-4 text-center self-center">
-          <div v-if="showVid" class="q-video">
-              <hr class="s">
-            <h6> Welcome to Rescue Mission</h6>
-            <hr class="s">
-            <video width="350" controls poster="statics/brm.png" preload="none">
-              <source src="statics/welcome.mp4" type="video/mp4"> Your browser does not support HTML5 video.
-            </video>
-          </div>
-        </div>
-        <div class="col-xs-10">
-          <hr>
+            <iframe width="350" height="300" src="https://www.youtube.com/embed/SQRwGpdWsRQ?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -581,12 +563,18 @@
             </div>
             <div class="col-xs-12">
               <hr class="hr">
-              <small class="text-center">
-                Be sure to check out this other great charity ride!
-              </small>
-              <q-btn flat @click="launch('https://www.cycleforindependence.org/')">
-                <img class="meridian-big" src="statics/cfi.jpg" alt="Cycle for independence logo">
-              </q-btn>
+              <div class="row justify-center">
+                <div class="col-xs-12 pad">
+                  <small class="text-center">
+                    Be sure to check out this other great charity ride!
+                  </small>
+                </div>
+                <div class="col-xs-12">
+                  <q-btn flat @click="launch('https://www.cycleforindependence.org/')">
+                    <img class="meridian-big" src="statics/cfi.jpg" alt="Cycle for independence logo">
+                  </q-btn>
+                </div>
+              </div>
               <hr class="hr">
             </div>
           </div>
@@ -790,6 +778,9 @@
 </script>
 
 <style scoped>
+  .pad{
+    padding-bottom: 1rem;
+  }
   .ride-spacer{
     height: 7rem;
   }

@@ -106,7 +106,7 @@
                     </q-card>
                 </div>
                 <div class="row wrap justify-center mobile-only">
-                    <div class="col-xs-12 text-center">
+                    <div class="col-xs-12 text-center r-links">
                         <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                     </div>
                 </div>

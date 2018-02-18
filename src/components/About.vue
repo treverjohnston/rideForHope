@@ -3,8 +3,9 @@
         <div class="row wrap" id="app">
             <div class="col-xs-12 text-center desktop-only">
                 <div class="row wrap justify-center white-back" id="number">
-                        <input readonly class="text-output large-text text-bold col-xs-4" value="$0">
-                    <h4 class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho With <u>YOUR</u> Help</h4>
+                    <input readonly class="text-output large-text text-bold col-xs-4" value="$0">
+                    <h4 class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho With
+                        <u>YOUR</u> Help</h4>
                 </div>
             </div>
             <div class="col-xs-12 text-center mobile-only">
@@ -13,7 +14,8 @@
                         <input readonly class="text-output text-bold col-xs-10 emphasize" value="$0">
                     </big>
 
-                    <p class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho With <u>YOUR</u> Help</p>
+                    <p class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho With
+                        <u>YOUR</u> Help</p>
 
                 </div>
             </div>
@@ -21,14 +23,14 @@
             <h2 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">Our Mission</h2>
             <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10 ">
             <h6 class="top text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
-                <b>Ride For Hope Idaho</b> is a charity bicycle event with the firm belief that quality healthcare should be accessible
-                to everyone. We support the holistic approach to healthcare where true healing focuses not only on symptoms,
-                but the underlying root cause of disease.
+                <b>Ride For Hope Idaho</b> is a charity bicycle event with the firm belief that quality healthcare should be
+                accessible to everyone. We support the holistic approach to healthcare where true healing focuses not only
+                on symptoms, but the underlying root cause of disease.
             </h6>
             <h6 class="top text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
-                <b>Ride For Hope Idaho</b> is committed to ensuring that 100% of participant fees and donations go directly to charity.
-                This unique commitment is made possible by charitable contributions from local sponsors which cover the entire
-                cost of the event.
+                <b>Ride For Hope Idaho</b> is committed to ensuring that 100% of participant fees and donations go directly
+                to charity. This unique commitment is made possible by charitable contributions from local sponsors which
+                cover the entire cost of the event.
             </h6>
             <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10">
             <h3 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">About Us</h3>
@@ -106,16 +108,80 @@
                     </em>
                 </h4>
             </div>
-            <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5">
+            <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5 self-center">
                 <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
                     <img class="responsive check" src="statics/gch.png" alt="Genesis Community Health Logo">
                 </q-btn>
             </div>
-            <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5">
+            <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5 self-center">
                 <q-btn @click="launch('https://boiserm.org/')" flat>
                     <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
                 </q-btn>
             </div>
+        </div>
+        <div class="row justify-center">
+            <div class="col-xs-11">
+                <div class="row justify-center video">
+                    <div class="col-xs-10 text-center">
+                        <!-- <hr class="desktop-only"> -->
+                        <big>Learn More About Genesis Community Health</big>
+                        <hr class="desktop-only">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                        <iframe src="https://player.vimeo.com/video/214745227" width="300" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-xs-12 text-center self-center mobile-only">
+                        <!-- <hr class="s"> -->
+                        <h6>Genesis Community</h6>
+                        <h6> Healthcare Overview</h6>
+                        <!-- <hr class="s"> -->
+                    </div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 text-center self-center">
+                        <q-card-media @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')"
+                            class="mobile-only" overlay-postion="full">
+                            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+                        </q-card-media>
+                        <q-btn flat @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')"
+                            class="shadow-24 two desktop-only ">
+                            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+                            <div class="otwo desktop-only">
+                                <h5>Genesis Community Healthcare Overview</h5>
+                            </div>
+                        </q-btn>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                        <iframe src="https://player.vimeo.com/video/217763499" width="300" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="row justify-center video">
+                    <div class="col-xs-10 text-center self-center">
+                        <!-- <hr class="desktop-only"> -->
+                        <big>Learn More About Boise Rescue Mission</big>
+                        <hr class="desktop-only">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 text-center self-center single">
+                        <iframe width="350" height="300" src="https://www.youtube.com/embed/xH7_FBH2oiU?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- <div class="col-xs-12 col-md-4 text-center self-center">
+              <div  class="q-video">
+                <hr class="s">
+                <h6> New Life Program</h6>
+                <hr class="s">
+                <video width="350"  controls poster="statics/brm.png" preload="none">
+                  <source src="statics/new.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+                </video>
+              </div>
+            </div> -->
+                    <div class="col-xs-12 col-sm-6 col-md-4 text-center self-center single">
+                        <iframe width="350" height="300" src="https://www.youtube.com/embed/SQRwGpdWsRQ?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </q-layout>
 </template>
@@ -130,7 +196,8 @@
         Ripple,
         QFixedPosition,
         QIcon,
-        openURL
+        openURL,
+        QCardMedia
     } from "quasar";
     export default {
         name: "About",
@@ -145,7 +212,8 @@
             QBtn,
             QFixedPosition,
             QIcon,
-            openURL
+            openURL,
+            QCardMedia
         },
         directives: {
             BackToTop,
@@ -172,12 +240,77 @@
 </script>
 
 <style scoped>
+    .single {
+        background-color: rgba(211, 211, 211, 0.481);
+        /* border-radius: 5px; */
+        margin: 0 .5rem 0 .5rem;
+    }
+
+    .video {
+        margin-top: 3rem;
+        background-color: rgba(163, 163, 163, 0.535);
+        color: black;
+        padding: 1rem 0 2rem 0;
+        border-radius: 25px;
+    }
+
+    .s {
+        width: 70%;
+    }
+
+    .mid {
+        height: 35vh;
+    }
+
+    .gen {
+        background-color: white;
+        color: black;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(150, 0, 0, 0.699);
+    }
+
+    .two:hover .otwo {
+        opacity: 1;
+
+    }
+
+    .otwo {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(163, 163, 163, 0.699);
+    }
+
     .white-back {
         background-color: rgba(255, 255, 255, 0.295);
         margin: 1rem 5rem 1rem 5rem;
         border-radius: 9px;
     }
-    .large-text{
+
+    .large-text {
         font-size: 5rem;
     }
 
