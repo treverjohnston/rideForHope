@@ -10,13 +10,15 @@
             </div>
         </div>
         <div class="row wrap justify-center text-center">
-            <div v-scroll-fire="animate" class="col-xs-12 col-md-10">
-                <h2 class="text-bold shadow desktop-only">Veni Vidi Vici Sponsors ($2500+)</h2>
-                <h4 class="text-bold shadow mobile-only">Veni Vidi Vici Sponsors ($2500+)</h4>
+            <div v-scroll-fire="animate" class="col-xs-12 col-md-12">
+                <h2 class="text-bold shadow desktop-only">Veni Vidi Vici Sponsors</h2>
+                <h2 class="text-bold shadow desktop-only">($2500+)</h2>
+                <h4 class="text-bold shadow mobile-only">Veni Vidi Vici Sponsors</h4>
+                <h4 class="text-bold shadow mobile-only">($2500+)</h4>
                 <big class="text-italic">"I came. I saw. I conquered."</big>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
-                    <div id="bar" class="col-xs-12 col-md-10">
+                    <div id="bar" class="col-xs-12 col-md-12">
                         <q-btn flat class="el" data-x="360" @click="launch('http://www.meridian-cycles.com/')">
                             <img class="responsive gold desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
                             <img class="responsive gold-mobile mobile-only" src="~statics/meridian.png" alt="Meridian cycles">
@@ -27,13 +29,15 @@
             </div>
         </div>
         <div class="row wrap justify-center text-center">
-            <div class="col-xs-10 col-md-8">
-                <h2 class="text-bold shadow desktop-only">Semper Fidelis Sponsors ($1500)</h2>
-                <h4 class="text-bold shadow mobile-only">Semper Fidelis Sponsors ($1500)</h4>
+            <div class="col-xs-12 col-md-12">
+                <h2 class="text-bold shadow desktop-only">Semper Fidelis Sponsors</h2>
+                <h2 class="text-bold shadow desktop-only">($1500-$2499)</h2>
+                <h4 class="text-bold shadow mobile-only">Semper Fidelis Sponsors</h4>
+                <h4 class="text-bold shadow mobile-only">($1500-$2499)</h4>
                 <big class="text-italic">"Always Faithful"</big>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
-                    <div class="col-xs-12 col-md-6 self-center">
+                    <div class="col-xs-6 col-md-4 self-center">
                         <q-btn flat @click="launch('//10barrel.com/pub/boise/')">
                             <img class="responsive silver desktop-only" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"
                                 alt="10 Barrel BrewingCo.">
@@ -41,7 +45,7 @@
                                 alt="10 Barrel BrewingCo.">
                         </q-btn>
                     </div>
-                    <div class="col-xs-12 col-md-6 self-center">
+                    <div class="col-xs-6 col-md-4 self-center">
                         <q-btn flat @click="launch('https://www.villagercreative.com/')">
                             <img class="responsive silver desktop-only" src="https://res.cloudinary.com/treverscloud/image/upload/v1518848726/VillagerLogo_youxql.png"
                                 alt="Villager Creative">
@@ -49,7 +53,7 @@
                                 alt="Villager Creative">
                         </q-btn>
                     </div>
-                    <div class="col-xs-12 col-md-6 self-center silver-space">
+                    <div class="col-xs-6 col-md-4 self-center silver-space">
                         <q-btn flat color="black"  no-caps>
                             <h5 class="black silver-text">R__B Ranch</h5>
                         </q-btn>
@@ -59,48 +63,50 @@
             </div>
         </div>
         <div class="row wrap justify-center text-center">
-            <div class="col-xs-12 col-md-8">
-                <h2 class="text-bold shadow desktop-only">Carpe Diem Sponsors ($500)</h2>
-                <h4 class="text-bold shadow mobile-only">Carpe Diem Sponsors ($500)</h4>
+            <div class="col-xs-12 col-md-12">
+                <h2 class="text-bold shadow desktop-only">Carpe Diem Sponsors</h2>
+                <h2 class="text-bold shadow desktop-only">($500-$1499)</h2>
+                <h4 class="text-bold shadow mobile-only">Carpe Diem Sponsors</h4>
+                <h4 class="text-bold shadow mobile-only">($500-$1499)</h4>
                 <big class="text-italic">"Seize the Day"</big>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
-                    <div class="col-xs-9 col-md-5 self-center">
+                    <div class="col-xs-6 col-md-3 self-center">
                         <q-btn flat @click="launch('//www.firstinterstatebank.com/')">
                             <img class="responsive carp" src="statics/firstI.png" alt="1st Interstate Bank">
                         </q-btn>
                     </div>
-                    <div class="col-xs-9 col-md-5 self-center">
+                    <div class="col-xs-6 col-md-3 self-center">
                         <q-btn flat @click="launch('http://www.lylepearson.com/')">
                             <img class="responsive carp" src="statics/lyle.jpg" alt="Lyle Pearson">
                         </q-btn>
                     </div>
-                    <div class="col-xs-9 col-md-5 self-center">
+                    <div class="col-xs-6 col-md-3 self-center">
                         <q-btn flat @click="launch('http://www.raymondjames.com/boiseid/')">
                             <img class="responsive carp" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
                         </q-btn>
                     </div>
-                    <div class="col-xs-9 col-md-5 self-center">
+                    <div class="col-xs-6 col-md-3 self-center">
                         <q-btn flat @click="launch('//www.idahopower.com/')">
                             <img class="responsive carp" src="statics/power.png" alt="Idaho Power">
                         </q-btn>
                     </div>
-                    <div class="col-xs-9 col-md-5 self-center">
+                    <div class="col-xs-6 col-md-3 self-center">
                         <q-btn flat @click="launch('http://www.meatsroyaleidaho.com/')">
                             <img class="responsive carp" src="~statics/meats.jpg" alt="Meats Royale">
                         </q-btn>
                     </div>
-                    <div class="col-xs-9 col-md-5 self-center">
+                    <div class="col-xs-6 col-md-3 self-center">
                         <q-btn flat @click="launch('//www.sherwin-williams.com/')">
                             <img class="responsive carp" src="statics/sherwin.png" alt="Sherwin Williams">
                         </q-btn>
                     </div>
-                    <div class="col-xs-9 col-md-5 self-center">
+                    <div class="col-xs-6 col-md-3 self-center">
                         <q-btn flat @click="launch('http://www.mycoffeestudios.com/')">
                             <img class="responsive carp" src="statics/coffee.jpg" alt="Coffee Studio">
                         </q-btn>
                     </div>
-                    <div class="col-xs-9 col-md-5 self-center">
+                    <div class="col-xs-6 col-md-3 self-center">
                         <q-btn flat @click="launch('http://www.summitcancercenters.com/contact-us/summit-locations/boise-cancer-treatment/')">
                             <img class="responsive carp" src="https://res.cloudinary.com/treverscloud/image/upload/v1518848308/SummitBoise-logo-jpeg_rwizxi.jpg" alt="Summit Cancer Center">
                         </q-btn>
@@ -113,22 +119,26 @@
             </div>
         </div>
         <div class="row wrap justify-center text-center">
-            <div class="col-xs-8">
-                <h2 class="text-bold shadow desktop-only">Virtutem Spei Sponsors (<$500)</h2>
-                        <h4 class="text-bold shadow mobile-only">Virtutem Spei Sponsors (<$500)</h4>
+            <div class="col-xs-12">
+                <h2 class="text-bold shadow desktop-only">Virtutem Spei Sponsors</h2>
+                <h2 class="text-bold shadow desktop-only">(<$500)</h2>
+                        <h4 class="text-bold shadow mobile-only">Virtutem Spei Sponsors</h4>
+                        <h4 class="text-bold shadow mobile-only">(<$500)</h4>
                                 <big class="text-italic">"Hope and Strength"</big>
                                 <hr color="red" class="hr">
                                 <div class="mid row wrap justify-center">
 
-                                    <div class="col-xs-12 col-md-4 self-center last">
+                                    <div class="col-xs-6 col-md-6 self-center last">
                                         <q-btn outline color="black" no-caps @click="launch('//franzbakery.com/')">
-                                            <h5 class="black">Franz Bakery</h5>
+                                            <h5 class="black desktop-only">Franz Bakery</h5>
+                                            <h6 class="black mobile-only">Franz Bakery</h6>
                                             <!-- <img class="responsive" src="statics/franz.png" alt="Franz Bakery"> -->
                                         </q-btn>
                                     </div>
-                                    <div class="col-xs-12 col-md-4 self-center last">
+                                    <div class="col-xs-6 col-md-6 self-center last">
                                         <q-btn color="black" outline no-caps @click="launch('http://www.fallsbrand.com/')">
-                                            <h5 class="black">Falls Brand</h5>
+                                            <h5 class="black desktop-only">Falls Brand</h5>
+                                            <h6 class="black mobile-only">Falls Brand</h6>
                                         </q-btn>
                                     </div>
                                 </div>
@@ -212,7 +222,7 @@
 
     }
     .back{
-        background-color: rgba(224, 226, 226, 0.65);
+        background-color: rgba(138, 138, 138, 0.905);
         color: black;
     }
     .last {
@@ -224,14 +234,17 @@
     }
 
     .gold {
-        height: 12rem;
+        height: 15rem;
+    }
+    .gold-mobile {
+        height: 11rem;
     }
 
     .silver {
         height: 8rem;
     }
     .silver-mobile {
-        height: 7rem;
+        height: 6rem;
     }
 
     .btn {
@@ -251,8 +264,9 @@
     }
 
     .shadow {
-        text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
-color: black;
+        /* text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2); */
+        text-shadow: 0 0 5px #fff;
+        color: black;
         /* color: white; */
     }
 

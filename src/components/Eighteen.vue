@@ -18,22 +18,22 @@
         </div>
         <div class="row justify-center">
             <div class="col-xs-12 col-md-4">
-                    <div class="row wrap r-links justify-center">
-                            <div class="col-xs-11 text-center">
+                    <div class="row wrap justify-center">
+                            <div class="col-xs-11 text-center r-links">
                                 <q-btn no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')">Register Now
                                 </q-btn>
                             </div>
                         </div>
-                <div class="row wrap justify-center r-links">
-                    <h6 class="light-paragraph text-center col-xs-11 col-md-11">
+                <div class="row wrap justify-center">
+                    <h6 class="light-paragraph text-center col-xs-11 col-md-11 r-links">
                         Flat and mellow ride through farmland with one rest stop half-way through course. Race with the bumble bees, fly wth the
                         birds and burn up the road with with human powered speed! This is a “honey” of a course and flat
                         as a pancake; except for one little blueberry bump on top that is too small to categorize. No blackberries,
                         huckleberries or strawberry mountains on this course!
                     </h6>
                 </div>
-                <div class="row justify-center r-links">
-                    <div class="col-xs-12 col-md-12 text-center border">
+                <div class="row justify-center">
+                    <div class="col-xs-11 col-md-11 text-center border r-links">
                         <div class="row justify-center">
                             <div class="col-xs-4">
                                 <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
@@ -52,16 +52,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="row justify-center r-links desktop-only">
-                    <div class="col-xs-11 text-center">
+                <div class="row justify-center desktop-only">
+                    <div class="col-xs-11 text-center r-links">
                         <h5>Quick Links To Other Routes</h5>
                         <q-btn class="r-btn" @click="$router.push('/31-mile')" no-caps>31 Mile</q-btn>
                         <q-btn class="r-btn" @click="$router.push('/metric')" no-caps>Metric Century</q-btn>
                         <q-btn class="r-btn" @click="$router.push('/Century')" no-caps>Century</q-btn>
                     </div>
                 </div>
-                <div class="row wrap r-links justify-center desktop-only last">
-                    <div class="col-xs-11 text-center">
+                <div class="row wrap justify-center desktop-only last">
+                    <div class="col-xs-11 text-center r-links">
                         <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                     </q-card>
                 </div>
                 <div class="row wrap justify-center mobile-only">
-                    <div class="col-xs-12 text-center r-links">
+                    <div class="col-xs-12 text-center bot-link">
                         <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                     </div>
                 </div>
@@ -216,7 +216,7 @@
     }
 
     .headline {
-        text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        /* text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2); */
 
     }
 

@@ -20,8 +20,8 @@
         </div>
         <div class="row justify-center">
             <div class="col-xs-12 col-md-4">
-                    <div class="row wrap r-links justify-center">
-                            <div class="col-xs-11 text-center">
+                    <div class="row wrap justify-center">
+                            <div class="col-xs-11 r-links text-center">
                                 <q-btn no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')">Register Now
                                 </q-btn>
                             </div>
@@ -125,7 +125,7 @@
                             </div>
                         </q-transition>
                     </q-card>
-                    <div class="col-xs-12 text-center mobile-only">
+                    <div class="col-xs-12 text-center mobile-only bot-link">
                         <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                     </div>
                 </div>
@@ -203,7 +203,7 @@
     }
 
     .headline {
-        text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        /* text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2); */
 
     }
 

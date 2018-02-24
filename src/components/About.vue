@@ -19,22 +19,22 @@
 
                 </div>
             </div>
-            <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10 ">
+            <hr class="offset-md-2 col-md-8 return offset-xs-1 col-xs-10 ">
             <h2 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">Our Mission</h2>
-            <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10 ">
-            <h6 class="top text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
+            <hr class="offset-md-2 col-md-8 return offset-xs-1 col-xs-10 ">
+            <h6 class="top text-italic light-paragraph offset-md-2 col-md-8 offset-xs-1 col-xs-10">
                 <b>Ride For Hope Idaho</b> is a charity bicycle event with the firm belief that quality healthcare should be
                 accessible to everyone. We support the holistic approach to healthcare where true healing focuses not only
                 on symptoms, but the underlying root cause of disease.
             </h6>
-            <h6 class="top text-italic light-paragraph offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
+            <h6 class="top text-italic light-paragraph offset-md-2 col-md-8 offset-xs-1 col-xs-10">
                 <b>Ride For Hope Idaho</b> is committed to ensuring that 100% of participant fees and donations go directly
                 to charity. This unique commitment is made possible by charitable contributions from local sponsors which
                 cover the entire cost of the event.
             </h6>
-            <hr class="offset-sm-2 col-sm-8 return offset-xs-1 col-xs-10">
+            <hr class="offset-md-2 col-md-8 return offset-xs-1 col-xs-10">
             <h3 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">About Us</h3>
-            <div class="para offset-sm-2 col-sm-5 offset-xs-1 col-xs-10">
+            <div class="para offset-md-2 col-md-5 offset-xs-1 col-xs-10">
                 <p class="text-justify">
                     <em>
                         <b>Ride For Hope Idaho</b>
@@ -76,10 +76,10 @@
                     <li>In 2017 over $12,500 was donated.</li>
                 </ul>
             </div>
-            <div class="pic col-sm-4 col-xs-12 text-center">
+            <div class="pic col-md-4 col-xs-12 text-center">
                 <img class="rider responsive" src="https://res.cloudinary.com/treverscloud/image/upload/v1517606065/margo_kuo44h.jpg" alt="rider">
             </div>
-            <div class="paragroup offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
+            <div class="paragroup offset-md-2 col-md-8 offset-xs-1 col-xs-10">
                 <p class="text-justify">
                     This year we are proud to support
                     <b>
@@ -101,43 +101,43 @@
                     we can make a difference. Please join us in helping the most vulnerable in our Treasure Valley Community.
                 </p>
             </div>
-            <div class="paragroup offset-sm-2 col-sm-8 offset-xs-1 col-xs-10">
+            <div class="paragroup offset-md-2 col-md-8 offset-xs-1 col-xs-10">
                 <h4 class="text-center signature">
                     <em>
                         <b>Team Ride For Hope Idaho</b>
                     </em>
                 </h4>
             </div>
-            <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5 self-center">
+            <div class="offset-md-2 col-md-4 offset-xs-1 col-xs-5 self-center">
                 <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
                     <img class="responsive check" src="statics/gch.png" alt="Genesis Community Health Logo">
                 </q-btn>
             </div>
-            <div class="offset-sm-2 col-sm-4 offset-xs-1 col-xs-5 self-center">
+            <div class="offset-md-2 col-md-4 offset-xs-1 col-xs-5 self-center">
                 <q-btn @click="launch('https://boiserm.org/')" flat>
                     <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
                 </q-btn>
             </div>
+            <div class="col-xs-12 space">
+
+            </div>
         </div>
-        <div class="row justify-center">
+        <!-- <div class="row justify-center">
             <div class="col-xs-11">
                 <div class="row justify-center video">
                     <div class="col-xs-10 text-center">
-                        <!-- <hr class="desktop-only"> -->
                         <big>Learn More About Genesis Community Health</big>
                         <hr class="desktop-only">
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                        <iframe src="https://player.vimeo.com/video/214745227" width="300" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                    <div class="col-xs-12 col-sm-11 col-md-4 text-center">
+                        <iframe src="https://player.vimeo.com/video/214745227" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
                             allowfullscreen></iframe>
                     </div>
                     <div class="col-xs-12 text-center self-center mobile-only">
-                        <!-- <hr class="s"> -->
                         <h6>Genesis Community</h6>
                         <h6> Healthcare Overview</h6>
-                        <!-- <hr class="s"> -->
                     </div>
-                    <div class="col-xs-10 col-sm-6 col-md-4 text-center self-center">
+                    <div class="col-xs-10 col-sm-10 col-md-4 text-center self-center">
                         <q-card-media @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')"
                             class="mobile-only" overlay-postion="full">
                             <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
@@ -150,38 +150,27 @@
                             </div>
                         </q-btn>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                        <iframe src="https://player.vimeo.com/video/217763499" width="300" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                    <div class="col-xs-12 col-sm-11 col-md-4 text-center">
+                        <iframe src="https://player.vimeo.com/video/217763499" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
                             allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="row justify-center video">
                     <div class="col-xs-10 text-center self-center">
-                        <!-- <hr class="desktop-only"> -->
                         <big>Learn More About Boise Rescue Mission</big>
                         <hr class="desktop-only">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 text-center self-center single">
-                        <iframe width="350" height="300" src="https://www.youtube.com/embed/xH7_FBH2oiU?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/xH7_FBH2oiU?rel=0" frameborder="0" allow="autoplay; encrypted-media"
                             allowfullscreen></iframe>
                     </div>
-                    <!-- <div class="col-xs-12 col-md-4 text-center self-center">
-              <div  class="q-video">
-                <hr class="s">
-                <h6> New Life Program</h6>
-                <hr class="s">
-                <video width="350"  controls poster="statics/brm.png" preload="none">
-                  <source src="statics/new.mp4" type="video/mp4"> Your browser does not support HTML5 video.
-                </video>
-              </div>
-            </div> -->
                     <div class="col-xs-12 col-sm-6 col-md-4 text-center self-center single">
-                        <iframe width="350" height="300" src="https://www.youtube.com/embed/SQRwGpdWsRQ?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/SQRwGpdWsRQ?rel=0" frameborder="0" allow="autoplay; encrypted-media"
                             allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         </div>
     </q-layout>
 </template>
@@ -240,6 +229,9 @@
 </script>
 
 <style scoped>
+    .space{
+        padding: 1rem;
+    }
     .single {
         background-color: rgba(211, 211, 211, 0.481);
         /* border-radius: 5px; */

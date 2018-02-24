@@ -469,8 +469,8 @@
           <big>Learn More About Genesis Community Health</big>
           <!-- <hr class="desktop-only"> -->
         </div>
-        <div class="col-xs-12 col-md-4 text-center">\
-            <iframe src="https://player.vimeo.com/video/214745227" width="325" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
+        <div class="col-xs-12 col-md-4 text-center">
+            <iframe src="https://player.vimeo.com/video/214745227" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
         </div>
         <div class="col-xs-12 text-center self-center mobile-only">
@@ -493,7 +493,7 @@
           </q-btn>
         </div>
         <div class="col-xs-12 col-md-4 text-center">
-            <iframe src="https://player.vimeo.com/video/217763499" width="325" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
+            <iframe src="https://player.vimeo.com/video/217763499" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
         </div>
       </div>
@@ -504,7 +504,7 @@
           <!-- <hr class="desktop-only"> -->
         </div>
         <div class="col-xs-12 col-md-4 text-center self-center">
-            <iframe width="350" height="300" src="https://www.youtube.com/embed/xH7_FBH2oiU?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/xH7_FBH2oiU?rel=0" frameborder="0" allow="autoplay; encrypted-media"
                             allowfullscreen></iframe>
         </div>
         <!-- <div class="col-xs-12 col-md-4 text-center self-center">
@@ -518,7 +518,7 @@
           </div>
         </div> -->
         <div class="col-xs-12 col-md-4 text-center self-center">
-            <iframe width="350" height="300" src="https://www.youtube.com/embed/SQRwGpdWsRQ?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/SQRwGpdWsRQ?rel=0" frameborder="0" allow="autoplay; encrypted-media"
             allowfullscreen></iframe>
         </div>
       </div>
@@ -561,7 +561,10 @@
                 <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
               </q-btn>
             </div>
-            <div class="col-xs-12">
+            <div v-if="!home" class="col-xs-12">
+              <hr class="hr">
+            </div>
+            <div v-if="home" class="col-xs-12">
               <hr class="hr">
               <div class="row justify-center">
                 <div class="col-xs-12 pad">

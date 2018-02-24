@@ -6,19 +6,27 @@
 </template>
 
 <script>
-/*
-   * Root component
-   */
-export default {};
+  /*
+     * Root component
+     */
+  export default {};
 </script>
 
 <style>
-  .r-links{
-        margin-top: 3rem;
-        background-color: rgba(224, 226, 226, 0.65);
-padding: .5rem;
-border-radius: 15px;
-    }
+  .bot-link {
+    margin: 1rem 0 1rem 0;
+    background-color: rgba(224, 226, 226, 0.65);
+    padding: .5rem;
+    border-radius: 15px;
+  }
+
+  .r-links {
+    margin-top: 3rem;
+    background-color: rgba(224, 226, 226, 0.65);
+    padding: .5rem;
+    border-radius: 15px;
+  }
+
   .swal-modal {
     background-color: rgba(0, 0, 0, 0.767);
 
@@ -30,59 +38,70 @@ border-radius: 15px;
 
   }
 
-  .swal-title{
+  .swal-title {
     color: white;
     font-family: 'Bellefair', serif;
   }
-  .swal-text{
+
+  .swal-text {
     color: white;
     font-family: 'Bellefair', serif;
 
   }
-  .rest{
-        max-height: 3rem;
-    }
-  .header{
+
+  .rest {
+    max-height: 3rem;
+  }
+
+  .header {
     height: 200px;
   }
-body {
-  /* font-family: "Bellefair", serif; */
-  font-family: 'Quattrocento', serif;
 
-}
-.red-back {
-  background-color: rgba(65, 57, 57, 0.5);
-  padding: 1rem;
-  border-radius: 15px;
-}
-.r-btn {
-  background-color: rgba(197, 7, 7, 0.8);
-  color: white;
-}
-.q-item {
-  font-size: 2rem;
-  color: black;
-  text-align: center;
-  padding: 0;
-  font-weight: 400;
-  text-align: left;
-}
-.q-item-link:hover {
-  background: transparent;
-}
-.q-list-highlight {
-  background: transparent;
-  color: black;
-  font-weight: 400;
-}
-.q-tabs-head {
-  background-color: rgba(17, 17, 17, 0.88);
-}
+  body {
+    /* font-family: "Bellefair", serif; */
+    font-family: 'Quattrocento', serif;
 
-.bg-grey-2 {
-  background: rgba(255, 255, 255, 0.85) !important;
-}
-.black {
-  color: black;
-}
+  }
+
+  .red-back {
+    background-color: rgba(65, 57, 57, 0.5);
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .r-btn {
+    background-color: rgba(197, 7, 7, 0.8);
+    color: white;
+  }
+
+  .q-item {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    padding: 0;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .q-item-link:hover {
+    background: transparent;
+  }
+
+  .q-list-highlight {
+    background: transparent;
+    color: black;
+    font-weight: 400;
+  }
+
+  .q-tabs-head {
+    background-color: rgba(17, 17, 17, 0.88);
+  }
+
+  .bg-grey-2 {
+    background: rgba(255, 255, 255, 0.85) !important;
+  }
+
+  .black {
+    color: black;
+  }
 </style>
