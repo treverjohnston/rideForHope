@@ -1,5 +1,6 @@
 <template>
     <q-layout class="about black">
+            <!-- <div data-idonate-embed='1e91f3f7-8e57-4853-b7d2-fd246340c903'></div> -->
         <div class="row wrap" id="app">
             <div class="col-xs-12 text-center desktop-only">
                 <div class="row wrap justify-center white-back" id="number">

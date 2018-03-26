@@ -21,7 +21,7 @@
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
+        <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')"
           color="red">Register
         </q-btn>
       </q-transition>
@@ -31,7 +31,7 @@
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
-      <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
+      <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')"
       />
       <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
       />
@@ -57,7 +57,7 @@
             </q-tab>
           </q-item-main>
           <q-item-main>
-            <q-tab @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
+            <q-tab @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')"
               name="home" class="tab" slot="title" color="red" label="Register" />
           </q-item-main>
           <q-item-main>
@@ -102,7 +102,7 @@
           <hr class="tabhr">
         </q-side-link>
         <!-- <q-side-link> -->
-        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
+        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')"
           class="side register" label="Register" />
         <!-- </q-side-link> -->
         <hr class="tabhrs">
@@ -129,7 +129,7 @@
             </q-side-link>
           </q-collapsible>
           <hr class="tabhrs">
-          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D67623%26fNew%3D1%26fsource%3DimAEOverview')"
+          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')"
             class="small-side register" label="Register" />
           <hr class="tabhrs">
           <q-side-link to="packet">
@@ -187,6 +187,11 @@
       </q-list>
     </div>
     <router-view />
+    <div class="row">
+      <div class="col-xs-12">
+        
+      </div>
+    </div>
     <div v-if="home">
       <q-parallax :speed="1" :height="500" src="./statics/cover.jpg">
         <div slot="loading">Loading...</div>
@@ -421,7 +426,6 @@
                 <span slot="subtitle">
                   Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails are for sissys
                   and blisters are braille for success.
-                  <!-- The course has a little of everything including short climbs, rolling hills, and flats -->
                 </span>
               </q-card-title>
             </div>
@@ -434,16 +438,6 @@
             <img class="gch responsive" src="statics/gch.png" alt="genesis community health logo">
           </q-btn>
         </div>
-        <!-- <div  class="text-italic text-center light-paragraph col-xs-12 col-md-4 self-center text">
-
-            <h6>
-              This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
-              healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
-              to the low-income and uninsured. Boise Rescue Mission provides programs and services including addiction recovery
-              and food and shelter for homeless men, women and children.
-            </h6>
-            <q-btn @click="$router.push('/about')" class="cbtnm">Learn More About These Organizations</q-btn>
-          </div> -->
         <h6 class="text-italic text-center light-paragraph col-xs-12 col-md-4 self-center text" data-x="80">
           This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
           healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
@@ -456,18 +450,9 @@
           </q-btn>
         </div>
       </div>
-      <!-- <div class="row justify-center">
-        <div class="col-xs-12">
-            <div class="spacer">
-              <img class="ride-spacer" src="statics/RFHIdahoLogo.png" alt="ride for hope logo">
-            </div>
-          </div>
-      </div> -->
       <div class="row justify-center xs-gutter brm-video">
         <div class="col-xs-10 text-center">
-          <!-- <hr class="desktop-only"> -->
           <big>Learn More About Genesis Community Health</big>
-          <!-- <hr class="desktop-only"> -->
         </div>
         <div class="col-xs-12 col-md-4 text-center">
             <iframe src="https://player.vimeo.com/video/214745227" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
@@ -499,26 +484,14 @@
       </div>
       <div class="row justify-center xs-gutter video">
         <div class="col-xs-10 text-center self-center">
-          <!-- <hr class="desktop-only"> -->
           <big>Learn More About Boise Rescue Mission</big>
-          <!-- <hr class="desktop-only"> -->
         </div>
         <div class="col-xs-12 col-md-4 text-center self-center">
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/xH7_FBH2oiU?rel=0" frameborder="0" allow="autoplay; encrypted-media"
-                            allowfullscreen></iframe>
+          <iframe width="100%" height="300" src="https://www.youtube.com/embed/xH7_FBH2oiU?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
         </div>
-        <!-- <div class="col-xs-12 col-md-4 text-center self-center">
-          <div v-if="showVid" class="q-video">
-            <hr class="s">
-            <h6> New Life Program</h6>
-            <hr class="s">
-            <video width="350"  controls poster="statics/brm.png" preload="none">
-              <source src="statics/new.mp4" type="video/mp4"> Your browser does not support HTML5 video.
-            </video>
-          </div>
-        </div> -->
         <div class="col-xs-12 col-md-4 text-center self-center">
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/SQRwGpdWsRQ?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+          <iframe width="100%" height="300" src="https://www.youtube.com/embed/SQRwGpdWsRQ?rel=0" frameborder="0" allow="autoplay; encrypted-media"
             allowfullscreen></iframe>
         </div>
       </div>
@@ -583,23 +556,6 @@
           </div>
         </div>
       </div>
-      <!-- <div v-scroll-fire="animate" class="row justify-center">
-        <div class="col-xs-12 col-md-12">
-          <div class="row justify-center">
-            <div class="col-xs-12">
-              <hr class="hr">
-              <h5 class="text-bold text-italic">Semper Fidelis Sponsors</h5>
-            </div>
-            <div class="col-xs-6 col-md-3">
-              <q-btn flat @click="launch('https://10barrel.com/pub/boise/')">
-                <img @click="launch('https://10barrel.com/pub/boise/')" class="responsive silver" src="https://static.wixstatic.com/media/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png/v1/fill/w_158,h_63,al_c,usm_0.66_1.00_0.01/a44970_7743f2c5985f46479ec37070bf3361fd~mv2.png"
-                  alt="10 Barrel BrewingCo.">
-              </q-btn>
-            </div>
-            <hr class="hr">
-          </div>
-        </div>
-      </div> -->
     </div>
     </div>
     <q-fixed-position corner="bottom-right" :offset="[18, 18]">
@@ -739,10 +695,10 @@
           .then((value) => {
             switch (value) {
               case 'sponsor':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')
                 break;
               case 'give':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')
                 break;
             }
           })
@@ -759,10 +715,10 @@
           .then((value) => {
             switch (value) {
               case 'sponsor':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')
                 break;
               case 'give':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')
                 break;
             }
           })
@@ -776,20 +732,23 @@
     mounted() {
       this.$refs.layout.hideLeft();
     },
-    beforeDestroy() { }
+    
   };
 </script>
 
 <style scoped>
-  .pad{
+  .pad {
     padding-bottom: 1rem;
   }
-  .ride-spacer{
+
+  .ride-spacer {
     height: 7rem;
   }
-  .s{
+
+  .s {
     width: 70%;
   }
+
   .check {
     max-width: 30vw;
   }
@@ -826,6 +785,7 @@
     opacity: 1;
 
   }
+
   .otwo {
     position: absolute;
     top: 0;
@@ -871,6 +831,7 @@
     background-color: black;
     color: white;
   }
+
   .video {
     background-color: white;
     color: black;

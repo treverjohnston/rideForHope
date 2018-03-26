@@ -1,54 +1,11 @@
 <template>
+    <!-- <div ref="test"></div> -->
+    <!-- <div data-idonate-embed='1e91f3f7-8e57-4853-b7d2-fd246340c903'></div> -->
+    <!-- <iframe src="https://embed.idonate.com/app4/loader.html?embed_id=1e91f3f7-8e57-4853-b7d2-fd246340c903" frameborder="0" scrolling="no" style="visibility: visible; width: 100%; height: 561px; margin: 0px; padding: 0px"></iframe> -->
     <q-layout class="donate">
         <div class="row wrap">
-            <div class="mid offset-xs-1 col-xs-10">
-                <div class="row wrap">
-                    <div class="fancy col-xs-12">
-                        <div class="row wrap desktop-only">
-                            <h2 class="font text-center offset-xs-1 col-xs-10">
-                                Why Ride For Hope Idaho?
-                            </h2>
-                            <h4 class="light-paragraph text-center offset-xs-1 col-xs-10">
-                                SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED
-                            </h4>
-                        </div>
-                        <div class="row wrap mobile-only">
-                            <h4 class="font text-center offset-xs-1 col-xs-10">
-                                Why Ride For Hope Idaho?
-                            </h4>
-                            <h6 class="light-paragraph text-center offset-xs-1 col-xs-10">
-                                SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="row wrap">
-                    <div class="col-xs-12 text-center">
-                        <q-btn @click="launch('https://legacy.imathlete.com/events/rideforhopeidaho')" class="cbtn shadow-24">Donate Here</q-btn>
-                    </div>
-                </div>
-                <div class="row wrap justify-center desktop-only">
-                    <div class="col-xs-4">
-                        <img class="grow responsive" src="statics/riders4.jpg">
-                    </div>
-                    <div class="col-xs-4">
-                        <img class="grow responsive" src="statics/riders5.jpg">
-                    </div>
-                    <div class="col-xs-4">
-                        <img class="grow responsive" src="statics/riders3.jpg">
-                    </div>
-                    <div class="col-xs-4">
-                        <img class="grow responsive" src="statics/riders2.jpg">
-                    </div>
-                </div>
-                <div class="row wrap justify-center mobile-only">
-                    <div class="col-xs-11 img">
-                        <img class="responsive" src="statics/riders5.jpg">
-                    </div>
-                    <div class="col-xs-11">
-                        <img class="responsive" src="statics/riders2.jpg">
-                    </div>
-                </div>
+            <div class="col-xs-12" ref="test">
+                    <!-- <div id="imATHLETEStoreWidget_6BAC6260E56D8C13026F2E5D56D2D878"></div> -->
             </div>
         </div>
     </q-layout>
@@ -68,6 +25,15 @@
         components: {
             QLayout,
             QBtn
+        },
+        created() {
+            // let script = document.createElement('script')
+
+            // script.setAttribute('type', 'text/javascript');
+            // script.setAttribute('src', 'https://embed.idonate.com/idonate.js')
+            // document.body.appendChild(script)
+
+
         },
         computed: {
             routes() {
