@@ -101,7 +101,7 @@ var store = new vuex.Store({
             var arr = []
             for (let i = 0; i < pics.length; i++) {
                 const pic = pics[i];
-                var url = `//res.cloudinary.com/treverscloud/image/upload/v${pic.version}/${pic.public_id}.${pic.format}`
+                var url = `//res.cloudinary.com/treverscloud/image/upload/c_crop/v${pic.version}/${pic.public_id}.${pic.format}`
                 arr.unshift(url)
             }
             state.gallery = arr
