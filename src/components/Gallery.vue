@@ -1,8 +1,9 @@
 <template>
     <q-layout class="gallery">
-        <div class="row">
+        <div class="row justify-center">
+            
             <gallery :images="pictures" :index="index" @close="index = null"></gallery>
-            <div class="image" v-for="image, imageIndex in pictures" @click="index = imageIndex" :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"></div>
+            <div class="image col-xs-5 col-sm-5 col-md-3 col-lg-2" v-for="image, imageIndex in pictures" @click="index = imageIndex" :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"></div>
         </div>
     </q-layout>
 </template>
@@ -41,7 +42,7 @@
 <style scoped>
     .gallery {
         background-color: black;
-        padding: 1rem 0 1rem 2.5%;
+        padding: 1rem 0 1rem 0;
         /* align-items: center;
        align-content: center; */
     }
