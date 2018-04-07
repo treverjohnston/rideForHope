@@ -1,30 +1,37 @@
 <template>
     <q-layout class="gallery">
-        <q-gallery-carousel ref="gallery" class="pics" infinite handle-arrow-keys fullscreen :src="pictures"></q-gallery-carousel>
+        <div class="row">
+            <gallery :images="pictures" :index="index" @close="index = null"></gallery>
+            <div class="image" v-for="image, imageIndex in pictures" @click="index = imageIndex" :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"></div>
+        </div>
     </q-layout>
 </template>
 
 <script>
+    import VueGallery from 'vue-gallery';
     import {
         QLayout,
-        QGalleryCarousel
+        // QGalleryCarousel
 
     } from 'quasar'
     export default {
         name: 'Gallery',
         data() {
-            return {}
+            return {
+                index: null
+            }
         },
         components: {
             QLayout,
-            QGalleryCarousel
+            // QGalleryCarousel,
+            'gallery': VueGallery
         },
-        computed:{
-            pictures(){
+        computed: {
+            pictures() {
                 return this.$store.state.gallery
             }
         },
-        mounted(){
+        mounted() {
             // this.$refs.gallery.toggleQuickView()
             this.$store.dispatch('getPictures')
         }
@@ -32,11 +39,19 @@
 </script>
 
 <style scoped>
-    .gallery{
+    .gallery {
         background-color: black;
-
+        padding: 1rem 0 1rem 2.5%;
+        /* align-items: center;
+       align-content: center; */
     }
-    .pics{
-        height: 85vh;
+
+    .image {
+        float: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 1px solid #ebebeb;
+        margin: 5px;
     }
 </style>
