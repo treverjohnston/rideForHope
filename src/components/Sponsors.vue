@@ -71,42 +71,42 @@
                 <big class="text-italic">"Seize the Day"</big>
                 <hr color="red" class="hr">
                 <div class="mid row wrap justify-center">
-                    <div class="col-xs-6 col-md-3 self-center">
+                    <div class="col-xs-6 col-md-2 self-center">
                         <q-btn flat @click="launch('//www.firstinterstatebank.com/')">
                             <img class="responsive carp" src="statics/firstI.png" alt="1st Interstate Bank">
                         </q-btn>
                     </div>
-                    <div class="col-xs-6 col-md-3 self-center">
+                    <div class="col-xs-6 col-md-2 self-center">
                         <q-btn flat @click="launch('http://www.lylepearson.com/')">
                             <img class="responsive carp" src="statics/lyle.jpg" alt="Lyle Pearson">
                         </q-btn>
                     </div>
-                    <div class="col-xs-6 col-md-3 self-center">
+                    <div class="col-xs-6 col-md-2 self-center">
                         <q-btn flat @click="launch('http://www.raymondjames.com/boiseid/')">
                             <img class="responsive carp" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
                         </q-btn>
                     </div>
-                    <div class="col-xs-6 col-md-3 self-center">
+                    <div class="col-xs-6 col-md-2 self-center">
                         <q-btn flat @click="launch('//www.idahopower.com/')">
                             <img class="responsive carp" src="statics/power.png" alt="Idaho Power">
                         </q-btn>
                     </div>
-                    <div class="col-xs-6 col-md-3 self-center">
+                    <div class="col-xs-6 col-md-2 self-center">
                         <q-btn flat @click="launch('http://www.meatsroyaleidaho.com/')">
                             <img class="responsive carp" src="~statics/meats.jpg" alt="Meats Royale">
                         </q-btn>
                     </div>
-                    <div class="col-xs-6 col-md-3 self-center">
+                    <div class="col-xs-6 col-md-2 self-center">
                         <q-btn flat @click="launch('//www.sherwin-williams.com/')">
                             <img class="responsive carp" src="statics/sherwin.png" alt="Sherwin Williams">
                         </q-btn>
                     </div>
-                    <div class="col-xs-6 col-md-3 self-center">
+                    <div class="col-xs-6 col-md-2 self-center">
                         <q-btn flat @click="launch('http://www.mycoffeestudios.com/')">
                             <img class="responsive carp" src="statics/coffee.jpg" alt="Coffee Studio">
                         </q-btn>
                     </div>
-                    <div class="col-xs-6 col-md-3 self-center">
+                    <div class="col-xs-6 col-md-2 self-center">
                         <q-btn flat @click="launch('http://www.summitcancercenters.com/contact-us/summit-locations/boise-cancer-treatment/')">
                             <img class="responsive carp" src="https://res.cloudinary.com/treverscloud/image/upload/v1518848308/SummitBoise-logo-jpeg_rwizxi.jpg" alt="Summit Cancer Center">
                         </q-btn>
@@ -219,7 +219,6 @@
     .silver-text{
         font-size: 3.5rem;
         font-family: "Niconne", cursive;
-
     }
     .back{
         background-color: rgba(138, 138, 138, 0.905);
@@ -234,7 +233,7 @@
     }
 
     .gold {
-        height: 15rem;
+        height: 19rem;
     }
     .gold-mobile {
         height: 11rem;
