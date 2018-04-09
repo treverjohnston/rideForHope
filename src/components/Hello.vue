@@ -17,7 +17,6 @@
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
         <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
-          <!-- <q-btn outline color="red" @click="donSwal">Just Donate -->
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
@@ -35,7 +34,6 @@
       />
       <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
       />
-      <!-- <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="funSwal" /> -->
       <q-tab class="tab involved" align="left" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
@@ -201,16 +199,26 @@
               <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
               <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
               <h2 class="text-bold">Kuna, ID</h2>
+              <h5 class="text-bold">Join us at 10 Barrel Brewing Company June 5, 2018 from 5pm - 9pm for charity night,</h5>
+              <h5 class="text-bold">100% of profits go to Ride For Hope Idaho!</h5>
             </div>
-            <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn>
+            <div>
+              <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn>
+            </div>
+            <div>
+              <q-btn @click="launch('https://10barrel.com/culture/charity-of-the-month/')" class="cbtnm shadow-24 text-center desktop-only">10 Barrel Charity Month Information</q-btn>
+            </div>
           </div>
         </q-transition>
         <div class="promo text-center mobile-only">
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
           <h4 class="text-bold">2018 Event Date: Saturday, June 23</h4>
           <h4 class="text-bold">Kuna, ID</h4>
+          <p class="text-bold">Join us at 10 Barrel Brewing Company June 5, 2018 from 5pm - 9pm for charity night,</p>
+              <p class="text-bold">100% of profits go to Ride For Hope Idaho!</p>
         </div>
         <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center mobile-only">Ride Day Information</q-btn>
+        <q-btn @click="launch('https://10barrel.com/culture/charity-of-the-month/')" class="cbtnm shadow-24 text-center mobile-only">10 Barrel Charity Month Information</q-btn>
       </q-parallax>
 
       <div class="spacer row wrap">
