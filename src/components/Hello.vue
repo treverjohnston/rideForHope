@@ -200,7 +200,7 @@
               <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
               <h2 class="text-bold">Kuna, ID</h2>
               <h5 class="text-bold">Join us at 10 Barrel Brewing Company June 5, 2018 from 5pm - 9pm for charity night,</h5>
-              <h5 class="text-bold">100% of profits go to Ride For Hope Idaho!</h5>
+              <h5 class="text-bold">100% of the profits go to Ride For Hope Idaho!</h5>
             </div>
             <div>
               <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn>
