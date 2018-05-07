@@ -1,37 +1,24 @@
 <template>
     <q-layout class="contact black">
-        <!-- <div class="row wrap justify-center promo">
-                <div class="col-xs-12 text-center">
-                    <q-card-media class="header desktop-only" overlay-position="full">
-                        <q-parallax src="./statics/road.jpg" :speed=".8" :height="200">
-                            <div slot="loading">
-                                <h3>Team Ride For Hope Idaho</h3>
-                                <hr color="red" class="hr">
-                            </div>
-                        </q-parallax>
-                                <q-card-title slot="overlay" class="text-center">
-                                    <h3 class="red-back">Team Ride For Hope Idaho</h3>
-                                </q-card-title>
-                    </q-card-media>
-                    <q-parallax class="mobile-only" src="statics/road.jpg" :speed=".8" :height="200">
-                        <div slot="loading">
-                            <h3>Team Ride For Hope Idaho</h3>
-                            <hr color="red" class="hr">
-                        </div>
-                        <h3 class="red-back">Team Ride For Hope Idaho</h3>
-                    </q-parallax>
-                </div>
-            </div> -->
         <div class="row wrap justify-center xs-gutter">
-            <div class="col-xs-6 desktop-only">
-                <img src="statics/ride/rfh.jpg" class="responsive img" alt="RFH Riders">
+            <div class="col-xs-5 col-md-3 self-center left">
+                <img src="statics/team2.jpg" class="responsive img" alt="RFH Riders">
+            </div>
+            <div class="col-xs-5 col-md-4 desktop-only self-center">
+                <img src="statics/team1.jpg" class="responsive img" alt="RFH Riders">
+            </div>
+            <div class="col-xs-5 col-md-3 self-center right">
+                <img src="statics/team3.jpg" class="responsive img" alt="RFH Riders">
+            </div>
+            <div class="col-xs-8 col-md-4 mobile-only self-center">
+                <img src="statics/team1.jpg" class="responsive border" alt="RFH Riders">
             </div>
             <div class="col-xs-11 col-md-5 text-center">
                 <h3 class="desktop-only">Team Ride For Hope Idaho</h3>
                 <h4 class="mobile-only">Team Ride For Hope Idaho</h4>
                 <p>Interested in joining Team Ride For Hope Idaho?</p>
                 <hr class="ihr">
-                <p>You Can Look at our club on Strava or view our Facebook page</p>
+                <p>Take a look at our club on Strava or view our Facebook page</p>
                 <div class="row justify-about">
                     <div class="col-xs-6">
                         <q-btn flat @click="launch('https://www.strava.com/clubs/302822')" flat>
@@ -58,7 +45,7 @@
                 </p>
                 <p>You must commit to another charity ride. (i.e. Cycle for Independence)</p>
             </div>
-            
+
 
         </div>
     </q-layout>
@@ -108,18 +95,30 @@
 </script>
 
 <style scoped>
+    .right {
+        margin-right: 1rem;
+    }
+
+    .left {
+        margin-left: 1rem;
+    }
+
     .fb {
-    color: rgb(59, 89, 152);
-    width: 10rem;
-  }
+        color: rgb(59, 89, 152);
+        width: 10rem;
+    }
+
     .frame {
         width: 100%;
         height: 80vh;
     }
 
     .img {
-        height: 60vh;
+        max-height: 45vh;
         margin-top: 3rem;
+        border: 5px solid black;
+    }
+    .border{
         border: 5px solid black;
 
     }
