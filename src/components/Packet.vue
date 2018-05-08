@@ -1,32 +1,7 @@
 <template>
-    <q-layout class="contact black">
-        <!-- <div class="row wrap justify-center promo">
-                <div class="col-xs-12 text-center">
-                    <q-card-media class="header desktop-only" overlay-position="full">
-                        <q-parallax src="./statics/road.jpg" :speed=".8" :height="200">
-                            <div slot="loading">
-                                <h3>Packet Pick Up</h3>
-                                <hr color="red" class="hr">
-                            </div>
-                        </q-parallax>
-                                <q-card-title slot="overlay" class="text-center">
-                                    <h3 class="red-back">Packet Pick Up</h3>
-                                </q-card-title>
-                    </q-card-media>
-                    <q-parallax class="mobile-only" src="statics/road.jpg" :speed=".8" :height="200">
-                        <div slot="loading">
-                            <h3>Packet Pick Up</h3>
-                            <hr color="red" class="hr">
-                        </div>
-                        <h3 class="red-back">Packet Pick Up</h3>
-                    </q-parallax>
-                </div>
-            </div> -->
+    <q-layout class="ride-back">
         <div class="row wrap justify-center">
-            <!-- <div class="col-xs-6 desktop-only">
-                    <img src="statics/ride/ride1.jpg" class="responsive img" alt="RFH Logo">
-                </div> -->
-            <div class="col-xs-11 col-md-8 text-center">
+            <div class="col-xs-11 col-md-10 black-back shadow-24 text-center">
                 <h3 class="desktop-only">Packet Pick Up</h3>
                 <h4 class="mobile-only">Packet Pick Up</h4>
                 <hr class="ihr">

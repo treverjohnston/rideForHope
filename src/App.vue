@@ -13,6 +13,19 @@
 </script>
 
 <style>
+  .ride-back {
+    background-image: url("https://res.cloudinary.com/treverscloud/image/upload/v1517856029/bw_icaeha.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* text-shadow: 0 0 5px #fff; */
+    color: black;
+  }
+  .black-back{
+        background-color: rgba(138, 138, 138, 0.905);
+    }
+
   .bot-link {
     margin: 1rem 0 1rem 0;
     background-color: rgba(224, 226, 226, 0.65);

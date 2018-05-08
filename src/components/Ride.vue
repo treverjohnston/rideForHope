@@ -1,58 +1,40 @@
 <template>
-    <q-layout class="contact black">
-        <!-- <div class="row wrap justify-center promo">
-            <div class="col-xs-12 text-center">
-                <q-card-media class="header desktop-only" overlay-position="full">
-                    <q-parallax src="./statics/road.jpg" :speed=".8" :height="200">
-                        <div slot="loading">
-                            <h3>Ride Day Information</h3>
-                            <hr color="red" class="hr">
-                        </div>
-                    </q-parallax>
-                            <q-card-title slot="overlay" class="text-center">
-                                <h3 class="red-back">Ride Day Information</h3>
-                            </q-card-title>
-                </q-card-media>
-                <q-parallax class="mobile-only" src="statics/road.jpg" :speed=".8" :height="200">
-                    <div slot="loading">
-                        <h3>Ride Day Information</h3>
-                        <hr color="red" class="hr">
-                    </div>
-                    <h3 class="red-back">Ride Day Information</h3>
-                </q-parallax>
-            </div>
-        </div> -->
+    <q-layout class="ride-back">
         <div class="row wrap justify-center xs-gutter">
-            <div class="col-xs-6 desktop-only self-center">
-                <img src="statics/ride/ride1.jpg" class="responsive img" alt="RFH Logo">
-            </div>
-            <div class="col-xs-11 col-md-5 text-center self-center">
-                <h3 class="desktop-only">Ride Day Information</h3>
-                <h4 class="mobile-only">Ride Day Information</h4>
-                <p>Registration opens at 5:30 AM</p>
-                <!-- <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p> -->
-                <hr class="ihr">
-                <h5>Century Start Time</h5>
-                <p>6:30 AM*</p>
-                <h5>Metric Century Start Time</h5>
-                <p>8:30 AM*</p>
-                <h5>31 Mile Start Time</h5>
-                <p>10:30 AM*</p>
-                <h5>18 Mile Start Time</h5>
-                <p>11:00 AM*</p>
-                <hr class="ihr">
-                <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p>
-            </div>
-            <div class="col-xs-10">
-                <h3 class="desktop-only text-center">Directions (Kuna City Hall)</h3>
-                <h4 class="mobile-only text-center">Directions (Kuna City Hall)</h4>
+            <div class="col-xs-11 shadow-24 black-back">
+                <div class="row justify-center">
+                    <div class="col-xs-6 desktop-only self-center">
+                        <img src="statics/ride/ride1.jpg" class="responsive img" alt="RFH Logo">
+                    </div>
+                    <div class="col-xs-11 col-md-5 text-center self-center">
+                        <h3 class="desktop-only">Ride Day Information</h3>
+                        <h4 class="mobile-only">Ride Day Information</h4>
+                        <p>Registration opens at 5:30 AM</p>
+                        <!-- <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p> -->
+                        <hr class="ihr">
+                        <h5>Century Start Time</h5>
+                        <p>6:30 AM*</p>
+                        <h5>Metric Century Start Time</h5>
+                        <p>8:30 AM*</p>
+                        <h5>31 Mile Start Time</h5>
+                        <p>10:30 AM*</p>
+                        <h5>18 Mile Start Time</h5>
+                        <p>11:00 AM*</p>
+                        <hr class="ihr">
+                        <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p>
+                    </div>
+                    <div class="col-xs-10">
+                        <h3 class="desktop-only text-center">Directions (Kuna City Hall)</h3>
+                        <h4 class="mobile-only text-center">Directions (Kuna City Hall)</h4>
 
-                <iframe class="frame" src="//www.google.com/maps/embed/v1/place?q=Kuna%20City%20Hall
+                        <iframe class="frame" src="//www.google.com/maps/embed/v1/place?q=Kuna%20City%20Hall
                     &zoom=13
                     &attribution_source=Google+Maps+Embed+API
                     &attribution_web_url=https://developers.google.com/maps/documentation/embed/
                     &key=AIzaSyBLaoSdXeLvOkN5Tp5YkPZ35gXfi5-LhsI" allowfullscreen>
-                </iframe>
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </q-layout>

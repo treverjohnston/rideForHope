@@ -1,48 +1,41 @@
 <template>
-    <q-layout class="contact black">
-        <div class="row wrap justify-center promo">
-            <div class="col-xs-12 text-center">
-                <q-parallax src="statics/road.jpg" :height="200">
-                    <div slot="loading">
-                        <h3>Contact Us</h3>
-                        <hr color="red" class="hr">
-                        <h5 class="desktop-only">Please contact us anytime with any questions, or other inquiries.</h5>
-                        <h6 class="mobile-only">Please contact us anytime with any questions, or other inquiries.</h6>
-                    </div>
-                    <div class="red-back">
-
+    <q-layout class="ride-back">
+        <div class="row justify-center">
+            <div class="col-xs-11 col-md-10 black-back shadow-24">
+                <div class="row wrap justify-center">
+                    <div class="col-xs-12 text-center">
                         <h3>Contact Us</h3>
                         <hr class="hr">
                         <h5 class="desktop-only">Please contact us anytime with any questions, or other inquiries.</h5>
                         <h6 class="mobile-only">Please contact us anytime with any questions, or other inquiries.</h6>
                     </div>
-                </q-parallax>
-            </div>
-        </div>
-        <div class="row justify-center bot desktop-only xs-gutter">
-            <div class="col-xs-5 self-center space">
-                <img src="statics/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
-            </div>
-            <div class="col-xs-5 self-center">
-                <q-input v-model="name" float-label="Name" name="name" type="text" />
-                <q-input v-model="email" float-label="Email" name="email" type="email" />
-                <q-input v-model="phone" float-label="Phone" name="phone" type="tel" />
-                <q-input v-model="subject" float-label="Subject" name="subject" type="text" />
-                <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
-                <q-btn @click="send">Send</q-btn>
-            </div>
-        </div>
-        <div class="row wrap justify-center mobile-only">
-            <div class="col-xs-11">
-                <q-input v-model="name" float-label="Name" name="name" />
-                <q-input v-model="email" float-label="Email" name="email" />
-                <q-input v-model="phone" float-label="Phone" name="phone" />
-                <q-input v-model="subject" float-label="Subject" name="subject" />
-                <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
-                <q-btn @click="send" class="full-width">Send</q-btn>
-            </div>
-            <div class="col-xs-10 bot">
-                    <img src="statics/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
+                </div>
+                <div class="row justify-center bot desktop-only xs-gutter">
+                    <div class="col-xs-5 self-center space">
+                        <img src="statics/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
+                    </div>
+                    <div class="col-xs-5 self-center">
+                        <q-input v-model="name" float-label="Name" name="name" type="text" />
+                        <q-input v-model="email" float-label="Email" name="email" type="email" />
+                        <q-input v-model="phone" float-label="Phone" name="phone" type="tel" />
+                        <q-input v-model="subject" float-label="Subject" name="subject" type="text" />
+                        <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
+                        <q-btn @click="send">Send</q-btn>
+                    </div>
+                </div>
+                <div class="row wrap justify-center mobile-only">
+                    <div class="col-xs-11">
+                        <q-input v-model="name" float-label="Name" name="name" />
+                        <q-input v-model="email" float-label="Email" name="email" />
+                        <q-input v-model="phone" float-label="Phone" name="phone" />
+                        <q-input v-model="subject" float-label="Subject" name="subject" />
+                        <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
+                        <q-btn @click="send" class="full-width">Send</q-btn>
+                    </div>
+                    <div class="col-xs-10 bot">
+                        <img src="statics/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
+                    </div>
+                </div>
             </div>
         </div>
     </q-layout>
@@ -108,9 +101,10 @@
 </script>
 
 <style scoped>
-    .space{
+    .space {
         padding-right: 3rem;
     }
+
     .img {
         border: 5px solid black;
     }
