@@ -13,13 +13,15 @@
             <div class="col-xs-8 col-md-4 mobile-only self-center">
                 <img src="statics/team1.jpg" class="responsive border" alt="RFH Riders">
             </div>
-            <div class="col-xs-11 col-md-5 text-center">
+        </div>
+        <div class="row justify-center bot">
+            <div class="col-xs-11 col-md-6 text-center">
                 <h3 class="desktop-only">Team Ride For Hope Idaho</h3>
                 <h4 class="mobile-only">Team Ride For Hope Idaho</h4>
                 <p>Interested in joining Team Ride For Hope Idaho?</p>
                 <hr class="ihr">
                 <p>Take a look at our club on Strava or view our Facebook page</p>
-                <div class="row justify-about">
+                <div class="row justify-center">
                     <div class="col-xs-6">
                         <q-btn flat @click="launch('https://www.strava.com/clubs/302822')" flat>
                             <img class="strava responsive" src="statics/strava2.png" alt="strava logo">
@@ -35,7 +37,13 @@
                     </div>
                 </div>
             </div>
-
+            <div class="col-xs-12 col-md-4 text-center">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%2Frideforhopeidaho&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+                    allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        <div class="row justify-center">
             <div class="col-xs-10 text-center">
                 <h3 class="desktop-only">Team Ride For Hope Idaho Requirements</h3>
                 <h4 class="mobile-only">Team Ride For Hope Idaho Requirements</h4>
@@ -45,8 +53,6 @@
                 </p>
                 <p>You must commit to another charity ride. (i.e. Cycle for Independence)</p>
             </div>
-
-
         </div>
     </q-layout>
 </template>
@@ -118,7 +124,8 @@
         margin-top: 3rem;
         border: 5px solid black;
     }
-    .border{
+
+    .border {
         border: 5px solid black;
 
     }

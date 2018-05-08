@@ -1,14 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+<widget id="com.rideforhopeidaho" version="1.0.0">
+    <name>Ride For Hope Idaho</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+Ride For Hope Idaho Website in Mobile   </description>
+    <author email="treverj1029@gmail.com" href="http://treverjohnston.com">
+       Trever Johnston
     </author>
     <content src="index.html" />
+    <icon src="res/RFHIdahoLogo.png" />
     <access origin="*" />
+    <allow-navigation href="rideforhopeidaho.com*" />
+    <allow-navigation href="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -22,6 +24,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <engine name="android" spec="^6.3.0" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
+    <engine name="android" spec="^7.0.0" />
 </widget>

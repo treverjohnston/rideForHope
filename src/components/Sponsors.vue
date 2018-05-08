@@ -83,7 +83,7 @@
                             </q-btn>
                         </div>
                         <div class="col-xs-6 col-md-2 self-center">
-                            <q-btn flat @click="launch('http://www.raymondjames.com/boiseid/')">
+                            <q-btn flat @click="launch('https://www.raymondjames.com/boiseid/dmcquesten.htm')">
                                 <img class="responsive carp" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
                             </q-btn>
                         </div>
@@ -111,6 +111,24 @@
                             <q-btn flat @click="launch('http://www.summitcancercenters.com/contact-us/summit-locations/boise-cancer-treatment/')">
                                 <img class="responsive carp" src="https://res.cloudinary.com/treverscloud/image/upload/v1518848308/SummitBoise-logo-jpeg_rwizxi.jpg"
                                     alt="Summit Cancer Center">
+                            </q-btn>
+                        </div>
+                        <div class="col-xs-6 col-md-2 self-center">
+                            <q-btn flat @click="launch('https://www.tamarackgrove.com/')">
+                                <img class="responsive carp" src="statics/tamarack.png"
+                                    alt="Tamarack Grove Engineering">
+                            </q-btn>
+                        </div>
+                        <div class="col-xs-6 col-md-2 self-center">
+                            <q-btn flat @click="launch('https://www.westmark.org/index.shtml')">
+                                <img class="responsive carp" src="statics/westmark.gif"
+                                    alt="Westmark Credit Union">
+                            </q-btn>
+                        </div>
+                        <div class="col-xs-6 col-md-2 self-center">
+                            <q-btn flat @click="launch('http://www.mcdrealestategroup.com/')">
+                                <img class="responsive carp" src="statics/sign.jpg"
+                                    alt="McDonough Real Estate Group">
                             </q-btn>
                         </div>
 
