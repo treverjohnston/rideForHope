@@ -13,6 +13,12 @@
 </script>
 
 <style>
+   .modal-content {
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 5px;
+  }
   .ride-back {
     background-image: url("https://res.cloudinary.com/treverscloud/image/upload/v1517856029/bw_icaeha.jpg");
     background-position: center center;

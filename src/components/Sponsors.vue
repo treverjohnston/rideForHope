@@ -87,6 +87,9 @@
                                 <q-btn flat @click="launch('https://www.raymondjames.com/boiseid/dmcquesten.htm')">
                                     <img class="responsive carp" src="https://static.wixstatic.com/media/a44970_97eca4f2e97749eaa2d64d293f5497c7~mv2.gif" alt="riverside associates">
                                 </q-btn>
+                                <small class="desktop-only">Dan McQuesten--208-850-6672</small>
+                                <small class="mobile-only">Dan McQuesten</small>
+                                <small class="mobile-only">208-850-6672</small>
                             </div>
                             <div class="col-xs-6 col-md-3 self-center">
                                 <q-btn flat @click="launch('//www.idahopower.com/')">

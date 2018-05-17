@@ -187,10 +187,36 @@
     <router-view />
     <div class="row">
       <div class="col-xs-12">
-        
+
       </div>
     </div>
     <div v-if="home">
+      <div class="row justify-center">
+      <q-modal ref="charityModal">
+          <div class="col-xs-10 text-center">
+            <big class="text-bold">Join us at 10 Barrel Brewing Company June 5, 2018 from 5pm - 9pm for charity night!</big>
+          </div>
+          <div class="col-xs-10 text-center">
+            <big class="text-bold">100% of the profits go to Ride For Hope Idaho!</big>
+          </div>
+          <div class="col-xs-4 text-center">
+            <q-btn class="cbtnm shadow-24 text-center desktop-only" @click="$refs.charityModal.close()">Dismiss</q-btn>
+            <q-btn class="cbtnm shadow-24 text-center desktop-only" @click="launch('https://10barrel.com/culture/charity-of-the-month/')">More Info</q-btn>
+          </div>
+        </q-modal>
+      <q-modal ref="charityModalMobile">
+          <div class="col-xs-10 text-center">
+            <big class="text-bold">Join us at 10 Barrel Brewing Company June 5, 2018 from 5pm - 9pm for charity night!</big>
+          </div>
+          <div class="col-xs-10 text-center space">
+            <big class="text-bold">100% of the profits go to Ride For Hope Idaho!</big>
+          </div>
+          <div class="col-xs-4 text-center">
+            <q-btn class="cbtnm shadow-24 text-center" @click="$refs.charityModalMobile.close()">Dismiss</q-btn>
+            <q-btn class="cbtnm shadow-24 text-center" @click="launch('https://10barrel.com/culture/charity-of-the-month/')">More Info</q-btn>
+          </div>
+        </q-modal>
+      </div>
       <q-parallax :speed="1" :height="500" src="./statics/cover.jpg">
         <div slot="loading">Loading...</div>
         <q-transition appear enter="slideInUp" leave="fadeOut">
@@ -199,14 +225,10 @@
               <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
               <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
               <h2 class="text-bold">Kuna, ID</h2>
-              <h5 class="text-bold">Join us at 10 Barrel Brewing Company June 5, 2018 from 5pm - 9pm for charity night,</h5>
-              <h5 class="text-bold">100% of the profits go to Ride For Hope Idaho!</h5>
+              <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">10 Barrel Charity Month Information</q-btn>
             </div>
             <div>
               <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn>
-            </div>
-            <div>
-              <q-btn @click="launch('https://10barrel.com/culture/charity-of-the-month/')" class="cbtnm shadow-24 text-center desktop-only">10 Barrel Charity Month Information</q-btn>
             </div>
           </div>
         </q-transition>
@@ -214,11 +236,9 @@
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
           <h4 class="text-bold">2018 Event Date: Saturday, June 23</h4>
           <h4 class="text-bold">Kuna, ID</h4>
-          <p class="text-bold">Join us at 10 Barrel Brewing Company June 5, 2018 from 5pm - 9pm for charity night,</p>
-              <p class="text-bold">100% of profits go to Ride For Hope Idaho!</p>
+          <q-btn @click="$refs.charityModalMobile.open()" class="cbtnm shadow-24 text-center">10 Barrel Charity Month Information</q-btn>
         </div>
         <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center mobile-only">Ride Day Information</q-btn>
-        <q-btn @click="launch('https://10barrel.com/culture/charity-of-the-month/')" class="cbtnm shadow-24 text-center mobile-only">10 Barrel Charity Month Information</q-btn>
       </q-parallax>
 
       <div class="spacer row wrap">
@@ -463,14 +483,14 @@
           <big>Learn More About Genesis Community Health</big>
         </div>
         <div class="col-xs-12 col-md-4 text-center">
-            <iframe src="https://player.vimeo.com/video/214745227" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
-              allowfullscreen></iframe>
+          <iframe src="https://player.vimeo.com/video/214745227" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
+            allowfullscreen></iframe>
         </div>
         <div class="col-xs-12 text-center self-center mobile-only">
-            <hr class="s">
-            <h6>Genesis Community</h6>
-             <h6> Healthcare Overview</h6>
-            <hr class="s">
+          <hr class="s">
+          <h6>Genesis Community</h6>
+          <h6> Healthcare Overview</h6>
+          <hr class="s">
         </div>
         <div class="col-xs-10 col-md-4 text-center self-center">
           <q-card-media @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')"
@@ -486,8 +506,8 @@
           </q-btn>
         </div>
         <div class="col-xs-12 col-md-4 text-center">
-            <iframe src="https://player.vimeo.com/video/217763499" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
-              allowfullscreen></iframe>
+          <iframe src="https://player.vimeo.com/video/217763499" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen
+            allowfullscreen></iframe>
         </div>
       </div>
       <div class="row justify-center xs-gutter video">
@@ -608,7 +628,8 @@
     ScrollFire,
     QCardMedia,
     QCardActions,
-    QVideo
+    QVideo,
+    QModal
   } from "quasar";
 
   export default {
@@ -639,7 +660,8 @@
       QFixedPosition,
       QCardMedia,
       QCardActions,
-      QVideo
+      QVideo,
+      QModal
     },
     data() {
       return {
@@ -740,11 +762,17 @@
     mounted() {
       this.$refs.layout.hideLeft();
     },
-    
+
   };
 </script>
 
 <style scoped>
+  .space{
+    margin: 1rem 0 1rem 0
+  }
+  .charityModal{
+    background-color: rgba(0, 0, 0, 0.479);
+  }
   .pad {
     padding-bottom: 1rem;
   }
@@ -1046,6 +1074,7 @@
     padding: 1rem 2rem 1rem 2rem;
     background-color: rgba(0, 128, 128, 0.6);
     color: black;
+    border-radius: 5px;
   }
 
 
