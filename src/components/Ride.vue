@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="ride-back">
+    <q-layout class="black">
         <div class="row wrap justify-center xs-gutter">
             <div class="col-xs-11 shadow-24 black-back">
                 <div class="row justify-center">
@@ -108,9 +108,5 @@
 
     .hr {
         width: 20%
-    }
-
-    .contact {
-        background-image: url("~statics/triangular.png")
     }
 </style>

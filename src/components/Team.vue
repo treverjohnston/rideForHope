@@ -26,7 +26,7 @@
                         <div class="row justify-center">
                             <div class="col-xs-6">
                                 <q-btn flat @click="launch('https://www.strava.com/clubs/302822')" flat>
-                                    <img class="strava responsive" src="statics/strava2.png" alt="strava logo">
+                                    <img class="strava responsive" src="statics/logos/strava2.png" alt="strava logo">
                                 </q-btn>
                             </div>
                             <div class="col-xs-6 self-center">
@@ -163,7 +163,4 @@
         width: 20%
     }
 
-    /* .contact {
-        background-image: url("~statics/triangular.png")
-    } */
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="ride-back">
+    <q-layout class="black">
         <div class="row justify-center">
             <div class="col-xs-11 col-md-10 black-back shadow-24">
                 <div class="row wrap justify-center">
@@ -216,7 +216,4 @@
 
     }
 
-    .eighteen {
-        background-image: url("~statics/triangular.png");
-    }
 </style>

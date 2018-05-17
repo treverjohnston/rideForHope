@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="ride-back">
+    <q-layout class="black">
         <div class="row justify-center">
             <div class="col-xs-11 col-md-10 black-back shadow-24">
                 <div class="row wrap">
@@ -113,12 +113,12 @@
                     </div>
                     <div class="offset-md-2 col-md-4 offset-xs-1 col-xs-5 self-center">
                         <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
-                            <img class="responsive check" src="statics/gch.png" alt="Genesis Community Health Logo">
+                            <img class="responsive check" src="statics/logos/gch.png" alt="Genesis Community Health Logo">
                         </q-btn>
                     </div>
                     <div class="offset-md-2 col-md-4 offset-xs-1 col-xs-5 self-center">
                         <q-btn @click="launch('https://boiserm.org/')" flat>
-                            <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
+                            <img class="responsive check" src="statics/logos/brm.png" alt="Boise Rescue Mission Logo">
                         </q-btn>
                     </div>
                     <div class="col-xs-12 space">
@@ -297,9 +297,6 @@
         max-width: 18rem;
     }
 
-    .about {
-        background-image: url("~statics/triangular.png");
-    }
 
     .return {
         background-color: red;

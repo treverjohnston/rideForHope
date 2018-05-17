@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="ride-back">
+    <q-layout class="black">
         <div class="row wrap justify-center">
             <div class="col-xs-11 col-md-10 black-back shadow-24">
                 <div class="row justify-center">
@@ -52,7 +52,7 @@
                     </div>
                     <div class="col-xs-12">
                         <div class="spacer">
-                            <img class="ride" src="statics/RFHIdahoLogo.png" alt="ride for hope logo">
+                            <img class="ride" src="statics/logos/RFHIdahoLogo.png" alt="ride for hope logo">
                         </div>
                     </div>
                     <div class="col-xs-11 col-md-8 ">
@@ -224,9 +224,5 @@
 
     .hr {
         width: 20%
-    }
-
-    .contact {
-        background-image: url("~statics/triangular.png")
     }
 </style>

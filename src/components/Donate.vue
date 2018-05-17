@@ -69,10 +69,6 @@
         margin: 1rem 0 1rem 0;
     }
 
-    .donate {
-        background-image: url("~statics/triangular.png")
-    }
-
     .font {
         font-family: 'Lobster', cursive;
         color: black;

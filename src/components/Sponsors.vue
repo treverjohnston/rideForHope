@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="ride-back">
+    <q-layout class="">
         <div class="row justify-center">
             <div class="col-xs-12 col-md-10 shadow-24 black-back">
                 <div class="row wrap justify-center promo">
@@ -21,8 +21,8 @@
                         <div class="mid row wrap justify-center">
                             <div id="bar" class="col-xs-12 col-md-12">
                                 <q-btn flat class="el" data-x="360" @click="launch('http://www.meridian-cycles.com/')">
-                                    <img class="responsive gold desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
-                                    <img class="responsive gold-mobile mobile-only" src="~statics/meridian.png" alt="Meridian cycles">
+                                    <img class="responsive gold desktop-only" src="statics/logos/meridian.png" alt="Meridian Cycles logo">
+                                    <img class="responsive gold-mobile mobile-only" src="~statics/logos/meridian.png" alt="Meridian cycles">
                                 </q-btn>
                             </div>
                         </div>
@@ -40,8 +40,8 @@
                         <div class="mid row wrap justify-center">
                             <div class="col-xs-6 col-md-6 self-center">
                                 <q-btn flat @click="launch('http://www.lylepearson.com/')">
-                                    <img class="responsive silver silver-space desktop-only" src="statics/lyle.jpg" alt="Lyle Pearson">
-                                    <img class="responsive silver-mobile mobile-only" src="statics/lyle.jpg" alt="Lyle Pearson">
+                                    <img class="responsive silver silver-space desktop-only" src="statics/sponsors/lyle.jpg" alt="Lyle Pearson">
+                                    <img class="responsive silver-mobile mobile-only" src="statics/sponsors/lyle.jpg" alt="Lyle Pearson">
                                 </q-btn>
                             </div>
                             <div class="col-xs-6 col-md-6 self-center">
@@ -80,7 +80,7 @@
                         <div class="mid row wrap justify-center">
                             <div class="col-xs-6 col-md-3 self-center">
                                 <q-btn flat @click="launch('//www.firstinterstatebank.com/')">
-                                    <img class="responsive carp" src="statics/firstI.png" alt="1st Interstate Bank">
+                                    <img class="responsive carp" src="statics/sponsors/firstI.png" alt="1st Interstate Bank">
                                 </q-btn>
                             </div>
                             <div class="col-xs-6 col-md-3 self-center">
@@ -93,22 +93,22 @@
                             </div>
                             <div class="col-xs-6 col-md-3 self-center">
                                 <q-btn flat @click="launch('//www.idahopower.com/')">
-                                    <img class="responsive carp" src="statics/power.png" alt="Idaho Power">
+                                    <img class="responsive carp" src="statics/sponsors/power.png" alt="Idaho Power">
                                 </q-btn>
                             </div>
                             <div class="col-xs-6 col-md-3 self-center">
                                 <q-btn flat @click="launch('http://www.meatsroyaleidaho.com/')">
-                                    <img class="responsive carp" src="~statics/meats.jpg" alt="Meats Royale">
+                                    <img class="responsive carp" src="~statics/sponsors/meats.jpg" alt="Meats Royale">
                                 </q-btn>
                             </div>
                             <div class="col-xs-6 col-md-3 self-center">
                                 <q-btn flat @click="launch('//www.sherwin-williams.com/')">
-                                    <img class="responsive carp" src="statics/sherwin.png" alt="Sherwin Williams">
+                                    <img class="responsive carp" src="statics/sponsors/sherwin.png" alt="Sherwin Williams">
                                 </q-btn>
                             </div>
                             <div class="col-xs-6 col-md-3 self-center">
                                 <q-btn flat @click="launch('http://www.mycoffeestudios.com/')">
-                                    <img class="responsive carp" src="statics/coffee.jpg" alt="Coffee Studio">
+                                    <img class="responsive carp" src="statics/sponsors/coffee.jpg" alt="Coffee Studio">
                                 </q-btn>
                             </div>
                             <div class="col-xs-6 col-md-3 self-center">
@@ -119,22 +119,19 @@
                             </div>
                             <div class="col-xs-6 col-md-3 self-center">
                                 <q-btn flat @click="launch('https://www.tamarackgrove.com/')">
-                                    <img class="responsive carp" src="statics/tamarack.png" alt="Tamarack Grove Engineering">
+                                    <img class="responsive carp" src="statics/sponsors/tamarack.jpg" alt="Tamarack Grove Engineering">
                                 </q-btn>
                             </div>
                             <div class="col-xs-6 col-md-3 self-center">
                                 <q-btn flat @click="launch('https://www.westmark.org/index.shtml')">
-                                    <img class="responsive carp" src="statics/westmark.gif" alt="Westmark Credit Union">
+                                    <img class="responsive carp" src="statics/sponsors/westmark.gif" alt="Westmark Credit Union">
                                 </q-btn>
                             </div>
                             <div class="col-xs-6 col-md-3 self-center">
                                 <q-btn flat @click="launch('http://www.mcdrealestategroup.com/')">
-                                    <img class="responsive carp" src="statics/sign.jpg" alt="McDonough Real Estate Group">
+                                    <img class="responsive carp" src="statics/sponsors/sign.jpg" alt="McDonough Real Estate Group">
                                 </q-btn>
                             </div>
-
-
-
                         </div>
                         <hr color="red" class="hr">
                     </div>

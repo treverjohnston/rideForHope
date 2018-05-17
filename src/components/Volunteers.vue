@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="ride-back">
+    <q-layout class="black">
         <div class="row justify-center">
             <div class="col-xs-11 col-md-10 black-back shadow-24 pad-bot">
                 <div class="row wrap justify-center promo">
@@ -146,9 +146,5 @@
 
     .red {
         color: rgb(212, 0, 0);
-    }
-
-    .volunteers {
-        background-image: url("~statics/triangular.png");
     }
 </style>

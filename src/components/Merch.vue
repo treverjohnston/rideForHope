@@ -24,7 +24,7 @@
             <div class="row wrap justify-center pics desktop-only">
                 <q-card flat align="center" class="col-xs-12 col-md-6">
                     <q-card-media>
-                        <img src="~statics/jersey.jpg" class="responsive" alt="Jersey">
+                        <img src="~statics/merch/jersey.jpg" class="responsive" alt="Jersey">
                     </q-card-media>
                     <q-card-title class="black-text">
                         Ride For Hope Idaho Jersey </q-card-title>
@@ -37,7 +37,7 @@
                 <div class="row wrap justify-center pics-mobile mobile-only">
                     <q-card flat align="center" class="col-xs-12">
                         <q-card-media>
-                            <img src="~statics/jersey.jpg" class="responsive" alt="Jersey">
+                            <img src="~statics/merch/jersey.jpg" class="responsive" alt="Jersey">
                         </q-card-media>
                         <q-card-title class="black-text">
                             Ride For Hope Idaho Jersey </q-card-title>

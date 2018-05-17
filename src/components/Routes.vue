@@ -113,10 +113,6 @@
         border: 5px solid black;
     }
 
-    .routes {
-        background-image: url("~statics/triangular.png")
-    }
-
     .promo {
         text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
     }

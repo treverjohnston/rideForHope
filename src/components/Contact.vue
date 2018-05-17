@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="ride-back">
+    <q-layout class="black">
         <div class="row justify-center">
             <div class="col-xs-11 col-md-10 black-back shadow-24">
                 <div class="row wrap justify-center">
@@ -12,7 +12,7 @@
                 </div>
                 <div class="row justify-center bot desktop-only xs-gutter">
                     <div class="col-xs-5 self-center space">
-                        <img src="statics/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
+                        <img src="statics/logos/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
                     </div>
                     <div class="col-xs-5 self-center">
                         <q-input v-model="name" float-label="Name" name="name" type="text" />
@@ -33,7 +33,7 @@
                         <q-btn @click="send" class="full-width">Send</q-btn>
                     </div>
                     <div class="col-xs-10 bot">
-                        <img src="statics/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
+                        <img src="statics/logos/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
                     </div>
                 </div>
             </div>
@@ -121,7 +121,4 @@
         width: 20%
     }
 
-    .contact {
-        background-image: url("~statics/triangular.png")
-    }
 </style>

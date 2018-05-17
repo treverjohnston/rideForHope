@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="ride-back">
+    <q-layout class="black">
         <div class="row wrap justify-center">
             <div class="col-xs-11 col-md-10 black-back shadow-24 text-center">
                 <h3 class="desktop-only">Packet Pick Up</h3>
@@ -83,7 +83,4 @@
         width: 20%
     }
 
-    .contact {
-        background-image: url("~statics/triangular.png")
-    }
 </style>

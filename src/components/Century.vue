@@ -1,5 +1,5 @@
 <template>
-    <q-layout class="ride-back">
+    <q-layout class="black">
         <div class="row justify-center">
             <div class="col-xs-11 col-md-10 shadow-24 black-back">
                 <div class="row wrap justify-center">
@@ -207,7 +207,5 @@
 
     }
 
-    .century {
-        background-image: url("~statics/triangular.png");
-    }
+   
 </style>

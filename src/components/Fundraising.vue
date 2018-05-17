@@ -84,7 +84,4 @@
             width: 20%
         }
     
-        .contact {
-            background-image: url("~statics/triangular.png")
-        }
     </style>

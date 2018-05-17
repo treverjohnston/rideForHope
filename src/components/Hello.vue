@@ -1,18 +1,18 @@
 <template>
-  <q-layout ref="layout" class="back" view="lHh Lpr fff" :left-class="{'bg-grey-2': true}">
+  <q-layout ref="layout" class="back ride-back" view="lHh Lpr fff" :left-class="{'bg-grey-2': true}">
     <q-toolbar class="head">
       <q-btn class="mobile-only" flat @click="$refs.layout.toggleLeft()">
         <q-icon name="menu" />
       </q-btn>
       <q-btn @click="$router.push('/')">
-        <img src="statics/RFHIdahoLogo.png" alt="logo" class="mini">
+        <img src="statics/logos/RFHIdahoLogo.png" alt="logo" class="mini">
       </q-btn>
       <q-toolbar-title class="desktop-only">
         Ride For Hope Idaho
       </q-toolbar-title>
       <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
         <q-btn class="desktop-only" @click="launch('http://www.meridian-cycles.com/')">
-          <img class="meridian desktop-only" src="statics/meridian.png" alt="Meridian Cycles logo">
+          <img class="meridian desktop-only" src="statics/logos/meridian.png" alt="Meridian Cycles logo">
         </q-btn>
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
@@ -25,7 +25,7 @@
         </q-btn>
       </q-transition>
       <q-btn class="mobile-only">
-        <img class="meridian-mobile" @click="launch('http://www.meridian-cycles.com/')" src="statics/meridian.png" alt="Meridian Cycles logo">
+        <img class="meridian-mobile" @click="launch('http://www.meridian-cycles.com/')" src="statics/logos/meridian.png" alt="Meridian Cycles logo">
       </q-btn>
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
@@ -192,7 +192,7 @@
     </div>
     <div v-if="home">
       <div class="row justify-center">
-      <q-modal ref="charityModal">
+        <q-modal ref="charityModal">
           <div class="col-xs-10 text-center">
             <big class="text-bold">Join us at 10 Barrel Brewing Company June 5, 2018 from 5pm - 9pm for charity night!</big>
           </div>
@@ -204,7 +204,7 @@
             <q-btn class="cbtnm shadow-24 text-center desktop-only" @click="launch('https://10barrel.com/culture/charity-of-the-month/')">More Info</q-btn>
           </div>
         </q-modal>
-      <q-modal ref="charityModalMobile">
+        <q-modal ref="charityModalMobile">
           <div class="col-xs-10 text-center">
             <big class="text-bold">Join us at 10 Barrel Brewing Company June 5, 2018 from 5pm - 9pm for charity night!</big>
           </div>
@@ -217,7 +217,7 @@
           </div>
         </q-modal>
       </div>
-      <q-parallax :speed="1" :height="500" src="./statics/cover.jpg">
+      <q-parallax :speed="1" :height="500" src="./statics/backgrounds/cover.jpg">
         <div slot="loading">Loading...</div>
         <q-transition appear enter="slideInUp" leave="fadeOut">
           <div class="text-center">
@@ -248,7 +248,7 @@
           the underlying root cause of disease.
         </h6>
         <div class="text-center col-xs-12 col-md-4">
-          <img class="ride self-center xs-gutter" src="statics/RFHIdahoLogo.png" alt="ride for hope logo">
+          <img class="ride self-center xs-gutter" src="statics/logos/RFHIdahoLogo.png" alt="ride for hope logo">
         </div>
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
           <b>Ride For Hope Idaho</b> is committed to ensuring that 100% of participant fees and donations go directly to charity.
@@ -259,14 +259,14 @@
       <div class="row wrap">
         <div class="col-xs-12">
           <q-card-media overlay-position="full">
-            <q-parallax class="desktop-only" :speed=".7" :height="500" src="./statics/zoomout.jpg">
+            <q-parallax class="desktop-only" :speed=".7" :height="500" src="./statics/backgrounds/zoomout.jpg">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black">
                 </div>
               </q-transition>
             </q-parallax>
-            <q-parallax class="mobile-only" :speed=".7" :height="200" src="./statics/zoomout.jpg">
+            <q-parallax class="mobile-only" :speed=".7" :height="200" src="./statics/backgrounds/zoomout.jpg">
               <div slot="loading">Loading...</div>
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black">
@@ -283,8 +283,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 border desktop-only">
                   <q-card-media overlay-position="full">
-                    <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-                      <div slot="loading">Loading...</div>
+                    <q-parallax :speed="1" :height="260" src="">
                       <q-transition appear enter="slideInUp" leave="fadeOut">
                         <div class="black-back">
                         </div>
@@ -304,8 +303,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 border desktop-only">
                   <q-card-media overlay-position="full">
-                    <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-                      <div slot="loading">Loading...</div>
+                    <q-parallax :speed="1" :height="260" src="">
                       <q-transition appear enter="slideInUp" leave="fadeOut">
                         <div class="black-back">
                         </div>
@@ -326,8 +324,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 border desktop-only">
                   <q-card-media overlay-position="full">
-                    <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-                      <div slot="loading">Loading...</div>
+                    <q-parallax :speed="1" :height="260" src="">
                       <q-transition appear enter="slideInUp" leave="fadeOut">
                         <div class="black-back">
                         </div>
@@ -348,8 +345,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 border desktop-only">
                   <q-card-media overlay-position="full">
-                    <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-                      <div slot="loading">Loading...</div>
+                    <q-parallax :speed="1" :height="260" src="">
                       <q-transition appear enter="slideInUp" leave="fadeOut">
                         <div class="black-back">
                         </div>
@@ -374,8 +370,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
           <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-              <div slot="loading">Loading...</div>
+            <q-parallax :speed="1" :height="260" src="">
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
                 </div>
@@ -395,8 +390,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
           <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-              <div slot="loading">Loading...</div>
+            <q-parallax :speed="1" :height="260" src="">
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
                 </div>
@@ -417,8 +411,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
           <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-              <div slot="loading">Loading...</div>
+            <q-parallax :speed="1" :height="260" src="">
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
                 </div>
@@ -439,8 +432,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 border mobile-only">
           <q-card-media overlay-position="full">
-            <q-parallax :speed="1" :height="260" src="./statics/subtle.png">
-              <div slot="loading">Loading...</div>
+            <q-parallax :speed="1" :height="260" src="">
               <q-transition appear enter="slideInUp" leave="fadeOut">
                 <div class="black-back">
                 </div>
@@ -463,7 +455,7 @@
       <div v-scroll-fire="showVideos" class="row wrap justify-center gen">
         <div class="text-center col-xs-12 col-md-4 self-center">
           <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
-            <img class="gch responsive" src="statics/gch.png" alt="genesis community health logo">
+            <img class="gch responsive" src="statics/logos/gch.png" alt="genesis community health logo">
           </q-btn>
         </div>
         <h6 class="text-italic text-center light-paragraph col-xs-12 col-md-4 self-center text" data-x="80">
@@ -474,7 +466,7 @@
         </h6>
         <div class="text-center col-xs-12 col-md-4 self-center">
           <q-btn @click="launch('https://boiserm.org/')" flat>
-            <img class="responsive check" src="statics/brm.png" alt="Boise Rescue Mission Logo">
+            <img class="responsive check" src="statics/logos/brm.png" alt="Boise Rescue Mission Logo">
           </q-btn>
         </div>
       </div>
@@ -495,11 +487,11 @@
         <div class="col-xs-10 col-md-4 text-center self-center">
           <q-card-media @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')"
             class="mobile-only" overlay-postion="full">
-            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+            <img src="~statics/video_pics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
           </q-card-media>
           <q-btn flat @click="launch('//www.ktvb.com/news/health/free-primary-health-clinic-wants-to-take-on-more-patients/482912341')"
             class="shadow-24 two desktop-only ">
-            <img src="~statics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
+            <img src="~statics/video_pics/ktvb.jpg" alt="Genesis Info Video" class="responsive">
             <div class="otwo desktop-only">
               <h5>Genesis Community Healthcare Overview</h5>
             </div>
@@ -542,7 +534,7 @@
             </div>
             <div class="col-xs-6 col-md-3 self-center">
               <q-btn flat @click="launch('https://www.strava.com/clubs/302822')" flat>
-                <img class="strava" src="statics/strava.png" alt="strava logo">
+                <img class="strava" src="statics/logos/strava.png" alt="strava logo">
               </q-btn>
             </div>
             <div class="col-xs-6 col-md-3 mobile-only self-center">
@@ -554,7 +546,7 @@
               <!-- <hr class="hr"> -->
               <!-- <h5 class="text-bold text-italic">Veni Vidi Vici Sponsors</h5> -->
               <q-btn flat data-x="360" class="el" @click="launch('http://www.meridian-cycles.com/')">
-                <img class="meridian-big" src="statics/meridian.png" alt="Meridian Cycles logo">
+                <img class="meridian-big" src="statics/logos/meridian.png" alt="Meridian Cycles logo">
               </q-btn>
             </div>
             <div class="col-md-3 desktop-only self-center">
@@ -575,7 +567,7 @@
                 </div>
                 <div class="col-xs-12">
                   <q-btn flat @click="launch('https://www.cycleforindependence.org/')">
-                    <img class="meridian-big" src="statics/cfi.jpg" alt="Cycle for independence logo">
+                    <img class="meridian-big" src="statics/logos/cfi.jpg" alt="Cycle for independence logo">
                   </q-btn>
                 </div>
               </div>
@@ -767,12 +759,14 @@
 </script>
 
 <style scoped>
-  .space{
+  .space {
     margin: 1rem 0 1rem 0
   }
-  .charityModal{
+
+  .charityModal {
     background-color: rgba(0, 0, 0, 0.479);
   }
+
   .pad {
     padding-bottom: 1rem;
   }
@@ -1022,7 +1016,7 @@
 
   .spacer {
     padding: 0.5rem 0 0.5rem 0;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
   }
