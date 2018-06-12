@@ -22,6 +22,16 @@
                             </div>
                         </div>
                         <div class="row wrap justify-center">
+                                <div class="light-paragraph text-center col-xs-11 col-md-11 r-links">
+                                    <p>Registration opens at 5:30 AM</p>
+                                    <hr class="ihr">
+                                    <h4>Century Start Time</h4>
+                                    <h5>6:00 AM*</h5>
+                                    <hr class="ihr">
+                                    <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p>
+                                </div>
+                            </div>
+                        <div class="row wrap justify-center">
                             <h6 class="top  light-paragraph text-center col-xs-11 col-md-11 r-links">
                                 100 mile course. Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails
                                 are for sissys and blisters are braille for success. There are 6 rest stops with ample opportunity

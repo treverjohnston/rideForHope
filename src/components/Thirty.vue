@@ -22,6 +22,16 @@
                             </div>
                         </div>
                         <div class="row wrap justify-center">
+                                <div class="light-paragraph text-center col-xs-11 col-md-11 r-links">
+                                    <p>Registration opens at 5:30 AM</p>
+                                    <hr class="ihr">
+                                    <h4>31 Mile Start Time</h4>
+                                    <h5>10:00 AM*</h5>
+                                    <hr class="ihr">
+                                    <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p>
+                                </div>
+                            </div>
+                        <div class="row wrap justify-center">
                             <h6 class="top light-paragraph text-center col-xs-11 col-md-11 r-links">
                                 Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight
                                 those who want to establish a new 40k personal best. But you surely didn’t train all that

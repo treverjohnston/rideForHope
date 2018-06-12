@@ -22,6 +22,16 @@
                             </div>
                         </div>
                         <div class="row wrap justify-center">
+                            <div class="light-paragraph text-center col-xs-11 col-md-11 r-links">
+                                <p>Registration opens at 5:30 AM</p>
+                                <hr class="ihr">
+                                <h4>18 Mile Start Time</h4>
+                                <h5>10:30 AM*</h5>
+                                <hr class="ihr">
+                                <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p>
+                            </div>
+                        </div>
+                        <div class="row wrap justify-center">
                             <h6 class="light-paragraph text-center col-xs-11 col-md-11 r-links">
                                 Flat and mellow ride through farmland with one rest stop half-way through course. Race with the bumble bees, fly wth the
                                 birds and burn up the road with with human powered speed! This is a “honey” of a course and
@@ -215,5 +225,4 @@
         background-color: rgba(0, 128, 128, 0.6);
 
     }
-
 </style>

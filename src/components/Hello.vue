@@ -194,26 +194,35 @@
       <div class="row justify-center">
         <q-modal ref="charityModal">
           <div class="col-xs-10 text-center">
-            <big class="text-bold">Join us at 10 Barrel Brewing Company June 5, 2018 from 5pm - 9pm for charity night!</big>
-          </div>
+              <big class="text-bold">Packet Pick Up</big>
+            </div>
+          <div class="col-xs-10 text-center space">
+              <big>
+                  <b>Date: </b>Friday, June 22
+              </big>          </div>
           <div class="col-xs-10 text-center">
-            <big class="text-bold">100% of the profits go to Ride For Hope Idaho!</big>
+            <big class=""><b>Time: </b>2pm-8pm</h5></big>
           </div>
           <div class="col-xs-4 text-center">
+            <q-btn class="cbtnm shadow-24 text-center desktop-only" @click="$router.push('packet')">More Info</q-btn>
             <q-btn class="cbtnm shadow-24 text-center desktop-only" @click="$refs.charityModal.close()">Dismiss</q-btn>
-            <q-btn class="cbtnm shadow-24 text-center desktop-only" @click="launch('https://10barrel.com/culture/charity-of-the-month/')">More Info</q-btn>
           </div>
         </q-modal>
         <q-modal ref="charityModalMobile">
           <div class="col-xs-10 text-center">
-            <big class="text-bold">Join us at 10 Barrel Brewing Company June 5, 2018 from 5pm - 9pm for charity night!</big>
+            <big class="text-bold">Packet Pick Up</big>
           </div>
           <div class="col-xs-10 text-center space">
-            <big class="text-bold">100% of the profits go to Ride For Hope Idaho!</big>
+              <big>
+                  <b>Date: </b>Friday, June 22
+              </big>
+          </div>
+          <div class="col-xs-10 text-center space">
+            <big class=""><b>Time: </b>2pm-8pm</h5></big>
           </div>
           <div class="col-xs-4 text-center">
+            <q-btn class="cbtnm shadow-24 text-center" @click="$router.push('packet')">More Info</q-btn>
             <q-btn class="cbtnm shadow-24 text-center" @click="$refs.charityModalMobile.close()">Dismiss</q-btn>
-            <q-btn class="cbtnm shadow-24 text-center" @click="launch('https://10barrel.com/culture/charity-of-the-month/')">More Info</q-btn>
           </div>
         </q-modal>
       </div>
@@ -225,7 +234,7 @@
               <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
               <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
               <h2 class="text-bold">Kuna, ID</h2>
-              <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">10 Barrel Charity Month Information</q-btn>
+              <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn>
             </div>
             <div>
               <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn>
@@ -236,7 +245,7 @@
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
           <h4 class="text-bold">2018 Event Date: Saturday, June 23</h4>
           <h4 class="text-bold">Kuna, ID</h4>
-          <q-btn @click="$refs.charityModalMobile.open()" class="cbtnm shadow-24 text-center">10 Barrel Charity Month Information</q-btn>
+          <q-btn @click="$refs.charityModalMobile.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn>
         </div>
         <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center mobile-only">Ride Day Information</q-btn>
       </q-parallax>

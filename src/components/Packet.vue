@@ -5,7 +5,15 @@
                 <h3 class="desktop-only">Packet Pick Up</h3>
                 <h4 class="mobile-only">Packet Pick Up</h4>
                 <hr class="ihr">
-               <p>Check back soon for information about Packet Pick Up</p>
+                <h5>
+                    <b>Date: </b>Friday, June 22</h5>
+                <h5>
+                    <b>Time: </b>2pm-8pm</h5>
+                <hr class="ihr">
+                <h4>Meridian Cycles</h4>
+                <h5>1203 N Main</h5>
+                <h5> Meridian, ID</h5>
+                <h5>83642</h5>
             </div>
 
 
@@ -82,5 +90,4 @@
     .hr {
         width: 20%
     }
-
 </style>

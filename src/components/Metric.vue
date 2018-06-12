@@ -23,6 +23,16 @@
                             </div>
                         </div>
                         <div class="row wrap justify-center">
+                                <div class="light-paragraph text-center col-xs-11 col-md-11 r-links">
+                                    <p>Registration opens at 5:30 AM</p>
+                                    <hr class="ihr">
+                                    <h4>Metric Century Start Time</h4>
+                                    <h5>8:00 AM*</h5>
+                                    <hr class="ihr">
+                                    <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p>
+                                </div>
+                            </div>
+                        <div class="row wrap justify-center">
                             <h6 class="top light-paragraph text-center col-xs-11 col-md-11 r-links">
                                 62.8 miles long (because 62.9 would just be CRAZY!). Completely redesigned course for 2018. This is a ride for true bikers
                                 (i.e. no longer embarrassed to wear spandex). The route Includes rolling hills, scenic overlooks,

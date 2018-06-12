@@ -13,13 +13,13 @@
                         <!-- <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p> -->
                         <hr class="ihr">
                         <h5>Century Start Time</h5>
-                        <p>6:30 AM*</p>
+                        <p>6:00 AM*</p>
                         <h5>Metric Century Start Time</h5>
-                        <p>8:30 AM*</p>
+                        <p>8:00 AM*</p>
                         <h5>31 Mile Start Time</h5>
-                        <p>10:30 AM*</p>
+                        <p>10:00 AM*</p>
                         <h5>18 Mile Start Time</h5>
-                        <p>11:00 AM*</p>
+                        <p>10:30 AM*</p>
                         <hr class="ihr">
                         <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p>
                     </div>

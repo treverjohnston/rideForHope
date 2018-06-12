@@ -60,7 +60,7 @@
             };
         },
         validations: {
-            name: { required, alpha },
+            name: { required },
             email: { required, email },
             subject: { required },
             message: { required }
