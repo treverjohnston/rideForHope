@@ -42,52 +42,80 @@ var store = new vuex.Store({
             //     description: '(Starlite Lazer 20 Youth Bike (Made to Order: Girls or Boys, various colors available)'
             // },
             {
-                link: 'https://res.cloudinary.com/treverscloud/image/upload/v1511556283/Ride/light.jpg',
-                donator: 'George\'s Cycles',
-                description: '(NightRider Headlight/Tail Light)'
+                link: '../statics/raffle/IMG_1671.jpg',
+                donator: '',
+                description: ''
             },
             {
-                link: 'https://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/cycle2.jpg',
-                donator: 'Anonymous',
-                description: '(Woman\'s Del Sol 3spd Deluxe Cruiser)'
+                link: '../statics/raffle/IMG_1672.jpg',
+                donator: '',
+                description: ''
             },
             {
-                link: 'https://res.cloudinary.com/treverscloud/image/upload/v1511556283/Ride/fitbit.jpg',
-                donator: 'Anonymous',
-                description: '(FitBit Charge 2)'
+                link: '../statics/raffle/IMG_1673.jpg',
+                donator: '',
+                description: ''
             },
             {
-                link: 'https://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/pump.jpg',
-                donator: 'Reed Cycle',
-                description: '(Blackburn Bike Pump)'
+                link: '../statics/raffle/IMG_1674.jpg',
+                donator: '',
+                description: ''
             },
             {
-                link: 'https://res.cloudinary.com/treverscloud/image/upload/v1511556284/Ride/reed.jpg',
-                donator: 'Reed Cycle',
-                description: '($50 Gift Certificate)'
+                link: '../statics/raffle/IMG_1675.jpg',
+                donator: '',
+                description: ''
             },
             {
-                link: 'https://res.cloudinary.com/treverscloud/image/upload/v1511556283/Ride/shirt.jpg',
-                donator: 'Reed Cycle',
-                description: '(Smith Sweatshirt & Dakine Bage)'
+                link: '../statics/raffle/IMG_1676.jpg',
+                donator: '',
+                description: ''
             },
             {
-                link: 'https://res.cloudinary.com/treverscloud/image/upload/v1511556283/Ride/spud.jpg',
-                donator: 'Idaho Candy Company',
-                description: '(24 Idaho Spud Bars)'
+                link: '../statics/raffle/IMG_1677.jpg',
+                donator: '',
+                description: ''
             },
             {
-                link: 'https://static.wixstatic.com/media/a44970_a8eed31add7e419995034cd868029ac8~mv2.png/v1/fill/w_167,h_167,al_c,lg_1/a44970_a8eed31add7e419995034cd868029ac8~mv2.png',
-                donator: 'Jack In The Box',
-                description: '(50 Free Meals, raffled in 10 meal increments)'
+                link: '../statics/raffle/IMG_1678.jpg',
+                donator: '',
+                description: ''
+            },
+            {
+                link: '../statics/raffle/IMG_1679.jpg',
+                donator: '',
+                description: ''
+            },
+            {
+                link: '../statics/raffle/IMG_1680.jpg',
+                donator: '',
+                description: ''
+            },
+            {
+                link: '../statics/raffle/IMG_1681.jpg',
+                donator: '',
+                description: ''
+            },
+            {
+                link: '../statics/raffle/IMG_1682.jpg',
+                donator: '',
+                description: ''
+            },
+            {
+                link: '../statics/raffle/IMG_1683.jpg',
+                donator: '',
+                description: ''
+            },
+            {
+                link: '../statics/raffle/IMG_1684.jpg',
+                donator: '',
+                description: ''
             },
         ],
         pictures: [
             'statics/ride/IMG_8884.JPG.jpg',
             'statics/ride/IMG_8882.JPG.jpg',
-            // 'statics/ride/IMG_8815.JPG.jpg',
             'statics/ride/IMG_8818.JPG.jpg',
-            // 'statics/ride/IMG_8876.JPG.jpg',
             'statics/ride/IMG_8894.JPG.jpg'
         ],
         gallery: []

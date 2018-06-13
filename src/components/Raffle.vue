@@ -43,7 +43,7 @@
                     </q-card-main>
                 </q-card>
             </div>
-        </q-transition>
+        </q-transition> -->
         <div class="row wrap justify-center pics desktop-only">
             <q-card v-for="item in items" flat align="center" class="col-xs-12 col-lg-3">
                 <q-card-media>
@@ -57,7 +57,7 @@
                 </q-card-main>
             </q-card>
         </div>
-        <div class="row wrap justify-center mobile-only">
+        <!-- <div class="row wrap justify-center mobile-only">
             <q-card align="center" class="col-xs-11 col-sm-8 col-lg-3 pics-mobile">
                 <q-card-media>
                     <img src="https://static.wixstatic.com/media/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.jpg/v1/fill/w_413,h_218,al_c,q_80,usm_0.66_1.00_0.01/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.webp"
@@ -70,7 +70,7 @@
                     <p>(Starlite Lazer 20 Youth Bike (Made to Order: Girls or Boys, various colors available)</p>
                 </q-card-main>
             </q-card>
-        </div>
+        </div> -->
         <div class="row wrap justify-center mobile-only">
             <q-card v-for="item in items" align="center" class="col-xs-11 col-sm-8 col-lg-3 pics-mobile">
                 <q-card-media>
@@ -83,7 +83,7 @@
                     <p>{{item.description}}</p>
                 </q-card-main>
             </q-card>
-        </div> -->
+        </div>
     </q-layout>
 </template>
 
