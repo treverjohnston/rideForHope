@@ -20,7 +20,7 @@
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')"
+        <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventSearch.aspx%3Fterm%3Dride%20for%20hope%23')"
           color="red">Register
         </q-btn>
       </q-transition>
@@ -100,7 +100,7 @@
           <hr class="tabhr">
         </q-side-link>
         <!-- <q-side-link> -->
-        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')"
+        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventSearch.aspx%3Fterm%3Dride%20for%20hope%23')"
           class="side register" label="Register" />
         <!-- </q-side-link> -->
         <hr class="tabhrs">
@@ -127,7 +127,7 @@
             </q-side-link>
           </q-collapsible>
           <hr class="tabhrs">
-          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')"
+          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventSearch.aspx%3Fterm%3Dride%20for%20hope%23')"
             class="small-side register" label="Register" />
           <hr class="tabhrs">
           <q-side-link to="packet">
@@ -192,16 +192,30 @@
     </div>
     <div v-if="home">
       <div class="row justify-center">
+        <q-modal ref="charitySplash" class="text-center">
+          <div class="col-xs-10">
+            <h6 class="q-title">Join us at
+              <a href="https://www.payettebrewing.com/#hero" target="_blank">Payette Brewing Company</a> July 16th, 2018 for a charity night! Stay tuned for more information on this post-ride
+              bash!
+            </h6>
+            <h6 class="q-title">A special thanks to
+              <a href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018</h6>
+            <q-btn class="cbtnm shadow-24 text-center" @click="$refs.charitySplash.close()">Dismiss</q-btn>
+          </div>
+        </q-modal>
         <q-modal ref="charityModal">
           <div class="col-xs-10 text-center">
-              <big class="text-bold">Packet Pick Up</big>
-            </div>
+            <big class="text-bold">Packet Pick Up</big>
+          </div>
           <div class="col-xs-10 text-center space">
-              <big>
-                  <b>Date: </b>Friday, June 22
-              </big>          </div>
+            <big>
+              <b>Date: </b>Friday, June 22
+            </big>
+          </div>
           <div class="col-xs-10 text-center">
-            <big class=""><b>Time: </b>2pm-8pm</h5></big>
+            <big class="">
+              <b>Time: </b>2pm-8pm</h5>
+            </big>
           </div>
           <div class="col-xs-4 text-center">
             <q-btn class="cbtnm shadow-24 text-center desktop-only" @click="$router.push('packet')">More Info</q-btn>
@@ -213,12 +227,14 @@
             <big class="text-bold">Packet Pick Up</big>
           </div>
           <div class="col-xs-10 text-center space">
-              <big>
-                  <b>Date: </b>Friday, June 22
-              </big>
+            <big>
+              <b>Date: </b>Friday, June 22
+            </big>
           </div>
           <div class="col-xs-10 text-center space">
-            <big class=""><b>Time: </b>2pm-8pm</h5></big>
+            <big class="">
+              <b>Time: </b>2pm-8pm</h5>
+            </big>
           </div>
           <div class="col-xs-4 text-center">
             <q-btn class="cbtnm shadow-24 text-center" @click="$router.push('packet')">More Info</q-btn>
@@ -226,7 +242,7 @@
           </div>
         </q-modal>
       </div>
-      <q-parallax :speed="1" :height="500" src="./statics/backgrounds/cover.jpg">
+      <q-parallax :speed="1" :height="500" src="./statics/backgrounds/back.jpg">
         <div slot="loading">Loading...</div>
         <q-transition appear enter="slideInUp" leave="fadeOut">
           <div class="text-center">
@@ -234,10 +250,14 @@
               <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
               <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
               <h2 class="text-bold">Kuna, ID</h2>
-              <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn>
+
+              <h6 class="q-title">A special thanks to
+                <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds
+                to Ride For Hope Idaho!</h6>
             </div>
             <div>
-              <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn>
+              <!-- <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
+              <!-- <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn> -->
             </div>
           </div>
         </q-transition>
@@ -245,11 +265,15 @@
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
           <h4 class="text-bold">2018 Event Date: Saturday, June 23</h4>
           <h4 class="text-bold">Kuna, ID</h4>
-          <q-btn @click="$refs.charityModalMobile.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn>
+          <h6 class="q-title">A special thanks to
+            <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds to
+            Ride For Hope Idaho!</h6>
         </div>
-        <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center mobile-only">Ride Day Information</q-btn>
-      </q-parallax>
 
+          <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center">Ride Day Information</q-btn>
+          <q-btn @click="packetSwal()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn>
+          <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
+      </q-parallax>
       <div class="spacer row wrap">
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
           <b>Ride For Hope Idaho</b> is a charity bicycle event with the firm belief that quality healthcare should be accessible
@@ -666,7 +690,8 @@
     },
     data() {
       return {
-        showVid: false
+        showVid: false,
+        showSplash: false
       };
     },
     computed: {
@@ -689,6 +714,9 @@
       },
       showVideos() {
         this.showVid = true;
+      },
+      sesame() {
+        this.showSplash = true;
       },
       animate() {
         anime({
@@ -753,6 +781,44 @@
                 break;
             }
           })
+      },
+      charitySwal() {
+        return swal({
+          title: 'Charity Day',
+          text: 'Join us at Payette Brewing Company July 16th, 2018 for a charity night! Stay tuned for more information on this post-ride bash!',
+          buttons: {
+            // site: { text: "Payette Brewing Company", value: "site" },
+            dismiss: { text: "Dismiss", value: "dismiss" }
+          }
+        })
+          .then((value) => {
+            switch (value) {
+              case 'site':
+                this.launch('https://www.payettebrewing.com')
+                break;
+              case 'dismiss':
+                break;
+            }
+          })
+      },
+      packetSwal() {
+        return swal({
+          title: 'Packet Pick Up',
+          text: 'Friday, June 22 from 2pm-8pm at Meridian Cycles',
+          buttons: {
+            site: { text: "More Information", value: "site" },
+            dismiss: { text: "Dismiss", value: "dismiss" }
+          }
+        })
+          .then((value) => {
+            switch (value) {
+              case 'site':
+                this.$router.push('packet')
+                break;
+              case 'dismiss':
+                break;
+            }
+          })
       }
     },
     directives: {
@@ -762,12 +828,17 @@
     },
     mounted() {
       this.$refs.layout.hideLeft();
+      // this.charitySwal();
     },
 
   };
 </script>
 
 <style scoped>
+  .noHighlight {
+    color: black;
+  }
+
   .space {
     margin: 1rem 0 1rem 0
   }

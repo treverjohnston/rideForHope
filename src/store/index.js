@@ -9,6 +9,13 @@ import { Toast } from 'quasar'
 // var baseUrl = production ? '//inspireq.herokuapp.com/' : '//localhost:3000/';
 
 vue.use(vuex)
+import VueAnalytics from 'vue-analytics'
+
+vue.use(VueAnalytics, {
+    id: 'UA-120904325-1',
+    checkDuplicatedScript: true,
+    router
+})
 
 var store = new vuex.Store({
     state: {
@@ -36,11 +43,11 @@ var store = new vuex.Store({
 
         ],
         raffles: [
-            // {
-            //     link: 'https://static.wixstatic.com/media/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.jpg/v1/fill/w_413,h_218,al_c,q_80,usm_0.66_1.00_0.01/a44970_f74796a9307f49fcb7522d98ce8d751e~mv2.webp',
-            //     donator: 'Meridian Cycles',
-            //     description: '(Starlite Lazer 20 Youth Bike (Made to Order: Girls or Boys, various colors available)'
-            // },
+            {
+                link: './statics/raffle/IMG_1576.png',
+                donator: '',
+                description: ''
+            },
             {
                 link: './statics/raffle/IMG_1671.png',
                 donator: '',

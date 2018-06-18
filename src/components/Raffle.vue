@@ -23,7 +23,7 @@
                 <hr color="red" class="hr">
                 <h4 class="headline text-bold">RAFFLE ITEMS</h4>
                 <h5 class="fancy ">Raffle tickets are available for purchase: </h5><h5>$2 for 1 ticket</h5><h5>$5 for 3 tickets</h5>
-                <h5 class="fancy">Additional meal tickets are also available for $5</h5>
+                <h5 class="fancy">Additional meal tickets are also available $5</h5>
                 <q-btn class="btn shadow-24" no-caps @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Purchase Raffle Tickets</q-btn>
                 <hr color="red" class="hr">
             </div>
