@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="row justify-center">
-                    <div class="col-xs-12 col-md-4">
+                    <div class="col-xs-12 col-lg-4 r-links">
                         <div class="row wrap justify-center">
                             <div class="col-xs-11 r-links text-center">
                                 <q-btn no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')">Register Now
@@ -24,7 +24,7 @@
                         </div>
                         <div class="row wrap justify-center">
                                 <div class="light-paragraph text-center col-xs-11 col-md-11 r-links">
-                                    <p>Registration opens at 5:30 AM</p>
+                                    <p>Registration opens at 5:00 AM</p>
                                     <hr class="ihr">
                                     <h4>Metric Century Start Time</h4>
                                     <h5>8:00 AM*</h5>
@@ -85,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-8">
+                    <div class="col-xs-12 col-lg-8 top-marg">
                         <div class="row wrap justify-center">
                             <q-card class="route col-xs-11 col-md-11 shadow-24">
                                 <q-transition appear enter="zoomIn" leave="fadeOut">
@@ -96,8 +96,10 @@
                                         <div align="center" class="white-text" label="View More Map Options">
                                             <q-btn class="btn" @click="launch('//www.mapmyride.com/routes/view/981667107')" no-caps>Map My Ride</q-btn>
                                             <q-btn class="btn" @click="launch('//www.strava.com/routes/4093800')" no-caps>Strava</q-btn>
-                                            <q-btn class="btn" @click="launch('//connect.garmin.com/modern/course/16760339')" no-caps>Garmin</q-btn>
+                                            <q-btn class="btn" @click="launch('https://connect.garmin.com/modern/course/19154726')" no-caps>Garmin</q-btn>
                                             <q-btn class="btn" @click="launch('//ridewithgps.com/routes/26451173')" no-caps>Ride With GPS</q-btn>
+                                            <q-btn class="btn" @click="launch('./statics/map/Metric.pdf')" no-caps>PDF Printout</q-btn>
+
                                         </div>
                                     </div>
                                 </q-transition>
@@ -175,7 +177,24 @@
             launch(url) {
                 openURL(url)
             },
-
+            constructionSwal() {
+                return swal({
+                    title: 'Route Changes',
+                    text: 'Due to construction, ride-day routes may vary from those currently posted.  Check back soon for updated routes.',
+                    buttons: {
+                        dismiss: { text: "Dismiss", value: "dismiss" }
+                    }
+                })
+                    .then((value) => {
+                        switch (value) {
+                            case 'dismiss':
+                                break;
+                        }
+                    })
+            }
+        },
+        mounted(){
+            // this.constructionSwal();
         }
     }
 </script>

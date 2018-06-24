@@ -9,10 +9,13 @@
   /*
      * Root component
      */
-  export default {};
+  export default {  };
 </script>
 
 <style>
+  .top-marg{
+    margin-top: 5rem;
+  }
    .modal-content {
     background-color: rgba(0, 0, 0, .9);
     color: white;
@@ -41,13 +44,13 @@
 
   .r-links {
     margin-top: 3rem;
-    background-color: rgba(224, 226, 226, 0.65);
     padding: .5rem;
     border-radius: 15px;
+    background-color: rgba(224, 226, 226, 0.65);
   }
 
   .swal-modal {
-    background-color: rgba(0, 0, 0, 0.767);
+    background-color: rgba(0, 0, 0, 0.905);
 
   }
 

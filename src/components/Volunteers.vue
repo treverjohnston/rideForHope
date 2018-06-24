@@ -18,7 +18,7 @@
                         <q-btn @click="send">Send</q-btn>
                     </div>
                     <div class="col-xs-7">
-                        <h6 class="light-paragraph text-center red">Thanks to all of you who are volunteering ---- we couldn't do this without you!</h6>
+                        <h6 class="light-paragraph text-center">Thanks to all of you who are volunteering ---- we couldn't do this without you!</h6>
                         <div id="bar" class="row wrap justify center">
                             <div v-for="pic in pictures" class="col-xs-6">
                                 <img data-x="80" class="el test" :src="pic" alt="ride picture">

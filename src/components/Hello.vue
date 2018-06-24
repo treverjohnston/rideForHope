@@ -20,7 +20,7 @@
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventSearch.aspx%3Fterm%3Dride%20for%20hope%23')"
+        <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
           color="red">Register
         </q-btn>
       </q-transition>
@@ -30,7 +30,7 @@
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
-      <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')"
+      <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
       />
       <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
       />
@@ -55,8 +55,8 @@
             </q-tab>
           </q-item-main>
           <q-item-main>
-            <q-tab @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')"
-              name="home" class="tab" slot="title" color="red" label="Register" />
+            <q-tab @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" name="home"
+              class="tab" slot="title" color="red" label="Register" />
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Packet Pick Up" name="rider" to="packet" />
@@ -100,8 +100,8 @@
           <hr class="tabhr">
         </q-side-link>
         <!-- <q-side-link> -->
-        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventSearch.aspx%3Fterm%3Dride%20for%20hope%23')"
-          class="side register" label="Register" />
+        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" class="side register"
+          label="Register" />
         <!-- </q-side-link> -->
         <hr class="tabhrs">
         <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" class="side"
@@ -127,8 +127,8 @@
             </q-side-link>
           </q-collapsible>
           <hr class="tabhrs">
-          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventSearch.aspx%3Fterm%3Dride%20for%20hope%23')"
-            class="small-side register" label="Register" />
+          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" class="small-side register"
+            label="Register" />
           <hr class="tabhrs">
           <q-side-link to="packet">
             <q-item-main class="small-side" label="Packet Pick Up" />
@@ -248,12 +248,15 @@
           <div class="text-center">
             <div class="promo text-center desktop-only">
               <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
-              <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
-              <h2 class="text-bold">Kuna, ID</h2>
+              <h1 class="text-bold">Ride For Hope Idaho</h1>
+              <!-- <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
+              <h2 class="text-bold">Kuna, ID</h2> -->
 
               <h6 class="q-title">A special thanks to
                 <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds
                 to Ride For Hope Idaho!</h6>
+                <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
+
             </div>
             <div>
               <!-- <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
@@ -263,16 +266,17 @@
         </q-transition>
         <div class="promo text-center mobile-only">
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
-          <h4 class="text-bold">2018 Event Date: Saturday, June 23</h4>
-          <h4 class="text-bold">Kuna, ID</h4>
+          <h4 class="text-bold">Ride For Hope Idaho</h4>
+          <!-- <h4 class="text-bold">2018 Event Date: Saturday, June 23</h4>
+          <h4 class="text-bold">Kuna, ID</h4> -->
           <h6 class="q-title">A special thanks to
             <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds to
             Ride For Hope Idaho!</h6>
+            <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
         </div>
 
-          <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center">Ride Day Information</q-btn>
-          <q-btn @click="packetSwal()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn>
-          <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
+        <!-- <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center">Ride Day Information</q-btn>
+          <q-btn @click="packetSwal()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
       </q-parallax>
       <div class="spacer row wrap">
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
@@ -754,10 +758,10 @@
           .then((value) => {
             switch (value) {
               case 'sponsor':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')
                 break;
               case 'give':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')
                 break;
             }
           })
@@ -774,10 +778,10 @@
           .then((value) => {
             switch (value) {
               case 'sponsor':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')
                 break;
               case 'give':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')
                 break;
             }
           })
@@ -819,6 +823,21 @@
                 break;
             }
           })
+      },
+      welcomeSwal() {
+        return swal({
+          title: 'Thank You!',
+          text: 'Thank you to all of the amazing volunteers and riders who helped make the 2018 Ride For Hope Idaho the most successful ever! The fun is not over yet though! Join us July 16th at Payette Brewing Company for a charity night benefiting Ride For Hope Idaho!',
+          buttons: {
+            dismiss: { text: "Dismiss", value: "dismiss" }
+          }
+        })
+          .then((value) => {
+            switch (value) {
+              case 'dismiss':
+                break;
+            }
+          })
       }
     },
     directives: {
@@ -828,7 +847,7 @@
     },
     mounted() {
       this.$refs.layout.hideLeft();
-      // this.charitySwal();
+      this.welcomeSwal();
     },
 
   };
@@ -836,7 +855,7 @@
 
 <style scoped>
   .noHighlight {
-    color: black;
+    color: white;
   }
 
   .space {
@@ -1146,8 +1165,10 @@
   .promo {
     /* margin-top: -6rem; */
     padding: 1rem 2rem 1rem 2rem;
-    background-color: rgba(0, 128, 128, 0.6);
-    color: black;
+    /* background-color: rgba(0, 128, 128, 0.803); */
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    /* color: black; */
     border-radius: 5px;
   }
 

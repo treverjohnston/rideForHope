@@ -4,10 +4,10 @@
             <q-transition appear enter="fadeIn" leave="fadeOut">
                 <div class="col-lg-8 top text-center">
                     <hr color="red" class="hr">
-                    <h2 class="headline text-bold">RAFFLE ITEMS</h2>
-                    <h4 class="fancy">Raffle tickets are available for purchase: </h4><h4>$2 for 1 ticket</h4><h4>$5 for 3 tickets</h4>
+                    <h2 class="headline text-bold">2018 RAFFLE ITEMS</h2>
+                    <!-- <h4 class="fancy">Raffle tickets are available for purchase: </h4><h4>$2 for 1 ticket</h4><h4>$5 for 3 tickets</h4>
                     <h4 class="fancy">Additional meal tickets are also available for $5</h4>
-                    <q-btn class="btn shadow-24" no-caps @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Purchase Raffle Tickets</q-btn>
+                    <q-btn class="btn shadow-24" no-caps @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Purchase Raffle Tickets</q-btn> -->
                     <hr color="red" class="hr">
                     <!-- <h4 class="text-italic">
                         Congratulations to 2017 Raffle item winners!!!
@@ -21,10 +21,10 @@
         <div class="row wrap justify-center mobile-only">
             <div class="col-xs-11 top text-center">
                 <hr color="red" class="hr">
-                <h4 class="headline text-bold">RAFFLE ITEMS</h4>
-                <h5 class="fancy ">Raffle tickets are available for purchase: </h5><h5>$2 for 1 ticket</h5><h5>$5 for 3 tickets</h5>
+                <h4 class="headline text-bold">2018 RAFFLE ITEMS</h4>
+                <!-- <h5 class="fancy ">Raffle tickets are available for purchase: </h5><h5>$2 for 1 ticket</h5><h5>$5 for 3 tickets</h5>
                 <h5 class="fancy">Additional meal tickets are also available $5</h5>
-                <q-btn class="btn shadow-24" no-caps @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Purchase Raffle Tickets</q-btn>
+                <q-btn class="btn shadow-24" no-caps @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Purchase Raffle Tickets</q-btn> -->
                 <hr color="red" class="hr">
             </div>
         </div>

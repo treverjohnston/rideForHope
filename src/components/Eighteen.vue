@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="row justify-center">
-                    <div class="col-xs-12 col-md-4">
+                    <div class="col-xs-12 col-lg-4 r-links">
                         <div class="row wrap justify-center">
                             <div class="col-xs-11 text-center r-links">
                                 <q-btn no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')">Register Now
@@ -23,7 +23,7 @@
                         </div>
                         <div class="row wrap justify-center">
                             <div class="light-paragraph text-center col-xs-11 col-md-11 r-links">
-                                <p>Registration opens at 5:30 AM</p>
+                                <p>Registration opens at 5:00 AM</p>
                                 <hr class="ihr">
                                 <h4>18 Mile Start Time</h4>
                                 <h5>10:30 AM*</h5>
@@ -74,7 +74,7 @@
                         </div>
 
                     </div>
-                    <div class="col-xs-12 col-md-8">
+                    <div class="col-xs-12 col-lg-7 top-marg">
                         <div class="row wrap justify-center">
                             <q-card class="route col-xs-11 col-md-11 shadow-24">
                                 <q-transition appear enter="zoomIn" leave="fadeOut">
@@ -85,8 +85,9 @@
                                         <div align="center" class="white-text small" label="View More Map Options">
                                             <q-btn class="btn" @click="launch('//www.mapmyride.com/routes/view/996049745')" no-caps>Map My Ride</q-btn>
                                             <q-btn class="btn" @click="launch('//www.strava.com/routes/4176344')" no-caps>Strava</q-btn>
-                                            <q-btn class="btn" @click="launch('//connect.garmin.com/modern/course/16760460')" no-caps>Garmin</q-btn>
+                                            <q-btn class="btn" @click="launch('https://connect.garmin.com/modern/course/19154844')" no-caps>Garmin</q-btn>
                                             <q-btn class="btn" @click="launch('//ridewithgps.com/routes/12352336')" no-caps>Ride With GPS</q-btn>
+                                            <q-btn class="btn" @click="launch('./statics/map/18.pdf')" no-caps>PDF Printout</q-btn>
                                         </div>
                                     </div>
                                 </q-transition>
@@ -173,13 +174,6 @@
 <style scoped>
     .last {
         margin-bottom: 1rem;
-    }
-
-    .r-links {
-        margin-top: 3rem;
-        background-color: rgba(224, 226, 226, 0.65);
-        padding: .5rem;
-        border-radius: 15px;
     }
 
     .rest {

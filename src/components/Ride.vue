@@ -9,7 +9,7 @@
                     <div class="col-xs-11 col-md-5 text-center self-center">
                         <h3 class="desktop-only">Ride Day Information</h3>
                         <h4 class="mobile-only">Ride Day Information</h4>
-                        <p>Registration opens at 5:30 AM</p>
+                        <p>Registration opens at 5:00 AM</p>
                         <!-- <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p> -->
                         <hr class="ihr">
                         <h5>Century Start Time</h5>
