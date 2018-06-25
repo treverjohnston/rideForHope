@@ -13,6 +13,9 @@
 </script>
 
 <style>
+  .white{
+    color: white;
+  }
   .top-marg{
     margin-top: 5rem;
   }

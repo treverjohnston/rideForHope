@@ -560,10 +560,10 @@
     <div class="footer text-center text-bold" slot="footer">
       <div class="row justify-center">
         <div class="col-xs-12">
-          <h3 class="text-center desktop-only">
+          <h3 class="text-center desktop-only white">
             Thank you for supporting Ride for Hope!
           </h3>
-          <h6 class="text-center mobile-only">
+          <h6 class="text-center mobile-only white">
             Thank you for supporting Ride for Hope!
           </h6>
         </div>
@@ -601,7 +601,7 @@
               <hr class="hr">
               <div class="row justify-center">
                 <div class="col-xs-12 pad">
-                  <small class="text-center">
+                  <small class="text-center white">
                     Be sure to check out this other great charity ride!
                   </small>
                 </div>
@@ -1111,7 +1111,7 @@
   }
 
   .footer {
-    background-color: rgb(17, 17, 17);
+    background-color: rgba(17, 17, 17, 0.88);
     color: rgb(180, 0, 0);
     padding-bottom: 3rem;
   }
