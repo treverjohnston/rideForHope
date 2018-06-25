@@ -248,15 +248,16 @@
           <div class="text-center">
             <div class="promo text-center desktop-only">
               <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
+              <hr>
               <h1 class="text-bold">Ride For Hope Idaho</h1>
-              <!-- <h2 class="text-bold">2018 Event Date: Saturday, June 23</h2>
-              <h2 class="text-bold">Kuna, ID</h2> -->
-
+              <!-- <hr> -->
+              <h2 class="text-bold">2019 Event Date: Saturday, June 22</h2>
+              <h2 class="text-bold">Kuna, ID</h2>
+              <hr>
               <h6 class="q-title">A special thanks to
                 <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds
                 to Ride For Hope Idaho!</h6>
-                <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
-
+              <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
             </div>
             <div>
               <!-- <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
@@ -266,13 +267,15 @@
         </q-transition>
         <div class="promo text-center mobile-only">
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
+          <hr>
           <h4 class="text-bold">Ride For Hope Idaho</h4>
-          <!-- <h4 class="text-bold">2018 Event Date: Saturday, June 23</h4>
-          <h4 class="text-bold">Kuna, ID</h4> -->
+          <h4 class="text-bold">2019 Event Date: Saturday, June 22</h4>
+          <h4 class="text-bold">Kuna, ID</h4>
+          <hr>
           <h6 class="q-title">A special thanks to
             <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds to
             Ride For Hope Idaho!</h6>
-            <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
+          <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
         </div>
 
         <!-- <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center">Ride Day Information</q-btn>
