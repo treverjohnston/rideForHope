@@ -26,13 +26,21 @@
     border-radius: 5px;
   }
   .ride-back {
-    background-image: url("https://res.cloudinary.com/treverscloud/image/upload/v1517856029/bw_icaeha.jpg");
+    /* background-image: url("https://res.cloudinary.com/treverscloud/image/upload/v1517856029/bw_icaeha.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
     /* text-shadow: 0 0 5px #fff; */
     color: black;
+
+    background: url(https://res.cloudinary.com/treverscloud/image/upload/v1517856029/bw_icaeha.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
   }
   .black-back{
         background-color: rgba(138, 138, 138, 0.905);

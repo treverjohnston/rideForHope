@@ -199,7 +199,7 @@
               bash!
             </h6>
             <h6 class="q-title">A special thanks to
-              <a href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018</h6>
+              <a href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting a charity night on June 5, 2018</h6>
             <q-btn class="cbtnm shadow-24 text-center" @click="$refs.charitySplash.close()">Dismiss</q-btn>
           </div>
         </q-modal>
@@ -268,12 +268,12 @@
         <div class="promo text-center mobile-only">
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
           <hr>
-          <h4 class="text-bold">Ride For Hope Idaho</h4>
-          <h4 class="text-bold">2019 Event Date: Saturday, June 22</h4>
-          <h4 class="text-bold">Kuna, ID</h4>
+          <!-- <h4 class="text-bold">Ride For Hope Idaho</h4> -->
+          <h5 class="">2019 Event Date:</h5><h5>Saturday, June 22</h5>
+          <h5 class="">Kuna, ID</h5>
           <hr>
           <h6 class="q-title">A special thanks to
-            <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds to
+            <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting a charity night on June 5, 2018 and donating 100% of proceeds to
             Ride For Hope Idaho!</h6>
           <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
         </div>
