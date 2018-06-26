@@ -16,13 +16,17 @@
         </q-btn>
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
-        </q-btn>
+        <!-- LIVE REGISTRATION -->
+        <!-- <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
+        </q-btn> -->
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
-          color="red">Register
+        <q-btn class="mobile-only" outline @click="$router.push('/register')" color="red">Register
         </q-btn>
+        <!-- LIVE REGISTRATION -->
+        <!-- <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
+          color="red">Register
+        </q-btn> -->
       </q-transition>
       <q-btn class="mobile-only">
         <img class="meridian-mobile" @click="launch('http://www.meridian-cycles.com/')" src="statics/logos/meridian.png" alt="Meridian Cycles logo">
@@ -30,8 +34,10 @@
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
-      <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
-      />
+      <q-route-tab class="tab" slot="title" color="red" label="Register" name="register" to="register" />
+      <!-- LIVE REGISTRATION -->
+      <!-- <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
+      /> -->
       <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
       />
       <q-tab class="tab involved" align="left" slot="title" label="Rider Info" name="rider">
@@ -55,8 +61,10 @@
             </q-tab>
           </q-item-main>
           <q-item-main>
-            <q-tab @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" name="home"
-              class="tab" slot="title" color="red" label="Register" />
+            <q-route-tab @click="collapse" name="register" class="tab" slot="title" color="red" label="Register" to="register" />
+            <!-- LIVE REGISTRATION -->
+            <!-- <q-tab @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" name="home"
+              class="tab" slot="title" color="red" label="Register" /> -->
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Packet Pick Up" name="rider" to="packet" />
@@ -99,9 +107,13 @@
           <q-item-main class="side" label="Home" />
           <hr class="tabhr">
         </q-side-link>
-        <!-- <q-side-link> -->
-        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" class="side register"
-          label="Register" />
+        <q-side-link to="register">
+          <q-item-main class="side register" label="Register" />
+          <!-- <hr class="tabhr"> -->
+        </q-side-link>
+        <!-- LIVE REGISTRATION -->
+        <!-- <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" class="side register"
+          label="Register" /> -->
         <!-- </q-side-link> -->
         <hr class="tabhrs">
         <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" class="side"
@@ -127,8 +139,12 @@
             </q-side-link>
           </q-collapsible>
           <hr class="tabhrs">
-          <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" class="small-side register"
-            label="Register" />
+          <q-side-link to="register">
+            <q-item-main class="small-side register" label="Register" />
+          </q-side-link>
+          <!-- LIVE REGISTRATION -->
+          <!-- <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" class="small-side register"
+            label="Register" /> -->
           <hr class="tabhrs">
           <q-side-link to="packet">
             <q-item-main class="small-side" label="Packet Pick Up" />
@@ -269,12 +285,13 @@
           <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
           <hr>
           <!-- <h4 class="text-bold">Ride For Hope Idaho</h4> -->
-          <h5 class="">2019 Event Date:</h5><h5>Saturday, June 22</h5>
+          <h5 class="">2019 Event Date:</h5>
+          <h5>Saturday, June 22</h5>
           <h5 class="">Kuna, ID</h5>
           <hr>
           <h6 class="q-title">A special thanks to
-            <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting a charity night on June 5, 2018 and donating 100% of proceeds to
-            Ride For Hope Idaho!</h6>
+            <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting a charity night on June 5, 2018 and donating 100% of proceeds to Ride For
+            Hope Idaho!</h6>
           <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
         </div>
 
@@ -974,7 +991,7 @@
     width: 20rem;
   }
 
-  .register {
+  .s {
     color: red;
   }
 

@@ -17,8 +17,11 @@
                     <div class="col-xs-12 col-lg-4 r-links">
                         <div class="row wrap justify-center">
                             <div class="col-xs-11 r-links text-center">
-                                <q-btn no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')">Register Now
+                                <q-btn no-caps class="btn" @click="$router.push('/register')">Register Now
                                 </q-btn>
+                                <!-- LIVE REGISTRATION -->
+                                <!-- <q-btn no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')">Register Now
+                                </q-btn> -->
                             </div>
                         </div>
                         <div class="row wrap justify-center">
