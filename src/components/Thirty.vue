@@ -87,14 +87,16 @@
                                 <q-transition appear enter="zoomIn" leave="fadeOut">
                                     <div>
                                         <q-card-media>
-                                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517598418/31_MILE_2018_ynauc9.jpg" alt="31-mile preview">
+                                                <iframe id="mapmyfitness_route" src="//snippets.mapmycdn.com/routes/view/embedded/1478990992?width=400&height=300&&line_color=E6ff8f49&rgbhex=498fff&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-06-18T21:12:41-07:00&show_marker_every=3" height="360px" width="100%" frameborder="0"></iframe>
+                                                                                                         
+                                            <!-- <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517598418/31_MILE_2018_ynauc9.jpg" alt="31-mile preview"> -->
                                         </q-card-media>
                                         <div align="center" class="white-text" label="View More Map Options">
-                                            <q-btn class="btn" @click="launch('//www.mapmyride.com/routes/view/1478990992')" no-caps>Map My Ride</q-btn>
-                                            <q-btn class="btn" @click="launch('//www.strava.com/routes/3647308')" no-caps>Strava</q-btn>
-                                            <q-btn class="btn" @click="launch('https://connect.garmin.com/modern/course/19154808')" no-caps>Garmin</q-btn>
-                                            <q-btn class="btn" @click="launch('//ridewithgps.com/routes/26451284')" no-caps>Ride With GPS</q-btn>
-                                            <q-btn class="btn" @click="launch('./statics/map/31.pdf')" no-caps>PDF Printout</q-btn>
+                                            <q-btn class="btn blue-back" @click="launch('//www.mapmyride.com/routes/view/1478990992')" no-caps>Map My Ride</q-btn>
+                                            <q-btn class="btn blue-back" @click="launch('//www.strava.com/routes/3647308')" no-caps>Strava</q-btn>
+                                            <q-btn class="btn blue-back" @click="launch('https://connect.garmin.com/modern/course/19154808')" no-caps>Garmin</q-btn>
+                                            <q-btn class="btn blue-back" @click="launch('//ridewithgps.com/routes/26451284')" no-caps>Ride With GPS</q-btn>
+                                            <q-btn class="btn blue-back" @click="launch('./statics/map/31.pdf')" no-caps>PDF Printout</q-btn>
 
                                         </div>
                                     </div>
@@ -202,6 +204,9 @@
         margin: .5rem .5rem .5rem 0;
         background-color: rgba(197, 7, 7, 0.8);
         color: white;
+    }
+    .blue-back{
+     background-color: rgba(73, 143, 255, 0.898);
     }
 
     .route {

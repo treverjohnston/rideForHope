@@ -201,103 +201,56 @@
       </q-list>
     </div>
     <router-view />
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-xs-12">
 
       </div>
-    </div>
+    </div> -->
     <div v-if="home">
       <div class="row justify-center">
-        <q-modal ref="charitySplash" class="text-center">
-          <div class="col-xs-10">
-            <h6 class="q-title">Join us at
-              <a href="https://www.payettebrewing.com/#hero" target="_blank">Payette Brewing Company</a> July 16th, 2018 for a charity night! Stay tuned for more information on this post-ride
-              bash!
-            </h6>
-            <h6 class="q-title">A special thanks to
-              <a href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting a charity night on June 5, 2018</h6>
-            <q-btn class="cbtnm shadow-24 text-center" @click="$refs.charitySplash.close()">Dismiss</q-btn>
-          </div>
-        </q-modal>
-        <q-modal ref="charityModal">
-          <div class="col-xs-10 text-center">
-            <big class="text-bold">Packet Pick Up</big>
-          </div>
-          <div class="col-xs-10 text-center space">
-            <big>
-              <b>Date: </b>Friday, June 22
-            </big>
-          </div>
-          <div class="col-xs-10 text-center">
-            <big class="">
-              <b>Time: </b>2pm-8pm</h5>
-            </big>
-          </div>
-          <div class="col-xs-4 text-center">
-            <q-btn class="cbtnm shadow-24 text-center desktop-only" @click="$router.push('packet')">More Info</q-btn>
-            <q-btn class="cbtnm shadow-24 text-center desktop-only" @click="$refs.charityModal.close()">Dismiss</q-btn>
-          </div>
-        </q-modal>
-        <q-modal ref="charityModalMobile">
-          <div class="col-xs-10 text-center">
-            <big class="text-bold">Packet Pick Up</big>
-          </div>
-          <div class="col-xs-10 text-center space">
-            <big>
-              <b>Date: </b>Friday, June 22
-            </big>
-          </div>
-          <div class="col-xs-10 text-center space">
-            <big class="">
-              <b>Time: </b>2pm-8pm</h5>
-            </big>
-          </div>
-          <div class="col-xs-4 text-center">
-            <q-btn class="cbtnm shadow-24 text-center" @click="$router.push('packet')">More Info</q-btn>
-            <q-btn class="cbtnm shadow-24 text-center" @click="$refs.charityModalMobile.close()">Dismiss</q-btn>
-          </div>
-        </q-modal>
-      </div>
-      <q-parallax :speed="1" :height="500" src="./statics/backgrounds/back.jpg">
-        <div slot="loading">Loading...</div>
-        <q-transition appear enter="slideInUp" leave="fadeOut">
-          <div class="text-center">
-            <div class="promo text-center desktop-only">
-              <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
+        <div class="col-xs-12">
+          <q-parallax :speed="1" :height="500" src="./statics/backgrounds/back.jpg">
+            <div slot="loading">Loading...</div>
+            <q-transition appear enter="slideInUp" leave="fadeOut">
+              <div class="text-center">
+                <div class="promo text-center desktop-only">
+                  <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
+                  <hr>
+                  <h1 class="text-bold">Ride For Hope Idaho</h1>
+                  <!-- <hr> -->
+                  <h2 class="text-bold">2019 Event Date: Saturday, June 22</h2>
+                  <h2 class="text-bold">Kuna, ID</h2>
+                  <hr>
+                  <h6 class="q-title">A special thanks to
+                    <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds
+                    to Ride For Hope Idaho!</h6>
+                  <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
+                </div>
+                <div>
+                  <!-- <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
+                  <!-- <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn> -->
+                </div>
+              </div>
+            </q-transition>
+            <div class="promo text-center mobile-only">
+              <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
               <hr>
-              <h1 class="text-bold">Ride For Hope Idaho</h1>
-              <!-- <hr> -->
-              <h2 class="text-bold">2019 Event Date: Saturday, June 22</h2>
-              <h2 class="text-bold">Kuna, ID</h2>
+              <!-- <h4 class="text-bold">Ride For Hope Idaho</h4> -->
+              <h5 class="">2019 Event Date:</h5>
+              <h5>Saturday, June 22</h5>
+              <h5 class="">Kuna, ID</h5>
               <hr>
               <h6 class="q-title">A special thanks to
-                <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds
-                to Ride For Hope Idaho!</h6>
+                <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting a charity night on June 5, 2018 and donating 100% of proceeds to Ride
+                For Hope Idaho!</h6>
               <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
             </div>
-            <div>
-              <!-- <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
-              <!-- <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn> -->
-            </div>
-          </div>
-        </q-transition>
-        <div class="promo text-center mobile-only">
-          <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
-          <hr>
-          <!-- <h4 class="text-bold">Ride For Hope Idaho</h4> -->
-          <h5 class="">2019 Event Date:</h5>
-          <h5>Saturday, June 22</h5>
-          <h5 class="">Kuna, ID</h5>
-          <hr>
-          <h6 class="q-title">A special thanks to
-            <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting a charity night on June 5, 2018 and donating 100% of proceeds to Ride For
-            Hope Idaho!</h6>
-          <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
-        </div>
 
-        <!-- <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center">Ride Day Information</q-btn>
-          <q-btn @click="packetSwal()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
-      </q-parallax>
+            <!-- <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center">Ride Day Information</q-btn>
+      <q-btn @click="packetSwal()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
+          </q-parallax>
+        </div>
+      </div>
       <div class="spacer row wrap">
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text" data-x="80">
           <b>Ride For Hope Idaho</b> is a charity bicycle event with the firm belief that quality healthcare should be accessible
@@ -1220,8 +1173,8 @@
 
   .back {
     /* background-image: url("~assets/cover.jpg"); */
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
   }
 </style>

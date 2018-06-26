@@ -99,14 +99,16 @@
                                 <q-transition appear enter="zoomIn" leave="fadeOut">
                                     <div>
                                         <q-card-media>
-                                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517598416/CENTURY_2018_gj2tra.jpg" alt="century preview">
+                                                <iframe id="mapmyfitness_route" src="//snippets.mapmycdn.com/routes/view/embedded/1462908562?width=400&height=300&&line_color=E61abb1a&rgbhex=1abb1a&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-06-19T08:00:12-07:00&show_marker_every=10" height="370px" width="100%" frameborder="0"></iframe>
+                                                                                                             
+                                            <!-- <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517598416/CENTURY_2018_gj2tra.jpg" alt="century preview"> -->
                                         </q-card-media>
                                         <div align="center" class="white-text" label="View More Map Options">
-                                            <q-btn class="btn" @click="launch('//www.mapmyride.com/routes/view/1462908562')" no-caps>Map My Ride</q-btn>
-                                            <q-btn class="btn" @click="launch('//www.strava.com/routes/7741956')" no-caps>Strava</q-btn>
-                                            <q-btn class="btn" @click="launch('https://connect.garmin.com/modern/course/19140098')" no-caps>Garmin</q-btn>
-                                            <q-btn class="btn" @click="launch('//ridewithgps.com/routes/26451231')" no-caps>Ride With GPS</q-btn>
-                                            <q-btn class="btn" @click="launch('./statics/map/Century.pdf')" no-caps>PDF Printout</q-btn>
+                                            <q-btn class="btn color" @click="launch('//www.mapmyride.com/routes/view/1462908562')" no-caps>Map My Ride</q-btn>
+                                            <q-btn class="btn color" @click="launch('//www.strava.com/routes/7741956')" no-caps>Strava</q-btn>
+                                            <q-btn class="btn color" @click="launch('https://connect.garmin.com/modern/course/19140098')" no-caps>Garmin</q-btn>
+                                            <q-btn class="btn color" @click="launch('//ridewithgps.com/routes/26451231')" no-caps>Ride With GPS</q-btn>
+                                            <q-btn class="btn color" @click="launch('./statics/map/Century.pdf')" no-caps>PDF Printout</q-btn>
 
                                         </div>
                                     </div>
@@ -225,6 +227,9 @@
         margin: .5rem .5rem .5rem 0;
         background-color: rgba(197, 7, 7, 0.8);
         color: white;
+    }
+    .color{
+        background-color: rgba(27, 187, 27, 0.844);
     }
 
     .route {
