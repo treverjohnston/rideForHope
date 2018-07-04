@@ -125,7 +125,11 @@ var store = new vuex.Store({
             'statics/ride/IMG_8818.JPG.jpg',
             'statics/ride/IMG_8894.JPG.jpg'
         ],
-        gallery: []
+        gallery: [],
+        newGallery: [
+            'statics/2018_gallery/1.jpg',
+            'statics/2018_gallery/2.jpg',
+        ]
     },
     mutations: {
         handleError(state, err) {

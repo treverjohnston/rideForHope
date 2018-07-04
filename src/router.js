@@ -77,6 +77,10 @@ export default new VueRouter({
           component: load('Gallery')
         },
         {
+          path: '2018-gallery',
+          component: load('2018-gallery')
+        },
+        {
           path: 'merchandise',
           component: load('Merch')
         },

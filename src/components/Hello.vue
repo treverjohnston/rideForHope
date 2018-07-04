@@ -96,7 +96,16 @@
       </q-tab>
       <q-route-tab class="tab" slot="title" label="Volunteer" name="volunteers" to="volunteers" />
       <q-route-tab class="tab" slot="title" label="Sponsors" name="sponsors" to="sponsors" />
-      <q-route-tab class="tab" slot="title" label="Gallery" name="gallery" to="gallery" />
+      <q-tab class="tab involved" slot="title" label="Galleries" name="gallery">
+        <q-popover fit ref="popover" class="involved">
+          <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="2018 Gallery" name="gallery" to="2018-gallery" />
+          </q-item-main>
+          <q-item-main>
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Past Rides" name="gallery" to="gallery" />
+          </q-item-main>
+        </q-popover>
+      </q-tab>
       <q-route-tab class="tab" slot="title" label="About" name="about" to="about" />
       <q-route-tab class="tab" slot="title" label="Contact" name="contact" to="contact" />
     </q-tabs>
@@ -172,7 +181,6 @@
             <q-item-main class="small-side" label="Raffle Items" />
           </q-side-link>
           <hr class="tabhrs">
-
           <q-side-link to="merchandise" class="left">
             <q-item-main class="small-side" label="Jerseys" />
           </q-side-link>
@@ -186,10 +194,15 @@
           <q-item-main class="side" label="Sponsors" />
           <hr class="tabhr">
         </q-side-link>
-        <q-side-link to="gallery">
-          <q-item-main class="side" label="Gallery" />
-          <hr class="tabhr">
-        </q-side-link>
+        <q-collapsible class="side-collapse" label="Merchandise">
+          <q-side-link to="gallery">
+            <q-item-main class="small-side" label="2018 Gallery" />
+          </q-side-link>
+          <hr class="tabhrs">
+          <q-side-link to="gallery">
+            <q-item-main class="small-side" label="Past Gallery" />
+          </q-side-link>
+        </q-collapsible>
         <q-side-link to="about">
           <q-item-main class="side" label="About" />
           <hr class="tabhr">

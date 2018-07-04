@@ -84,7 +84,7 @@
                             <div class="row wrap r-links justify-center desktop-only last">
                                 <div class="col-xs-11 text-center">
                                     <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     </div>

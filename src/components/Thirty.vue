@@ -72,7 +72,7 @@
                                     <q-btn class="r-btn" @click="$router.push('/18-mile')" no-caps>18 Mile</q-btn>
                                     <q-btn class="r-btn" @click="$router.push('/metric')" no-caps>Metric Century</q-btn>
                                     <q-btn class="r-btn" @click="$router.push('/Century')" no-caps>Century</q-btn>
-                                </div>
+                                </div> 
                             </div>
                             <div class="row wrap r-links justify-center desktop-only last">
                                 <div class="col-xs-11 text-center">

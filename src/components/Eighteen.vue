@@ -10,7 +10,7 @@
                                 <h5 class="headline text-center black">Virtutem Spei - "Hope and Strength"</h5>
                                 <hr class="hr">
                             </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
                 <div class="row justify-center">
