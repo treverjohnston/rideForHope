@@ -194,8 +194,8 @@
           <q-item-main class="side" label="Sponsors" />
           <hr class="tabhr">
         </q-side-link>
-        <q-collapsible class="side-collapse" label="Merchandise">
-          <q-side-link to="gallery">
+        <q-collapsible class="side-collapse" label="Galleries">
+          <q-side-link to="2018-gallery">
             <q-item-main class="small-side" label="2018 Gallery" />
           </q-side-link>
           <hr class="tabhrs">
@@ -203,6 +203,7 @@
             <q-item-main class="small-side" label="Past Gallery" />
           </q-side-link>
         </q-collapsible>
+        <hr class="tabhr">
         <q-side-link to="about">
           <q-item-main class="side" label="About" />
           <hr class="tabhr">
