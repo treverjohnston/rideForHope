@@ -34,7 +34,9 @@
         },
         mounted() {
             // this.$refs.gallery.toggleQuickView()
-            this.$store.dispatch('getPictures')
+            if (this.$store.state.newGallery.length <= 1) {
+                this.$store.commit('addToNewGallery');
+            }
         }
     }
 </script>

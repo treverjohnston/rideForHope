@@ -126,12 +126,14 @@ var store = new vuex.Store({
             'statics/ride/IMG_8894.JPG.jpg'
         ],
         gallery: [],
-        newGallery: [
-            'statics/2018_gallery/1.jpg',
-            'statics/2018_gallery/2.jpg',
-        ]
+        newGallery: []
     },
     mutations: {
+        addToNewGallery(state){
+            for (let i = 1; i < 23; i++) {
+                state.newGallery.push(`./statics/2018_gallery/${i}.jpg`);
+            }
+        },
         handleError(state, err) {
             console.error(err)
             // state.error = err
@@ -158,7 +160,6 @@ var store = new vuex.Store({
                 .catch(err => {
                     commit('handleError', err)
                 })
-
         },
         sendEmail({ commit, dispatch }, obj) {
             console.log('email obj', obj)
