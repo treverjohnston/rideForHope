@@ -224,8 +224,8 @@
       <div class="row justify-center">
         <div class="col-xs-12 text-center">
           <div id="video_overlays" class="absolute text-center">
-            <img class="ride self-center text-center vid-logo desktop-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
-            <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
+            <img class="ride self-center text-center vid-logo desktop-only" autoplay loop src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
+            <img class="mini self-center text-center vid-logo mobile-only" autoplay loop src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
           </div>
           <video class="fit" id="player" src="./statics/video/short.mp4" type="video/mp4" autoplay loop>Your browser does not support this streaming content.</video>
         
@@ -867,6 +867,7 @@
   .vid-logo {
     /* max-width: 20vw; */
     /* height: 100%; */
+    margin-top: 3rem;
   }
 
   .inner {
