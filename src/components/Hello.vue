@@ -17,8 +17,8 @@
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
         <!-- LIVE REGISTRATION -->
-        <!-- <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
-        </q-btn> -->
+        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
+        </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
         <q-btn class="mobile-only" outline @click="$router.push('/register')" color="red">Register
@@ -222,45 +222,55 @@
     </div> -->
     <div v-if="home">
       <div class="row justify-center">
+        <div class="col-xs-12 text-center">
+          <div id="video_overlays" class="absolute text-center">
+            <img class="ride self-center text-center vid-logo desktop-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
+            <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
+          </div>
+          <video class="fit" id="player" src="./statics/video/short.mp4" type="video/mp4" autoplay loop>Your browser does not support this streaming content.</video>
+        
+        </div>
+      </div>
+      <div class="row justify-center">
         <div class="col-xs-12">
-          <q-parallax :speed="1" :height="500" src="./statics/backgrounds/back.jpg">
-            <div slot="loading">Loading...</div>
-            <q-transition appear enter="slideInUp" leave="fadeOut">
-              <div class="text-center">
-                <div class="promo text-center desktop-only">
-                  <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
-                  <hr>
-                  <h1 class="text-bold">Ride For Hope Idaho</h1>
-                  <!-- <hr> -->
-                  <h2 class="text-bold">2019 Event Date: Saturday, June 22</h2>
-                  <h2 class="text-bold">Kuna, ID</h2>
-                  <hr>
-                  <h6 class="q-title">A special thanks to
-                    <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds
-                    to Ride For Hope Idaho!</h6>
-                  <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
-                </div>
-                <div>
-                  <!-- <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
-                  <!-- <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn> -->
-                </div>
-              </div>
-            </q-transition>
-            <div class="promo text-center mobile-only">
-              <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
+          <!-- <q-parallax :speed="1" :height="500" src="./statics/video/header.mp4">
+            <div slot="loading">Loading...</div> -->
+          <!-- <q-transition appear enter="slideInUp" leave="fadeOut"> -->
+          <div class="text-center">
+            <div class="promo text-center desktop-only">
+              <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
               <hr>
-              <!-- <h4 class="text-bold">Ride For Hope Idaho</h4> -->
-              <h5 class="">2019 Event Date:</h5>
-              <h5>Saturday, June 22</h5>
-              <h5 class="">Kuna, ID</h5>
+              <h1 class="text-bold">Ride For Hope Idaho</h1>
+              <!-- <hr> -->
+              <h2 class="text-bold">2019 Event Date: Saturday, June 22</h2>
+              <h2 class="text-bold">Kuna, ID</h2>
               <hr>
               <h6 class="q-title">A special thanks to
-                <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting a charity night on June 5, 2018 and donating 100% of proceeds to Ride
-                For Hope Idaho!</h6>
+                <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds
+                to Ride For Hope Idaho!</h6>
               <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
             </div>
+            <div>
+              <!-- <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
+              <!-- <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center desktop-only">Ride Day Information</q-btn> -->
+            </div>
+          </div>
+          <!-- </q-transition> -->
+          <div class="promo text-center mobile-only">
+            <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
+            <hr>
+            <!-- <h4 class="text-bold">Ride For Hope Idaho</h4> -->
+            <h5 class="">2019 Event Date:</h5>
+            <h5>Saturday, June 22</h5>
+            <h5 class="">Kuna, ID</h5>
+            <hr>
+            <h6 class="q-title">A special thanks to
+              <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting a charity night on June 5, 2018 and donating 100% of proceeds to Ride
+              For Hope Idaho!</h6>
+            <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
+          </div>
 
-            <!-- <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center">Ride Day Information</q-btn>
+          <!-- <q-btn @click="$router.push('ride')" class="cbtnm shadow-24 text-center">Ride Day Information</q-btn>
       <q-btn @click="packetSwal()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
           </q-parallax>
         </div>
@@ -645,7 +655,8 @@
     QCardMedia,
     QCardActions,
     QVideo,
-    QModal
+    QModal,
+    date
   } from "quasar";
 
   export default {
@@ -834,13 +845,54 @@
     },
     mounted() {
       this.$refs.layout.hideLeft();
-      this.welcomeSwal();
+
+      // Conditions to display swal
+      // let dayPass = false;
+      // let timeStamp = Date.now()
+      // let m = date.formatDate(timeStamp, 'MM')
+      // let d = date.formatDate(timeStamp, 'DD')
+      // let y = date.formatDate(timeStamp, 'YYYY')
+      // if(d == '10' || d == '11' || d == '12' || d == '13' || d == '14' || d == '15' || d == '16'){
+      //   dayPass = true;
+      // } 
+      // if (m == '07' && dayPass && y == '2018') {
+      // this.welcomeSwal();
+      // }
     },
 
   };
 </script>
 
 <style scoped>
+  .vid-logo {
+    /* max-width: 20vw; */
+    /* height: 100%; */
+  }
+
+  .inner {
+    /* position: relative;
+    left: -50%; */
+  }
+
+  .full-vid {
+    width: 100%;
+    /* margin: -5rem 0 -5rem 0; */
+  }
+
+  #video_box {
+    /* float: left; */
+  }
+
+  #video_overlays {
+    /* position: absolute; */
+    float: left;
+    /* left: 40%; */
+    /* width: 640px; */
+    /* min-height: 370px; */
+    /* background-color: #000; */
+    z-index: 300000;
+  }
+
   .noHighlight {
     color: white;
   }

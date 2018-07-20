@@ -29,7 +29,7 @@
                     <q-card-title class="black-text">
                         2018 Ride For Hope Idaho Jersey </q-card-title>
                     <q-card-main>
-                        <q-btn no-caps @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')" class="cbtn shadow-24">$50.00</q-btn>
+                        <q-btn no-caps disabled @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')" class="cbtn shadow-24">$50.00 (Sold Out)</q-btn>
                     </q-card-main>
                 </q-card>
             </div>
@@ -42,7 +42,7 @@
                         <q-card-title class="black-text">
                            2018 Ride For Hope Idaho Jersey </q-card-title>
                         <q-card-main>
-                            <q-btn no-caps @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')" class="cbtn shadow-24">$50.00</q-btn>
+                            <q-btn no-caps disabled @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')" class="cbtn shadow-24">$50.00 (Sold Out)</q-btn>
                         </q-card-main>
                     </q-card>
                 </div>
