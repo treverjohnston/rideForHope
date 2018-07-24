@@ -115,6 +115,10 @@ export default new VueRouter({
         {
           path: 'team',
           component: load('Team')
+        },
+        {
+          path: 'charities',
+          component: load('Charities')
         }
       ]
     },
