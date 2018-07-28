@@ -1,9 +1,6 @@
 <template>
   <q-layout ref="layout" class="back ride-back" view="lHh Lpr fff" :left-class="{'bg-grey-2': true}">
     <q-toolbar v-if="!home" class="head">
-      <q-btn class="mobile-only" flat @click="$refs.layout.toggleLeft()">
-        <q-icon name="menu" />
-      </q-btn>
       <q-btn @click="$router.push('/')">
         <img src="statics/logos/RFHIdahoLogo.png" alt="logo" class="mini">
       </q-btn>
@@ -15,6 +12,19 @@
           <img class="meridian desktop-only" src="statics/logos/meridian.png" alt="Meridian Cycles logo">
         </q-btn>
       </q-transition>
+      <q-transition appear enter="lightSpeedIn" leave="fadeOut">
+        <!-- LIVE REGISTRATION -->
+        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
+        </q-btn>
+      </q-transition>
+    </q-toolbar>
+    <q-toolbar class="head">
+      <q-btn class="mobile-only" flat @click="$refs.layout.toggleLeft()">
+        <q-icon name="menu" />
+      </q-btn>
+      <q-btn @click="$router.push('/')">
+        <img src="statics/logos/RFHIdahoLogo.png" alt="logo" class="mini">
+      </q-btn>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
         <!-- LIVE REGISTRATION -->
         <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
@@ -226,7 +236,7 @@
           <img class="ride self-center text-center vid-logo desktop-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
           <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
         </div>
-        <video slot="slide" class="fit" id="player" :src="video" type="video/mp4" muted autoplay loop>Your browser does not support this streaming content.</video>
+        <video class="fit" id="player" :src="video" type="video/mp4" muted="true" autoplay="true" loop>Your browser does not support this streaming content.</video>
       </div>
 
       <div class="row justify-center">
