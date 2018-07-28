@@ -18,7 +18,7 @@
         </q-btn>
       </q-transition>
     </q-toolbar>
-    <q-toolbar class="head">
+    <q-toolbar class="head mobile-only">
       <q-btn class="mobile-only" flat @click="$refs.layout.toggleLeft()">
         <q-icon name="menu" />
       </q-btn>
@@ -696,7 +696,7 @@
 
   #video_overlays {
     float: left;
-    z-index: 300000;
+    z-index: 1000;
   }
 
   .noHighlight {
