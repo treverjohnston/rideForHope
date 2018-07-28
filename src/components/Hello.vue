@@ -366,65 +366,66 @@
           </q-btn>
         </div>
       </div>
-      <!-- Footer -->
-      <div class="footer text-center text-bold" slot="footer">
-        <div class="row justify-center">
-          <div class="col-xs-12">
-            <h3 class="text-center desktop-only white">
-              Thank you for supporting Ride for Hope!
-            </h3>
-            <h6 class="text-center mobile-only white">
-              Thank you for supporting Ride for Hope!
-            </h6>
-          </div>
-          <div class="col-xs-12">
-            <div class="row justify-center">
-              <div class="col-xs-12">
-                <hr class="hr">
-              </div>
-              <div class="col-xs-6 col-md-3 self-center">
-                <q-btn flat @click="launch('https://www.strava.com/clubs/302822')" flat>
-                  <img class="strava" src="statics/logos/strava.png" alt="strava logo">
-                </q-btn>
-              </div>
-              <div class="col-xs-6 col-md-3 mobile-only self-center">
-                <q-btn flat @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
-                  <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
-                </q-btn>
-              </div>
-              <div v-scroll-fire="animate" class="col-md-3 self-center" id="bar">
-                <q-btn flat data-x="360" class="el" @click="launch('http://www.meridian-cycles.com/')">
-                  <img class="meridian-big" src="statics/logos/meridian.png" alt="Meridian Cycles logo">
-                </q-btn>
-              </div>
-              <div class="col-md-3 desktop-only self-center">
-                <q-btn flat @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
-                  <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
-                </q-btn>
-              </div>
-              <div v-if="!home" class="col-xs-12">
-                <hr class="hr">
-              </div>
-              <div v-if="home" class="col-xs-12">
-                <hr class="hr">
-                <div class="row justify-center">
-                  <div class="col-xs-12 pad">
-                    <small class="text-center white">
-                      Be sure to check out this other great charity ride!
-                    </small>
-                  </div>
-                  <div class="col-xs-12">
-                    <q-btn flat @click="launch('https://www.cycleforindependence.org/')">
-                      <img class="meridian-big" src="statics/logos/cfi.jpg" alt="Cycle for independence logo">
-                    </q-btn>
-                  </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer text-center text-bold" slot="footer">
+      <div class="row justify-center">
+        <div class="col-xs-12">
+          <h3 class="text-center desktop-only white">
+            Thank you for supporting Ride for Hope!
+          </h3>
+          <h6 class="text-center mobile-only white">
+            Thank you for supporting Ride for Hope!
+          </h6>
+        </div>
+        <div class="col-xs-12">
+          <div class="row justify-center">
+            <div class="col-xs-12">
+              <hr class="hr">
+            </div>
+            <div class="col-xs-6 col-md-3 self-center">
+              <q-btn flat @click="launch('https://www.strava.com/clubs/302822')" flat>
+                <img class="strava" src="statics/logos/strava.png" alt="strava logo">
+              </q-btn>
+            </div>
+            <div class="col-xs-6 col-md-3 mobile-only self-center">
+              <q-btn flat @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
+                <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
+              </q-btn>
+            </div>
+            <div v-scroll-fire="animate" class="col-md-3 self-center" id="bar">
+              <q-btn flat data-x="360" class="el" @click="launch('http://www.meridian-cycles.com/')">
+                <img class="meridian-big" src="statics/logos/meridian.png" alt="Meridian Cycles logo">
+              </q-btn>
+            </div>
+            <div class="col-md-3 desktop-only self-center">
+              <q-btn flat @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
+                <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
+              </q-btn>
+            </div>
+            <div v-if="!home" class="col-xs-12">
+              <hr class="hr">
+            </div>
+            <div v-if="home" class="col-xs-12">
+              <hr class="hr">
+              <div class="row justify-center">
+                <div class="col-xs-12 pad">
+                  <small class="text-center white">
+                    Be sure to check out this other great charity ride!
+                  </small>
                 </div>
-                <hr class="hr">
+                <div class="col-xs-12">
+                  <q-btn flat @click="launch('https://www.cycleforindependence.org/')">
+                    <img class="meridian-big" src="statics/logos/cfi.jpg" alt="Cycle for independence logo">
+                  </q-btn>
+                </div>
               </div>
+              <hr class="hr">
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
     <q-fixed-position corner="bottom-right" :offset="[18, 18]">
       <q-btn round v-back-to-top.animate="{offset: 200, duration: 200}" class="animate-pop back">
