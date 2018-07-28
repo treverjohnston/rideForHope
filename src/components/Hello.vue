@@ -226,11 +226,7 @@
           <img class="ride self-center text-center vid-logo desktop-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
           <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
         </div>
-        <q-carousel class="text-white col-xs-12" infinite autoplay>
-          <video slot="slide" class="fit" id="player" src="./statics/video/6.mp4" type="video/mp4" muted autoplay loop>Your browser does not support this streaming content.</video>
-          <video slot="slide" class="fit" id="player" src="./statics/video/4.mp4" type="video/mp4" muted autoplay loop>Your browser does not support this streaming content.</video>
-          <video slot="slide" class="fit" id="player" src="./statics/video/5.mp4" type="video/mp4" muted autoplay loop>Your browser does not support this streaming content.</video>
-        </q-carousel>
+        <video slot="slide" class="fit" id="player" :src="video" type="video/mp4" muted autoplay loop>Your browser does not support this streaming content.</video>
       </div>
 
       <div class="row justify-center">
@@ -300,7 +296,7 @@
             <q-btn class="route-btn" @click="$router.push('18-mile')" outline color="red">
               <h4>18 Mile</h4>
             </q-btn>
-            <span  class="white" slot="subtitle">
+            <span class="white" slot="subtitle">
               Flat and mellow ride through farmland with one rest stop half-way through course. Race with the bumble bees, fly with the
               birds and burn up the road with human powered speed! </span>
           </q-card-title>
@@ -513,6 +509,10 @@
         } else {
           return false;
         }
+      },
+      video() {
+        var num = Math.floor((Math.random() * 3) + 1);
+        return `./statics/video/${num}.mp4`;
       }
     },
     methods: {
