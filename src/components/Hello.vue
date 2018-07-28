@@ -227,9 +227,9 @@
           <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
         </div>
         <q-carousel class="text-white col-xs-12" infinite autoplay>
-          <video slot="slide" class="fit" id="player" src="./statics/video/6.mp4" type="video/mp4" autoplay loop>Your browser does not support this streaming content.</video>
-          <video slot="slide" class="fit" id="player" src="./statics/video/4.mp4" type="video/mp4" autoplay loop>Your browser does not support this streaming content.</video>
-          <video slot="slide" class="fit" id="player" src="./statics/video/5.mp4" type="video/mp4" autoplay loop>Your browser does not support this streaming content.</video>
+          <video slot="slide" class="fit" id="player" src="./statics/video/6.mp4" type="video/mp4" muted autoplay loop>Your browser does not support this streaming content.</video>
+          <video slot="slide" class="fit" id="player" src="./statics/video/4.mp4" type="video/mp4" muted autoplay loop>Your browser does not support this streaming content.</video>
+          <video slot="slide" class="fit" id="player" src="./statics/video/5.mp4" type="video/mp4" muted autoplay loop>Your browser does not support this streaming content.</video>
         </q-carousel>
       </div>
 
