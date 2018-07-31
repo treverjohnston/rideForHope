@@ -1,6 +1,6 @@
 <template>
   <q-layout ref="layout" class="back ride-back" view="lHh Lpr fff" :left-class="{'bg-grey-2': true}">
-    <q-toolbar v-if="!home" class="head">
+    <q-toolbar v-if="!home" class="head desktop-only">
       <q-btn @click="$router.push('/')">
         <img src="statics/logos/RFHIdahoLogo.png" alt="logo" class="mini">
       </q-btn>
@@ -13,7 +13,6 @@
         </q-btn>
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <!-- LIVE REGISTRATION -->
         <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
         </q-btn>
       </q-transition>
@@ -26,7 +25,6 @@
         <img src="statics/logos/RFHIdahoLogo.png" alt="logo" class="mini">
       </q-btn>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <!-- LIVE REGISTRATION -->
         <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
         </q-btn>
       </q-transition>
@@ -236,7 +234,8 @@
           <img class="ride self-center text-center vid-logo desktop-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
           <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
         </div>
-        <video class="fit" id="player" :src="video" type="video/mp4" muted="true" autoplay="true" loop>Your browser does not support this streaming content.</video>
+        <video class="fit" style="width: 100%;" id="player" :src="video" poster="./statics/backgrounds/back.jpg" type="video/mp4"
+          playsinline="true" muted="true" autoplay="true" loop="true">Your browser does not support this streaming content.</video>
       </div>
 
       <div class="row justify-center">
@@ -686,8 +685,7 @@
 
 <style scoped>
   .vid-logo {
-    margin-top: 5rem;
-
+    /* margin-top: 5rem; */
   }
 
 
@@ -696,8 +694,14 @@
   }
 
   #video_overlays {
-    float: left;
-    z-index: 1000;
+    /* float: left;
+    z-index: 1000; */
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 15vh;
+    z-index: 25;
+    text-align: center;
   }
 
   .noHighlight {
