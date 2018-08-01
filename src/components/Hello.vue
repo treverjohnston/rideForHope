@@ -230,12 +230,15 @@
 
     <div v-if="home">
       <div class="row justify-center">
-        <div id="video_overlays" class="absolute text-center">
-          <img class="ride self-center text-center vid-logo desktop-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
-          <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
-        </div>
-        <video class="fit" style="width: 100%;" id="player" :src="video" poster="./statics/backgrounds/back.jpg" type="video/mp4"
-          playsinline="true" muted="true" autoplay="true" loop="true">Your browser does not support this streaming content.</video>
+          <div id="video_overlays" class="absolute text-center">
+            <img class="ride self-center text-center vid-logo desktop-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
+            <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
+          </div>
+          <video class="fit" style="width: 100%;" id="player" :src="video" poster="./statics/backgrounds/header.jpg" type="video/mp4"
+            playsinline="true" muted="true" autoplay="true" loop="true">Your browser does not support this streaming content.
+            <img src="statics/backgrounds/header.jpg" style="width: 100%"
+              alt="mobile background of riders" class="mobile-only responsive">
+          </video>
       </div>
 
       <div class="row justify-center">
@@ -509,7 +512,8 @@
     data() {
       return {
         showVid: false,
-        showSplash: false
+        showSplash: false,
+        video: `./statics/video/head.mp4`
       };
     },
     computed: {
@@ -520,10 +524,10 @@
           return false;
         }
       },
-      video() {
-        var num = Math.floor((Math.random() * 3) + 1);
-        return `./statics/video/${num}.mp4`;
-      }
+      // video() {
+      //   var num = Math.floor((Math.random() * 3) + 1);
+      //   return `./statics/video/head.mp4`;
+      // }
     },
     methods: {
       launch(url) {
