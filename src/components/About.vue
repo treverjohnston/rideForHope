@@ -71,14 +71,15 @@
                         <p class="text-justify">
                             <em>
                                 <b>Ride For Hope Idaho</b>
-                            </em> has donated $28,500 in three years:</p>
+                            </em> has donated over $46,500 in four years:</p>
                         <ul>
-                            <li>In 2015 over $7,000 was donated.</li>
-                            <li>In 2016 over $9,000 was donated.</li>
-                            <li>In 2017 over $12,500 was donated.</li>
+                            <li>In 2015 over $7,000 was raised.</li>
+                            <li>In 2016 over $9,000 was raised.</li>
+                            <li>In 2017 over $12,500 was raised.</li>
+                            <li>In 2018 over $18,000 was raised.</li>
                         </ul>
                     </div>
-                    <div class="pic col-md-4 col-xs-12 text-center">
+                    <div class="pic col-md-4 col-sm-12 col-xs-12 text-center">
                         <img class="rider responsive" src="https://res.cloudinary.com/treverscloud/image/upload/v1517606065/margo_kuo44h.jpg" alt="rider">
                     </div>
                     <div class="paragroup offset-md-2 col-md-8 offset-xs-1 col-xs-10">
@@ -171,7 +172,7 @@
             animate() {
                 anime({
                     targets: '#number input',
-                    value: '$' + '28500',
+                    value: '$' + '46500',
                     round: 1,
                     easing: 'easeInOutExpo',
                     duration: 3333

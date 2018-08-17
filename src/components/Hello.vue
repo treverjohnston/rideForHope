@@ -235,7 +235,7 @@
             <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
           </div>
           <video class="fit" style="width: 100%;" id="player" :src="video" poster="./statics/backgrounds/header.jpg" type="video/mp4"
-            playsinline="true" muted="true" autoplay="true" loop="true">Your browser does not support this streaming content.
+            playsinline="playsinline" muted="muted" autoplay="autoplay" loop="loop">Your browser does not support this streaming content.
             <img src="statics/backgrounds/header.jpg" style="width: 100%"
               alt="mobile background of riders" class="mobile-only responsive">
           </video>
@@ -423,6 +423,11 @@
                 </div>
               </div>
               <hr class="hr">
+              <div class="row justify-center">
+                <div class="col-xs-11 text-center white">
+                  <small>Special thanks to Imago Caeli for all 2018 Ride For Hope Idaho video!</small>
+                </div>
+              </div>
             </div>
           </div>
         </div>
