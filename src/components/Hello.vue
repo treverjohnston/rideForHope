@@ -147,6 +147,7 @@
             <q-side-link to="9-mile">
               <q-item-main class="small-side" label="9 Mile" />
             </q-side-link>
+            <hr class="tabhrs">
             <q-side-link to="19-mile">
               <q-item-main class="small-side" label="19 Mile" />
             </q-side-link>
@@ -857,7 +858,7 @@
   }
 
   .mobile-border {
-    border: 1px white solid;
+    /* border: 1px white solid; */
     padding: 3em 0 3em 0;
   }
 
