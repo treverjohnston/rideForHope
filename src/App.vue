@@ -9,22 +9,25 @@
   /*
      * Root component
      */
-  export default {  };
+  export default {};
 </script>
 
 <style>
-  .white{
+  .white {
     color: white;
   }
-  .top-marg{
+
+  .top-marg {
     margin-top: 5rem;
   }
-   .modal-content {
+
+  .modal-content {
     background-color: rgba(0, 0, 0, .9);
     color: white;
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 5px;
   }
+
   .ride-back {
     /* background-image: url("https://res.cloudinary.com/treverscloud/image/upload/v1517856029/bw_icaeha.jpg");
     background-position: center center;
@@ -42,9 +45,10 @@
     height: 100%;
     overflow: hidden;
   }
-  .black-back{
-        background-color: rgba(138, 138, 138, 0.905);
-    }
+
+  .black-back {
+    background-color: rgba(138, 138, 138, 0.905);
+  }
 
   .bot-link {
     margin: 1rem 0 1rem 0;
@@ -105,6 +109,8 @@
   .r-btn {
     background-color: rgba(197, 7, 7, 0.8);
     color: white;
+    padding: 1rem;
+    margin: 1rem;
   }
 
   .q-item {

@@ -123,9 +123,18 @@
     QListHeader
   } from "quasar";
   export default {
-    name: "Nineteen",
+    name: "Nine",
     data() {
-      return { route: [] };
+      return {
+        route: []
+      };
+    },
+    mounted() {
+      this.$store.state.routes.forEach(route => {
+        if (route.url == this.$route.path) {
+          return this.route = route;
+        }
+      });
     },
     components: {
       QLayout,
@@ -142,13 +151,6 @@
       QItemSide,
       QItemMain,
       QListHeader
-    },
-    mounted() {
-      this.$store.state.routes.forEach(route => {
-        if (route.url == this.$route.path) {
-          return this.route = route;
-        }
-      });
     },
     computed: {
       pictures() {
@@ -185,9 +187,9 @@
     color: white;
   }
 
-  .yellow {
-    background-color: rgba(253, 237, 0, 0.939);
-    color: black;
+  .purple {
+    background-color: purple;
+    color: white;
   }
 
   .small {

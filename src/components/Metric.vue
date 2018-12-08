@@ -1,15 +1,16 @@
 <template>
     <q-layout class="black">
         <div class="row justify-center">
-            <div class="col-xs-11 col-md-10 shadow-24 black-back">
+            <div class="col-xs-11 col-md-10 black-back shadow-24">
                 <div class="row wrap justify-center">
                     <div class="col-xs-12">
                         <div class="row justify-center">
                             <div class="col-xs-12 text-center">
-                                <h2 class="headline text-center black desktop-only">Metric Century Ride</h2>
-                                <h4 class="headline text-center black mobile-only">Metric Century Ride</h4>
-                                <h5 class="headline text-center black">Semper Fidelis - "Always Faithful"</h5>
-                                <hr class="hr">
+                                <h2 class="headline text-center black">{{route.length}} Ride</h2>
+                                <h5 class="headline text-center black">
+                                    {{route.headline}}
+                                </h5>
+                                <hr class="hr" />
                             </div>
                         </div>
                     </div>
@@ -17,118 +18,84 @@
                 <div class="row justify-center">
                     <div class="col-xs-12 col-lg-4 r-links">
                         <div class="row wrap justify-center">
-                            <div class="col-xs-11 r-links text-center">
+                            <div class="col-xs-11 text-center r-links">
                                 <q-btn no-caps class="btn" @click="$router.push('/register')">Register Now
                                 </q-btn>
                                 <!-- LIVE REGISTRATION -->
-                                <!-- <q-btn no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')">Register Now
-                                </q-btn> -->
+                                <!--
+                  <q-btn no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')">Register Now
+                  </q-btn>
+                -->
                             </div>
                         </div>
                         <div class="row wrap justify-center">
-                                <div class="light-paragraph text-center col-xs-11 col-md-11 r-links">
-                                    <p>Registration opens at 5:00 AM</p>
-                                    <hr class="ihr">
-                                    <h4>Metric Century Start Time</h4>
-                                    <h5>8:00 AM*</h5>
-                                    <hr class="ihr">
-                                    <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p>
-                                </div>
+                            <div class="light-paragraph text-center col-xs-11 col-md-11 r-links">
+                                <p>Registration opens at 5:00 AM</p>
+                                <hr class="ihr" />
+                                <h4>{{route.length}} Start Time</h4>
+                                <h5>{{route.startTime}}</h5>
+                                <hr class="ihr" />
+                                <p>
+                                    *Please be at the start line ready to ride at least 15 minutes
+                                    before posted start time.
+                                </p>
                             </div>
+                        </div>
                         <div class="row wrap justify-center">
-                            <h6 class="top light-paragraph text-center col-xs-11 col-md-11 r-links">
-                                62.8 miles long (because 62.9 would just be CRAZY!). Completely redesigned course for 2018. This is a ride for true bikers
-                                (i.e. no longer embarrassed to wear spandex). The route Includes rolling hills, scenic overlooks,
-                                vineyards and 4 rest stops. The course meets up with the last half of the Century route (so
-                                you will have additional riders to share your challenge with along the way). You will continue
-                                northwest toward Marsing and then turn back toward Kuna and pedal, pedal, pedal, to Lake
-                                Shore Drive skirting Lake Lowell on your way back to the finish line where festivities and
-                                food await, (if you are fast enough!). Just remember, Humpty Dumpty had wall issues too but
-                                he overcame; so can you!
+                            <h6 class="light-paragraph text-center col-xs-11 col-md-11 r-links">
+                                {{route.description}}
                             </h6>
-                            <div class="col-xs-11 col-md-11 text-center r-links">
+                        </div>
+                        <div class="row justify-center">
+                            <div class="col-xs-11 col-md-11 text-center border r-links">
                                 <div class="row justify-center">
                                     <div class="col-xs-4">
                                         <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
-                                            alt="rest stop">
+                                            alt="rest stop" />
                                     </div>
-                                    <div class="col-xs-12">
-                                        <h5>
-                                            Rest Stops
-                                        </h5>
+                                    <div class="col-xs-12 self-center">
+                                        <h5>Rest Stops</h5>
                                     </div>
-                                    <div class="col-xs-12">
-                                        <h6>
-                                            Bowmont - 12.5 Miles
-                                        </h6>
-                                        <h6>
-                                            Gun Range- 27.9 Miles
-                                        </h6>
-                                        <h6>
-                                            Lake Shore Dr. - 42.5 Miles
-                                        </h6>
-                                        <h6>
-                                            Bowmont - 54.5 Miles
-                                        </h6>
-
+                                    <div class="col-xs-12 self-center" v-for="stop in route.restStops">
+                                        <h6>{{stop}}</h6>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-11 text-center desktop-only r-links">
-                                <h5>Quick Links To Other Routes</h5>
-                                <q-btn class="r-btn" @click="$router.push('/18-mile')" no-caps>18 Mile</q-btn>
-                                <q-btn class="r-btn" @click="$router.push('/31-mile')" no-caps>31 Mile</q-btn>
-                                <q-btn class="r-btn" @click="$router.push('/Century')" no-caps>Century</q-btn>
+                        </div>
+                        <div class="row justify-center desktop-only">
+                            <div class="col-xs-11 text-center r-links">
+                                <div class="row justify-center">
+                                    <h5 class="col-xs-12">Quick Links To Other Routes</h5>
+                                    <q-btn v-for="otherRoute in routes" v-if="otherRoute.length != route.length" class="col-xs-4 r-btn"
+                                        @click="$router.push(otherRoute.url.trim('/'))" no-caps>{{otherRoute.length}}</q-btn>
+                                </div>
                             </div>
-
-                            <div class="row wrap r-links justify-center desktop-only last">
-                                <div class="col-xs-11 text-center">
-                                    <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
-                                </div> 
+                        </div>
+                        <div class="row wrap justify-center desktop-only last">
+                            <div class="col-xs-11 text-center r-links">
+                                <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-lg-8 top-marg">
+                    <div class="col-xs-12 col-lg-7 top-marg">
                         <div class="row wrap justify-center">
                             <q-card class="route col-xs-11 col-md-11 shadow-24">
                                 <q-transition appear enter="zoomIn" leave="fadeOut">
                                     <div>
                                         <q-card-media>
-                                            <!-- <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517598417/METRIC_CENTURY_2018_xc3agh.jpg" alt="metric century preview"> -->
-                                            <iframe id="mapmyfitness_route" src="//snippets.mapmycdn.com/routes/view/embedded/981667107?width=400&height=300&&line_color=E60044e1&rgbhex=e14400&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-06-18T20:51:29-07:00&show_marker_every=6" height="400px" width="100%" frameborder="0"></iframe></q-card-media>
-                                        <div align="center" class="white-text" label="View More Map Options">
-                                            <q-btn class="btn color" @click="launch('//www.mapmyride.com/routes/view/981667107')" no-caps>Map My Ride</q-btn>
-                                            <q-btn class="btn color" @click="launch('//www.strava.com/routes/4093800')" no-caps>Strava</q-btn>
-                                            <q-btn class="btn color" @click="launch('https://connect.garmin.com/modern/course/19154726')" no-caps>Garmin</q-btn>
-                                            <q-btn class="btn color" @click="launch('//ridewithgps.com/routes/26451173')" no-caps>Ride With GPS</q-btn>
-                                            <q-btn class="btn color" @click="launch('./statics/map/Metric.pdf')" no-caps>PDF Printout</q-btn>
-
+                                            <iframe id="mapmyfitness_route" :src="route.frame" height="650px" width="100%"
+                                                frameborder="0"></iframe>
+                                        </q-card-media>
+                                        <div align="center" class="white-text small" label="View More Map Options">
+                                            <q-btn v-for="link in route.otherMaps" :class="route.btnClass" @click="launch(link.link)"
+                                                no-caps>{{link.title}}</q-btn>
                                         </div>
                                     </div>
                                 </q-transition>
                             </q-card>
-                            <q-card class="route col-xs-11 col-md-11 shadow-24">
-                                <q-transition appear enter="zoomIn" leave="fadeOut">
-                                    <div>
-                                        <q-card-media>
-                                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248679/Metric_Century_Elevation_Chart_Only_kwxpn6.jpg"
-                                                alt="metric century elevation profile">
-                                        </q-card-media>
-
-                                    </div>
-                                </q-transition>
-                            </q-card>
-                            <q-card class="route col-xs-11 col-md-11 shadow-24">
-                                <q-transition appear enter="zoomIn" leave="fadeOut">
-                                    <div>
-                                        <q-card-media>
-                                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248679/Metric_Century_Climb_Details_jobfsy.jpg" alt="metric century climb profile">
-                                        </q-card-media>
-
-                                    </div>
-                                </q-transition>
-                            </q-card>
-                            <div class="col-xs-12 text-center mobile-only bot-link">
+                        </div>
+                        <div class="row wrap justify-center mobile-only">
+                            <div class="col-xs-12 text-center bot-link">
                                 <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                             </div>
                         </div>
@@ -157,6 +124,7 @@
         name: 'metric',
         data() {
             return {
+                route: []
             }
         },
         components: {
@@ -171,9 +139,19 @@
             QParallax,
             QCollapsible
         },
+        mounted() {
+            this.$store.state.routes.forEach(route => {
+                if (route.url == this.$route.path) {
+                    return this.route = route;
+                }
+            });
+        },
         computed: {
             pictures() {
                 return this.$store.state.pictures
+            },
+            routes() {
+                return this.$store.state.routes;
             }
         },
         methods: {
@@ -195,9 +173,6 @@
                         }
                     })
             }
-        },
-        mounted(){
-            // this.constructionSwal();
         }
     }
 </script>
@@ -216,8 +191,9 @@
         background-color: rgba(197, 7, 7, 0.8);
         color: white;
     }
-    .color{
-        background-color:rgba(255, 68, 0, 0.919);
+
+    .color {
+        background-color: rgba(255, 68, 0, 0.919);
     }
 
     .route {
@@ -236,5 +212,4 @@
         background-color: rgba(0, 128, 128, 0.6);
 
     }
-
 </style>

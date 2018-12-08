@@ -13,7 +13,8 @@
         </q-btn>
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
+        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just
+          Donate
         </q-btn>
       </q-transition>
     </q-toolbar>
@@ -25,7 +26,8 @@
         <img src="statics/logos/RFHIdahoLogo.png" alt="logo" class="mini">
       </q-btn>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just Donate
+        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just
+          Donate
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
@@ -37,7 +39,8 @@
         </q-btn> -->
       </q-transition>
       <q-btn class="mobile-only">
-        <img class="meridian-mobile" @click="launch('http://www.meridian-cycles.com/')" src="statics/logos/meridian.png" alt="Meridian Cycles logo">
+        <img class="meridian-mobile" @click="launch('http://www.meridian-cycles.com/')" src="statics/logos/meridian.png"
+          alt="Meridian Cycles logo">
       </q-btn>
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
@@ -46,15 +49,17 @@
       <!-- LIVE REGISTRATION -->
       <!-- <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
       /> -->
-      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
-      />
+      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" />
       <q-tab class="tab involved" align="left" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
             <q-tab class="tab" slot="title" label="Routes" name="rider">
               <q-popover fit anchor="top left" ref="routePopB">
                 <q-item-main>
-                  <q-route-tab class="tab" @click="collapse" slot="title" label="18 Mile" name="routes" to="18-mile" />
+                  <q-route-tab class="tab" @click="collapse" slot="title" label="9 Mile" name="routes" to="9-mile" />
+                </q-item-main>
+                <q-item-main>
+                  <q-route-tab class="tab" @click="collapse" slot="title" label="19 Mile" name="routes" to="19-mile" />
                 </q-item-main>
                 <q-item-main>
                   <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="routes" to="31-mile" />
@@ -87,8 +92,8 @@
             <q-route-tab @click="collapse" class="tab" slot="title" label="How Climbs Are Categorized" name="rider" to="climbs" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Team Ride For Hope Idaho Information" name="rider" to="team"
-            />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Team Ride For Hope Idaho Information" name="rider"
+              to="team" />
           </q-item-main>
         </q-popover>
       </q-tab>
@@ -133,14 +138,17 @@
           label="Register" /> -->
         <!-- </q-side-link> -->
         <hr class="tabhrs">
-        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" class="side"
-          label="Rider Fundraising" />
+        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
+          class="side" label="Rider Fundraising" />
         <hr class="tabhr">
         </q-collapsible>
         <q-collapsible class="side-collapse" label="Rider Information">
           <q-collapsible class="side-collapse" label="Routes">
-            <q-side-link to="18-mile">
-              <q-item-main class="small-side" label="18 Mile" />
+            <q-side-link to="9-mile">
+              <q-item-main class="small-side" label="9 Mile" />
+            </q-side-link>
+            <q-side-link to="19-mile">
+              <q-item-main class="small-side" label="19 Mile" />
             </q-side-link>
             <hr class="tabhrs">
             <q-side-link to="31-mile">
@@ -230,15 +238,15 @@
 
     <div v-if="home">
       <div class="row justify-center">
-          <div id="video_overlays" class="absolute text-center">
-            <img class="ride self-center text-center vid-logo desktop-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
-            <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
-          </div>
-          <video class="fit" style="width: 100%;" id="player" :src="video" poster="./statics/backgrounds/header.jpg" type="video/mp4"
-            playsinline="playsinline" muted="muted" autoplay="autoplay" loop="loop">Your browser does not support this streaming content.
-            <img src="statics/backgrounds/header.jpg" style="width: 100%"
-              alt="mobile background of riders" class="mobile-only responsive">
-          </video>
+        <div id="video_overlays" class="absolute text-center">
+          <img class="ride self-center text-center vid-logo desktop-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
+          <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
+        </div>
+        <video class="fit" style="width: 100%;" id="player" :src="video" poster="./statics/backgrounds/header.jpg" type="video/mp4"
+          playsinline="playsinline" muted="muted" autoplay="autoplay" loop="loop">Your browser does not support this
+          streaming content.
+          <img src="statics/backgrounds/header.jpg" style="width: 100%" alt="mobile background of riders" class="mobile-only responsive">
+        </video>
       </div>
 
       <div class="row justify-center">
@@ -252,7 +260,8 @@
               <h2 class="text-bold">Kuna, ID</h2>
               <hr>
               <h6 class="q-title">A special thanks to
-                <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds
+                <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for
+                hosting hosting a charity night on June 5, 2018 and donating 100% of proceeds
                 to Ride For Hope Idaho!</h6>
               <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Video and Gallery</q-btn>
               <!-- <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn> -->
@@ -271,7 +280,8 @@
             <h5 class="">Kuna, ID</h5>
             <hr>
             <h6 class="q-title">A special thanks to
-              <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting a charity night on June 5, 2018 and donating 100% of proceeds to Ride
+              <a class="noHighlight" href="https://10barrel.com/" target="_blank">10 Barrel Brewing Co.</a> for hosting
+              a charity night on June 5, 2018 and donating 100% of proceeds to Ride
               For Hope Idaho!</h6>
             <!-- <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn> -->
             <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Video and Gallery</q-btn>
@@ -283,16 +293,20 @@
       </div>
       <div class="spacer row wrap">
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text">
-          <b>Ride For Hope Idaho</b> is a charity bicycle event with the firm belief that quality healthcare should be accessible
-          to everyone. We support the holistic approach to healthcare where true healing focuses not only on symptoms, but
+          <b>Ride For Hope Idaho</b> is a charity bicycle event with the firm belief that quality healthcare should be
+          accessible
+          to everyone. We support the holistic approach to healthcare where true healing focuses not only on symptoms,
+          but
           the underlying root cause of disease.
         </h6>
         <div class="text-center col-xs-12 col-md-4">
           <img class="ride self-center xs-gutter" src="statics/logos/RFHIdahoLogo.png" alt="ride for hope logo">
         </div>
         <h6 class="text-italic text-center light-paragraph col-xs-10 col-md-4 self-center text">
-          <b>Ride For Hope Idaho</b> is committed to ensuring that 100% of participant fees and donations go directly to charity.
-          This unique commitment is made possible by charitable contributions from local sponsors which cover the entire
+          <b>Ride For Hope Idaho</b> is committed to ensuring that 100% of participant fees and donations go directly
+          to charity.
+          This unique commitment is made possible by charitable contributions from local sponsors which cover the
+          entire
           cost of the event.
         </h6>
       </div>
@@ -303,47 +317,22 @@
           </q-card-title>
           <hr class="routeshr">
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 border">
+        <div class="col-xs-12 col-sm-6 col-md-5 border desktop-only" v-for="route in routes">
           <q-card-title class="text-center">
-            <q-btn class="route-btn" @click="$router.push('18-mile')" outline color="red">
-              <h4>18 Mile</h4>
+            <q-btn class="route-btn" @click="$router.push(route.url.trim('/'))" outline color="red">
+              <h4>{{route.length}}</h4>
             </q-btn>
-            <span class="white" slot="subtitle">
-              Flat and mellow ride through farmland with one rest stop half-way through course. Race with the bumble bees, fly with the
-              birds and burn up the road with human powered speed! </span>
+            <h6 class="white" slot="subtitle">
+              {{route.shortDescription}}</h6>
           </q-card-title>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 border">
+        <div class="col-xs-12 col-sm-6 col-md-5 mobile-border mobile-only" v-for="route in routes">
           <q-card-title class="text-center">
-            <q-btn class="route-btn" @click="$router.push('31-mile')" outline color="red">
-              <h4>31 Mile</h4>
+            <q-btn class="route-btn" @click="$router.push(route.url.trim('/'))" outline color="red">
+              <h4>{{route.length}}</h4>
             </q-btn>
-            <span class="white" slot="subtitle">
-              Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight
-              those who want to establish a new 40k personal best.
-            </span>
-          </q-card-title>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 border">
-          <q-card-title class="text-center">
-            <q-btn class="route-btn" @click="$router.push('metric')" outline color="red">
-              <h4>Metric Century</h4>
-            </q-btn>
-            <span class="white" slot="subtitle">
-              Completely redesigned course for 2018. This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The
-              route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops.
-            </span>
-          </q-card-title>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 border">
-          <q-card-title class="text-center">
-            <q-btn class="route-btn" @click="$router.push('Century')" outline color="red">
-              <h4>Century</h4>
-            </q-btn>
-            <span class="white" slot="subtitle">
-              Over hill, over dale while avoiding the dusty mountain bike trail. This route is for those who believe toenails are for sissys
-              and blisters are braille for success.
-            </span>
+            <h6 class="white" slot="subtitle">
+              {{route.shortDescription}}</h6>
           </q-card-title>
         </div>
       </div>
@@ -355,9 +344,12 @@
         </div>
         <div class="text-italic text-center light-paragraph col-xs-12 col-md-4 self-center text" data-x="80">
           <h6>
-            This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community Health is an integrated
-            healthcare facility providing primary medical care, basic dental, mental health, specialty referral and medication
-            to the low-income and uninsured. Boise Rescue Mission provides programs and services including addiction recovery
+            This year we are proud to support Genesis Community Health and Boise Rescue Mission. Genesis Community
+            Health is an integrated
+            healthcare facility providing primary medical care, basic dental, mental health, specialty referral and
+            medication
+            to the low-income and uninsured. Boise Rescue Mission provides programs and services including addiction
+            recovery
             and food and shelter for homeless men, women and children.
           </h6>
           <q-btn class="cbtnm" @click="$router.push('charities')">Learn More</q-btn>
@@ -529,6 +521,9 @@
           return false;
         }
       },
+      routes() {
+        return this.$store.state.routes;
+      }
       // video() {
       //   var num = Math.floor((Math.random() * 3) + 1);
       //   return `./statics/video/head.mp4`;
@@ -835,7 +830,7 @@
   }
 
   .route-btn {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 
   .routeshr {
@@ -857,7 +852,13 @@
   }
 
   .border {
+    /* border: 1px white solid; */
+    padding: 5em
+  }
+
+  .mobile-border {
     border: 1px white solid;
+    padding: 3em 0 3em 0;
   }
 
   .text {
