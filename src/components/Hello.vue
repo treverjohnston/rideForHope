@@ -319,20 +319,20 @@
           <hr class="routeshr">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-5 border desktop-only" v-for="route in routes">
-          <q-card-title class="text-center">
+          <q-card-title class="text-center card-container shadow-24">
             <q-btn class="route-btn" @click="$router.push(route.url.trim('/'))" outline color="red">
               <h4>{{route.length}}</h4>
             </q-btn>
-            <h6 class="white" slot="subtitle">
+            <h6 class="white text-justify" slot="subtitle">
               {{route.shortDescription}}</h6>
           </q-card-title>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-5 mobile-border mobile-only" v-for="route in routes">
-          <q-card-title class="text-center">
+          <q-card-title class="text-center card-container shadow-24">
             <q-btn class="route-btn" @click="$router.push(route.url.trim('/'))" outline color="red">
               <h4>{{route.length}}</h4>
             </q-btn>
-            <h6 class="white" slot="subtitle">
+            <h6 class="white text-justify" slot="subtitle">
               {{route.shortDescription}}</h6>
           </q-card-title>
         </div>
@@ -421,8 +421,14 @@
                   <small>Special thanks to Imago Caeli for all 2018 Ride For Hope Idaho video!</small>
                 </div>
               </div>
+              <hr class="hr">
             </div>
           </div>
+        </div>
+        <div class="col-xs-12">
+          <q-btn flat class="" @click="launch('//www.ebenezerwebsites.com/')">
+            <img class="ebenezer" src="../assets/ebenezer.png" alt="Ebenezer Websites Logo">
+          </q-btn>
         </div>
       </div>
     </div>
@@ -689,8 +695,9 @@
 </script>
 
 <style scoped>
-  .vid-logo {
-    /* margin-top: 5rem; */
+  .card-container {
+    background-color: rgba(75, 75, 75, 0.39);
+    border: 1px solid white;
   }
 
 
@@ -899,6 +906,10 @@
     max-width: 9rem;
   }
 
+  .ebenezer {
+    max-width: 7rem;
+  }
+
   .meridian-mobile {
     max-height: 3rem;
     margin-top: 0.5rem;
@@ -971,7 +982,7 @@
   .footer {
     background-color: rgba(17, 17, 17, 0.88);
     color: rgb(180, 0, 0);
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 
   .spacer {

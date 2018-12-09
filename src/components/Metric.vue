@@ -18,7 +18,7 @@
                 <div class="row justify-center">
                     <div class="col-xs-12 col-lg-4 r-links">
                         <div class="row wrap justify-center">
-                            <div class="col-xs-11 text-center r-links">
+                            <div class="col-xs-11 text-center spacers">
                                 <q-btn no-caps class="btn" @click="$router.push('/register')">Register Now
                                 </q-btn>
                                 <!-- LIVE REGISTRATION -->
@@ -29,8 +29,8 @@
                             </div>
                         </div>
                         <div class="row wrap justify-center">
-                            <div class="light-paragraph text-center col-xs-11 col-md-11 r-links">
-                                <p>Registration opens at 5:00 AM</p>
+                            <div class="light-paragraph text-center col-xs-11 col-md-11 spacers">
+                                <p>Ride Day Registration opens at 5:00 AM</p>
                                 <hr class="ihr" />
                                 <h4>{{route.length}} Start Time</h4>
                                 <h5>{{route.startTime}}</h5>
@@ -41,13 +41,13 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="row wrap justify-center">
-                            <h6 class="light-paragraph text-center col-xs-11 col-md-11 r-links">
-                                {{route.description}}
-                            </h6>
-                        </div>
+                        <!-- <div class="row wrap justify-center">
+              <h6 class="light-paragraph text-center col-xs-11 spacers description text-justify">
+                {{route.description}}
+              </h6>
+            </div> -->
                         <div class="row justify-center">
-                            <div class="col-xs-11 col-md-11 text-center border r-links">
+                            <div class="col-xs-11 col-md-11 text-center border spacers">
                                 <div class="row justify-center">
                                     <div class="col-xs-4">
                                         <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
@@ -55,6 +55,7 @@
                                     </div>
                                     <div class="col-xs-12 self-center">
                                         <h5>Rest Stops</h5>
+                                        <hr class="hr" />
                                     </div>
                                     <div class="col-xs-12 self-center" v-for="stop in route.restStops">
                                         <h6>{{stop}}</h6>
@@ -63,16 +64,19 @@
                             </div>
                         </div>
                         <div class="row justify-center desktop-only">
-                            <div class="col-xs-11 text-center r-links">
+                            <div class="col-xs-11 text-center spacers">
                                 <div class="row justify-center">
                                     <h5 class="col-xs-12">Quick Links To Other Routes</h5>
+                                    <div class="col-xs-12">
+                                        <hr class="ihr">
+                                    </div>
                                     <q-btn v-for="otherRoute in routes" v-if="otherRoute.length != route.length" class="col-xs-4 r-btn"
                                         @click="$router.push(otherRoute.url.trim('/'))" no-caps>{{otherRoute.length}}</q-btn>
                                 </div>
                             </div>
                         </div>
                         <div class="row wrap justify-center desktop-only last">
-                            <div class="col-xs-11 text-center r-links">
+                            <div class="col-xs-11 text-center spacers">
                                 <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                             </div>
                         </div>
@@ -82,11 +86,15 @@
                             <q-card class="route col-xs-11 col-md-11 shadow-24">
                                 <q-transition appear enter="zoomIn" leave="fadeOut">
                                     <div>
-                                        <q-card-media>
+                                        <q-card-media class="desktop-only">
                                             <iframe id="mapmyfitness_route" :src="route.frame" height="650px" width="100%"
                                                 frameborder="0"></iframe>
                                         </q-card-media>
-                                        <div align="center" class="white-text small" label="View More Map Options">
+                                        <q-card-media class="mobile-only">
+                                            <iframe id="mapmyfitness_route" :src="route.frameMobile" height="650px"
+                                                width="100%" frameborder="0"></iframe>
+                                        </q-card-media>
+                                        <div align="center" class="white small" label="View More Map Options">
                                             <q-btn v-for="link in route.otherMaps" :class="route.btnClass" @click="launch(link.link)"
                                                 no-caps>{{link.title}}</q-btn>
                                         </div>
@@ -94,8 +102,25 @@
                                 </q-transition>
                             </q-card>
                         </div>
+                        <div class="row wrap justify-center">
+                            <h6 class="white text-center col-xs-11 spacers description text-justify">
+                                {{route.description}}
+                            </h6>
+                        </div>
+                        <div class="row justify-center mobile-only">
+                            <div class="col-xs-11 text-center spacers white">
+                                <div class="row justify-center white">
+                                    <h5 class="col-xs-12 text-center">Quick Links To Other Routes</h5>
+                                    <div class="col-xs-12">
+                                        <hr class="ihr">
+                                    </div>
+                                    <q-btn v-for="otherRoute in routes" v-if="otherRoute.length != route.length" class="col-xs-4 r-btn"
+                                        @click="$router.push(otherRoute.url.trim('/'))" no-caps>{{otherRoute.length}}</q-btn>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row wrap justify-center mobile-only">
-                            <div class="col-xs-12 text-center bot-link">
+                            <div class="col-xs-11 text-center spacers bot-link">
                                 <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
                             </div>
                         </div>
@@ -194,14 +219,6 @@
 
     .color {
         background-color: rgba(255, 68, 0, 0.919);
-    }
-
-    .route {
-        border: 5px solid black;
-    }
-
-    .hr {
-        width: 30%;
     }
 
     .headline {

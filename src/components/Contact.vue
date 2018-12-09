@@ -6,21 +6,31 @@
                     <div class="col-xs-12 text-center">
                         <h3>Contact Us</h3>
                         <hr class="hr">
-                        <h5 class="desktop-only">Please contact us anytime with any questions, or other inquiries.</h5>
-                        <h6 class="mobile-only">Please contact us anytime with any questions, or other inquiries.</h6>
+                        <h5 class="desktop-only">Please contact us anytime with any questions or inquiries!</h5>
+                        <h6 class="mobile-only">Please contact us anytime with any questions or inquiries!</h6>
                     </div>
                 </div>
                 <div class="row justify-center bot desktop-only xs-gutter">
                     <div class="col-xs-5 self-center space">
-                        <img src="statics/logos/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
+                        <img src="statics/logos/RFHIdahoLogo.png" class="responsive img route" alt="Ride for hope idaho logo">
                     </div>
                     <div class="col-xs-5 self-center">
                         <q-input v-model="name" float-label="Name" name="name" type="text" />
                         <q-input v-model="email" float-label="Email" name="email" type="email" />
                         <q-input v-model="phone" float-label="Phone" name="phone" type="tel" />
                         <q-input v-model="subject" float-label="Subject" name="subject" type="text" />
-                        <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
-                        <q-btn @click="send">Send</q-btn>
+                        <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100"
+                            :min-rows="5" />
+                        <form action="//formspree.io/rideforhopeidaho@gmail.com" method="POST">
+                            <q-btn type="submit" outline color="black">Send</q-btn>
+                            <div class="hidden">
+                                <input type="text" name="name" v-model="name">
+                                <input type="email" name="_replyto" v-model="email">
+                                <input type="tel" name="phone" v-model="phone">
+                                <input type="text" name="subject" v-model="subject">
+                                <input type="textarea" name="message" v-model="message">
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="row wrap justify-center mobile-only">
@@ -29,11 +39,21 @@
                         <q-input v-model="email" float-label="Email" name="email" />
                         <q-input v-model="phone" float-label="Phone" name="phone" />
                         <q-input v-model="subject" float-label="Subject" name="subject" />
-                        <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100" :min-rows="5" />
-                        <q-btn @click="send" class="full-width">Send</q-btn>
+                        <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100"
+                            :min-rows="5" />
+                        <form action="//formspree.io/rideforhopeidaho@gmail.com" method="POST">
+                            <q-btn type="submit" outline color="black">Send</q-btn>
+                            <div class="hidden">
+                                <input type="text" name="name" v-model="name">
+                                <input type="email" name="_replyto" v-model="email">
+                                <input type="tel" name="phone" v-model="phone">
+                                <input type="text" name="subject" v-model="subject">
+                                <input type="textarea" name="message" v-model="message">
+                            </div>
+                        </form>
                     </div>
                     <div class="col-xs-10 bot">
-                        <img src="statics/logos/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
+                        <img src="statics/logos/RFHIdahoLogo.png" class="responsive img route" alt="Ride for hope idaho logo">
                     </div>
                 </div>
             </div>
@@ -120,5 +140,4 @@
     .hr {
         width: 20%
     }
-
 </style>

@@ -28,6 +28,10 @@
     border-radius: 5px;
   }
 
+  .route {
+    background-color: rgba(75, 75, 75, 0.39);
+  }
+
   .ride-back {
     /* background-image: url("https://res.cloudinary.com/treverscloud/image/upload/v1517856029/bw_icaeha.jpg");
     background-position: center center;
@@ -51,17 +55,28 @@
   }
 
   .bot-link {
-    margin: 1rem 0 1rem 0;
-    background-color: rgba(224, 226, 226, 0.65);
-    padding: .5rem;
-    border-radius: 15px;
+    margin-bottom: 1rem;
   }
 
   .r-links {
     margin-top: 3rem;
     padding: .5rem;
     border-radius: 15px;
-    background-color: rgba(224, 226, 226, 0.65);
+    /* background-color: rgba(224, 226, 226, 0.65); */
+    /* background-color: rgba(75, 75, 75, 0.39); */
+    color: white;
+  }
+
+  .spacers {
+    margin-top: 3rem;
+    padding: .5rem;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: rgba(75, 75, 75, 0.39);
+  }
+
+  .description {
+    padding: 1rem;
   }
 
   .swal-modal {
@@ -111,6 +126,11 @@
     color: white;
     padding: 1rem;
     margin: 1rem;
+    border-radius: 10px;
+  }
+
+  .hr {
+    width: 30%;
   }
 
   .q-item {
