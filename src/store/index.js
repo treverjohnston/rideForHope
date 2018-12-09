@@ -19,6 +19,7 @@ vue.use(VueAnalytics, {
 
 var store = new vuex.Store({
   state: {
+    openRegistration: false,
     routes: [
       // {
       //     url: '/18-mile',

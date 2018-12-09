@@ -9,10 +9,39 @@
   /*
      * Root component
      */
-  export default {};
+  export default {
+    mounted() {
+      let closeDate = new Date("June 23, 2019 01:00:00")
+      let openDate = new Date("January 1, 2019 00:00:00")
+
+      let date = new Date();
+      if (date > openDate && date < closeDate) {
+        this.$store.state.openRegistration = true;
+      }
+    }
+  };
 </script>
 
 <style>
+  .route-btn {
+    margin-bottom: 3rem;
+  }
+
+  .card-container {
+    background-color: rgba(75, 75, 75, 0.39);
+    border: 1px solid white;
+  }
+
+  .border {
+    /* border: 1px white solid; */
+    padding: 5em
+  }
+
+  .mobile-border {
+    /* border: 1px white solid; */
+    padding: 3em 0 3em 0;
+  }
+
   .white {
     color: white;
   }

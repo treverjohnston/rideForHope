@@ -31,12 +31,11 @@
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn class="mobile-only" outline @click="$router.push('/register')" color="red">Register
-        </q-btn>
-        <!-- LIVE REGISTRATION -->
-        <!-- <q-btn class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
+        <q-btn v-if="openRegistration" class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
           color="red">Register
-        </q-btn> -->
+        </q-btn>
+        <q-btn v-else class="mobile-only" outline @click="$router.push('/register')" color="red">Register
+        </q-btn>
       </q-transition>
       <q-btn class="mobile-only">
         <img class="meridian-mobile" @click="launch('http://www.meridian-cycles.com/')" src="statics/logos/meridian.png"
@@ -45,10 +44,8 @@
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
-      <q-route-tab class="tab" slot="title" color="red" label="Register" name="register" to="register" />
-      <!-- LIVE REGISTRATION -->
-      <!-- <q-tab class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
-      /> -->
+      <q-tab v-if="openRegistration" class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" />
+      <q-route-tab v-else class="tab" slot="title" color="red" label="Register" name="register" to="register" />
       <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" />
       <q-tab class="tab involved" align="left" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
@@ -74,10 +71,10 @@
             </q-tab>
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" name="register" class="tab" slot="title" color="red" label="Register" to="register" />
-            <!-- LIVE REGISTRATION -->
-            <!-- <q-tab @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" name="home"
-              class="tab" slot="title" color="red" label="Register" /> -->
+            <q-tab v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
+              name="home" class="tab" slot="title" color="red" label="Register" />
+            <q-route-tab v-else @click="collapse" name="register" class="tab" slot="title" color="red" label="Register"
+              to="register" />
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Packet Pick Up" name="rider" to="packet" />
@@ -107,7 +104,7 @@
           </q-item-main>
         </q-popover>
       </q-tab>
-      <q-route-tab class="tab" slot="title" label="Volunteer" name="volunteers" to="volunteers" />
+      <!-- <q-route-tab class="tab" slot="title" label="Volunteer" name="volunteers" to="volunteers" /> -->
       <q-route-tab class="tab" slot="title" label="Sponsors" name="sponsors" to="sponsors" />
       <q-tab class="tab involved" slot="title" label="Galleries" name="gallery">
         <q-popover fit ref="popover" class="involved">
@@ -130,13 +127,10 @@
           <hr class="tabhr">
         </q-side-link>
         <q-side-link to="register">
-          <q-item-main class="side register" label="Register" />
-          <!-- <hr class="tabhr"> -->
+          <q-item-main v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
+            class="side register" label="Register" />
+          <q-item-main v-else class="side register" label="Register" />
         </q-side-link>
-        <!-- LIVE REGISTRATION -->
-        <!-- <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" class="side register"
-          label="Register" /> -->
-        <!-- </q-side-link> -->
         <hr class="tabhrs">
         <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
           class="side" label="Rider Fundraising" />
@@ -166,11 +160,10 @@
           </q-collapsible>
           <hr class="tabhrs">
           <q-side-link to="register">
-            <q-item-main class="small-side register" label="Register" />
+            <q-item-main v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
+              class="small-side register" label="Register" />
+            <q-item-main v-else class="small-side register" label="Register" />
           </q-side-link>
-          <!-- LIVE REGISTRATION -->
-          <!-- <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" class="small-side register"
-            label="Register" /> -->
           <hr class="tabhrs">
           <q-side-link to="packet">
             <q-item-main class="small-side" label="Packet Pick Up" />
@@ -203,10 +196,10 @@
           </q-side-link>
         </q-collapsible>
         <hr class="tabhr">
-        <q-side-link to="volunteers">
+        <!-- <q-side-link to="volunteers">
           <q-item-main class="side" label="Volunteer" />
           <hr class="tabhr">
-        </q-side-link>
+        </q-side-link> -->
         <q-side-link to="sponsors">
           <q-item-main class="side" label="Sponsors" />
           <hr class="tabhr">
@@ -318,7 +311,7 @@
           </q-card-title>
           <hr class="routeshr">
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-5 border desktop-only" v-for="route in routes">
+        <div class="col-xs-12 col-sm-6 col-md-5 border desktop-only self-center" v-for="route in routes">
           <q-card-title class="text-center card-container shadow-24">
             <q-btn class="route-btn" @click="$router.push(route.url.trim('/'))" outline color="red">
               <h4>{{route.length}}</h4>
@@ -530,6 +523,9 @@
       },
       routes() {
         return this.$store.state.routes;
+      },
+      openRegistration() {
+        return this.$store.state.openRegistration;
       }
       // video() {
       //   var num = Math.floor((Math.random() * 3) + 1);
@@ -695,12 +691,6 @@
 </script>
 
 <style scoped>
-  .card-container {
-    background-color: rgba(75, 75, 75, 0.39);
-    border: 1px solid white;
-  }
-
-
   .full-vid {
     width: 100%;
   }
@@ -837,10 +827,6 @@
     color: red;
   }
 
-  .route-btn {
-    margin-bottom: 3rem;
-  }
-
   .routeshr {
     width: 90%;
     margin-bottom: 3rem;
@@ -857,16 +843,6 @@
     background: rgba(0, 0, 0, 0.308);
     height: 100%;
     width: 100%;
-  }
-
-  .border {
-    /* border: 1px white solid; */
-    padding: 5em
-  }
-
-  .mobile-border {
-    /* border: 1px white solid; */
-    padding: 3em 0 3em 0;
   }
 
   .text {

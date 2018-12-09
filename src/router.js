@@ -89,10 +89,10 @@ export default new VueRouter({
           path: 'merchandise',
           component: load('Merch')
         },
-        {
-          path: 'volunteers',
-          component: load('Volunteers')
-        },
+        // {
+        //   path: 'volunteers',
+        //   component: load('Volunteers')
+        // },
         {
           path: 'sponsors',
           component: load('Sponsors')

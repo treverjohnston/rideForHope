@@ -12,14 +12,10 @@
                         <p>Registration opens at 5:00 AM</p>
                         <!-- <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p> -->
                         <hr class="ihr">
-                        <h5>Century Start Time</h5>
-                        <p>6:00 AM*</p>
-                        <h5>Metric Century Start Time</h5>
-                        <p>8:00 AM*</p>
-                        <h5>31 Mile Start Time</h5>
-                        <p>10:00 AM*</p>
-                        <h5>18 Mile Start Time</h5>
-                        <p>10:30 AM*</p>
+                        <span v-for="route in routes">
+                            <h5>{{route.length}} Start Time</h5>
+                            <p>{{route.startTime}}</p>
+                        </span>
                         <hr class="ihr">
                         <p>*Please be at the start line ready to ride at least 15 minutes before posted start time.</p>
                     </div>
@@ -27,11 +23,12 @@
                         <h3 class="desktop-only text-center">Directions (Kuna City Hall)</h3>
                         <h4 class="mobile-only text-center">Directions (Kuna City Hall)</h4>
 
-                        <iframe class="frame" src="//www.google.com/maps/embed/v1/place?q=Kuna%20City%20Hall
+                        <iframe class="frame shadow-24 route" src="//www.google.com/maps/embed/v1/place?q=Kuna%20City%20Hall
                     &zoom=13
                     &attribution_source=Google+Maps+Embed+API
                     &attribution_web_url=https://developers.google.com/maps/documentation/embed/
-                    &key=AIzaSyBLaoSdXeLvOkN5Tp5YkPZ35gXfi5-LhsI" allowfullscreen>
+                    &key=AIzaSyBLaoSdXeLvOkN5Tp5YkPZ35gXfi5-LhsI"
+                            allowfullscreen>
                         </iframe>
                     </div>
                 </div>
@@ -61,6 +58,11 @@
                 subject: '',
                 message: ''
             }
+        },
+        computed: {
+            routes() {
+                return this.$store.state.routes;
+            },
         },
 
         components: {
