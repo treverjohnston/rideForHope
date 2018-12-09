@@ -320,7 +320,7 @@
               {{route.shortDescription}}</h6>
           </q-card-title>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-5 mobile-border mobile-only" v-for="route in routes">
+        <div class="col-xs-11 col-sm-6 col-md-5 mobile-border mobile-only" v-for="route in routes">
           <q-card-title class="text-center card-container shadow-24">
             <q-btn class="route-btn" @click="$router.push(route.url.trim('/'))" outline color="red">
               <h4>{{route.length}}</h4>
