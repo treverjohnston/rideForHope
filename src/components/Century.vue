@@ -6,8 +6,8 @@
                     <div class="col-xs-12">
                         <div class="row justify-center">
                             <div class="col-xs-12 text-center">
-                                <h2 class="headline text-center black">{{route.length}} Ride</h2>
-                                <h5 class="headline text-center black">
+                                <h2 class="headline text-center white">{{route.length}} Ride</h2>
+                                <h5 class="headline text-center white">
                                     {{route.headline}}
                                 </h5>
                                 <hr class="hr" />

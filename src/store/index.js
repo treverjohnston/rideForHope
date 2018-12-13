@@ -71,8 +71,8 @@ var store = new vuex.Store({
         ],
         btnClass: 'btn yellow',
         headline: 'Virtutem Spei - "Hope and Strength"',
-        frame: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=600&height=400&elevation=true&line_color=E60f0bdb&rgbhex=DB0B0E&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
-        frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=300&height=450&elevation=true&line_color=E60f0bdb&rgbhex=DB0B0E&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
+        frame: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=600&height=400&elevation=true&line_color=E60dd9cf&rgbhex=cfd90d&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
+        frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=300&height=450&elevation=true&line_color=E60dd9cf&rgbhex=cfd90d&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
         startTime: '10:30 AM*',
         otherMaps: [
           {
