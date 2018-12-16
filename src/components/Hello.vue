@@ -250,7 +250,7 @@
               <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
               <hr>
               <h1 class="text-bold">Ride For Hope Idaho</h1>
-              <h2 class="text-bold">2019 Event Date: Saturday, June 22</h2>
+              <h2 class="text-bold">2019 Event Date: Saturday, June 8</h2>
               <h2 class="text-bold">Kuna, ID</h2>
               <hr>
               <h6 class="q-title">A special thanks to
@@ -270,7 +270,7 @@
             <hr>
             <!-- <h4 class="text-bold">Ride For Hope Idaho</h4> -->
             <h5 class="">2019 Event Date:</h5>
-            <h5>Saturday, June 22</h5>
+            <h5>Saturday, June 8</h5>
             <h5 class="">Kuna, ID</h5>
             <hr>
             <h6 class="q-title">A special thanks to
@@ -633,7 +633,7 @@
       packetSwal() {
         return swal({
           title: 'Packet Pick Up',
-          text: 'Friday, June 22 from 2pm-8pm at Meridian Cycles',
+          text: 'Friday, June 7 from 2pm-8pm at Meridian Cycles',
           buttons: {
             site: { text: "More Information", value: "site" },
             dismiss: { text: "Dismiss", value: "dismiss" }
