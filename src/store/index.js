@@ -110,8 +110,8 @@ var store = new vuex.Store({
         ],
         btnClass: 'btn blue-back',
         headline: 'Carpe Diem - "Seize The Day"',
-        frame: '//snippets.mapmycdn.com/routes/view/embedded/1478990992?width=600&height=400&elevation=true&line_color=E60f0bdb&rgbhex=DB0B0E&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-21T10:32:52-05:00&show_marker_every=3',
-        frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/1478990992?width=300&height=450&elevation=true&line_color=E60f0bdb&rgbhex=DB0B0E&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-21T10:32:52-05:00&show_marker_every=3',
+        frame: '//snippets.mapmycdn.com/routes/view/embedded/1478990992?width=600&height=400&elevation=true&line_color=E6d9430d&rgbhex=0d43d9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-21T10:32:52-05:00&show_marker_every=3',
+        frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/1478990992?width=300&height=450&elevation=true&line_color=E6d9430d&rgbhex=0d43d9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-21T10:32:52-05:00&show_marker_every=3',
         startTime: '10:00 AM*',
         otherMaps: [
           {
@@ -150,8 +150,8 @@ var store = new vuex.Store({
         ],
         btnClass: 'btn color',
         headline: 'Semper Fidelis - "Always Faithful"',
-        frame: '//snippets.mapmycdn.com/routes/view/embedded/981667107?width=400&height=300&line_color=E60044e1&rgbhex=e14400&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-06-18T20:51:29-07:00&show_marker_every=6',
-        frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/981667107?width=300&height=450&line_color=E60044e1&rgbhex=e14400&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-06-18T20:51:29-07:00&show_marker_every=6',
+        frame: '//snippets.mapmycdn.com/routes/view/embedded/981667107?width=400&height=300&line_color=E60073ff&rgbhex=ff7300&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-06-18T20:51:29-07:00&show_marker_every=6',
+        frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/981667107?width=300&height=450&line_color=E60073ff&rgbhex=ff7300&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-06-18T20:51:29-07:00&show_marker_every=6',
         startTime: '8:00 AM*',
         otherMaps: [
           {
