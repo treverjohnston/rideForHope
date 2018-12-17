@@ -419,9 +419,12 @@
           </div>
         </div>
         <div class="col-xs-12">
-          <q-btn flat class="" @click="launch('//www.ebenezerwebsites.com/')">
+          <q-btn flat class="">
             <img class="ebenezer" src="../assets/ebenezer.png" alt="Ebenezer Websites Logo">
           </q-btn>
+          <!-- <q-btn flat class="" @click="launch('//www.ebenezerwebsites.com/')">
+            <img class="ebenezer" src="../assets/ebenezer.png" alt="Ebenezer Websites Logo">
+          </q-btn> -->
         </div>
       </div>
     </div>

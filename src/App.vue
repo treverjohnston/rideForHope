@@ -11,7 +11,7 @@
      */
   export default {
     mounted() {
-      let closeDate = new Date("June 23, 2019 01:00:00")
+      let closeDate = new Date("June 9, 2019 01:00:00")
       let openDate = new Date("January 1, 2019 00:00:00")
 
       let date = new Date();
