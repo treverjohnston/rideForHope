@@ -24,28 +24,30 @@
             <div class="row wrap justify-center pics desktop-only">
                 <q-card flat align="center" class="col-xs-12 col-md-6">
                     <q-card-media>
-                        <img src="~statics/merch/jersey.jpg" class="responsive" alt="Jersey">
+                        <img src="~statics/merch/cuore.jpg" class="responsive" alt="Jersey">
                     </q-card-media>
                     <q-card-title class="black-text">
-                        2018 Ride For Hope Idaho Jersey </q-card-title>
+                        2019 Ride For Hope Idaho Jersey </q-card-title>
                     <q-card-main>
-                        <q-btn no-caps disabled @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')" class="cbtn shadow-24">$50.00 (Sold Out)</q-btn>
+                        <q-btn no-caps disabled @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')"
+                            class="cbtn shadow-24">Available Early 2019</q-btn>
                     </q-card-main>
                 </q-card>
             </div>
         </q-transition>
-                <div class="row wrap justify-center pics-mobile mobile-only">
-                    <q-card flat align="center" class="col-xs-12">
-                        <q-card-media>
-                            <img src="~statics/merch/jersey.jpg" class="responsive" alt="Jersey">
-                        </q-card-media>
-                        <q-card-title class="black-text">
-                           2018 Ride For Hope Idaho Jersey </q-card-title>
-                        <q-card-main>
-                            <q-btn no-caps disabled @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')" class="cbtn shadow-24">$50.00 (Sold Out)</q-btn>
-                        </q-card-main>
-                    </q-card>
-                </div>
+        <div class="row wrap justify-center pics-mobile mobile-only">
+            <q-card flat align="center" class="col-xs-12">
+                <q-card-media>
+                    <img src="~statics/merch/jersey.jpg" class="responsive" alt="Jersey">
+                </q-card-media>
+                <q-card-title class="black-text">
+                    2018 Ride For Hope Idaho Jersey </q-card-title>
+                <q-card-main>
+                    <q-btn no-caps disabled @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')"
+                        class="cbtn shadow-24">$50.00 (Sold Out)</q-btn>
+                </q-card-main>
+            </q-card>
+        </div>
     </q-layout>
 </template>
 
@@ -114,7 +116,7 @@
         background-color: rgba(218, 0, 0, 0.699);
         color: white;
         padding: 0 2rem 0 2rem;
-      }
+    }
 
     .fancy {
         font-family: 'Niconne', cursive;
@@ -134,9 +136,10 @@
         padding: 2rem 0 1rem 0;
     }
 
-    .black-text{
+    .black-text {
         color: black;
     }
+
     .raffle {
         background-image: url("~statics/road.jpg");
         background-size: cover;

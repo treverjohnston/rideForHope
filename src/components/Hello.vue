@@ -8,12 +8,12 @@
         Ride For Hope Idaho
       </q-toolbar-title>
       <q-transition class="desktop-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn class="desktop-only" @click="launch('http://www.meridian-cycles.com/')">
+        <!-- <q-btn class="desktop-only" @click="launch('http://www.meridian-cycles.com/')">
           <img class="meridian desktop-only" src="statics/logos/meridian.png" alt="Meridian Cycles logo">
-        </q-btn>
+        </q-btn> -->
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just
+        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D71518%26mSource%3DimAOverview')">Just
           Donate
         </q-btn>
       </q-transition>
@@ -26,25 +26,25 @@
         <img src="statics/logos/RFHIdahoLogo.png" alt="logo" class="mini">
       </q-btn>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Just
+        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D71518%26mSource%3DimAOverview')">Just
           Donate
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn v-if="openRegistration" class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
+        <q-btn v-if="openRegistration" class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
           color="red">Register
         </q-btn>
         <q-btn v-else class="mobile-only" outline @click="$router.push('/register')" color="red">Register
         </q-btn>
       </q-transition>
-      <q-btn class="mobile-only">
+      <!-- <q-btn class="mobile-only">
         <img class="meridian-mobile" @click="launch('http://www.meridian-cycles.com/')" src="statics/logos/meridian.png"
           alt="Meridian Cycles logo">
-      </q-btn>
+      </q-btn> -->
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
-      <q-tab v-if="openRegistration" class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')" />
+      <q-tab v-if="openRegistration" class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')" />
       <q-route-tab v-else class="tab" slot="title" color="red" label="Register" name="register" to="register" />
       <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" />
       <q-tab class="tab involved" align="left" slot="title" label="Rider Info" name="rider">
@@ -71,7 +71,7 @@
             </q-tab>
           </q-item-main>
           <q-item-main>
-            <q-tab v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
+            <q-tab v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
               name="home" class="tab" slot="title" color="red" label="Register" />
             <q-route-tab v-else @click="collapse" name="register" class="tab" slot="title" color="red" label="Register"
               to="register" />
@@ -127,7 +127,7 @@
           <hr class="tabhr">
         </q-side-link>
         <q-side-link to="register">
-          <q-item-main v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
+          <q-item-main v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
             class="side register" label="Register" />
           <q-item-main v-else class="side register" label="Register" />
         </q-side-link>
@@ -160,7 +160,7 @@
           </q-collapsible>
           <hr class="tabhrs">
           <q-side-link to="register">
-            <q-item-main v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')"
+            <q-item-main v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
               class="small-side register" label="Register" />
             <q-item-main v-else class="small-side register" label="Register" />
           </q-side-link>
@@ -381,11 +381,14 @@
                 <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
               </q-btn>
             </div>
-            <div v-scroll-fire="animate" class="col-md-3 self-center" id="bar">
+            <q-btn flat class="col-md-3 self-center" @click="launch('//www.ebenezerwebsites.com/')">
+              <img class="ebenezer" src="../assets/ebenezer.png" alt="Ebenezer Websites Logo">
+            </q-btn>
+            <!-- <div v-scroll-fire="animate" class="col-md-3 self-center" id="bar">
               <q-btn flat data-x="360" class="el" @click="launch('http://www.meridian-cycles.com/')">
                 <img class="meridian-big" src="statics/logos/meridian.png" alt="Meridian Cycles logo">
               </q-btn>
-            </div>
+            </div> -->
             <div class="col-md-3 desktop-only self-center">
               <q-btn flat @click="launch('https://www.facebook.com/rideforhopeidaho/')" flat>
                 <q-icon class="fb" size="5.75rem" name="fa-facebook-square" />
@@ -422,9 +425,9 @@
           <!-- <q-btn flat class="">
             <img class="ebenezer" src="../assets/ebenezer.png" alt="Ebenezer Websites Logo">
           </q-btn> -->
-          <q-btn flat class="" @click="launch('//www.ebenezerwebsites.com/')">
+          <!-- <q-btn flat class="" @click="launch('//www.ebenezerwebsites.com/')">
             <img class="ebenezer" src="../assets/ebenezer.png" alt="Ebenezer Websites Logo">
-          </q-btn>
+          </q-btn> -->
         </div>
       </div>
     </div>
@@ -586,10 +589,10 @@
           .then((value) => {
             switch (value) {
               case 'sponsor':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')
                 break;
               case 'give':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')
                 break;
             }
           })
@@ -606,10 +609,10 @@
           .then((value) => {
             switch (value) {
               case 'sponsor':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')
                 break;
               case 'give':
-                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623')
+                this.launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')
                 break;
             }
           })

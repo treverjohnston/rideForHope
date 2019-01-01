@@ -19,7 +19,7 @@
                     <div class="col-xs-12 col-lg-4 r-links">
                         <div class="row wrap justify-center">
                             <div class="col-xs-11 text-center spacers">
-                                <q-btn v-if="openRegistration" no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D67623%26fQuery%3D%26z%3D1522016197284')">Register
+                                <q-btn v-if="openRegistration" no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')">Register
                                     Now
                                 </q-btn>
                                 <q-btn v-else no-caps class="btn" @click="$router.push('/register')">Register Now
@@ -28,7 +28,7 @@
                         </div>
                         <div class="row wrap justify-center">
                             <div class="light-paragraph text-center col-xs-11 col-md-11 spacers">
-                                <p>Ride Day Registration opens at 5:00 AM</p>
+                                <p>Ride Day Registration opens at 6:00 AM</p>
                                 <hr class="ihr" />
                                 <h4>{{route.length}} Start Time</h4>
                                 <h5>{{route.startTime}}</h5>

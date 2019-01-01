@@ -36,7 +36,7 @@ var store = new vuex.Store({
         headline: 'Virtutem Spei - "Hope and Strength"',
         frame: '//snippets.mapmycdn.com/routes/view/embedded/2264365960?width=600&height=400&elevation=true&line_color=E6d90d8e&rgbhex=8e0dd9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
         frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/2264365960?width=300&height=450&elevation=true&line_color=E6d90d8e&rgbhex=8e0dd9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
-        startTime: '11:45 AM*',
+        startTime: '11:30 AM*',
         otherMaps: [
           {
             title: 'Map My Ride',
@@ -73,7 +73,7 @@ var store = new vuex.Store({
         headline: 'Virtutem Spei - "Hope and Strength"',
         frame: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=600&height=400&elevation=true&line_color=E60dd9cf&rgbhex=cfd90d&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
         frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=300&height=450&elevation=true&line_color=E60dd9cf&rgbhex=cfd90d&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
-        startTime: '11:30 AM*',
+        startTime: '11:15 AM*',
         otherMaps: [
           {
             title: 'Map My Ride',
@@ -112,7 +112,7 @@ var store = new vuex.Store({
         headline: 'Carpe Diem - "Seize The Day"',
         frame: '//snippets.mapmycdn.com/routes/view/embedded/1478990992?width=600&height=400&elevation=true&line_color=E6d9430d&rgbhex=0d43d9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-21T10:32:52-05:00&show_marker_every=3',
         frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/1478990992?width=300&height=450&elevation=true&line_color=E6d9430d&rgbhex=0d43d9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-21T10:32:52-05:00&show_marker_every=3',
-        startTime: '11:00 AM*',
+        startTime: '10:45 AM*',
         otherMaps: [
           {
             title: 'Map My Ride',
@@ -173,7 +173,7 @@ var store = new vuex.Store({
         shortDescription:
           'Completely redesigned course for 2018. This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops.',
         description:
-          '62.8 miles long (because 62.9 would just be CRAZY!).  This is a ride for true bikers (i.e. no longer embarrassed to wear spandex). The route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops. The course meets up with the last half of the Century route (so you will have additional riders to share your challenge with along the way). You will continue northwest toward Marsing and then turn back toward Kuna and pedal, pedal, pedal, to Lake Shore Drive skirting Lake Lowell on your way back to the finish line where festivities and food await, (if you are fast enough!). Just remember, Humpty Dumpty had wall issues too but he overcame; so can you!'
+          '65.1 miles long (because 65.2 would just be CRAZY!).  This is a ride for true bikers (i.e. no longer embarrassed to wear spandex). The route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops. The course meets up with the last half of the Century route (so you will have additional riders to share your challenge with along the way). You will continue northwest toward Marsing and then turn back toward Kuna and pedal, pedal, pedal, to Lake Shore Drive skirting Lake Lowell on your way back to the finish line where festivities and food await, (if you are fast enough!). Just remember, Humpty Dumpty had wall issues too but he overcame; so can you!'
       },
       {
         url: '/Century',

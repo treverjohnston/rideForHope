@@ -6,11 +6,13 @@
                     <div class="col-xs-11 col-md-6 text-center">
                         <h3 class="text-bold shadow">We Love Our Sponsors!</h3>
                         <hr color="red" class="hr">
-                        <q-btn class="row wrap btn shadow-24" no-caps @click="$router.push('contact')">Sponsor Ride For Hope</q-btn>
+                        <q-btn class="row wrap btn shadow-24" no-caps @click="$router.push('contact')">Sponsor Ride For
+                            Hope</q-btn>
                         <hr color="red" class="hr">
                     </div>
                 </div>
-                <div class="row wrap justify-center text-center">
+
+                <!-- <div class="row wrap justify-center text-center">
                     <div v-scroll-fire="animate" class="col-xs-12 col-md-12">
                         <h2 class="text-bold shadow desktop-only">Veni Vidi Vici Sponsors</h2>
                         <h2 class="text-bold shadow desktop-only">($2500+)</h2>
@@ -152,19 +154,18 @@
                                                 <q-btn outline color="black" no-caps @click="launch('//franzbakery.com/')">
                                                     <h5 class="black desktop-only">Franz Bakery</h5>
                                                     <h6 class="black mobile-only">Franz Bakery</h6>
-                                                    <!-- <img class="responsive" src="statics/franz.png" alt="Franz Bakery"> -->
-                                                </q-btn>
-                                            </div>
-                                            <div class="col-xs-6 col-md-6 self-center last">
-                                                <q-btn color="black" outline no-caps @click="launch('http://www.fallsbrand.com/')">
-                                                    <h5 class="black desktop-only">Falls Brand</h5>
-                                                    <h6 class="black mobile-only">Falls Brand</h6>
-                                                </q-btn>
-                                            </div>
-                                        </div>
-                                        <hr color="red" class="hr">
-                    </div>
-                </div>
+                </q-btn>
+            </div>
+            <div class="col-xs-6 col-md-6 self-center last">
+                <q-btn color="black" outline no-caps @click="launch('http://www.fallsbrand.com/')">
+                    <h5 class="black desktop-only">Falls Brand</h5>
+                    <h6 class="black mobile-only">Falls Brand</h6>
+                </q-btn>
+            </div>
+        </div>
+        <hr color="red" class="hr">
+        </div>
+        </div> -->
             </div>
         </div>
     </q-layout>
