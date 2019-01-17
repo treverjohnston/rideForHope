@@ -258,7 +258,9 @@
                 for all 2018
                 Ride For Hope Idaho video!</h6>
               <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Video and Gallery</q-btn>
-              <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">10 Barrel Brewing Co. Charity Day</q-btn>
+              <q-btn v-if="showSwal" @click="charitySwal()" class="cbtnm shadow-24 text-center ">10 Barrel Brewing
+                Co.
+                Charity Day</q-btn>
             </div>
             <div>
               <!-- <q-btn @click="$refs.charityModal.open()" class="cbtnm shadow-24 text-center">Packet Pick Up Information</q-btn> -->
@@ -276,7 +278,8 @@
             <h6 class="q-title">A special thanks to
               <a class="noHighlight" href="https://www.imagocaeli.com/" target="_blank">Imago Caeli</a> for all 2018
               Ride For Hope Idaho video!</h6>
-            <q-btn @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company Charity Day</q-btn>
+            <q-btn v-if="showSwal" @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company
+              Charity Day</q-btn>
             <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Video and Gallery</q-btn>
           </div>
 
@@ -515,6 +518,7 @@
       return {
         showVid: false,
         showSplash: false,
+        showSwal: false,
         video: `./statics/video/head.mp4`
       };
     },
@@ -677,16 +681,19 @@
     },
     mounted() {
       this.$refs.layout.hideLeft();
-       let charityPass = false;
+      let charityPass = false;
       let timeStamp = Date.now()
       let m = date.formatDate(timeStamp, 'MM')
       let d = date.formatDate(timeStamp, 'DD')
       let y = date.formatDate(timeStamp, 'YYYY')
-      if(d == '17' || d == '18' || d == '19' || d == '20' || d == '21' || d == '22' || d == '23' || d == '24' || d == '25' || d == '26' || d == '27' || d == '28' || d == '29' || d == '30' || d == '31'){
+      if (d == '17' || d == '18' || d == '19' || d == '20' || d == '21' || d == '22' || d == '23' || d == '24' || d == '25' || d == '26' || d == '27' || d == '28' || d == '29' || d == '30' || d == '31') {
         charityPass = true;
-      } 
+      }
       if (m == '01' && charityPass && y == '2019') {
-      this.charitySwal();
+        this.showSwal = true;
+      }
+      if (this.showSwal) {
+        this.charitySwal();
       }
       // Conditions to display swal
       // let dayPass = false;
