@@ -11,7 +11,7 @@
      */
   export default {
     mounted() {
-      let closeDate = new Date("June 9, 2019 01:00:00")
+      let closeDate = new Date("June 6, 2019 11:59:00")
       let openDate = new Date("January 1, 2019 00:00:00")
 
       let date = new Date();
@@ -109,25 +109,22 @@
   }
 
   .swal-modal {
-    background-color: rgba(0, 0, 0, 0.905);
-
+    background-color: rgba(255, 255, 255, 0.932);
   }
 
   .swal-button {
-    background-color: rgb(77, 75, 75);
-    font-family: 'Bellefair', serif;
-
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
   }
 
   .swal-title {
-    color: white;
-    font-family: 'Bellefair', serif;
+    color: black;
   }
 
   .swal-text {
-    color: white;
-    font-family: 'Bellefair', serif;
-
+    color: black;
+    text-align: center;
   }
 
   .rest {
