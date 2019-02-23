@@ -278,7 +278,7 @@
             <h6 class="q-title">A special thanks to
               <a class="noHighlight" href="https://www.imagocaeli.com/" target="_blank">Imago Caeli</a> for all 2018
               Ride For Hope Idaho video!</h6>
-            <q-btn v-if="showSwal" @click="charitySwal()" class="cbtnm shadow-24 text-center ">Payette Brewing Company
+            <q-btn v-if="showSwal" @click="charitySwal()" class="cbtnm shadow-24 text-center ">10 Barrel Brewing Co.
               Charity Day</q-btn>
             <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Video and Gallery</q-btn>
           </div>
@@ -623,7 +623,7 @@
       charitySwal() {
         return swal({
           title: 'January 31, 2019 Charity Day',
-          text: 'Join us at 10 Barrel Brewing Co. January 31st, 2019 for a charity night! A portion of all proceeds from 5-9 are donated to Ride For Hope Idaho!',
+          text: 'Join us at 10 Barrel Brewing Co. January 31st, 2019 for a charity night. All proceeds from 5-9 are donated to charity! Between 2017 and 2018 this charity night has raised over $4000!',
           buttons: {
             site: { text: "10 Barrel Brewing Co.", value: "site" },
             dismiss: { text: "Dismiss", value: "dismiss" }
@@ -632,7 +632,7 @@
           .then((value) => {
             switch (value) {
               case 'site':
-                this.launch('https://www.10barrel.com')
+                this.launch('https://www.google.com/maps/dir/10+barrel+brewing+boise')
                 break;
               case 'dismiss':
                 break;
