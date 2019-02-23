@@ -36,7 +36,7 @@ var store = new vuex.Store({
         headline: 'Virtutem Spei - "Hope and Strength"',
         frame: '//snippets.mapmycdn.com/routes/view/embedded/2264365960?width=600&height=400&elevation=true&line_color=E6d90d8e&rgbhex=8e0dd9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
         frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/2264365960?width=300&height=450&elevation=true&line_color=E6d90d8e&rgbhex=8e0dd9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
-        startTime: '11:30 AM*',
+        startTime: '11:15 AM*',
         otherMaps: [
           {
             title: 'Map My Ride',
