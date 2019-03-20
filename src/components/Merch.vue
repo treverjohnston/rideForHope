@@ -20,9 +20,9 @@
                 </div>
             </q-transition>
         </div>
-        <q-transition v-for="merchandi in merchandise" appear enter="fadeIn" leave="fadeOut">
+        <q-transition appear enter="fadeIn" leave="fadeOut">
             <div class="row wrap justify-center pics desktop-only">
-                <q-card flat align="center" class="col-xs-12 col-md-5">
+                <q-card v-for="merchandi in merchandise" flat align="center" class="col-xs-12 col-md-7">
                     <q-card-media @click="launch('https://www.cuore.ch/teamshop/us/en/Ride-For-Hope-19/')">
                         <img :src="merchandi.src" class="responsive" alt="Jersey">
                     </q-card-media>
@@ -30,7 +30,8 @@
                         {{merchandi.title}} </q-card-title>
                     <q-card-main>
                         <q-btn no-caps @click="launch('https://www.cuore.ch/teamshop/us/en/Ride-For-Hope-19/')"
-                            class="cbtn shadow-24">Purchase</q-btn>
+                            class="cbtn shadow-24"><img src="~statics/merch/cuore.png" alt="Cuore Logo" class="btn-img">
+                        </q-btn>
                     </q-card-main>
                 </q-card>
             </div>
@@ -44,7 +45,8 @@
                     {{merchandi.title}}</q-card-title>
                 <q-card-main>
                     <q-btn no-caps @click="launch('https://www.cuore.ch/teamshop/us/en/Ride-For-Hope-19/')"
-                        class="cbtn shadow-24">Purchase</q-btn>
+                        class="cbtn shadow-24"><img src="~statics/merch/cuore.png" alt="Cuore Logo" class="btn-img">
+                    </q-btn>
                 </q-card-main>
             </q-card>
         </div>
@@ -108,6 +110,10 @@
 </script>
 
 <style scoped>
+    .btn-img {
+        max-width: 7rem;
+    }
+
     .back {
         background-color: transparent;
     }
