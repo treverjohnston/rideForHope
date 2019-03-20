@@ -23,7 +23,7 @@
         <q-transition v-for="merchandi in merchandise" appear enter="fadeIn" leave="fadeOut">
             <div class="row wrap justify-center pics desktop-only">
                 <q-card flat align="center" class="col-xs-12 col-md-5">
-                    <q-card-media>
+                    <q-card-media @click="launch('https://www.cuore.ch/teamshop/us/en/Ride-For-Hope-19/')">
                         <img :src="merchandi.src" class="responsive" alt="Jersey">
                     </q-card-media>
                     <q-card-title class="black-text">
