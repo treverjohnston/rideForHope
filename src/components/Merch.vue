@@ -20,31 +20,31 @@
                 </div>
             </q-transition>
         </div>
-        <q-transition appear enter="fadeIn" leave="fadeOut">
+        <q-transition v-for="merchandi in merchandise" appear enter="fadeIn" leave="fadeOut">
             <div class="row wrap justify-center pics desktop-only">
-                <q-card flat align="center" class="col-xs-12 col-md-6">
+                <q-card flat align="center" class="col-xs-12 col-md-5">
                     <q-card-media>
-                        <img src="~statics/merch/cuore.jpg" class="responsive" alt="Jersey">
+                        <img :src="merchandi.src" class="responsive" alt="Jersey">
                     </q-card-media>
                     <q-card-title class="black-text">
-                        2019 Ride For Hope Idaho Jersey </q-card-title>
+                        {{merchandi.title}} </q-card-title>
                     <q-card-main>
-                        <q-btn no-caps disabled @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')"
-                            class="cbtn shadow-24">Available Early 2019</q-btn>
+                        <q-btn no-caps @click="launch('https://www.cuore.ch/teamshop/us/en/Ride-For-Hope-19/')"
+                            class="cbtn shadow-24">Purchase</q-btn>
                     </q-card-main>
                 </q-card>
             </div>
         </q-transition>
         <div class="row wrap justify-center pics-mobile mobile-only">
-            <q-card flat align="center" class="col-xs-12">
-                <q-card-media>
-                    <img src="~statics/merch/jersey.jpg" class="responsive" alt="Jersey">
+            <q-card v-for="merchandi in merchandise" flat align="center" class="col-xs-11">
+                <q-card-media @click="launch('https://www.cuore.ch/teamshop/us/en/Ride-For-Hope-19/')">
+                    <img :src="merchandi.src" class="responsive" alt="Jersey">
                 </q-card-media>
                 <q-card-title class="black-text">
-                    2018 Ride For Hope Idaho Jersey </q-card-title>
+                    {{merchandi.title}}</q-card-title>
                 <q-card-main>
-                    <q-btn no-caps disabled @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')"
-                        class="cbtn shadow-24">$50.00 (Sold Out)</q-btn>
+                    <q-btn no-caps @click="launch('https://www.cuore.ch/teamshop/us/en/Ride-For-Hope-19/')"
+                        class="cbtn shadow-24">Purchase</q-btn>
                 </q-card-main>
             </q-card>
         </div>
@@ -83,8 +83,8 @@
             QIcon
         },
         computed: {
-            items() {
-                return this.$store.state.raffles
+            merchandise() {
+                return this.$store.state.merchandise
             }
         },
         directives: {

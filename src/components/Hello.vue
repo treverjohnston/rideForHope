@@ -13,7 +13,9 @@
         </q-btn> -->
       </q-transition>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D71518%26mSource%3DimAOverview')">Just
+        <q-btn outline color="red"
+          @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D71518%26mSource%3DimAOverview')">
+          Just
           Donate
         </q-btn>
       </q-transition>
@@ -26,12 +28,15 @@
         <img src="statics/logos/RFHIdahoLogo.png" alt="logo" class="mini">
       </q-btn>
       <q-transition appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn outline color="red" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D71518%26mSource%3DimAOverview')">Just
+        <q-btn outline color="red"
+          @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D71518%26mSource%3DimAOverview')">
+          Just
           Donate
         </q-btn>
       </q-transition>
       <q-transition class="mobile-only" appear enter="lightSpeedIn" leave="fadeOut">
-        <q-btn v-if="openRegistration" class="mobile-only" outline @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
+        <q-btn v-if="openRegistration" class="mobile-only" outline
+          @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
           color="red">Register
         </q-btn>
         <q-btn v-else class="mobile-only" outline @click="$router.push('/register')" color="red">Register
@@ -44,9 +49,11 @@
     </q-toolbar>
     <q-tabs slot="header" align="center" class="shadow-2 desktop-only tabs">
       <q-route-tab class="tab" slot="title" label="Home" name="home" to="/" />
-      <q-tab v-if="openRegistration" class="tab" slot="title" color="red" label="Register" name="reg" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')" />
+      <q-tab v-if="openRegistration" class="tab" slot="title" color="red" label="Register" name="reg"
+        @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')" />
       <q-route-tab v-else class="tab" slot="title" color="red" label="Register" name="register" to="register" />
-      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" />
+      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising"
+        @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" />
       <q-tab class="tab involved" align="left" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
@@ -62,7 +69,8 @@
                   <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="routes" to="31-mile" />
                 </q-item-main>
                 <q-item-main>
-                  <q-route-tab class="tab" @click="collapse" slot="title" label="Metric Century" name="routes" to="metric" />
+                  <q-route-tab class="tab" @click="collapse" slot="title" label="Metric Century" name="routes"
+                    to="metric" />
                 </q-item-main>
                 <q-item-main>
                   <q-route-tab class="tab" @click="collapse" slot="title" label="Century" name="routes" to="Century" />
@@ -71,7 +79,8 @@
             </q-tab>
           </q-item-main>
           <q-item-main>
-            <q-tab v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
+            <q-tab v-if="openRegistration"
+              @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
               name="home" class="tab" slot="title" color="red" label="Register" />
             <q-route-tab v-else @click="collapse" name="register" class="tab" slot="title" color="red" label="Register"
               to="register" />
@@ -83,24 +92,27 @@
             <q-route-tab @click="collapse" class="tab" slot="title" label="Rules Of The Road" name="rider" to="rules" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Start Times And Directions" name="rider" to="ride" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Start Times And Directions" name="rider"
+              to="ride" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="How Climbs Are Categorized" name="rider" to="climbs" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="How Climbs Are Categorized" name="rider"
+              to="climbs" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Team Ride For Hope Idaho Information" name="rider"
-              to="team" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Team Ride For Hope Idaho Information"
+              name="rider" to="team" />
           </q-item-main>
         </q-popover>
       </q-tab>
       <q-tab class="tab involved" slot="title" label="Merchandise" name="marchandise">
         <q-popover fit ref="popover" class="involved">
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Raffle Items" name="raffle" to="raffle" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Jerseys and More" name="merchandise"
+              to="merchandise" />
           </q-item-main>
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="Jerseys" name="merchandise" to="merchandise" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="Raffle Items" name="raffle" to="raffle" />
           </q-item-main>
         </q-popover>
       </q-tab>
@@ -109,7 +121,8 @@
       <q-tab class="tab involved" slot="title" label="Galleries" name="gallery">
         <q-popover fit ref="popover" class="involved">
           <q-item-main>
-            <q-route-tab @click="collapse" class="tab" slot="title" label="2018 Gallery" name="gallery" to="2018-gallery" />
+            <q-route-tab @click="collapse" class="tab" slot="title" label="2018 Gallery" name="gallery"
+              to="2018-gallery" />
           </q-item-main>
           <q-item-main>
             <q-route-tab @click="collapse" class="tab" slot="title" label="Past Rides" name="gallery" to="gallery" />
@@ -127,12 +140,14 @@
           <hr class="tabhr">
         </q-side-link>
         <q-side-link to="register">
-          <q-item-main v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
+          <q-item-main v-if="openRegistration"
+            @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
             class="side register" label="Register" />
           <q-item-main v-else class="side register" label="Register" />
         </q-side-link>
         <hr class="tabhrs">
-        <q-item-main @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
+        <q-item-main
+          @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
           class="side" label="Rider Fundraising" />
         <hr class="tabhr">
         </q-collapsible>
@@ -160,7 +175,8 @@
           </q-collapsible>
           <hr class="tabhrs">
           <q-side-link to="register">
-            <q-item-main v-if="openRegistration" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
+            <q-item-main v-if="openRegistration"
+              @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')"
               class="small-side register" label="Register" />
             <q-item-main v-else class="small-side register" label="Register" />
           </q-side-link>
@@ -187,12 +203,12 @@
         </q-collapsible>
         <hr class="tabhr">
         <q-collapsible class="side-collapse" label="Merchandise">
-          <q-side-link to="raffle" class="left">
-            <q-item-main class="small-side" label="Raffle Items" />
+          <q-side-link to="merchandise" class="left">
+            <q-item-main class="small-side" label="Jerseys and More" />
           </q-side-link>
           <hr class="tabhrs">
-          <q-side-link to="merchandise" class="left">
-            <q-item-main class="small-side" label="Jerseys" />
+          <q-side-link to="raffle" class="left">
+            <q-item-main class="small-side" label="Raffle Items" />
           </q-side-link>
         </q-collapsible>
         <hr class="tabhr">
@@ -233,13 +249,17 @@
     <div v-if="home">
       <div class="row justify-center">
         <div id="video_overlays" class="absolute text-center">
-          <img class="ride self-center text-center vid-logo desktop-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
-          <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png" alt="RFHI Logo">
+          <img class="ride self-center text-center vid-logo desktop-only" src="statics/logos/RFHIdahoLogo.png"
+            alt="RFHI Logo">
+          <img class="mini self-center text-center vid-logo mobile-only" src="statics/logos/RFHIdahoLogo.png"
+            alt="RFHI Logo">
         </div>
-        <video class="fit" style="width: 100%;" id="player" :src="video" poster="./statics/backgrounds/header.jpg" type="video/mp4"
-          playsinline="playsinline" muted="muted" autoplay="autoplay" loop="loop">Your browser does not support this
+        <video class="fit" style="width: 100%;" id="player" :src="video" poster="./statics/backgrounds/header.jpg"
+          type="video/mp4" playsinline="playsinline" muted="muted" autoplay="autoplay" loop="loop">Your browser does not
+          support this
           streaming content.
-          <img src="statics/backgrounds/header.jpg" style="width: 100%" alt="mobile background of riders" class="mobile-only responsive">
+          <img src="statics/backgrounds/header.jpg" style="width: 100%" alt="mobile background of riders"
+            class="mobile-only responsive">
         </video>
       </div>
 
@@ -257,7 +277,8 @@
                 <a class="noHighlight" href="https://www.imagocaeli.com/" target="_blank">Imago Caeli</a>
                 for all 2018
                 Ride For Hope Idaho video!</h6>
-              <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Video and Gallery</q-btn>
+              <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Video and Gallery
+              </q-btn>
               <q-btn v-if="showSwal" @click="charitySwal()" class="cbtnm shadow-24 text-center ">10 Barrel Brewing
                 Co.
                 Charity Day</q-btn>
@@ -280,7 +301,8 @@
               Ride For Hope Idaho video!</h6>
             <q-btn v-if="showSwal" @click="charitySwal()" class="cbtnm shadow-24 text-center ">10 Barrel Brewing Co.
               Charity Day</q-btn>
-            <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Video and Gallery</q-btn>
+            <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Video and Gallery
+            </q-btn>
           </div>
 
           <!-- <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Gallery and Video</q-btn> -->
