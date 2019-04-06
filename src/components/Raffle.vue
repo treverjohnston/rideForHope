@@ -4,10 +4,16 @@
             <q-transition appear enter="fadeIn" leave="fadeOut">
                 <div class="col-lg-8 top text-center">
                     <hr color="red" class="hr">
-                    <h2 class="headline text-bold">2018 RAFFLE ITEMS</h2>
-                    <!-- <h4 class="fancy">Raffle tickets are available for purchase: </h4><h4>$2 for 1 ticket</h4><h4>$5 for 3 tickets</h4>
-                    <h4 class="fancy">Additional meal tickets are also available for $5</h4>
-                    <q-btn class="btn shadow-24" no-caps @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Purchase Raffle Tickets</q-btn> -->
+                    <h2 class="headline text-bold">2019 RAFFLE ITEMS COMING SOON</h2>
+                    <h4 class="fancy">Raffle tickets are available for purchase: </h4>
+                    <h4>1 ticket for $3</h4>
+                    <h4>2 tickets for $5</h4>
+                    <h4>4 tickets for $10</h4>
+                    <h4>10 tickets for $20</h4>
+                    <h4 class="fancy">Additional meal tickets are also available for $8</h4>
+                    <q-btn class="btn shadow-24" no-caps
+                        @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">
+                        Purchase Raffle Tickets</q-btn>
                     <hr color="red" class="hr">
                     <!-- <h4 class="text-italic">
                         Congratulations to 2017 Raffle item winners!!!
@@ -21,10 +27,16 @@
         <div class="row wrap justify-center mobile-only">
             <div class="col-xs-11 top text-center">
                 <hr color="red" class="hr">
-                <h4 class="headline text-bold">2018 RAFFLE ITEMS</h4>
-                <!-- <h5 class="fancy ">Raffle tickets are available for purchase: </h5><h5>$2 for 1 ticket</h5><h5>$5 for 3 tickets</h5>
-                <h5 class="fancy">Additional meal tickets are also available $5</h5>
-                <q-btn class="btn shadow-24" no-caps @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">Purchase Raffle Tickets</q-btn> -->
+                <h4 class="headline text-bold">2019 RAFFLE ITEMS COMING SOON</h4>
+                <h5 class="fancy ">Raffle tickets are available for purchase: </h5>
+                <h5>1 ticket for $3</h5>
+                <h5>2 tickets for $5</h5>
+                <h5>4 tickets for $10</h5>
+                <h5>10 tickets for $20</h5>
+                <h5 class="fancy">Additional meal tickets are also available for $8</h5>
+                <q-btn class="btn shadow-24" no-caps
+                    @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">
+                    Purchase Raffle Tickets</q-btn>
                 <hr color="red" class="hr">
             </div>
         </div>
@@ -44,7 +56,9 @@
                 </q-card>
             </div>
         </q-transition> -->
-        <div class="row wrap justify-center pics desktop-only">
+
+        <!-- LIVE BELOW -->
+        <!-- <div class="row wrap justify-center pics desktop-only">
             <q-card v-for="item in items" flat align="center" class="col-xs-12 col-lg-3">
                 <q-card-media>
                     <img :src="item.link" class="img" alt="Raffle item picture">
@@ -56,7 +70,8 @@
                     <p>{{item.description}}</p>
                 </q-card-main>
             </q-card>
-        </div>
+        </div> -->
+
         <!-- <div class="row wrap justify-center mobile-only">
             <q-card align="center" class="col-xs-11 col-sm-8 col-lg-3 pics-mobile">
                 <q-card-media>
@@ -71,7 +86,9 @@
                 </q-card-main>
             </q-card>
         </div> -->
-        <div class="row wrap justify-center mobile-only">
+
+        <!-- LIVE BELOW -->
+        <!-- <div class="row wrap justify-center mobile-only">
             <q-card v-for="item in items" align="center" class="col-xs-11 col-sm-8 col-lg-3 pics-mobile">
                 <q-card-media>
                     <img :src="item.link" alt="Raffle item picture">
@@ -83,7 +100,7 @@
                     <p>{{item.description}}</p>
                 </q-card-main>
             </q-card>
-        </div>
+        </div> -->
     </q-layout>
 </template>
 
@@ -185,7 +202,8 @@
         width: 100%;
         height: 100%;
         top: 0;
-        left: 0;    }
+        left: 0;
+    }
 
     .pics {
         background-color: rgba(160, 160, 160, 0.507);

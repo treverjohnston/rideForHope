@@ -52,8 +52,8 @@
       <q-tab v-if="openRegistration" class="tab" slot="title" color="red" label="Register" name="reg"
         @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')" />
       <q-route-tab v-else class="tab" slot="title" color="red" label="Register" name="register" to="register" />
-      <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising"
-        @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" />
+      <!-- <q-tab class="tab" slot="title" label="Rider Fundraising" name="fundraising"
+        @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')" /> -->
       <q-tab class="tab involved" align="left" slot="title" label="Rider Info" name="rider">
         <q-popover fit ref="popoverRoutes">
           <q-item-main>
@@ -146,10 +146,10 @@
           <q-item-main v-else class="side register" label="Register" />
         </q-side-link>
         <hr class="tabhrs">
-        <q-item-main
+        <!-- <q-item-main
           @click="launch('https://www.imathlete.com/#/legacy?url=%2Fdonate%2FRideForHopeIdaho%3Fz%3D1517453663070')"
           class="side" label="Rider Fundraising" />
-        <hr class="tabhr">
+        <hr class="tabhr"> -->
         </q-collapsible>
         <q-collapsible class="side-collapse" label="Rider Information">
           <q-collapsible class="side-collapse" label="Routes">
@@ -270,8 +270,13 @@
               <h5 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h5>
               <hr>
               <h1 class="text-bold">Ride For Hope Idaho</h1>
-              <h2 class="text-bold">2019 Event Date: Saturday, June 8</h2>
-              <h2 class="text-bold">Kuna, ID</h2>
+              <h3 class="text-bold">2019 Event Date: Saturday, June 8</h3>
+              <h3 class="text-bold">Kuna, ID</h3>
+              <hr>
+              <h5 class="q-title">Online registration ends 6/6/2019.</h5>
+              <h5 class="q-title">Day of ride registration available.</h5>
+              <h5 class="q-title">Discount offered for teams of 5 or more and for families. Contact for more details.
+              </h5>
               <hr>
               <h6 class="q-title">A special thanks to
                 <a class="noHighlight" href="https://www.imagocaeli.com/" target="_blank">Imago Caeli</a>
@@ -291,10 +296,14 @@
           <div class="promo text-center mobile-only">
             <h6 class="light-paragraph">SUPPORTING HEALTHCARE FOR THE MEDICALLY UNDERSERVED</h6>
             <hr>
-            <!-- <h4 class="text-bold">Ride For Hope Idaho</h4> -->
+            <h4 class="text-bold">Ride For Hope Idaho</h4>
             <h5 class="">2019 Event Date:</h5>
             <h5>Saturday, June 8</h5>
             <h5 class="">Kuna, ID</h5>
+            <hr>
+            <h6 class="q-title">Online registration ends 6/6/2019.</h6>
+            <h6 class="q-title">Day of ride registration available.</h6>
+            <h6 class="q-title">Discount offered for teams of 5 or more and for families. Contact for more details.</h6>
             <hr>
             <h6 class="q-title">A special thanks to
               <a class="noHighlight" href="https://www.imagocaeli.com/" target="_blank">Imago Caeli</a> for all 2018
@@ -557,11 +566,10 @@
       },
       openRegistration() {
         return this.$store.state.openRegistration;
+      },
+      earlyRegistration() {
+        return this.$store.state.earlyRegistration;
       }
-      // video() {
-      //   var num = Math.floor((Math.random() * 3) + 1);
-      //   return `./statics/video/head.mp4`;
-      // }
     },
     methods: {
       launch(url) {
@@ -694,6 +702,21 @@
                 break;
             }
           })
+      },
+      registerSwal() {
+        return swal({
+          title: 'Early Registration Ending Soon!',
+          text: 'Early Registration ends 4/30/2019. Sign up now to take advantage of a discount!',
+          buttons: {
+            dismiss: { text: "Dismiss", value: "dismiss" }
+          }
+        })
+          .then((value) => {
+            switch (value) {
+              case 'dismiss':
+                break;
+            }
+          })
       }
     },
     directives: {
@@ -702,6 +725,7 @@
       ScrollFire
     },
     mounted() {
+
       this.$refs.layout.hideLeft();
       let charityPass = false;
       let timeStamp = Date.now()
@@ -716,6 +740,11 @@
       }
       if (this.showSwal) {
         this.charitySwal();
+      }
+      if (this.earlyRegistration) {
+        // setTimeout(this.registerSwal(), 500);
+        this.registerSwal();
+
       }
       // Conditions to display swal
       // let dayPass = false;

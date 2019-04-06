@@ -4,6 +4,7 @@ import $ from 'jquery';
 import vuex from 'vuex';
 import router from '../router';
 import { Toast } from 'quasar';
+import { Notify } from 'quasar';
 
 // var production = !window.location.host.includes('localhost');
 // var baseUrl = production ? '//inspireq.herokuapp.com/' : '//localhost:3000/';
@@ -20,6 +21,53 @@ vue.use(VueAnalytics, {
 var store = new vuex.Store({
   state: {
     openRegistration: false,
+    earlyRegistration: false,
+    lvl1: [
+      // {
+      //   name: 'Lyle Pearson',
+      //   logo: './statics/sponsors/lyle.jpg',
+      //   link: 'https://www.lylepearson.com/'
+      // }
+    ],
+    lvl2: [
+      {
+        name: '10 Barrel Brewing Co.',
+        logo: './statics/sponsors/10barrel.png',
+        link: 'https://10barrel.com/'
+      },
+      {
+        name: '1st Interstate Bank',
+        logo: './statics/sponsors/1stInterstate.png',
+        link: 'https://www.firstinterstatebank.com/'
+      },
+      {
+        name: 'Meridian Cycles',
+        logo: './statics/sponsors/meridian.png',
+        link: 'http://www.meridian-cycles.com/'
+      },
+      {
+        name: 'R__B Ranch',
+        logo: '',
+        link: ''
+      }
+    ],
+    lvl3: [
+      {
+        name: 'DaVita',
+        logo: './statics/sponsors/davita.png',
+        link: 'https://www.davita.com/'
+      }
+    ],
+    lvl4: [
+      {
+        name: 'Idaho Urologic Institute',
+        link: 'https://www.idurology.com/'
+      },
+      {
+        name: 'Idaho Power',
+        link: 'https://www.idahopower.com/'
+      }
+    ],
     routes: [
       // {
       //     url: '/18-mile',
@@ -27,6 +75,8 @@ var store = new vuex.Store({
       //     pic: '//res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/18_mrihcr.jpg'
       // },
       {
+        earlyReg: '$50',
+        reg: '$60',
         url: '/9-mile',
         length: '9 Mile',
         pic: '',
@@ -61,6 +111,8 @@ var store = new vuex.Store({
           'New route for 2019 for those who felt that 19 miles was just a bit too far!  Gentle flat and fun route though farmland and along canals with one rest stop at half way point.  This route is for everyone: road bike, no problem; cruiser bike, no issue; mountain bike, ditto; unicycle, check…….(provided your balance is good enough) !'
       },
       {
+        earlyReg: '$65',
+        reg: '$75',
         url: '/19-mile',
         length: '19 Mile',
         pic: '',
@@ -98,6 +150,8 @@ var store = new vuex.Store({
           'Completely redesigned route for 2019.  Unlike previous years this route takes riders eastward through scenic rolling farmland and returns along winding canals with two rest stops along the way. Every effort was made to add some greater scenic variety to this route for 2019 while maintaining a flat and mellow course.'
       },
       {
+        earlyReg: '$65',
+        reg: '$75',
         url: '/31-mile',
         length: '31 Mile',
         pic:
@@ -137,6 +191,8 @@ var store = new vuex.Store({
           'Destination route to Melba and then back to Kuna. Gentle rolling hills through farmland. This is a course that will delight those who want to establish a new 40k personal best. But you surely didn’t train all that time to come to Ride For Hope Idaho just to get it over with as fast as you can; did you?! Stop and smell the roses, converse with your riding partners, and don’t forget to experience a fancy porta-john at one of the three rest stops you will encounter along the route!'
       },
       {
+        earlyReg: '$75',
+        reg: '$85',
         url: '/metric',
         length: 'Metric Century',
         pic:
@@ -176,6 +232,8 @@ var store = new vuex.Store({
           '65.1 miles long (because 65.2 would just be CRAZY!).  This is a ride for true bikers (i.e. no longer embarrassed to wear spandex). The route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops. The course meets up with the last half of the Century route (so you will have additional riders to share your challenge with along the way). You will continue northwest toward Marsing and then turn back toward Kuna and pedal, pedal, pedal, to Lake Shore Drive skirting Lake Lowell on your way back to the finish line where festivities and food await, (if you are fast enough!). Just remember, Humpty Dumpty had wall issues too but he overcame; so can you!'
       },
       {
+        earlyReg: '$75',
+        reg: '$85',
         url: '/Century',
         length: 'Century',
         pic:

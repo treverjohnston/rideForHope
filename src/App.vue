@@ -18,6 +18,14 @@
       if (date > openDate && date < closeDate) {
         this.$store.state.openRegistration = true;
       }
+
+      let startEarly = new Date("April 1 2019 01:00:00")
+      let endEarly = new Date("April 30 2019 11:59:59")
+
+      if (date > startEarly && date < endEarly) {
+        this.$store.state.earlyRegistration = true;
+      }
+
     }
   };
 </script>
@@ -99,7 +107,7 @@
   .spacers {
     margin-top: 3rem;
     padding: .5rem;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     border: 1px solid white;
     background-color: rgba(75, 75, 75, 0.39);
   }

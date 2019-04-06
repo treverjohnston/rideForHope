@@ -19,11 +19,22 @@
                     <div class="col-xs-12 col-lg-4 r-links">
                         <div class="row wrap justify-center">
                             <div class="col-xs-11 text-center spacers">
-                                <q-btn v-if="openRegistration" no-caps class="btn" @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')">Register
+                                <q-btn v-if="openRegistration" no-caps class="btn"
+                                    @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')">
+                                    Register
                                     Now
                                 </q-btn>
                                 <q-btn v-else no-caps class="btn" @click="$router.push('/register')">Register Now
                                 </q-btn>
+                                <div class="top">
+                                    Regular Registration: {{route.reg}}
+                                </div>
+                                <div class="top">
+                                    Early Registration: {{route.earlyReg}}
+                                </div>
+                                <div class="top">
+                                    Discount offered for teams of 5 or more and for families. Contact for more details.
+                                </div>
                             </div>
                         </div>
                         <div class="row wrap justify-center">
@@ -48,7 +59,8 @@
                             <div class="col-xs-11 col-md-11 text-center border spacers">
                                 <div class="row justify-center">
                                     <div class="col-xs-4">
-                                        <img class="responsive rest" src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
+                                        <img class="responsive rest"
+                                            src="https://res.cloudinary.com/treverscloud/image/upload/v1517598415/Bathroom_sign_xybmya.jpg"
                                             alt="rest stop" />
                                     </div>
                                     <div class="col-xs-12 self-center">
@@ -68,14 +80,16 @@
                                     <div class="col-xs-12">
                                         <hr class="ihr">
                                     </div>
-                                    <q-btn v-for="otherRoute in routes" v-if="otherRoute.length != route.length" class="col-xs-4 r-btn"
-                                        @click="$router.push(otherRoute.url.trim('/'))" no-caps>{{otherRoute.length}}</q-btn>
+                                    <q-btn v-for="otherRoute in routes" v-if="otherRoute.length != route.length"
+                                        class="col-xs-4 r-btn" @click="$router.push(otherRoute.url.trim('/'))" no-caps>
+                                        {{otherRoute.length}}</q-btn>
                                 </div>
                             </div>
                         </div>
                         <div class="row wrap justify-center desktop-only last">
                             <div class="col-xs-11 text-center spacers">
-                                <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
+                                <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs
+                                </q-btn>
                             </div>
                         </div>
                     </div>
@@ -85,16 +99,16 @@
                                 <q-transition appear enter="zoomIn" leave="fadeOut">
                                     <div>
                                         <q-card-media class="desktop-only">
-                                            <iframe id="mapmyfitness_route" :src="route.frame" height="650px" width="100%"
-                                                frameborder="0"></iframe>
+                                            <iframe id="mapmyfitness_route" :src="route.frame" height="650px"
+                                                width="100%" frameborder="0"></iframe>
                                         </q-card-media>
                                         <q-card-media class="mobile-only">
                                             <iframe id="mapmyfitness_route" :src="route.frameMobile" height="650px"
                                                 width="100%" frameborder="0"></iframe>
                                         </q-card-media>
                                         <div align="center" class="white small" label="View More Map Options">
-                                            <q-btn v-for="link in route.otherMaps" :class="route.btnClass" @click="launch(link.link)"
-                                                no-caps>{{link.title}}</q-btn>
+                                            <q-btn v-for="link in route.otherMaps" :class="route.btnClass"
+                                                @click="launch(link.link)" no-caps>{{link.title}}</q-btn>
                                         </div>
                                     </div>
                                 </q-transition>
@@ -112,14 +126,16 @@
                                     <div class="col-xs-12">
                                         <hr class="ihr">
                                     </div>
-                                    <q-btn v-for="otherRoute in routes" v-if="otherRoute.length != route.length" class="col-xs-4 r-btn"
-                                        @click="$router.push(otherRoute.url.trim('/'))" no-caps>{{otherRoute.length}}</q-btn>
+                                    <q-btn v-for="otherRoute in routes" v-if="otherRoute.length != route.length"
+                                        class="col-xs-4 r-btn" @click="$router.push(otherRoute.url.trim('/'))" no-caps>
+                                        {{otherRoute.length}}</q-btn>
                                 </div>
                             </div>
                         </div>
                         <div class="row wrap justify-center mobile-only">
                             <div class="col-xs-11 text-center spacers bot-link">
-                                <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
+                                <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs
+                                </q-btn>
                             </div>
                         </div>
                     </div>

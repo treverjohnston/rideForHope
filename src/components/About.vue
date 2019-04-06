@@ -2,47 +2,63 @@
     <q-layout class="black">
         <div class="row justify-center">
             <div class="col-xs-11 col-md-10 black-back shadow-24">
-                <div class="row wrap">
-                    <div class="col-xs-12 text-center desktop-only">
-                        <div class="row wrap justify-center white-back" id="number">
+                <div class="row wrap justify-center">
+                    <div class="col-xs-9 text-center desktop-only spacers">
+                        <div class="row wrap justify-center" id="number">
                             <input readonly class="text-output large-text text-bold col-xs-4" value="$0">
-                            <h4 class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho With
+                            <h4 class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho
+                                With
                                 <u>YOUR</u> Help</h4>
                         </div>
                     </div>
-                    <div class="col-xs-12 text-center mobile-only">
-                        <div class="row wrap justify-center white-back" id="number">
+                    <div class="col-xs-10 text-center mobile-only spacers">
+                        <div class="row wrap justify-center" id="number">
                             <big>
                                 <input readonly class="text-output text-bold col-xs-10 emphasize" value="$0">
                             </big>
 
-                            <p class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho With
+                            <p class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho
+                                With
                                 <u>YOUR</u> Help</p>
 
                         </div>
                     </div>
-                    <hr class="offset-md-2 col-md-8 return offset-xs-1 col-xs-10 ">
-                    <h2 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">Our Mission</h2>
-                    <hr class="offset-md-2 col-md-8 return offset-xs-1 col-xs-10 ">
-                    <h6 class="top text-italic light-paragraph offset-md-2 col-md-8 offset-xs-1 col-xs-10">
-                        <b>Ride For Hope Idaho</b> is a charity bicycle event with the firm belief that quality healthcare should
-                        be accessible to everyone. We support the holistic approach to healthcare where true healing focuses
-                        not only on symptoms, but the underlying root cause of disease.
-                    </h6>
-                    <h6 class="top text-italic light-paragraph offset-md-2 col-md-8 offset-xs-1 col-xs-10">
-                        <b>Ride For Hope Idaho</b> is committed to ensuring that 100% of participant fees and donations go directly
-                        to charity. This unique commitment is made possible by charitable contributions from local sponsors
-                        which cover the entire cost of the event.
-                    </h6>
-                    <hr class="offset-md-2 col-md-8 return offset-xs-1 col-xs-10">
-                    <h3 class="text-bold offset-xs-1 col-xs-10 text-center text-italic">About Us</h3>
-                    <div class="para offset-md-2 col-md-5 offset-xs-1 col-xs-10">
+                    <!-- <hr class="offset-md-2 col-md-8 return offset-xs-1 col-xs-10 "> -->
+                    <div class="para col-md-9 col-xs-10">
+                        <h2 class="text-bold col-xs-10 text-center text-italic top-marg">Our Mission</h2>
+                        <!-- <hr class="offset-md-2 col-md-8 return offset-xs-1 col-xs-10 "> -->
                         <p class="text-justify">
                             <em>
                                 <b>Ride For Hope Idaho</b>
-                            </em> is a small, but growing group of volunteers who have been moved to action for a deep compassion
-                            for our fellow citizens. We feel a moral obligation to fight for individuals and families who
-                            do not have access to basic healthcare and fundamental human necessities. Many of these individuals
+                            </em> is a charity bicycle event with the firm belief that quality
+                            healthcare should
+                            be accessible to everyone. We support the holistic approach to healthcare where true healing
+                            focuses
+                            not only on symptoms, but the underlying root cause of disease.
+                        </p>
+                        <p class="text-justify">
+                            <em>
+                                <b>Ride For Hope Idaho</b>
+                            </em> is committed to ensuring that 100% of participant fees and
+                            donations
+                            go directly
+                            to charity. This unique commitment is made possible by charitable contributions from local
+                            sponsors
+                            which cover the entire cost of the event.
+                        </p>
+                    </div>
+                    <!-- <hr class="offset-md-2 col-md-8 return offset-xs-1 col-xs-10"> -->
+                    <h3 class="text-bold col-xs-10 text-center text-italic top-marg">About Us</h3>
+                    <div class="para col-md-5 col-xs-10">
+                        <p class="text-justify">
+                            <em>
+                                <b>Ride For Hope Idaho</b>
+                            </em> is a small, but growing group of volunteers who have been moved to action for a deep
+                            compassion
+                            for our fellow citizens. We feel a moral obligation to fight for individuals and families
+                            who
+                            do not have access to basic healthcare and fundamental human necessities. Many of these
+                            individuals
                             and families are grappling with exorbitant healthcare costs and preexisting conditions.
 
                         </p>
@@ -62,7 +78,8 @@
                             </b> that they don’t need to make a choice between paying bills or paying for medication;
                             <b>
                                 <em>"Hope"</em>
-                            </b> that because they earn a little too much and are not eligible for Medicaid, and are too young
+                            </b> that because they earn a little too much and are not eligible for Medicaid, and are too
+                            young
                             for Medicare, that there are still avenues for their healthcare needs;
                             <b>
                                 <em>"Hope"</em>
@@ -80,9 +97,11 @@
                         </ul>
                     </div>
                     <div class="pic col-md-4 col-sm-12 col-xs-12 text-center">
-                        <img class="rider responsive" src="https://res.cloudinary.com/treverscloud/image/upload/v1517606065/margo_kuo44h.jpg" alt="rider">
+                        <img class="rider responsive"
+                            src="https://res.cloudinary.com/treverscloud/image/upload/v1517606065/margo_kuo44h.jpg"
+                            alt="rider">
                     </div>
-                    <div class="paragroup offset-md-2 col-md-8 offset-xs-1 col-xs-10">
+                    <div class="paragroup col-md-10 col-xs-10">
                         <p class="text-justify">
                             This year we are proud to support
                             <b>
@@ -93,34 +112,46 @@
                             </b>.
                             <b>
                                 <em>Genesis Community Health</em>
-                            </b> is an integrated healthcare facility providing primary medical care, basic dental, mental health,
+                            </b> is an integrated healthcare facility providing primary medical care, basic dental,
+                            mental health,
                             specialty referral and medication to the low-income and uninsured.
                             <b>
                                 <em>Boise Rescue Mission</em>
-                            </b> provides programs and services including addiction recovery and food and shelter for homeless
+                            </b> provides programs and services including addiction recovery and food and shelter for
+                            homeless
                             men, women and children. </p>
                         <p class="text-justify">
-                            We are determined to continue along our upward fundraising trajectory. We can’t do it alone. We need your help. Collectively
-                            we can make a difference. Please join us in helping the most vulnerable in our Treasure Valley
+                            We are determined to continue along our upward fundraising trajectory. We can’t do it alone.
+                            We need your help. Collectively
+                            we can make a difference. Please join us in helping the most vulnerable in our Treasure
+                            Valley
                             Community.
                         </p>
                     </div>
-                    <div class="paragroup offset-md-2 col-md-8 offset-xs-1 col-xs-10">
-                        <h4 class="text-center signature">
-                            <em>
-                                <b>Team Ride For Hope Idaho</b>
-                            </em>
-                        </h4>
-                    </div>
-                    <div class="offset-md-2 col-md-4 offset-xs-1 col-xs-5 self-center">
-                        <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
-                            <img class="responsive check" src="statics/logos/gch.png" alt="Genesis Community Health Logo">
-                        </q-btn>
-                    </div>
-                    <div class="offset-md-2 col-md-4 offset-xs-1 col-xs-5 self-center">
-                        <q-btn @click="launch('https://boiserm.org/')" flat>
-                            <img class="responsive check" src="statics/logos/brm.png" alt="Boise Rescue Mission Logo">
-                        </q-btn>
+                    <div class="paragroup offset-md-1 col-md-11 top-marg text-center">
+                        <div class="row justify-center">
+                            <div class="paragroup col-md-10 col-xs-10">
+                                <h4 class="text-center signature">
+                                    <em>
+                                        <b>Team Ride For Hope Idaho</b>
+                                    </em>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row justify-center">
+                            <div class="col-md-6 col-xs-5 self-center">
+                                <q-btn @click="launch('https://genesiscommunityhealth.com/about-us/')" flat>
+                                    <img class="responsive check" src="statics/logos/gch.png"
+                                        alt="Genesis Community Health Logo">
+                                </q-btn>
+                            </div>
+                            <div class="col-md-6 col-xs-5 self-center">
+                                <q-btn @click="launch('https://boiserm.org/')" flat>
+                                    <img class="responsive check" src="statics/logos/brm.png"
+                                        alt="Boise Rescue Mission Logo">
+                                </q-btn>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xs-12 space">
 

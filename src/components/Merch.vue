@@ -30,7 +30,8 @@
                         {{merchandi.title}} </q-card-title>
                     <q-card-main>
                         <q-btn no-caps @click="launch('https://www.cuore.ch/teamshop/us/en/Ride-For-Hope-19/')"
-                            class="cbtn shadow-24"><img src="~statics/merch/cuore.png" alt="Cuore Logo" class="btn-img">
+                            class="cbtn shadow-24"><img src="statics/merch/cuore-logo.jpg" alt="Cuore Logo"
+                                class="btn-img">
                         </q-btn>
                     </q-card-main>
                 </q-card>
@@ -45,7 +46,7 @@
                     {{merchandi.title}}</q-card-title>
                 <q-card-main>
                     <q-btn no-caps @click="launch('https://www.cuore.ch/teamshop/us/en/Ride-For-Hope-19/')"
-                        class="cbtn shadow-24"><img src="~statics/merch/cuore.png" alt="Cuore Logo" class="btn-img">
+                        class="cbtn shadow-24"><img src="statics/merch/cuore-logo.jpg" alt="Cuore Logo" class="btn-img">
                     </q-btn>
                 </q-card-main>
             </q-card>
@@ -119,7 +120,8 @@
     }
 
     .cbtn {
-        background-color: rgba(218, 0, 0, 0.699);
+        /* background-color: rgba(218, 0, 0, 0.699); */
+        background-color: white;
         color: white;
         padding: 0 2rem 0 2rem;
     }
