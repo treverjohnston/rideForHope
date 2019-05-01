@@ -66,7 +66,7 @@
                   <q-route-tab class="tab" @click="collapse" slot="title" label="19 Mile" name="routes" to="19-mile" />
                 </q-item-main>
                 <q-item-main>
-                  <q-route-tab class="tab" @click="collapse" slot="title" label="31 Mile" name="routes" to="31-mile" />
+                  <q-route-tab class="tab" @click="collapse" slot="title" label="35 Mile" name="routes" to="35-mile" />
                 </q-item-main>
                 <q-item-main>
                   <q-route-tab class="tab" @click="collapse" slot="title" label="Metric Century" name="routes"
@@ -161,8 +161,8 @@
               <q-item-main class="small-side" label="19 Mile" />
             </q-side-link>
             <hr class="tabhrs">
-            <q-side-link to="31-mile">
-              <q-item-main class="small-side" label="31 Mile" />
+            <q-side-link to="35-mile">
+              <q-item-main class="small-side" label="35 Mile" />
             </q-side-link>
             <hr class="tabhrs">
             <q-side-link to="metric">

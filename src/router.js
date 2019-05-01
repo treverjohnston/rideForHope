@@ -54,7 +54,7 @@ export default new VueRouter({
           component: load('Eighteen')
         },
         {
-          path: '31-Mile',
+          path: '35-Mile',
           component: load('Thirty')
         },
         {

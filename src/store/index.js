@@ -23,13 +23,15 @@ var store = new vuex.Store({
     openRegistration: false,
     earlyRegistration: false,
     lvl1: [
-      // {
-      //   name: 'Lyle Pearson',
-      //   logo: './statics/sponsors/lyle.jpg',
-      //   link: 'https://www.lylepearson.com/'
-      // }
     ],
     lvl2: [
+      {
+        name: 'Lyle Pearson',
+        logo: './statics/sponsors/lyle.jpg',
+        link: 'https://www.lylepearson.com/'
+      }
+    ],
+    lvl3: [
       {
         name: '10 Barrel Brewing Co.',
         logo: './statics/sponsors/10barrel.png',
@@ -49,9 +51,7 @@ var store = new vuex.Store({
         name: 'R__B Ranch',
         logo: '',
         link: ''
-      }
-    ],
-    lvl3: [
+      },
       {
         name: 'DaVita',
         logo: './statics/sponsors/davita.png',
@@ -69,11 +69,6 @@ var store = new vuex.Store({
       }
     ],
     routes: [
-      // {
-      //     url: '/18-mile',
-      //     length: '18 Mile',
-      //     pic: '//res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/18_mrihcr.jpg'
-      // },
       {
         earlyReg: '$50',
         reg: '$60',
@@ -121,10 +116,10 @@ var store = new vuex.Store({
           'North Stewart Road – 7.6 Miles',
           'East Kuna Mora Road – 15 Miles'
         ],
-        btnClass: 'btn yellow',
+        btnClass: 'btn red',
         headline: 'Virtutem Spei - "Hope and Strength"',
-        frame: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=600&height=400&elevation=true&line_color=E60dd9cf&rgbhex=cfd90d&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
-        frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=300&height=450&elevation=true&line_color=E60dd9cf&rgbhex=cfd90d&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
+        frame: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=600&height=400&elevation=true&line_color=E60400ff&rgbhex=ff0004&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
+        frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=300&height=450&elevation=true&line_color=E60400ff&rgbhex=ff0004&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
         startTime: '11:15 AM*',
         otherMaps: [
           {
@@ -152,15 +147,15 @@ var store = new vuex.Store({
       {
         earlyReg: '$65',
         reg: '$75',
-        url: '/31-mile',
-        length: '31 Mile',
+        url: '/35-mile',
+        length: '35 Mile',
         pic:
           '//res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/31_lst8ag.jpg',
         mapLink: '//www.mapmyride.com/routes/view/1478990992',
         restStops: [
-          'W. Dickman - 9.7 Miles',
-          'Melba - 14 Miles',
-          'Bowmont - 22.6 Miles'
+          'Bowmont - 14.2 miles',
+          'Melba - 20.9 Miles',
+          'W. Dickman 25.3 Miles'
         ],
         btnClass: 'btn blue-back',
         headline: 'Carpe Diem - "Seize The Day"',
@@ -178,7 +173,7 @@ var store = new vuex.Store({
           },
           {
             title: 'Garmin',
-            link: '//connect.garmin.com/modern/course/19154808'
+            link: '//connect.garmin.com/modern/course/23705949'
           },
           {
             title: 'Ride with GPS',
@@ -199,10 +194,10 @@ var store = new vuex.Store({
           '//res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/62.8_obydkx.jpg',
         mapLink: '//www.mapmyride.com/routes/view/981667107',
         restStops: [
-          'Bowmont - 12.5 Miles',
-          'Gun Range- 27.9 Miles',
-          'Lake Shore Dr. - 42.5 Miles',
-          'Bowmont - 54.5 Miles'
+          'Bowmont - 14.2 Miles',
+          'Gun Range- 29.5 Miles',
+          'Lake Shore Dr. - 46.6 Miles',
+          'Bowmont - 58.5 Miles'
         ],
         btnClass: 'btn color',
         headline: 'Semper Fidelis - "Always Faithful"',
@@ -220,7 +215,7 @@ var store = new vuex.Store({
           },
           {
             title: 'Garmin',
-            link: '//connect.garmin.com/modern/course/19154726'
+            link: '//connect.garmin.com/modern/course/23705900'
           },
           {
             title: 'Ride with GPS',
@@ -229,7 +224,7 @@ var store = new vuex.Store({
         shortDescription:
           'Completely redesigned course for 2018. This is a ride for true bikers (i.e., no longer embarrassed to wear spandex). The route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops.',
         description:
-          '65.1 miles long (because 65.2 would just be CRAZY!).  This is a ride for true bikers (i.e. no longer embarrassed to wear spandex). The route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops. The course meets up with the last half of the Century route (so you will have additional riders to share your challenge with along the way). You will continue northwest toward Marsing and then turn back toward Kuna and pedal, pedal, pedal, to Lake Shore Drive skirting Lake Lowell on your way back to the finish line where festivities and food await, (if you are fast enough!). Just remember, Humpty Dumpty had wall issues too but he overcame; so can you!'
+          'At 67 miles long, this is a ride for true bikers (i.e. no longer embarrassed to wear spandex and know that STRAVA isn’t a new type of  pasta). The route Includes rolling hills, scenic overlooks, vineyards and 4 rest stops. The course meets up with the last half of the Century route (so you will have additional riders to share your challenge with along the way). You will continue northwest toward Marsing and then turn back toward Kuna and pedal, pedal, pedal, to Lake Shore Drive skirting Lake Lowell on your way back to the finish line where festivities and food await.  Just remember, no matter how slow you go, you are still lapping everybody on the couch!'
       },
       {
         earlyReg: '$75',
@@ -240,12 +235,12 @@ var store = new vuex.Store({
           '//res.cloudinary.com/treverscloud/image/upload/v1510899777/Ride/100_wi51xj.jpg',
         mapLink: '//www.mapmyride.com/routes/view/1462908562',
         restStops: [
-          'W. Dickman - 18.7 Miles',
-          'Melba - 32.2 Miles',
+          'W. Dickman - 20.3 Miles',
+          'Melba - 34 Miles',
           'Bowmont - 49.6 Miles',
-          'Gun Range - 64.9 Miles',
-          'Lake Shore Dr. - 79.8 Miles',
-          'Bowmont - 91.9 Miles'
+          'Gun Range - 65 Miles',
+          'Lake Shore Dr. - 82 Miles',
+          'Bowmont - 94 Miles'
         ],
         btnClass: 'btn color',
         headline: 'Veni Vidi Vici - "I Came. I Saw. I Conquered."',
@@ -263,7 +258,7 @@ var store = new vuex.Store({
           },
           {
             title: 'Garmin',
-            link: '//connect.garmin.com/modern/course/19140098'
+            link: '//connect.garmin.com/modern/course/23705841'
           },
           {
             title: 'Ride with GPS',

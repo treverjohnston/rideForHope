@@ -12,25 +12,35 @@
                     </h5>
                     <h6 class="mobile-only">(modified from www.mapmyride)
                     </h6>
-                    <p class="text-justify">For any climb to be rated (receive a climb score/category) it must be 500 meters in length with an average
-                        grade of 3% or more . Climbs are categorized from 4 (easiest) to beyond category (HC) most difficult.
-                        Map My Ride has added an additional category 5 rating. All climb scores are based on distance, grade/elevation
-                        change, and maximum elevation. The combination of these factors drives all final climb categories
-                        and there is no subjective analysis used in the final scoring of any climb score. All other climbs
+                    <p class="text-justify">For any climb to be rated (receive a climb score/category) it must be 500
+                        meters in length with an average
+                        grade of 3% or more . Climbs are categorized from 4 (easiest) to beyond category (HC) most
+                        difficult.
+                        Map My Ride has added an additional category 5 rating. All climb scores are based on distance,
+                        grade/elevation
+                        change, and maximum elevation. The combination of these factors drives all final climb
+                        categories
+                        and there is no subjective analysis used in the final scoring of any climb score. All other
+                        climbs
                         that do not meet the criteria for categorization are simply too small to rate and can usually be
-                        crossed easily by bicycle, running or walking. Categorized climb ratings are given by the UCI for
-                        races like the Tour de France and other professional cycling events. There are only three categorized
-                        climbs involving Ride For Hope Idaho routes. All three of the climbs are rated as category 5 climbs
-                        using Map My Ride methodology. Two of the climbs are on the Century Route and one climb is on the
-                        Metric Century course. Neither the 18 mile or 31 mile routes have climbs that are steep enough, or
+                        crossed easily by bicycle, running or walking. Categorized climb ratings are given by the UCI
+                        for
+                        races like the Tour de France and other professional cycling events. There are only three
+                        categorized
+                        climbs involving Ride For Hope Idaho routes. All three of the climbs are rated as category 5
+                        climbs
+                        using Map My Ride methodology. Two of the climbs are on the Century Route and one climb is on
+                        the
+                        Metric Century course. Neither the 18 mile or 35 mile routes have climbs that are steep enough,
+                        or
                         long enough, to categorize.
                     </p>
                 </div>
                 <q-card class="route col-xs-11 col-md-8">
                     <q-transition appear enter="zoomIn" leave="fadeOut">
                         <q-card-media>
-                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248679/Climb_Ratings_Graph_xnzecm.jpg" class="responsive"
-                                alt="Climb info">
+                            <img src="https://res.cloudinary.com/treverscloud/image/upload/v1517248679/Climb_Ratings_Graph_xnzecm.jpg"
+                                class="responsive" alt="Climb info">
                         </q-card-media>
                     </q-transition>
                 </q-card>
@@ -85,9 +95,10 @@
 </script>
 
 <style scoped>
-    .pad{
+    .pad {
         padding: 0 1rem 0 1rem;
     }
+
     .frame {
         width: 100%;
         height: 80vh;
@@ -115,5 +126,4 @@
     .hr {
         width: 20%
     }
-
 </style>

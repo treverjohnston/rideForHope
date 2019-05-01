@@ -44,25 +44,21 @@
                         <big class="text-italic">"Hope Conquers All"</big>
                         <hr color="red" class="hr">
                         <div class="mid row wrap justify-center">
-                            <div id="bar" class="col-xs-12 col-md-10">
+                            <!-- <div id="bar" class="col-xs-12 col-md-10">
                                 <q-btn flat class="el" data-x="360" @click="launch('https://www.lylepearson.com/')">
                                     <img class="responsive silver-big desktop-only" src="~/statics/sponsors/lyle.jpg"
                                         alt="Lyle Pearson">
                                     <img class="responsive silver-big-mobile mobile-only"
                                         src="~/statics/sponsors/lyle.jpg" alt="Lyle Pearson">
                                 </q-btn>
-                            </div>
+                            </div> -->
 
                             <div v-for="sponsor in l2" class="col-xs-12 col-md-6 self-center">
                                 <q-btn v-if="sponsor.logo != ''" flat @click="launch(sponsor.link)">
                                     <img class="responsive silver silver-space desktop-only" :src="sponsor.logo"
                                         :alt="sponsor.name">
-                                    <img class="responsive silver-mobile mobile-only" :src="sponsor.logo"
+                                    <img class="responsive silver-big-mobile mobile-only" :src="sponsor.logo"
                                         :alt="sponsor.name">
-                                </q-btn>
-                                <q-btn flat color="black" no-caps v-else>
-                                    <h6 class="black silver-text">R__B Ranch
-                                    </h6>
                                 </q-btn>
                             </div>
                         </div>
@@ -78,9 +74,13 @@
                         <big class="text-italic">"Hope And Strength"</big>
                         <hr color="red" class="hr">
                         <div class="mid row wrap justify-center">
-                            <div v-for="sponsor in l3" class="col-xs-6 col-md-3 self-center">
-                                <q-btn flat @click="launch(sponsor.link)">
+                            <div v-for="sponsor in l3" class="col-xs-6 col-md-4 self-center">
+                                <q-btn v-if="sponsor.logo != ''" flat @click="launch(sponsor.link)">
                                     <img class="responsive carp" :src="sponsor.logo" :alt="sponsor.name">
+                                </q-btn>
+                                <q-btn flat color="black" no-caps v-else>
+                                    <h6 class="black silver-text">R__B Ranch
+                                    </h6>
                                 </q-btn>
                             </div>
                         </div>
