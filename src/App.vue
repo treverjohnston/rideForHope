@@ -91,6 +91,13 @@
     background-color: rgba(138, 138, 138, 0.905);
   }
 
+  .white-back {
+    background-color: rgba(255, 255, 255, 0.892);
+    color: black;
+    height: 100%;
+    width: 100%;
+  }
+
   .bot-link {
     margin-bottom: 1rem;
   }

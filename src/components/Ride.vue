@@ -1,7 +1,7 @@
 <template>
     <q-layout class="black">
         <div class="row wrap justify-center xs-gutter">
-            <div class="col-xs-11 shadow-24 black-back">
+            <div class="col-xs-11 shadow-24 white-back">
                 <div class="row justify-center">
                     <div class="col-xs-6 desktop-only self-center">
                         <img src="statics/ride/ride1.jpg" class="responsive img" alt="RFH Logo">

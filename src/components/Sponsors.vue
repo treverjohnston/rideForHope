@@ -1,7 +1,7 @@
 <template>
     <q-layout class="">
         <div class="row justify-center">
-            <div class="col-xs-12 col-md-10 shadow-24 black-back">
+            <div class="col-xs-12 col-md-10 shadow-24 white-back">
                 <!-- <div class="row wrap justify-center promo">
                     <div class="col-xs-11 col-md-6 text-center">
                         <h3 class="text-bold shadow">We Love Our Sponsors!</h3>

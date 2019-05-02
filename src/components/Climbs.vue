@@ -1,7 +1,7 @@
 <template>
     <q-layout class="black">
         <div class="row wrap justify-center">
-            <div class="col-xs-11 col-md-10 black-back pad shadow-24">
+            <div class="col-xs-11 col-md-10 white-back pad shadow-24">
                 <div class="col-xs-11 col-md-8 text-center">
                     <h3 class="desktop-only">Information About Climbs
                     </h3>

@@ -1,12 +1,12 @@
 <template>
     <q-layout class="black">
         <div class="row justify-center">
-            <div class="col-xs-11 col-md-10 black-back shadow-24">
+            <div class="col-xs-11 col-md-10 white-back shadow-24">
                 <div class="row wrap justify-center">
                     <div class="col-xs-9 text-center desktop-only spacers">
                         <div class="row wrap justify-center" id="number">
                             <input readonly class="text-output large-text text-bold col-xs-4" value="$0">
-                            <h4 class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho
+                            <h4 class="text-bold col-xs-9 text-center text-italic">Donated by Ride For Hope Idaho
                                 With
                                 <u>YOUR</u> Help</h4>
                         </div>
@@ -17,7 +17,7 @@
                                 <input readonly class="text-output text-bold col-xs-10 emphasize" value="$0">
                             </big>
 
-                            <p class="text-bold col-xs-9 text-center text-italic">Amount Donated by Ride For Hope Idaho
+                            <p class="text-bold col-xs-9 text-center text-italic">Donated by Ride For Hope Idaho
                                 With
                                 <u>YOUR</u> Help</p>
 
@@ -284,11 +284,6 @@
         background-color: rgba(163, 163, 163, 0.699);
     }
 
-    .white-back {
-        background-color: rgba(255, 255, 255, 0.295);
-        margin: 1rem 5rem 1rem 5rem;
-        border-radius: 9px;
-    }
 
     .large-text {
         font-size: 5rem;

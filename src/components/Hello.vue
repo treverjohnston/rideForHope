@@ -435,12 +435,20 @@
               <div class="row justify-center">
                 <div class="col-xs-12 pad">
                   <small class="text-center white">
-                    Be sure to check out this other great charity ride!
+                    Be sure to check out these other great charity rides!
                   </small>
                 </div>
                 <div class="col-xs-12">
                   <q-btn flat @click="launch('https://www.cycleforindependence.org/')">
                     <img class="meridian-big" src="statics/logos/cfi.jpg" alt="Cycle for independence logo">
+                  </q-btn>
+                </div>
+                <div class="col-xs-12">
+                  <q-btn flat
+                    @click="launch('http://web.alsa.org/site/TR?sid=8540&type=fr_informational&pg=informational&fr_id=13510')">
+                    <img class="meridian-big"
+                      src="//web.alsa.org/images/content/pagebuilder/als_team_challenge_logo_white.png"
+                      alt="Cycle for independence logo">
                   </q-btn>
                 </div>
               </div>

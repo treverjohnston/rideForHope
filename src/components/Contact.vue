@@ -1,7 +1,7 @@
 <template>
     <q-layout class="black">
         <div class="row justify-center">
-            <div class="col-xs-11 col-md-10 black-back shadow-24">
+            <div class="col-xs-11 col-md-10 white-back shadow-24">
                 <div class="row wrap justify-center">
                     <div class="col-xs-12 text-center">
                         <h3>Contact Us</h3>
@@ -12,15 +12,15 @@
                 </div>
                 <div class="row justify-center bot desktop-only xs-gutter">
                     <div class="col-xs-5 self-center space">
-                        <img src="statics/logos/RFHIdahoLogo.png" class="responsive img route" alt="Ride for hope idaho logo">
+                        <img src="statics/logos/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
                     </div>
                     <div class="col-xs-5 self-center">
                         <q-input v-model="name" float-label="Name" name="name" type="text" />
                         <q-input v-model="email" float-label="Email" name="email" type="email" />
                         <q-input v-model="phone" float-label="Phone" name="phone" type="tel" />
                         <q-input v-model="subject" float-label="Subject" name="subject" type="text" />
-                        <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100"
-                            :min-rows="5" />
+                        <q-input v-model="message" type="textarea" name="message" float-label="Message"
+                            :max-height="100" :min-rows="5" />
                         <form action="//formspree.io/rideforhopeidaho@gmail.com" method="POST">
                             <q-btn type="submit" outline color="black">Send</q-btn>
                             <div class="hidden">
@@ -39,8 +39,8 @@
                         <q-input v-model="email" float-label="Email" name="email" />
                         <q-input v-model="phone" float-label="Phone" name="phone" />
                         <q-input v-model="subject" float-label="Subject" name="subject" />
-                        <q-input v-model="message" type="textarea" name="message" float-label="Message" :max-height="100"
-                            :min-rows="5" />
+                        <q-input v-model="message" type="textarea" name="message" float-label="Message"
+                            :max-height="100" :min-rows="5" />
                         <form action="//formspree.io/rideforhopeidaho@gmail.com" method="POST">
                             <q-btn type="submit" outline color="black">Send</q-btn>
                             <div class="hidden">
@@ -53,7 +53,7 @@
                         </form>
                     </div>
                     <div class="col-xs-10 bot">
-                        <img src="statics/logos/RFHIdahoLogo.png" class="responsive img route" alt="Ride for hope idaho logo">
+                        <img src="statics/logos/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
                     </div>
                 </div>
             </div>

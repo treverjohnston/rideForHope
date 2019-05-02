@@ -1,7 +1,7 @@
 <template>
     <q-layout class="team">
         <div class="row justify-center">
-            <div class="col-xs-11 col-md-10 black-back shadow-24">
+            <div class="col-xs-11 col-md-10 white-back shadow-24">
                 <div class="row wrap justify-center xs-gutter">
                     <div class="col-xs-5 col-md-3 self-center left">
                         <img src="statics/team2.jpg" class="responsive img" alt="RFH Riders">
@@ -40,9 +40,10 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4 text-center">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%2Frideforhopeidaho&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                            width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-                            allow="encrypted-media"></iframe>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%2Frideforhopeidaho&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
                 <div class="row justify-center">
@@ -51,7 +52,8 @@
                         <h4 class="mobile-only">Requirements</h4>
                         <hr class="ihr">
                         <p>
-                            You must attend every Saturday training ride. (Begins March 3 -- We leave from Meridian Cycles)
+                            You must attend every Saturday training ride. (Begins March 3 -- We leave from Meridian
+                            Cycles)
                         </p>
                         <p>You must commit to another charity ride. (i.e. Cycle for Independence)</p>
                     </div>
@@ -105,9 +107,10 @@
 </script>
 
 <style scoped>
-    .black-back{
+    .black-back {
         background-color: rgba(138, 138, 138, 0.905);
     }
+
     .team {
         background-image: url("https://res.cloudinary.com/treverscloud/image/upload/v1517856029/bw_icaeha.jpg");
         background-position: center center;
@@ -162,5 +165,4 @@
     .hr {
         width: 20%
     }
-
 </style>
