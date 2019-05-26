@@ -77,12 +77,16 @@ var store = new vuex.Store({
         pic: '',
         mapLink: '//www.mapmyride.com/routes/view/2264365960',
         restStops: ['East Kuna Mora Road -  4.6 Miles'],
-        btnClass: 'btn purple',
+        btnClass: 'btn color',
         headline: 'Virtutem Spei - "Hope and Strength"',
         frame: '//snippets.mapmycdn.com/routes/view/embedded/2264365960?width=600&height=400&elevation=true&line_color=E6d90d8e&rgbhex=8e0dd9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
         frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/2264365960?width=300&height=450&elevation=true&line_color=E6d90d8e&rgbhex=8e0dd9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
-        startTime: '11:15 AM*',
+        startTime: '11:00 AM*',
         otherMaps: [
+          {
+            title: 'Print Map',
+            link: './statics/pdfs/2019_9_MILE_PRINTABLE_MAP.pdf'
+          },
           {
             title: 'Map My Ride',
             link: '//www.mapmyride.com/routes/view/2264365960'
@@ -116,12 +120,16 @@ var store = new vuex.Store({
           'North Stewart Road – 7.6 Miles',
           'East Kuna Mora Road – 15 Miles'
         ],
-        btnClass: 'btn red',
+        btnClass: 'btn color',
         headline: 'Virtutem Spei - "Hope and Strength"',
         frame: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=600&height=400&elevation=true&line_color=E60400ff&rgbhex=ff0004&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
         frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/996049745?width=300&height=450&elevation=true&line_color=E60400ff&rgbhex=ff0004&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-28T15:24:15-05:00',
-        startTime: '11:15 AM*',
+        startTime: '11:00 AM*',
         otherMaps: [
+          {
+            title: 'Print Map',
+            link: './statics/pdfs/2019_19_MILE_PRINTABLE_MAP.pdf'
+          },
           {
             title: 'Map My Ride',
             link: '//www.mapmyride.com/routes/view/996049745'
@@ -157,12 +165,16 @@ var store = new vuex.Store({
           'Melba - 20.9 Miles',
           'W. Dickman 25.3 Miles'
         ],
-        btnClass: 'btn blue-back',
+        btnClass: 'btn color',
         headline: 'Carpe Diem - "Seize The Day"',
         frame: '//snippets.mapmycdn.com/routes/view/embedded/1478990992?width=600&height=400&elevation=true&line_color=E6d9430d&rgbhex=0d43d9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-21T10:32:52-05:00&show_marker_every=3',
         frameMobile: '//snippets.mapmycdn.com/routes/view/embedded/1478990992?width=300&height=450&elevation=true&line_color=E6d9430d&rgbhex=0d43d9&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2018-09-21T10:32:52-05:00&show_marker_every=3',
-        startTime: '10:45 AM*',
+        startTime: '10:30 AM*',
         otherMaps: [
+          {
+            title: 'Print Map',
+            link: './statics/pdfs/2019_35_MILE_PRINTABLE_MAP.pdf'
+          },
           {
             title: 'Map My Ride',
             link: '//www.mapmyride.com/routes/view/1478990992'
@@ -206,6 +218,10 @@ var store = new vuex.Store({
         startTime: '9:00 AM*',
         otherMaps: [
           {
+            title: 'Print Map',
+            link: './statics/pdfs/2019_METRIC_PRINTABLE_MAP.pdf'
+          },
+          {
             title: 'Map My Ride',
             link: '//www.mapmyride.com/routes/view/981667107'
           },
@@ -215,7 +231,7 @@ var store = new vuex.Store({
           },
           {
             title: 'Garmin',
-            link: '//connect.garmin.com/modern/course/23705900'
+            link: '//connect.garmin.com/modern/course/23734369'
           },
           {
             title: 'Ride with GPS',
@@ -249,6 +265,10 @@ var store = new vuex.Store({
         startTime: '7:00 AM*',
         otherMaps: [
           {
+            title: 'Print Map',
+            link: './statics/pdfs/2019_CENTURY_PRINTABLE_MAP.pdf'
+          },
+          {
             title: 'Map My Ride',
             link: '//www.mapmyride.com/routes/view/1462908562'
           },
@@ -258,7 +278,7 @@ var store = new vuex.Store({
           },
           {
             title: 'Garmin',
-            link: '//connect.garmin.com/modern/course/23705841'
+            link: '//connect.garmin.com/modern/course/24163088'
           },
           {
             title: 'Ride with GPS',

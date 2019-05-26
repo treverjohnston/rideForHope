@@ -19,12 +19,12 @@
           <div class="col-xs-12 col-lg-4 r-links">
             <div class="row wrap justify-center">
               <div class="col-xs-11 text-center spacers">
-                <q-btn v-if="openRegistration" no-caps class="btn"
+                <q-btn v-if="openRegistration" no-caps class="btn spacers"
                   @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventOverview.aspx%3FfEID%3D71518%26z%3D1546310361813')">
                   Register
                   Now
                 </q-btn>
-                <q-btn v-else no-caps class="btn" @click="$router.push('/register')">Register Now
+                <q-btn v-else no-caps class="btn spacers" @click="$router.push('/register')">Register Now
                 </q-btn>
                 <div class="top">
                   Regular Registration: {{route.reg}}
@@ -80,14 +80,23 @@
                   <div class="col-xs-12">
                     <hr class="ihr">
                   </div>
-                  <q-btn v-for="otherRoute in routes" v-if="otherRoute.length != route.length" class="col-xs-4 r-btn"
-                    @click="$router.push(otherRoute.url.trim('/'))" no-caps>{{otherRoute.length}}</q-btn>
+                  <q-btn v-for="otherRoute in routes" v-if="otherRoute.length != route.length"
+                    class="col-xs-4 btn spacers" @click="$router.push(otherRoute.url.trim('/'))" no-caps>
+                    {{otherRoute.length}}</q-btn>
                 </div>
               </div>
             </div>
             <div class="row wrap justify-center desktop-only last">
               <div class="col-xs-11 text-center spacers">
-                <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
+                <div class="row justify-center">
+                  <h5 class="col-xs-12">Resources</h5>
+                  <div class="col-xs-12">
+                    <hr class="ihr">
+                  </div>
+                  <q-btn class="btn spacers" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
+                  <q-btn class="btn spacers" @click="$router.push('rules')" no-caps>Rules Of The Road</q-btn>
+
+                </div>
               </div>
             </div>
           </div>
@@ -124,14 +133,26 @@
                   <div class="col-xs-12">
                     <hr class="ihr">
                   </div>
-                  <q-btn v-for="otherRoute in routes" v-if="otherRoute.length != route.length" class="col-xs-4 r-btn"
-                    @click="$router.push(otherRoute.url.trim('/'))" no-caps>{{otherRoute.length}}</q-btn>
+                  <q-btn v-for="otherRoute in routes" v-if="otherRoute.length != route.length"
+                    class="col-xs-4 btn spacers" @click="$router.push(otherRoute.url.trim('/'))" no-caps>
+                    {{otherRoute.length}}</q-btn>
                 </div>
               </div>
             </div>
-            <div class="row wrap justify-center mobile-only">
-              <div class="col-xs-11 text-center spacers bot-link">
-                <q-btn class="btn" @click="$router.push('climbs')" no-caps>Information About Climbs</q-btn>
+            <div class="row wrap justify-center mobile-only bot-link">
+              <div class="col-xs-11 text-center spacers white">
+                <div class="row justify-center white">
+                  <h5 class="col-xs-12 text-center">Resources</h5>
+                  <div class="col-xs-12">
+                    <hr class="ihr">
+                  </div>
+                  <div class="col-xs-11 text-center">
+                    <q-btn class="btn spacers" @click="$router.push('climbs')" no-caps>Information About Climbs
+                    </q-btn>
+                    <q-btn class="btn spacers" @click="$router.push('rules')" no-caps>Rules Of The Road
+                    </q-btn>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -225,9 +246,9 @@
     color: white;
   }
 
-  .yellow {
-    background-color: rgba(253, 237, 0, 0.939);
-    color: black;
+  .color {
+    background-color: rgba(197, 7, 7, 0.8);
+    color: white;
   }
 
   .small {

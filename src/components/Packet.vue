@@ -1,20 +1,20 @@
 <template>
     <q-layout class="black">
         <div class="row wrap justify-center">
-            <div class="col-xs-11 col-md-10 black-back shadow-24 text-center">
+            <div class="col-xs-11 col-md-10 white-back shadow-24 text-center">
                 <h3 class="desktop-only">Packet Pick Up</h3>
                 <h4 class="mobile-only">Packet Pick Up</h4>
                 <hr class="ihr">
-                <h5>Check back later for 2019 Packet Pick Up times!</h5>
-                <!-- <h5>
-                    <b>Date: </b>Friday, June 22</h5>
+                <!-- <h5>Check back later for 2019 Packet Pick Up times!</h5> -->
                 <h5>
-                    <b>Time: </b>2pm-8pm</h5>
+                    <b>Date: </b>Friday, June 7</h5>
+                <h5>
+                    <b>Time: </b>4pm-7pm</h5>
                 <hr class="ihr">
                 <h4>Meridian Cycles</h4>
-                <h5>1203 N Main</h5>
+                <h5>1203 N. Main St.</h5>
                 <h5> Meridian, ID</h5>
-                <h5>83642</h5> -->
+                <h5>83642</h5>
             </div>
 
 

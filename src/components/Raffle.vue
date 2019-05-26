@@ -4,13 +4,13 @@
             <q-transition appear enter="fadeIn" leave="fadeOut">
                 <div class="col-lg-8 top text-center">
                     <hr color="red" class="hr">
-                    <h2 class="headline text-bold">2019 RAFFLE ITEMS COMING SOON</h2>
+                    <h3 class="headline text-bold">2019 RAFFLE ITEMS ANNOUNCED AT EVENT</h3>
                     <h4 class="fancy">Raffle tickets are available for purchase: </h4>
                     <h4>1 ticket for $3</h4>
                     <h4>2 tickets for $5</h4>
                     <h4>4 tickets for $10</h4>
                     <h4>10 tickets for $20</h4>
-                    <h4 class="fancy">Additional meal tickets are also available for $8</h4>
+                    <h4 class="fancy">Additional meal tickets are also available for $10</h4>
                     <q-btn class="btn shadow-24" no-caps
                         @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">
                         Purchase Raffle Tickets</q-btn>
@@ -27,13 +27,13 @@
         <div class="row wrap justify-center mobile-only">
             <div class="col-xs-11 top text-center">
                 <hr color="red" class="hr">
-                <h4 class="headline text-bold">2019 RAFFLE ITEMS COMING SOON</h4>
+                <h4 class="headline text-bold">2019 RAFFLE ITEMS ANNOUNCED AT EVENT</h4>
                 <h5 class="fancy ">Raffle tickets are available for purchase: </h5>
                 <h5>1 ticket for $3</h5>
                 <h5>2 tickets for $5</h5>
                 <h5>4 tickets for $10</h5>
                 <h5>10 tickets for $20</h5>
-                <h5 class="fancy">Additional meal tickets are also available for $8</h5>
+                <h5 class="fancy">Additional meal tickets are also available for $10</h5>
                 <q-btn class="btn shadow-24" no-caps
                     @click="launch('https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventStore.aspx%3FfEID%3D67623%26mSource%3DimAOverview')">
                     Purchase Raffle Tickets</q-btn>

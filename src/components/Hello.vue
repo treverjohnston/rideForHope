@@ -273,17 +273,21 @@
               <h3 class="text-bold">2019 Event Date: Saturday, June 8</h3>
               <h3 class="text-bold">Kuna, ID</h3>
               <hr>
-              <h5 class="q-title">Online registration ends 6/6/2019.</h5>
+              <h5 class="q-title">Online registration ends 6/6/2019. Last day to register and be guarenteed a T-Shirt:
+                5/30/19</h5>
               <h5 class="q-title">Day of ride registration available.</h5>
               <h5 class="q-title">Discount offered for teams of 5 or more and for families. Contact for more details.
               </h5>
               <hr>
-              <h6 class="q-title">A special thanks to
+              <q-btn @click="launch('https://bigkbbqidaho.com/')" class="cbtnm shadow-24 text-center">Catered By
+                Big K BBQ
+              </q-btn>
+              <!-- <h6 class="q-title">A special thanks to
                 <a class="noHighlight" href="https://www.imagocaeli.com/" target="_blank">Imago Caeli</a>
                 for all 2018
                 Ride For Hope Idaho video!</h6>
               <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Video and Gallery
-              </q-btn>
+              </q-btn> -->
               <q-btn v-if="showSwal" @click="charitySwal()" class="cbtnm shadow-24 text-center ">10 Barrel Brewing
                 Co.
                 Charity Day</q-btn>
@@ -301,17 +305,21 @@
             <h5>Saturday, June 8</h5>
             <h5 class="">Kuna, ID</h5>
             <hr>
-            <h6 class="q-title">Online registration ends 6/6/2019.</h6>
+            <h6 class="q-title">Online registration ends 6/6/2019. Last day to register and be guarenteed a T-Shirt:
+              5/30/19</h6>
             <h6 class="q-title">Day of ride registration available.</h6>
             <h6 class="q-title">Discount offered for teams of 5 or more and for families. Contact for more details.</h6>
             <hr>
-            <h6 class="q-title">A special thanks to
+            <q-btn @click="launch('https://bigkbbqidaho.com/')" class="cbtnm shadow-24 text-center">Catered By
+              Big K BBQ
+            </q-btn>
+            <!-- <h6 class="q-title">A special thanks to
               <a class="noHighlight" href="https://www.imagocaeli.com/" target="_blank">Imago Caeli</a> for all 2018
               Ride For Hope Idaho video!</h6>
             <q-btn v-if="showSwal" @click="charitySwal()" class="cbtnm shadow-24 text-center ">10 Barrel Brewing Co.
               Charity Day</q-btn>
             <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Video and Gallery
-            </q-btn>
+            </q-btn> -->
           </div>
 
           <!-- <q-btn @click="$router.push('2018-gallery')" class="cbtnm shadow-24 text-center">2018 Gallery and Video</q-btn> -->
@@ -446,9 +454,7 @@
                 <div class="col-xs-12">
                   <q-btn flat
                     @click="launch('http://web.alsa.org/site/TR?sid=8540&type=fr_informational&pg=informational&fr_id=13510')">
-                    <img class="meridian-big"
-                      src="//web.alsa.org/images/content/pagebuilder/als_team_challenge_logo_white.png"
-                      alt="Cycle for independence logo">
+                    <img class="meridian-big" src="statics/logos/als.png" alt="ALS Team Challenge logo">
                   </q-btn>
                 </div>
               </div>

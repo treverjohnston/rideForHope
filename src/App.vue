@@ -204,4 +204,8 @@
   .black {
     color: black;
   }
+
+  .color {
+    border: 1px solid white;
+  }
 </style>
