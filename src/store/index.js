@@ -29,6 +29,11 @@ var store = new vuex.Store({
         name: 'Lyle Pearson',
         logo: './statics/sponsors/lyle.jpg',
         link: 'https://www.lylepearson.com/'
+      },
+      {
+        name: 'Imago Caeli LLC',
+        logo: './statics/sponsors/imago.jpg',
+        link: 'https://www.imagocaeli.com/'
       }
     ],
     lvl3: [
@@ -53,9 +58,14 @@ var store = new vuex.Store({
         link: ''
       },
       {
-        name: 'DaVita',
-        logo: './statics/sponsors/davita.png',
-        link: 'https://www.davita.com/'
+        name: 'Villager Creative',
+        logo: './statics/sponsors/villager.png',
+        link: 'https://www.villagercreative.com/'
+      },
+      {
+        name: 'Big K BBQ',
+        logo: './statics/sponsors/bigk.jpg',
+        link: 'https://bigkbbqidaho.com'
       }
     ],
     lvl4: [
@@ -66,6 +76,26 @@ var store = new vuex.Store({
       {
         name: 'Idaho Power',
         link: 'https://www.idahopower.com/'
+      },
+      {
+        name: 'DaVita',
+        logo: './statics/sponsors/davita.png',
+        link: 'https://www.davita.com/'
+      },
+      {
+        name: 'WestMark Credit Union',
+        logo: '',
+        link: 'https://www.westmark.org/'
+      },
+      {
+        name: 'McDonough Real Estate Group',
+        logo: '',
+        link: '//www.mcdrealestategroup.com/'
+      },
+      {
+        name: 'Coffee Studio',
+        logo: '',
+        link: 'https://www.mycoffeestudios.com/'
       }
     ],
     routes: [

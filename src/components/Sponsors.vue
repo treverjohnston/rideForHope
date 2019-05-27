@@ -10,7 +10,6 @@
                             Hope</q-btn>
                     </div>
                 </div> -->
-                <!-- NEED TO MOVE LYLE TO OPNES SPEM BUT STILL MAKE IT BIGGER -->
                 <div class="row wrap justify-center text-center">
                     <div v-scroll-fire="animate" class="col-xs-11 col-md-8 spacers">
                         <h2 class="text-bold shadow desktop-only">Veni Vidi Vici Sponsors</h2>
