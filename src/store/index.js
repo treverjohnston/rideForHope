@@ -59,7 +59,7 @@ var store = new vuex.Store({
       },
       {
         name: 'Villager Creative',
-        logo: './statics/sponsors/villager.png',
+        logo: './statics/sponsors/villager.jpg',
         link: 'https://www.villagercreative.com/'
       },
       {
