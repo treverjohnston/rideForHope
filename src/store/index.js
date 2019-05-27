@@ -78,7 +78,7 @@ var store = new vuex.Store({
         link: 'https://www.idahopower.com/'
       },
       {
-        name: 'DaVita',
+        name: 'DaVita Kidney Care',
         logo: './statics/sponsors/davita.png',
         link: 'https://www.davita.com/'
       },
