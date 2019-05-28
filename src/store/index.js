@@ -78,14 +78,14 @@ var store = new vuex.Store({
         link: 'https://www.idahopower.com/'
       },
       {
-        name: 'DaVita Kidney Care',
-        logo: './statics/sponsors/davita.png',
-        link: 'https://www.davita.com/'
-      },
-      {
         name: 'WestMark Credit Union',
         logo: '',
         link: 'https://www.westmark.org/'
+      },
+      {
+        name: 'DaVita Kidney Care',
+        logo: './statics/sponsors/davita.png',
+        link: 'https://www.davita.com/'
       },
       {
         name: 'McDonough Real Estate Group',
