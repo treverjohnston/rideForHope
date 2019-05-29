@@ -52,7 +52,7 @@
                                 </q-btn>
                             </div> -->
 
-                            <div v-for="sponsor in l2" class="col-xs-12 col-md-6 self-center">
+                            <div v-for="sponsor in l2" class="col-xs-12 col-md-9 self-center">
                                 <q-btn v-if="sponsor.logo != ''" flat @click="launch(sponsor.link)">
                                     <img class="responsive silver silver-space desktop-only" :src="sponsor.logo"
                                         :alt="sponsor.name">
@@ -73,7 +73,7 @@
                         <big class="text-italic">"Hope And Strength"</big>
                         <hr color="red" class="hr">
                         <div class="mid row wrap justify-center">
-                            <div v-for="sponsor in l3" class="col-xs-6 col-md-4 self-center">
+                            <div v-for="sponsor in l3" class="col-xs-8 col-md-6 self-center">
                                 <q-btn v-if="sponsor.logo != ''" flat @click="launch(sponsor.link)">
                                     <img class="responsive carp" :src="sponsor.logo" :alt="sponsor.name">
                                 </q-btn>
@@ -94,12 +94,19 @@
                         <!-- <h4 class="text-bold shadow mobile-only">($500-$1499)</h4> -->
                         <big class="text-italic">"Seize The Day"</big>
                         <hr color="red" class="hr">
-                        <div class="mid row wrap justify-center">
+                        <!-- <div class="mid row wrap justify-center">
 
                             <div v-for="sponsor in l4" class="col-xs-6 col-md-6 self-center last margin">
                                 <q-btn outline color="white" no-caps @click="launch(sponsor.link)">
                                     <h5 class="white desktop-only">{{sponsor.name}}</h5>
                                     <h6 class="white mobile-only">{{sponsor.name}}</h6>
+                                </q-btn>
+                            </div>
+                        </div> -->
+                        <div class="mid row wrap justify-center">
+                            <div v-for="sponsor in l4" class="col-xs-6 col-md-4 self-center">
+                                <q-btn flat>
+                                    <img class="responsive carp" :src="sponsor.logo" :alt="sponsor.name">
                                 </q-btn>
                             </div>
                         </div>
@@ -219,7 +226,7 @@
     }
 
     .silver {
-        min-height: 9rem;
+        height: 13rem;
     }
 
     .silver-mobile {
@@ -231,7 +238,7 @@
     }
 
     .silver-big-mobile {
-        height: 7rem;
+        height: 9rem;
     }
 
     .btn {

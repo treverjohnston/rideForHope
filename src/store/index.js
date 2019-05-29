@@ -59,7 +59,7 @@ var store = new vuex.Store({
       },
       {
         name: 'Villager Creative',
-        logo: './statics/sponsors/villager.jpg',
+        logo: './statics/sponsors/villager.png',
         link: 'https://www.villagercreative.com/'
       },
       {
@@ -71,15 +71,17 @@ var store = new vuex.Store({
     lvl4: [
       {
         name: 'Idaho Urologic Institute',
+        logo: './statics/sponsors/iui.png',
         link: 'https://www.idurology.com/'
       },
       {
         name: 'Idaho Power',
+        logo: './statics/sponsors/power.png',
         link: 'https://www.idahopower.com/'
       },
       {
         name: 'WestMark Credit Union',
-        logo: '',
+        logo: './statics/sponsors/westmark.jpg',
         link: 'https://www.westmark.org/'
       },
       {
@@ -89,12 +91,12 @@ var store = new vuex.Store({
       },
       {
         name: 'McDonough Real Estate Group',
-        logo: '',
+        logo: './statics/sponsors/mcdonough.jpg',
         link: '//www.mcdrealestategroup.com/'
       },
       {
         name: 'Coffee Studio',
-        logo: '',
+        logo: './statics/sponsors/CoffeeStudio.png',
         link: 'https://www.mycoffeestudios.com/'
       }
     ],
