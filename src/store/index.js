@@ -34,6 +34,11 @@ var store = new vuex.Store({
         name: 'Imago Caeli LLC',
         logo: './statics/sponsors/imago.jpg',
         link: 'https://www.imagocaeli.com/'
+      },
+      {
+        name: 'Ebenezer Websites LLC',
+        logo: './statics/sponsors/ebenezer.png',
+        link: 'https://www.ebenezerwebsites.com/'
       }
     ],
     lvl3: [
@@ -98,6 +103,44 @@ var store = new vuex.Store({
         name: 'Coffee Studio',
         logo: './statics/sponsors/CoffeeStudio.png',
         link: 'https://www.mycoffeestudios.com/'
+      }
+    ],
+    lvl5: [
+      {
+        name: 'Boise Bike Wrench'
+      },
+      {
+        name: 'Porta Pro'
+      },
+      {
+        name: 'Idaho Tents and Events'
+      },
+      {
+        name: 'Valley Wide REACT'
+      },
+      {
+        name: 'Blue Sky Bagels'
+      },
+      {
+        name: 'Resers'
+      },
+      {
+        name: 'Albertsons'
+      },
+      {
+        name: 'Aqua Tech - Dave Coburn'
+      },
+      {
+        name: 'Georges Cycles'
+      },
+      {
+        name: 'J&M Sanitation'
+      },
+      {
+        name: 'Kuna City'
+      },
+      {
+        name: 'Idaho State University Physician Assistant Program'
       }
     ],
     routes: [
