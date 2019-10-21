@@ -4,10 +4,15 @@ import $ from 'jquery';
 import vuex from 'vuex';
 import router from '../router';
 import { Toast } from 'quasar';
-import { Notify } from 'quasar';
 
-// var production = !window.location.host.includes('localhost');
-// var baseUrl = production ? '//inspireq.herokuapp.com/' : '//localhost:3000/';
+var production = !window.location.host.includes('localhost');
+var baseUrl = production ? '//www.unorthodoxgifts.com/' : '//localhost:3000/';
+
+var api = axios.create({
+  baseURL: baseUrl,
+  timeout: 4000,
+  withCredentials: true
+})
 
 vue.use(vuex);
 import VueAnalytics from 'vue-analytics';
@@ -26,6 +31,11 @@ var store = new vuex.Store({
     ],
     lvl2: [
       {
+        name: 'Ebenezer Websites LLC',
+        logo: './statics/sponsors/ebenezer.png',
+        link: 'https://www.ebenezerwebsites.com/'
+      },
+      {
         name: 'Lyle Pearson',
         logo: './statics/sponsors/lyle.jpg',
         link: 'https://www.lylepearson.com/'
@@ -36,9 +46,14 @@ var store = new vuex.Store({
         link: 'https://www.imagocaeli.com/'
       },
       {
-        name: 'Ebenezer Websites LLC',
-        logo: './statics/sponsors/ebenezer.png',
-        link: 'https://www.ebenezerwebsites.com/'
+        name: 'Big K BBQ',
+        logo: './statics/sponsors/bigk.jpg',
+        link: 'https://bigkbbqidaho.com'
+      },
+      {
+        name: 'Meridian Cycles',
+        logo: './statics/sponsors/meridian.png',
+        link: 'http://www.meridian-cycles.com/'
       }
     ],
     lvl3: [
@@ -53,11 +68,6 @@ var store = new vuex.Store({
         link: 'https://www.firstinterstatebank.com/'
       },
       {
-        name: 'Meridian Cycles',
-        logo: './statics/sponsors/meridian.png',
-        link: 'http://www.meridian-cycles.com/'
-      },
-      {
         name: 'R__B Ranch',
         logo: '',
         link: ''
@@ -68,9 +78,9 @@ var store = new vuex.Store({
         link: 'https://www.villagercreative.com/'
       },
       {
-        name: 'Big K BBQ',
-        logo: './statics/sponsors/bigk.jpg',
-        link: 'https://bigkbbqidaho.com'
+        name: 'Bikes and Beans',
+        logo: './statics/sponsors/bikesAndBeans.png',
+        link: '//bikesbeans.com/'
       }
     ],
     lvl4: [
@@ -78,6 +88,16 @@ var store = new vuex.Store({
         name: 'Idaho Urologic Institute',
         logo: './statics/sponsors/iui.png',
         link: 'https://www.idurology.com/'
+      },
+      {
+        name: 'Clif',
+        logo: './statics/sponsors/clifbar.jpg',
+        link: 'https://www.clifbar.com/'
+      },
+      {
+        name: 'Jo\'s Traveling Bar',
+        logo: './statics/sponsors/jos.png',
+        link: '//travelingbar.com/'
       },
       {
         name: 'Idaho Power',
@@ -138,6 +158,15 @@ var store = new vuex.Store({
       },
       {
         name: 'Kuna City'
+      },
+      {
+        name: 'Coca-Cola'
+      },
+      {
+        name: 'Pepsi'
+      },
+      {
+        name: 'Frito-Lay'
       },
       {
         name: 'Idaho State University Physician Assistant Program'
@@ -507,6 +536,15 @@ var store = new vuex.Store({
     }
   },
   actions: {
+    sendEmail({ commit, dispatch }, obj) {
+      api.post('email', obj)
+        .then(res => {
+          Toast.create({ html: 'Message Sent', bgColor: 'green' });
+        })
+        .catch(err => {
+          Toast.create({ html: 'Message send failed: ' + err, bgColor: 'red' });
+        })
+    },
     getPictures({ commit, dispatch }) {
       // cl.imageTag('rfh.json', { type: 'list' }).toHtml();
       axios
@@ -518,22 +556,6 @@ var store = new vuex.Store({
         .catch(err => {
           commit('handleError', err);
         });
-    },
-    sendEmail({ commit, dispatch }, obj) {
-      console.log('email obj', obj);
-      $.ajax({
-        url: 'https://formspree.io/rideforhopeidaho@gmail.com',
-        method: 'POST',
-        data: {
-          name: obj.name,
-          _email: obj.email,
-          phone: obj.phone,
-          _subject: obj._subject,
-          message: obj.message
-        },
-        dataType: 'json'
-      });
-      Toast.create('Message Sent');
     }
   }
 });

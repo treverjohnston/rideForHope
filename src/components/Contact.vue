@@ -21,16 +21,14 @@
                         <q-input v-model="subject" float-label="Subject" name="subject" type="text" />
                         <q-input v-model="message" type="textarea" name="message" float-label="Message"
                             :max-height="100" :min-rows="5" />
-                        <form action="//formspree.io/rideforhopeidaho@gmail.com" method="POST">
-                            <q-btn type="submit" outline color="black">Send</q-btn>
-                            <div class="hidden">
-                                <input type="text" name="name" v-model="name">
-                                <input type="email" name="_replyto" v-model="email">
-                                <input type="tel" name="phone" v-model="phone">
-                                <input type="text" name="subject" v-model="subject">
-                                <input type="textarea" name="message" v-model="message">
-                            </div>
-                        </form>
+                        <q-btn @click="sendEmail" outline color="black">Send</q-btn>
+                        <div class="hidden">
+                            <input type="text" name="name" v-model="name">
+                            <input type="email" name="_replyto" v-model="email">
+                            <input type="tel" name="phone" v-model="phone">
+                            <input type="text" name="subject" v-model="subject">
+                            <input type="textarea" name="message" v-model="message">
+                        </div>
                     </div>
                 </div>
                 <div class="row wrap justify-center mobile-only">
@@ -41,16 +39,14 @@
                         <q-input v-model="subject" float-label="Subject" name="subject" />
                         <q-input v-model="message" type="textarea" name="message" float-label="Message"
                             :max-height="100" :min-rows="5" />
-                        <form action="//formspree.io/rideforhopeidaho@gmail.com" method="POST">
-                            <q-btn type="submit" outline color="black">Send</q-btn>
-                            <div class="hidden">
-                                <input type="text" name="name" v-model="name">
-                                <input type="email" name="_replyto" v-model="email">
-                                <input type="tel" name="phone" v-model="phone">
-                                <input type="text" name="subject" v-model="subject">
-                                <input type="textarea" name="message" v-model="message">
-                            </div>
-                        </form>
+                        <q-btn @click="sendEmail" outline color="black">Send</q-btn>
+                        <div class="hidden">
+                            <input type="text" name="name" v-model="name">
+                            <input type="email" name="_replyto" v-model="email">
+                            <input type="tel" name="phone" v-model="phone">
+                            <input type="text" name="subject" v-model="subject">
+                            <input type="textarea" name="message" v-model="message">
+                        </div>
                     </div>
                     <div class="col-xs-10 bot">
                         <img src="statics/logos/RFHIdahoLogo.png" class="responsive img" alt="Ride for hope idaho logo">
@@ -95,7 +91,7 @@
             QParallax
         },
         methods: {
-            send() {
+            sendEmail() {
                 this.$v.name.$touch()
                 this.$v.email.$touch()
                 this.$v.subject.$touch()
@@ -111,8 +107,9 @@
                     name: this.name,
                     email: this.email,
                     phone: this.phone,
-                    _subject: this.subject,
-                    message: this.message
+                    subject: this.subject,
+                    message: this.message,
+                    from: "rfhi"
                 }
                 this.$store.dispatch('sendEmail', obj)
             }

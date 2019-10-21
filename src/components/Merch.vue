@@ -5,7 +5,7 @@
                 <h3 class="desktop-only">Merchandise</h3>
                 <h4 class="mobile-only">Merchandise</h4>
                 <hr class="ihr">
-                <h5>Jerseys, Bibs, and Socks are available to order on June 7th at packet pickup sand
+                <h5>Jerseys, Bibs, and Socks are available to order on June 7th at packet pickup and
                     on
                     June
                     8th at the event.</h5>

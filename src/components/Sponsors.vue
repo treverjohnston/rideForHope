@@ -90,6 +90,34 @@
                 <!-- SUPPORT -->
                 <div class="row wrap justify-center text-center ">
                     <div class="col-xs-11 col-md-8 spacers">
+                        <h2 class="text-bold shadow desktop-only">Carpe Diem Sponsors</h2>
+                        <!-- <h2 class="text-bold shadow desktop-only">($500-$1499)</h2> -->
+                        <h4 class="text-bold shadow mobile-only">Carpe Diem Sponsors</h4>
+                        <!-- <h4 class="text-bold shadow mobile-only">($500-$1499)</h4> -->
+                        <big class="text-italic">"Seize The Day"</big>
+                        <hr color="red" class="hr">
+                        <div class="mid row wrap justify-center">
+
+                            <!-- <div class="mid row wrap justify-center"> -->
+                            <div v-for="sponsor in l4" class="col-xs-6 col-md-4 self-center">
+                                <q-btn flat>
+                                    <img class="responsive carp" :src="sponsor.logo" :alt="sponsor.name">
+                                </q-btn>
+                            </div>
+                            <!-- <div v-for="sponsor in l4" class="col-xs-6 col-md-6 self-center last margin">
+                                <q-btn outline color="white" no-caps flat @click="launch(sponsor.link)">
+                                    <img class="responsive carp" :src="sponsor.logo" :alt="sponsor.name">
+                                   
+                                </q-btn>
+                            </div> -->
+                        </div>
+                        <!-- <hr color="red" class="hr"> -->
+                    </div>
+                </div>
+
+                <!-- SUPPORT -->
+                <div class="row wrap justify-center text-center ">
+                    <div class="col-xs-11 col-md-8 spacers">
                         <h2 class="text-bold shadow desktop-only">Support</h2>
                         <!-- <h2 class="text-bold shadow desktop-only">($500-$1499)</h2> -->
                         <h4 class="text-bold shadow mobile-only">Support</h4>
