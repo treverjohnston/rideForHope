@@ -542,7 +542,7 @@ var store = new vuex.Store({
           Toast.create({ html: 'Message Sent', bgColor: 'green' });
         })
         .catch(err => {
-          Toast.create({ html: 'Message send failed: ' + err, bgColor: 'red' });
+          Toast.create({ html: 'Message send failed: If issue persists, please email rideforhope@gmail.com  -  ' + err, bgColor: 'red' });
         })
     },
     getPictures({ commit, dispatch }) {
